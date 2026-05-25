@@ -1,0 +1,19 @@
+config,trial,faithfulness,answer_relevancy,context_precision,wall_seconds,error
+hybrid_no_rerank,1,0.9733333333333334,0.6481288793115747,0.9753333333164932,81.9,
+hybrid_no_rerank,2,0.9261111111111112,0.6501694169215841,0.9999999999833332,59.6,
+hybrid_no_rerank,3,0.9277777777777778,0.6487805671168791,0.9753333333164932,59.8,
+hybrid_bge_rerank,1,0.9592307692307692,0.8316320914713413,0.9999999999833332,81.1,
+hybrid_bge_rerank,2,0.9328671328671329,0.6827858039101201,0.9999999999833332,60.3,
+hybrid_bge_rerank,3,0.897480881691408,0.8443455215834021,0.9999999999833332,58.0,
+hybrid_jina_rerank,1,,,,,"The repository jinaai/jina-reranker-v2-base-multilingual contains custom code which must be executed to correctly load the model. You can inspect the repository content at https://hf.co/jinaai/jina-reranker-v2-base-multilingual .
+ You can inspect the repository content at https://hf.co/jinaai/jina-reranker-v2-base-multilingual.
+Please pass the argument `trust_remote_code=True` to allow custom code to be run."
+hybrid_jina_rerank,2,,,,,"The repository jinaai/jina-reranker-v2-base-multilingual contains custom code which must be executed to correctly load the model. You can inspect the repository content at https://hf.co/jinaai/jina-reranker-v2-base-multilingual .
+ You can inspect the repository content at https://hf.co/jinaai/jina-reranker-v2-base-multilingual.
+Please pass the argument `trust_remote_code=True` to allow custom code to be run."
+hybrid_jina_rerank,3,,,,,"The repository jinaai/jina-reranker-v2-base-multilingual contains custom code which must be executed to correctly load the model. You can inspect the repository content at https://hf.co/jinaai/jina-reranker-v2-base-multilingual .
+ You can inspect the repository content at https://hf.co/jinaai/jina-reranker-v2-base-multilingual.
+Please pass the argument `trust_remote_code=True` to allow custom code to be run."
+hybrid_msmarco_rerank,1,0.9666666666666666,0.660791334540447,0.9999999999833333,138.3,
+hybrid_msmarco_rerank,2,0.9833333333333334,0.6821698368124223,0.9999999999833333,47.3,
+hybrid_msmarco_rerank,3,0.96,0.6730587707160708,0.9999999999833333,59.8,

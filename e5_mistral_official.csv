@@ -1,0 +1,2 @@
+model,prompt_variant,faithfulness,answer_relevancy,context_precision,ingest_seconds,avg_query_seconds,wall_seconds
+intfloat/e5-mistral-7b-instruct,official_mteb,0.756,0.4706,0.89,1754.55,4.17,1957.3

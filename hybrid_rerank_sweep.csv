@@ -1,0 +1,6 @@
+retrieval,faithfulness,answer_relevancy,context_precision,avg_query_seconds
+"mmr(k=6,fetch=20,λ=0.5)",0.973,0.671,0.985,5.17
+"mmr(k=6,fetch=20,λ=0.5) + rerank(6/20)",0.94,0.676,1.0,6.19
+hybrid(pool=20),0.902,0.652,0.975,5.45
+hybrid(pool=30) + rerank(6/30),0.933,0.837,1.0,6.26
+hybrid(pool=50) + rerank(6/50),0.915,0.826,1.0,7.99

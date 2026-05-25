@@ -1,0 +1,4 @@
+config,faith_mean,faith_std,ar_mean,ar_std,cp_mean,cp_std,n
+hybrid_bge_rerank,0.9299,0.031,0.7863,0.0898,1.0,0.0,3
+hybrid_msmarco_rerank,0.97,0.012,0.672,0.0107,1.0,0.0,3
+hybrid_no_rerank,0.9424,0.0268,0.649,0.001,0.9836,0.0142,3

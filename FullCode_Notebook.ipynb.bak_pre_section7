@@ -1,0 +1,3145 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "go83F6ZLNZCB"
+   },
+   "source": [
+    "# **Problem Statement**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "4rHEr7iqNg96"
+   },
+   "source": [
+    "## **Business Context**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "FYIdTMGQN2GQ"
+   },
+   "source": [
+    "Lumina Energy Partners is a premier global investment firm managing a portfolio across traditional fossil fuels, renewable power generation, and advanced energy infrastructure. The global energy landscape is currently undergoing an unprecedented and highly complex transition. As the \u201cAge of Electricity\u201d takes hold, power demand is surging due to the electrification of transport and heating and the rapid expansion of AI-driven data centres. At the same time, the market is experiencing major structural shifts, including a coming wave of liquefied natural gas production, plateauing global oil demand, slower coal plant retirements due to policy support, and persistent bottlenecks in power grid infrastructure that constrain renewable integration.\n",
+    "\n",
+    "To maximise portfolio returns and mitigate risk, Lumina\u2019s investment committee requires rapid cross-sector intelligence. Evaluating an investment in a US natural gas facility, for example, requires analysts to synthesise insights spanning multiple energy markets. They must understand how AI data centres could account for almost half of projected US electricity demand growth and potentially add nearly 20 bcm of annual natural gas demand by 2030. At the same time, they must consider countervailing developments such as the slowdown in coal plant retirements due to federal policy support and the growing constraints on renewable deployment caused by grid congestion. These interdependencies require analysts to combine signals from multiple technical sources to produce a coherent macro outlook.\n",
+    "\n",
+    "Currently, Lumina\u2019s analysts rely on manual review of dense and highly technical International Energy Agency reports covering Coal, Oil, Gas, Electricity, and Renewables. Preparing a cross-sector investment briefing typically requires two to three days of work, during which analysts review five to ten separate reports and spend roughly 65% of their time locating relevant passages rather than performing financial modelling or scenario analysis. The process relies heavily on manual search across thousands of pages of PDFs and cross-referencing fragments of information between reports.\n",
+    "\n",
+    "This workflow creates measurable operational inefficiencies and analytical risk. Citation traceability is inconsistent, subtle correlations between reports may be overlooked, and valuable analyst time is diverted away from high-value modelling and strategic evaluation. In fast-moving market conditions or competitive bidding windows, the delay inherent in manual synthesis can mean that investment opportunities are missed before a complete briefing is produced.\n",
+    "\n",
+    "To remain competitive, Lumina requires an AI-assisted system capable of reducing briefing preparation time by at least 90%, retrieving relevant report passages with at least 90% accuracy, and generating fully grounded responses with complete source attribution and minimal hallucination risk. By transitioning from manual document review to a Retrieval Augmented Generation system grounded exclusively in authoritative IEA reports, Lumina can enable analysts to ask complex natural language questions and receive instant, synthesised, and fully cited strategic briefings. This approach would eliminate days of manual document review, reduce the risk of human oversight, and allow analysts to focus on financial modelling and strategic decision-making rather than time-consuming information retrieval."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "MvavPC3sN57m"
+   },
+   "source": [
+    "## **Objective**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "tTRkMJU_N-Ss"
+   },
+   "source": [
+    "Your objective as a Data Scientist is to design, build, and evaluate a prototype Retrieval Augmented Generation (RAG) pipeline that enables Lumina\u2019s analysts to rapidly obtain accurate and fully traceable energy market insights from a corpus of dense, technical International Energy Agency market reports. The system must synthesise information across multiple reports while producing high-fidelity, hallucination-free responses suitable for high-stakes investment decision-making.\n",
+    "\n",
+    "Key tasks include:\n",
+    "- **Data Ingestion and Preprocessing**: Extract text, quantitative data points, and complex policy details from the provided IEA PDF reports. Implement an intelligent chunking strategy that preserves the context of dense market analyses, outlook sections, and policy frameworks so that cross-sector insights can be retrieved accurately.\n",
+    "- **Vector Embedding and Storage**: Select an embedding model capable of capturing the semantic meaning of highly technical energy terminology and relationships across the reports. Generate semantic representations of the text and store these embeddings in a vector database to enable efficient similarity search across the entire corpus.\n",
+    "- **Advanced Retrieval**: Develop a robust retrieval mechanism capable of surfacing the most relevant passages across multiple reports in response to complex, multi-part analyst queries. The retrieval layer should support cross-sector questions that connect developments such as electricity demand growth, LNG supply expansion, and coal plant utilisation.\n",
+    "- **LLM Synthesis and Citation**: Integrate a Large Language Model to synthesise retrieved evidence into coherent, executive-level investment briefings. The generated responses must explicitly cite the source reports and relevant sections or pages for each key claim in order to ensure auditability and minimise hallucination risk.\n",
+    "- **Evaluation**: Establish evaluation metrics to assess system performance against benchmark questions generated by Lumina\u2019s senior energy analysts. Evaluation should measure retrieval relevance and factual accuracy, to achieve approximately 90% retrieval accuracy and significantly reduce the time required to prepare cross-sector investment briefings."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "B-a-ASZgN_9O"
+   },
+   "source": [
+    "## **Data Dictionary**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "py-_8aUqOpDh"
+   },
+   "source": [
+    "The corpus for this Retrieval-Augmented Generation (RAG) case study consists of five authoritative market reports published by the International Energy Agency (IEA). Each document provides comprehensive analysis and medium-term forecasts up to the year 2030 for different energy sectors:\n",
+    "\n",
+    "* **Coal 2025:** Analyzes recent trends and provides forecasts through 2030 for global coal demand, supply, trade, and prices amid shifting energy policies.\n",
+    "    - IEA (2025), Coal 2025, IEA, Paris https://www.iea.org/reports/coal-2025, Licence: CC BY 4.0\n",
+    "* **Electricity 2026:** Examines global electricity systems, offering forecasts to 2030 on electricity demand, supply, grid infrastructure bottlenecks, and system flexibility.\n",
+    "    - IEA (2026), Electricity 2026, IEA, Paris https://www.iea.org/reports/electricity-2026, Licence: CC BY 4.0\n",
+    "* **Gas 2025:** Explores medium-term trends in global natural gas markets through 2030, with a specific focus on the impending global expansion of liquefied natural gas (LNG) capacity and low-emission gases.\n",
+    "    - IEA (2025), Gas 2025, IEA, Paris https://www.iea.org/reports/gas-2025, Licence: CC BY 4.0\n",
+    "* **Oil 2025:** Delivers detailed forecasts on evolving global oil supply, demand, refining, and trade dynamics through 2030, highlighting the rising influence of petrochemical feedstocks.\n",
+    "    - IEA (2025), Oil 2025, IEA, Paris https://www.iea.org/reports/oil-2025, Licence: CC BY 4.0\n",
+    "* **Renewables 2025:** Analyzes recent policy and market developments to forecast the deployment of renewable energy technologies across the electricity, transport, and heat sectors up to 2030.\n",
+    "    - IEA (2025), Renewables 2025, IEA, Paris https://www.iea.org/reports/renewables-2025, Licence: CC BY 4.0"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "JV8JC0I0BgqP"
+   },
+   "source": [
+    "# **Requirements**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "4Y4jQLMkdGVa"
+   },
+   "source": [
+    "### 1. **Does the ingested IEA report corpus cover all critical energy sectors such as oil, natural gas, coal, electricity, renewables, and grid infrastructure?**\n",
+    "- Write the description here\n",
+    "\n",
+    "### 2. **How accurate and well-grounded are RAG-generated answers compared to base LLM responses?**\n",
+    "- Write the description here\n",
+    "\n",
+    "### 3. **How can RAG performance be systematically evaluated using automated metrics like RAGAS?**\n",
+    "- Write the description here\n",
+    "\n",
+    "### 4. **Which retrieval and prompting configurations yield the most reliable insights that are grounded in the IEA reports?**\n",
+    "- Write the description here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "sKBWuY9BGIMt"
+   },
+   "source": [
+    "# **Operationalize**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "KoCc7F4RB0x3"
+   },
+   "source": [
+    "With the requirements clearly defined, the next step is to prepare the IEA report dataset for effective model development and analysis.\n",
+    "\n",
+    "This process involves extracting textual content from the raw PDF reports and organising it into a structured format suitable for language model processing. The processed dataset can then be systematically analysed by the model to interpret information across reports covering electricity markets, natural gas supply, renewable energy deployment, and coal utilisation. This preparation stage ensures the content is organised in a way that supports efficient analysis and reliable insight generation.\n",
+    "\n",
+    "By structuring and standardising the report corpus, we create a solid foundation for accurate energy market interpretation and cross sector insight generation in the subsequent stages of the project."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "lnwETBOE6Bz5"
+   },
+   "source": [
+    "# **Installing and Importing the necessary libraries**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "TaOnUl1za5WU"
+   },
+   "source": [
+    "**Note**:\n",
+    "A T4 GPU is not required for this project; it can be completed using a CPU instance. However, a GPU can be used to speed up the embedding process."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "id": "BZim11lPeZHe"
+   },
+   "outputs": [],
+   "source": [
+    "# %pip install -q langchain_community==0.3.27 langchain==0.3.27 langchain_groq chromadb==1.0.15 pymupdf==1.26.3 tiktoken==0.9.0 ragas==0.3.0 datasets==4.0.0 evaluate==0.4.5 sentence-transformers==3.0.1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "nLddg0lg7cbZ"
+   },
+   "source": [
+    "**Note:**\n",
+    "\n",
+    "- After running the above cell, kindly restart the runtime (for Google Colab) or notebook kernel (for Jupyter Notebook), and run all cells sequentially from the next cell.\n",
+    "- On executing the above line of code, you might see a warning regarding package dependencies. This error message can be ignored as the above code ensures that all necessary libraries and their dependencies are maintained to successfully execute the code in this notebook."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "SWL0S6gOfYiW"
+   },
+   "source": [
+    "## Importing the required libraries"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {
+    "id": "OrUfjmDx7NuO"
+   },
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/opt/anaconda3/envs/MLENV311/lib/python3.11/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html\n",
+      "  from .autonotebook import tqdm as notebook_tqdm\n"
+     ]
+    }
+   ],
+   "source": [
+    "#---------------------------------------------------\n",
+    "# Libraries for file handling\n",
+    "#---------------------------------------------------\n",
+    "import os\n",
+    "import json\n",
+    "import zipfile\n",
+    "from tqdm import tqdm\n",
+    "from pathlib import Path\n",
+    "\n",
+    "#---------------------------------------------------\n",
+    "# Libraries for data handling\n",
+    "#---------------------------------------------------\n",
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "\n",
+    "#---------------------------------------------------\n",
+    "# Libraries for response generation\n",
+    "#---------------------------------------------------\n",
+    "import time\n",
+    "from groq import Groq\n",
+    "from langchain_groq import ChatGroq\n",
+    "from langchain_core.messages import SystemMessage, HumanMessage\n",
+    "\n",
+    "#---------------------------------------------------\n",
+    "# Libraries for document loading and embedding\n",
+    "#---------------------------------------------------\n",
+    "import tiktoken\n",
+    "from glob import glob\n",
+    "from langchain_community.document_loaders import PyMuPDFLoader\n",
+    "from langchain_text_splitters import RecursiveCharacterTextSplitter\n",
+    "from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings\n",
+    "from langchain_community.vectorstores import Chroma\n",
+    "\n",
+    "#---------------------------------------------------\n",
+    "# Libraries for evaluation\n",
+    "#---------------------------------------------------\n",
+    "from ragas import evaluate\n",
+    "from ragas.metrics import (\n",
+    "    Faithfulness,\n",
+    "    AnswerRelevancy,\n",
+    "    LLMContextPrecisionWithoutReference,\n",
+    ")\n",
+    "from datasets import Dataset\n",
+    "\n",
+    "#---------------------------------------------------\n",
+    "# Supress warnings\n",
+    "#---------------------------------------------------\n",
+    "import warnings\n",
+    "warnings.filterwarnings(\"ignore\", category=DeprecationWarning)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "sDrn3IH6Um8z"
+   },
+   "source": [
+    "## Loading the Groq API key"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "id": "J8YY5ZT39pEW"
+   },
+   "outputs": [],
+   "source": [
+    "# Load the JSON file and extract values\n",
+    "file_name = 'config.json'\n",
+    "with open(file_name, 'r') as file:\n",
+    "    config = json.load(file)\n",
+    "    # Assuming GROQ_API_KEY from config.json will now be your GROQ API Key\n",
+    "    GROQ_API_KEY = config.get(\"GROQ_API_KEY\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Hardware detection and harness bootstrap\n",
+    "\n",
+    "The harness auto-detects the available accelerator and picks a sensible dtype + batch size:\n",
+    "\n",
+    "| Device | Dtype | Batch size | Notes |\n",
+    "|---|---|---|---|\n",
+    "| CUDA (Ampere+, e.g. H100/A100) | bf16 | 128 | Tensor cores light up at bf16 |\n",
+    "| CUDA (pre-Ampere) | fp16 | 128 | |\n",
+    "| Apple MPS | fp16 | 32 | bf16 on MPS is still flaky in torch 2.x |\n",
+    "| CPU | fp32 | 8 | Fine for the 110M baseline only |\n",
+    "\n",
+    "CUDA wins over MPS when both are present, so the same notebook runs on a Mac for iteration and on a rented H100 for the heavy 7B embedder runs."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Detected environment:\n",
+      "  torch              2.12.0\n",
+      "  device             mps\n",
+      "  mps_available      True\n",
+      "  dtype              torch.float16\n",
+      "  batch_size         32\n",
+      "\n",
+      "Harness config: device=mps, dtype=torch.float16, batch_size=32\n",
+      "Indexes will be persisted under: chroma_stores/<model_slug>/\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Auto-detect accelerator (CUDA > MPS > CPU) and bootstrap the harness.\n",
+    "from rag_harness import (\n",
+    "    HarnessConfig,\n",
+    "    describe_environment,\n",
+    "    BENCHMARK_QUERIES,\n",
+    "    DEFAULT_MODEL_SET,\n",
+    ")\n",
+    "\n",
+    "print(\"Detected environment:\")\n",
+    "env_info = describe_environment()\n",
+    "\n",
+    "cfg = HarnessConfig(groq_api_key=GROQ_API_KEY)\n",
+    "print(f\"\\nHarness config: device={cfg.device}, dtype={cfg.dtype}, batch_size={cfg.batch_size}\")\n",
+    "print(f\"Indexes will be persisted under: {cfg.persist_root}/<model_slug>/\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Smoke test \u2014 one small model end-to-end\n",
+    "\n",
+    "Verifies PDF load, chunking, embedding on the detected device, Chroma persistence,\n",
+    "retrieval, Groq generation, and RAGAS scoring before launching the full comparison.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 199/199 [00:00<00:00, 1353.57it/s]\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[store] reusing cached collection at chroma_stores/baai_bge_base_en_v1_5_c900_o150 (2786 vectors)\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 199/199 [00:00<00:00, 6375.15it/s]\n",
+      "Evaluating: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 3/3 [01:08<00:00, 22.76s/it]"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'model': 'BAAI/bge-base-en-v1.5', 'retrieval': 'sim(k=6)', 'chunk_size': 900, 'chunk_overlap': 150, 'ingest_seconds': 0.24, 'avg_query_seconds': 0.95, 'faithfulness': 1.0, 'answer_relevancy': 0.6328738507049099, 'context_precision': 0.9999999999833333}\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "from rag_harness import run_model\n",
+    "\n",
+    "smoke_row = run_model(\"BAAI/bge-base-en-v1.5\", cfg, queries=BENCHMARK_QUERIES[:1])\n",
+    "print({k: v for k, v in smoke_row.items() if k not in (\"per_query\", \"answers\")})\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Portable index export / import\n",
+    "\n",
+    "Build embeddings on the H100, evaluate locally. The persisted Chroma directory is\n",
+    "self-contained \u2014 `export_index` tars it for `scp`, `import_index` unpacks it on the\n",
+    "other side. After import, `run_model` skips ingest and reuses the cached collection.\n",
+    "\n",
+    "```bash\n",
+    "# On H100 box after running ingest:\n",
+    "scp exports/intfloat_e5_mistral_7b_instruct.tar.gz mac:~/JH_AI_P4/exports/\n",
+    "\n",
+    "# On Mac:\n",
+    "from rag_harness import import_index\n",
+    "import_index(\"exports/intfloat_e5_mistral_7b_instruct.tar.gz\", cfg)\n",
+    "```\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from rag_harness import export_index, import_index\n",
+    "\n",
+    "# Example (uncomment after a successful ingest):\n",
+    "# export_index(\"BAAI/bge-base-en-v1.5\", cfg)\n",
+    "# import_index(\"exports/baai_bge_base_en_v1_5.tar.gz\", cfg)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Build all four generation strategies\n",
+    "\n",
+    "This sets up the shared LLM and the two vector stores (base-RAG MiniLM and tuned\n",
+    "bge-base) so the four answer sections below can each just call their strategy\n",
+    "function. The vector stores are cached on disk \u2014 re-running this cell is fast.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 103/103 [00:00<00:00, 12538.12it/s]\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[store] reusing cached collection at chroma_stores/sentence_transformers_all_minilm_l6_v2_c1000_o100 (2522 vectors)\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Loading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 199/199 [00:00<00:00, 9479.78it/s]\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[store] reusing cached collection at chroma_stores/baai_bge_base_en_v1_5_c900_o150 (2786 vectors)\n",
+      "[strategies] base RAG store:  2522 vectors (MiniLM)\n",
+      "[strategies] tuned RAG store: 2786 vectors (bge-base)\n"
+     ]
+    }
+   ],
+   "source": [
+    "import json\n",
+    "from langchain_groq import ChatGroq\n",
+    "import answer_runners as ar\n",
+    "from rag_harness import BENCHMARK_QUERIES\n",
+    "\n",
+    "llm = ChatGroq(\n",
+    "    model=cfg.generator_model,\n",
+    "    groq_api_key=cfg.groq_api_key,\n",
+    "    temperature=0,\n",
+    ")\n",
+    "\n",
+    "ar.build_strategies(cfg)\n",
+    "\n",
+    "# Optional: preload cached answers (so cells display without re-running)\n",
+    "CACHED_ANSWERS = json.load(open(\"all_answers.json\"))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# \ud83d\udcd6 Reader's Guide\n",
+    "\n",
+    "This notebook is organised around the **9 sections of the Project Evaluation Rubric** (60 points total). Each rubric section maps to a clearly-labelled notebook section, listed below in submission order. Empirical decisions throughout (chunking, embedder, retrieval strategy, evaluation methodology) are grounded in the sweep results documented in `chunk_sweep_token_vs_char.csv`, `model_comparison_full.csv`, `hybrid_rerank_sweep.csv`, and `variance_summary.csv`.\n",
+    "\n",
+    "## Rubric \u2192 Notebook Section Map\n",
+    "\n",
+    "| # | Rubric Section | Pts | Notebook Section | What's Covered |\n",
+    "|---|---|---|---|---|\n",
+    "| 1 | **Requirements Gathering** | 4 | *Problem Statement \u2192 Requirements* (top of notebook) | Business problem definition, four analysis requirements broken into measurable steps |\n",
+    "| 2 | **Answering Questions using the Base LLM** | 5 | *Question Answering using LLM* | Plain Groq Llama-3.3-70B with minimal system prompt. 5 benchmark queries, observations after each |\n",
+    "| 3 | **Base LLM with Prompt Engineering** | 7 | *Question Answering using LLM with Prompt Engineering* | Same LLM + analyst-persona system prompt; 5 answers; comparison vs base |\n",
+    "| 4 | **Vector Database Setup for RAG** | 6 | *Data Preparation for RAG* | Corpus overview, **token-based chunking** (380/60, decision documented), **bge-base-en-v1.5** embedder (5-model benchmark documented), **Chroma** vector store rationale |\n",
+    "| 5 | **Base RAG System** | 7 | *Question Answering using RAG* | MiniLM-L6 embedder + similarity k=4 + simple context prompt \u2014 represents an \"out-of-the-box\" RAG baseline |\n",
+    "| 6 | **Tuned RAG System** | 8 | *Fine-tuning the RAG* | Winning config: bge-base + token 380/60 + **MMR k=6 \u03bb=0.5** + cited-analyst prompt. Parameters (k, temperature=0, top_p, max_tokens) documented |\n",
+    "| 7 | **Output Evaluation** | 11 | *Output Evaluation* | **gpt-4o-mini** chosen as RAGAS judge (rationale documented). Metrics: **Faithfulness**, **Answer Relevancy**, **LLM Context Precision (without reference)**. All 4 techniques scored; **5-trial variance study** establishes confidence intervals |\n",
+    "| 8 | **Business Insights & Recommendations** | 4 | *Business Insights and Recommendations* | Key takeaways for Lumina's analyst workflow; logical next steps |\n",
+    "| 9 | **Presentation / Notebook \u2014 Overall Quality** | 8 | *(entire notebook)* | Clear section flow, commented executable code, business-grounded conclusions |\n",
+    "\n",
+    "## Key Empirical Findings (TL;DR for the reader)\n",
+    "\n",
+    "The four techniques compared on RAGAS (5-trial mean \u00b1 stdev, n=5 queries \u00d7 5 trials):\n",
+    "\n",
+    "| Technique | Faithfulness | Ans Relevancy | Ctx Precision | Composite |\n",
+    "|---|---|---|---|---|\n",
+    "| Base LLM | low | medium | n/a (no retrieval) | \u2014 |\n",
+    "| Prompt-engineered LLM | low\u2013medium | medium | n/a (no retrieval) | \u2014 |\n",
+    "| Base RAG (naive) | medium | low | medium | \u2014 |\n",
+    "| **Tuned RAG** | **0.954 \u00b1 0.022** | **0.847 \u00b1 0.004** | **0.997 \u00b1 0.004** | **0.933 \u00b1 0.008** |\n",
+    "\n",
+    "Tuned RAG **exceeds the 90% retrieval-accuracy target** Lumina specified in the brief.\n",
+    "\n",
+    "## Methodological Notes\n",
+    "\n",
+    "- **Generator LLM**: Groq `llama-3.3-70b-versatile` (the model prescribed by the project template). gpt-4o-mini was used as a fallback during quota-limited periods of development; final answers regenerated on Groq.\n",
+    "- **Judge LLM**: OpenAI `gpt-4o-mini` (separate from the generator to avoid self-grading bias).\n",
+    "- **Chunking unit**: tokens (not characters) \u2014 the embedder's own BERT tokenizer is the length function. This decision is documented in the Data Preparation section with the sweep that produced it.\n",
+    "- **Retrieval**: MMR (Maximal Marginal Relevance) with k=6. Hybrid (BM25+vector) and cross-encoder reranking were tested and **rejected** \u2014 the variance study showed they did not improve on MMR alone for this corpus and one configuration produced catastrophic answer-relevancy regressions on a subset of trials.\n",
+    "- **Evaluation rigour**: per-config metrics are reported as mean \u00b1 stdev across 5 trials, not single-run estimates. RAGAS scores on n=5 queries have meaningful run-to-run variance (~0.05\u20130.15 on Answer Relevancy in some configurations) that single-trial reporting hides.\n",
+    "\n",
+    "## Supporting Artifacts\n",
+    "\n",
+    "| File | Contents |\n",
+    "|---|---|\n",
+    "| `rag_harness.py` | Core pipeline: ingest, chunk, embed, retrieve, evaluate |\n",
+    "| `answer_runners.py` | Four answer-generation strategies (base / prompt-eng / base-RAG / tuned-RAG) |\n",
+    "| `all_answers.json` | 4 \u00d7 5 = 20 generated answers cached for the notebook |\n",
+    "| `chunk_sweep_token_vs_char.csv` | Char vs. token chunking decision data |\n",
+    "| `model_comparison_full.csv` | 5-model embedder benchmark |\n",
+    "| `hybrid_rerank_sweep.csv` | Hybrid + rerank configuration sweep |\n",
+    "| `variance_summary.csv` | 5-trial variance study aggregated stats |\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "TtZWqj0wFTS1"
+   },
+   "source": [
+    "# **Question Answering using LLM**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "EzzkvIXvFTS4"
+   },
+   "source": [
+    "## **Define the response function**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "System prompt: You are a helpful assistant. Answer the user's question.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Base LLM strategy \u2014 plain LLM, minimal system prompt, no retrieval.\n",
+    "# See answer_runners.MINIMAL_SYSTEM and base_llm_answer().\n",
+    "from answer_runners import base_llm_answer, MINIMAL_SYSTEM\n",
+    "print('System prompt:', MINIMAL_SYSTEM)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "hfKHDaYfuNEn"
+   },
+   "source": [
+    "## **Answering the questions**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "K8YgK91SFjVY"
+   },
+   "source": [
+    "### Query 1: How is the rapid global expansion of artificial intelligence data centres impacting overall electricity demand and straining existing power grid infrastructure?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The rapid global expansion of artificial intelligence (AI) data centers is significantly impacting overall electricity demand and straining existing power grid infrastructure. Here are some key factors contributing to this trend:\n",
+      "\n",
+      "1. **Increased energy consumption**: AI data centers require massive amounts of energy to power their operations, including cooling systems, servers, and networking equipment. As the number of data centers grows, so does their energy consumption, leading to a substantial increase in overall electricity demand.\n",
+      "2. **High-power density**: AI data centers have a high power density, meaning they require a large amount of power relative to their physical size. This can lead to localized strain on the power grid, particularly in areas with limited generation and transmission capacity.\n",
+      "3. **24/7 operation**: Data centers operate around the clock, which means they require a constant and reliable supply of electricity. This can lead to increased peak demand on the power grid, especially during periods of high usage.\n",
+      "4. **Cooling requirements**: AI data centers generate significant heat, which must be dissipated to prevent equipment failure. Cooling systems, such as air conditioning or liquid cooling, require additional energy, further increasing the overall energy consumption of the data center.\n",
+      "5. **Strain on existing infrastructure**: The rapid growth of AI data centers can outpace the development of new power generation and transmission infrastructure, leading to strain on existing systems. This can result in:\n",
+      "\t* **Power outages**: Increased demand can lead to power outages, particularly during periods of high usage or when the grid is already under stress.\n",
+      "\t* **Voltage fluctuations**: The high power density of data centers can cause voltage fluctuations, which can damage equipment and disrupt operations.\n",
+      "\t* **Grid congestion**: The increased demand from data centers can lead to grid congestion, making it challenging to transmit power to other areas of the grid.\n",
+      "6. **Renewable energy integration**: While some data centers are transitioning to renewable energy sources, such as solar or wind power, the intermittent nature of these sources can create challenges for grid stability and reliability.\n",
+      "7. **Water usage**: Many data centers use water for cooling, which can strain local water resources, particularly in areas where water is already scarce.\n",
+      "\n",
+      "To mitigate these impacts, data center operators, governments, and utilities are exploring various strategies, including:\n",
+      "\n",
+      "1. **Energy-efficient designs**: Implementing energy-efficient designs and technologies, such as air-side and water-side economization, to reduce energy consumption.\n",
+      "2. **Renewable energy sources**: Investing in renewable energy sources, such as on-site solar or wind power, to reduce dependence on non-renewable energy sources.\n",
+      "3. **Grid-scale energy storage**: Implementing grid-scale energy storage solutions, such as batteries, to stabilize the grid and reduce peak demand.\n",
+      "4. **Load management**: Implementing load management strategies, such as demand response programs, to shift energy consumption to off-peak hours.\n",
+      "5. **Grid modernization**: Upgrading grid infrastructure to support the increased demand from data centers and other emerging technologies.\n",
+      "6. **Water conservation**: Implementing water conservation measures, such as water recycling and efficient cooling systems, to reduce water usage.\n",
+      "\n",
+      "Ultimately, the rapid expansion of AI data centers will require a coordinated effort from data center operators, governments, and utilities to ensure that the power grid infrastructure can support the increased demand while minimizing the environmental impact.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: base_llm  \u2014  benchmark query 1\n",
+    "answer = CACHED_ANSWERS['base_llm']['answers'][0]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "rCRKIks7zjPg"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "J6yxICeVFjVc"
+   },
+   "source": [
+    "### Query 2: How is the unprecedented wave of new US liquefied natural gas (LNG) export capacity expected to impact natural gas affordability and spur additional demand in price-sensitive Asian markets by 2030?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The unprecedented wave of new US liquefied natural gas (LNG) export capacity is expected to have a significant impact on natural gas affordability and demand in price-sensitive Asian markets by 2030. Here are some key factors to consider:\n",
+      "\n",
+      "1. **Increased global supply**: The surge in US LNG export capacity will lead to a significant increase in global LNG supply, which is expected to reach 643 million tonnes per annum (mtpa) by 2030, up from 430 mtpa in 2020. This will put downward pressure on prices and make LNG more competitive with other fuels.\n",
+      "2. **Price competitiveness**: US LNG is expected to be highly competitive in Asian markets due to its low production costs, proximity to key markets, and favorable pricing mechanisms. This will enable US LNG to capture a larger share of the Asian market, particularly in countries like China, India, and Japan, which are seeking to diversify their energy mix and reduce dependence on coal and oil.\n",
+      "3. **Impact on Asian LNG prices**: The influx of US LNG is expected to lead to a decline in Asian LNG prices, making natural gas a more attractive option for power generation, industrial, and residential sectors. This, in turn, will spur additional demand for LNG in price-sensitive markets, particularly in countries with growing energy needs and limited domestic gas production.\n",
+      "4. **Growth in LNG demand**: The increased availability of affordable LNG is expected to drive growth in LNG demand in Asia, particularly in countries like:\n",
+      "\t* China: Expected to become the world's largest LNG importer by 2025, driven by government policies to reduce air pollution and increase the share of natural gas in the energy mix.\n",
+      "\t* India: Aims to increase the share of natural gas in its energy mix to 15% by 2030, driven by government initiatives to promote the use of cleaner fuels.\n",
+      "\t* Japan: Expected to continue to rely heavily on LNG for power generation, with a growing focus on renewable energy and energy efficiency.\n",
+      "5. **Infrastructure development**: The growth in LNG demand will also drive investment in LNG infrastructure, including regasification terminals, storage facilities, and transportation networks. This will enable more efficient and cost-effective delivery of LNG to end-users, further increasing its competitiveness.\n",
+      "6. **Diversification of supply**: The increased availability of US LNG will also promote diversification of supply in Asian markets, reducing dependence on traditional suppliers like Qatar, Australia, and Malaysia. This will enhance energy security and reduce the risks associated with over-reliance on a single supplier.\n",
+      "7. **Renewable energy integration**: The growth of LNG demand in Asia will also be influenced by the integration of renewable energy sources, such as solar and wind power, into the energy mix. As renewable energy becomes more cost-competitive, it may reduce the demand for LNG in some markets, but it will also create opportunities for LNG to play a complementary role in providing flexibility and reliability to the grid.\n",
+      "\n",
+      "In summary, the unprecedented wave of new US LNG export capacity is expected to make natural gas more affordable and competitive in price-sensitive Asian markets, driving growth in LNG demand and infrastructure development. By 2030, US LNG is expected to play a significant role in shaping the Asian energy landscape, promoting energy diversification, and supporting the transition to a lower-carbon economy.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: base_llm  \u2014  benchmark query 2\n",
+    "answer = CACHED_ANSWERS['base_llm']['answers'][1]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "qOqMHcBMzj8x"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "oflaoOGiFjVd"
+   },
+   "source": [
+    "### Query 3: How are the surge in US electricity demand and the 2025 federal emergency policy interventions collectively affecting the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The surge in US electricity demand and the 2025 federal emergency policy interventions are having a significant impact on the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants. Here are some key effects:\n",
+      "\n",
+      "1. **Accelerated retirement schedules**: The increasing cost of operating coal-fired power plants, combined with the rising demand for cleaner energy sources, has led to an acceleration of retirement schedules for many coal-fired plants. The 2025 federal emergency policy interventions, which aim to reduce greenhouse gas emissions and promote renewable energy, are further incentivizing the retirement of coal-fired plants.\n",
+      "2. **Reduced capacity planning**: As coal-fired plants retire, the overall capacity of the US power grid is being reduced. This reduction in capacity is being partially offset by the addition of new renewable energy sources, such as solar and wind power. However, the variability of these sources means that grid operators must carefully plan and manage capacity to ensure reliable electricity supply.\n",
+      "3. **Decreased generation output**: The surge in electricity demand is being met by a combination of increased generation from existing power plants, including natural gas-fired and renewable energy sources. Coal-fired plants, which were once the primary source of electricity generation, are now operating at reduced capacity factors, leading to decreased generation output.\n",
+      "4. **Shift to natural gas and renewables**: The policy interventions are promoting a shift towards natural gas and renewable energy sources, which are becoming increasingly cost-competitive with coal. This shift is leading to a decrease in the market share of coal-fired power plants, making it more challenging for them to remain economically viable.\n",
+      "5. **Increased focus on grid resilience**: The 2025 federal emergency policy interventions are also emphasizing the importance of grid resilience, which includes the ability to withstand and recover from disruptions, such as extreme weather events. Coal-fired plants, which are often located in areas prone to flooding and other natural disasters, may face additional challenges in maintaining grid resilience.\n",
+      "6. **Regional disparities**: The impact of the surge in electricity demand and policy interventions is not uniform across the US. Regions with high demand growth, such as the Southwest and California, are experiencing a more rapid transition to renewable energy sources, while regions with existing coal-fired infrastructure, such as the Midwest and Appalachia, are facing more significant challenges in adapting to the changing energy landscape.\n",
+      "7. **Economic implications**: The retirement of coal-fired power plants and the shift towards renewable energy sources are having significant economic implications for communities that have historically relied on coal mining and power generation. The policy interventions are providing support for workers and communities affected by the transition, but the economic impacts are still being felt.\n",
+      "\n",
+      "In summary, the surge in US electricity demand and the 2025 federal emergency policy interventions are collectively driving a significant transformation of the US power sector, with coal-fired power plants facing accelerated retirement schedules, reduced capacity planning, and decreased generation output. The shift towards natural gas and renewable energy sources is underway, with a focus on grid resilience and regional disparities in the transition.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: base_llm  \u2014  benchmark query 3\n",
+    "answer = CACHED_ANSWERS['base_llm']['answers'][2]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "eaCF5dlOzkip"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "WUUqY4FbFjVe"
+   },
+   "source": [
+    "### Query 4:  How are the increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) in Europe altering the revenue expectations and financial agility of developers investing in utility-scale solar PV?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) in Europe are significantly altering the revenue expectations and financial agility of developers investing in utility-scale solar PV. Here are some key implications:\n",
+      "\n",
+      "1. **Negative wholesale electricity prices**: With the growing share of intermittent renewable energy sources, such as solar and wind, wholesale electricity prices are becoming increasingly volatile. Negative prices occur when there is an oversupply of electricity, and generators are forced to pay to feed their excess energy into the grid. This can lead to reduced revenue for solar PV developers, as they may not be able to sell their electricity at a profitable price.\n",
+      "2. **Two-sided Contracts for Difference (CfDs)**: Two-sided CfDs are a type of contract that exposes both the buyer and seller to price risks. In a two-sided CfD, the developer receives a fixed strike price for their electricity, but they also have to pay the difference if the wholesale price falls below the strike price. This means that developers are now more exposed to market risks and may face significant financial penalties if wholesale prices are low.\n",
+      "3. **Reduced revenue expectations**: The combination of negative wholesale prices and two-sided CfDs is reducing the revenue expectations of solar PV developers. With the risk of negative prices and the potential for financial penalties, developers may need to reassess their project economics and adjust their revenue projections downward.\n",
+      "4. **Increased financial risk**: The shift towards two-sided CfDs increases the financial risk for developers, as they are now more exposed to market volatility. This may lead to higher financing costs, as lenders and investors may view these projects as riskier investments.\n",
+      "5. **Impact on project financing**: The altered revenue expectations and increased financial risk may affect the ability of developers to secure project financing. Lenders may require more stringent credit enhancements, such as higher debt service coverage ratios or more comprehensive risk management strategies, to mitigate the risks associated with two-sided CfDs.\n",
+      "6. **Need for innovative financing structures**: To mitigate the risks associated with two-sided CfDs, developers may need to explore innovative financing structures, such as revenue put options or proxy revenue swaps, to manage their exposure to market risks.\n",
+      "7. **Focus on grid-scale energy storage**: The increasing frequency of negative wholesale prices and the shift towards two-sided CfDs may accelerate the development of grid-scale energy storage solutions. By storing excess energy generated during periods of low demand, developers can reduce their exposure to negative prices and increase their revenue potential.\n",
+      "8. **Diversification of revenue streams**: Developers may need to diversify their revenue streams to reduce their dependence on wholesale electricity prices. This could include exploring alternative revenue sources, such as providing grid services, like frequency response or reserve power, or offering energy storage and balancing services to the grid.\n",
+      "\n",
+      "To maintain financial agility in this new regulatory environment, solar PV developers should:\n",
+      "\n",
+      "1. **Conduct thorough market analysis**: Developers should carefully analyze the market and assess the potential risks and opportunities associated with two-sided CfDs.\n",
+      "2. **Diversify their revenue streams**: Developers should explore alternative revenue sources to reduce their dependence on wholesale electricity prices.\n",
+      "3. **Implement robust risk management strategies**: Developers should develop comprehensive risk management strategies to mitigate the risks associated with two-sided CfDs.\n",
+      "4. **Consider innovative financing structures**: Developers should explore innovative financing structures, such as revenue put options or proxy revenue swaps, to manage their exposure to market risks.\n",
+      "5. **Invest in grid-scale energy storage**: Developers should consider investing in grid-scale energy storage solutions to reduce their exposure to negative prices and increase their revenue potential.\n",
+      "\n",
+      "By adopting these strategies, solar PV developers can navigate the challenges posed by negative wholesale electricity prices and two-sided CfDs, while maintaining their financial agility and competitiveness in the European market.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: base_llm  \u2014  benchmark query 4\n",
+    "answer = CACHED_ANSWERS['base_llm']['answers'][3]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "xWc5EBdRzlMa"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "5laPFTHrFjVf"
+   },
+   "source": [
+    "### Query 5: How do the tax credit modifications under the US \"One Big Beautiful Bill Act\" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalisation of traditional US West Coast refineries?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The \"One Big Beautiful Bill Act\" is not a real bill, and I couldn't find any information on such legislation. However, I can provide a general analysis of how tax credit modifications could impact the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF) and the potential cascading impact on traditional US West Coast refineries.\n",
+      "\n",
+      "The US government has introduced various tax credits and incentives to promote the production and use of Sustainable Aviation Fuel (SAF). The most notable one is the Sustainable Aviation Fuel (SAF) tax credit, which is part of the Inflation Reduction Act (IRA) of 2022. This tax credit provides a $1.25 per gallon credit for SAF produced from certain feedstocks, such as waste biomass, agricultural waste, and other non-food biomass.\n",
+      "\n",
+      "Assuming a hypothetical \"One Big Beautiful Bill Act\" (OBBBA) modifies the tax credit structure for SAF, the impact on investment economics would depend on the specific changes made. Here are a few possible scenarios:\n",
+      "\n",
+      "1. **Increased tax credit for domestic feedstocks**: If the OBBBA increases the tax credit for SAF produced from domestic feedstocks, it could make domestic feedstocks more competitive compared to imported feedstocks. This could lead to increased investment in domestic feedstock production, such as waste biomass or agricultural waste, and create new opportunities for farmers, foresters, and waste management companies.\n",
+      "2. **Reduced tax credit for imported feedstocks**: If the OBBBA reduces or eliminates the tax credit for SAF produced from imported feedstocks, it could make imported feedstocks less competitive. This could lead to a decrease in imports and an increase in demand for domestic feedstocks, which could benefit domestic producers.\n",
+      "3. **New tax credits for specific feedstocks**: If the OBBBA introduces new tax credits for specific feedstocks, such as algae or camelina, it could create new opportunities for investment in these areas. This could lead to the development of new supply chains and industries.\n",
+      "\n",
+      "The cascading impact of the biofuel transition on traditional US West Coast refineries would depend on various factors, including the level of investment in SAF production, the availability of feedstocks, and the demand for SAF. Here are a few possible scenarios:\n",
+      "\n",
+      "1. **Capacity rationalization**: As refineries transition to produce more SAF, they may need to reduce their capacity for traditional petroleum-based fuels. This could lead to a rationalization of refining capacity on the US West Coast, with some refineries potentially being repurposed or closed.\n",
+      "2. **New investment opportunities**: The transition to SAF could create new investment opportunities for refineries, such as upgrading existing infrastructure to produce SAF or investing in new technologies to produce low-carbon fuels.\n",
+      "3. **Changes in feedstock demand**: The increased demand for domestic feedstocks could lead to changes in the demand for traditional petroleum-based feedstocks, such as crude oil. This could impact the economics of traditional refining operations and lead to a shift towards more sustainable and low-carbon feedstocks.\n",
+      "\n",
+      "In conclusion, the impact of tax credit modifications on the investment economics of using domestic versus imported feedstocks for SAF would depend on the specific changes made. The cascading impact on traditional US West Coast refineries would depend on various factors, including the level of investment in SAF production, the availability of feedstocks, and the demand for SAF. A detailed analysis of the specific tax credit modifications and their impact on the refining industry would be necessary to fully understand the effects of the OBBBA.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: base_llm  \u2014  benchmark query 5\n",
+    "answer = CACHED_ANSWERS['base_llm']['answers'][4]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "xf70_Wymzl1a"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "hgdjIjPvmi_A"
+   },
+   "source": [
+    "## **Storing the generated outputs**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "application/vnd.microsoft.datawrangler.viewer.v0+json": {
+       "columns": [
+        {
+         "name": "index",
+         "rawType": "int64",
+         "type": "integer"
+        },
+        {
+         "name": "query",
+         "rawType": "object",
+         "type": "string"
+        },
+        {
+         "name": "answer",
+         "rawType": "object",
+         "type": "string"
+        }
+       ],
+       "ref": "ff7d25b0-08e8-43ba-95f3-a650f9323d06",
+       "rows": [
+        [
+         "0",
+         "How is the rapid global expansion of artificial intelligence data centres impacting overall electricity demand and straining existing power grid infrastructure?",
+         "The rapid global expansion of artificial intelligence (AI) data centers is significantly impacting overall electricity demand and straining existing power grid infrastructure. Here are some key factors contributing to this trend:\n\n1. **Increased energy consumption**: AI data centers require massive amounts of energy to power their operations, including cooling systems, servers, and networking equipment. As the number of data centers grows, so does their energy consumption, leading to a substantial increase in overall electricity demand.\n2. **High-power density**: AI data centers have a high power density, meaning they require a large amount of power relative to their physical size. This can lead to localized strain on the power grid, particularly in areas with limited generation and transmission capacity.\n3. **24/7 operation**: Data centers operate around the clock, which means they require a constant and reliable supply of electricity. This can lead to increased peak demand on the power grid, especially during periods of high usage.\n4. **Cooling requirements**: AI data centers generate significant heat, which must be dissipated to prevent equipment failure. Cooling systems, such as air conditioning or liquid cooling, require additional energy, further increasing the overall energy consumption of the data center.\n5. **Strain on existing infrastructure**: The rapid growth of AI data centers can outpace the development of new power generation and transmission infrastructure, leading to strain on existing systems. This can result in:\n\t* **Power outages**: Increased demand can lead to power outages, particularly during periods of high usage or when the grid is already under stress.\n\t* **Voltage fluctuations**: The high power density of data centers can cause voltage fluctuations, which can damage equipment and disrupt operations.\n\t* **Grid congestion**: The increased demand from data centers can lead to grid congestion, making it challenging to transmit power to other areas of the grid.\n6. **Renewable energy integration**: While some data centers are transitioning to renewable energy sources, such as solar or wind power, the intermittent nature of these sources can create challenges for grid stability and reliability.\n7. **Water usage**: Many data centers use water for cooling, which can strain local water resources, particularly in areas where water is already scarce.\n\nTo mitigate these impacts, data center operators, governments, and utilities are exploring various strategies, including:\n\n1. **Energy-efficient designs**: Implementing energy-efficient designs and technologies, such as air-side and water-side economization, to reduce energy consumption.\n2. **Renewable energy sources**: Investing in renewable energy sources, such as on-site solar or wind power, to reduce dependence on non-renewable energy sources.\n3. **Grid-scale energy storage**: Implementing grid-scale energy storage solutions, such as batteries, to stabilize the grid and reduce peak demand.\n4. **Load management**: Implementing load management strategies, such as demand response programs, to shift energy consumption to off-peak hours.\n5. **Grid modernization**: Upgrading grid infrastructure to support the increased demand from data centers and other emerging technologies.\n6. **Water conservation**: Implementing water conservation measures, such as water recycling and efficient cooling systems, to reduce water usage.\n\nUltimately, the rapid expansion of AI data centers will require a coordinated effort from data center operators, governments, and utilities to ensure that the power grid infrastructure can support the increased demand while minimizing the environmental impact."
+        ],
+        [
+         "1",
+         "How is the unprecedented wave of new US liquefied natural gas (LNG) export capacity expected to impact natural gas affordability and spur additional demand in price-sensitive Asian markets by 2030?",
+         "The unprecedented wave of new US liquefied natural gas (LNG) export capacity is expected to have a significant impact on natural gas affordability and demand in price-sensitive Asian markets by 2030. Here are some key factors to consider:\n\n1. **Increased global supply**: The surge in US LNG export capacity will lead to a significant increase in global LNG supply, which is expected to reach 643 million tonnes per annum (mtpa) by 2030, up from 430 mtpa in 2020. This will put downward pressure on prices and make LNG more competitive with other fuels.\n2. **Price competitiveness**: US LNG is expected to be highly competitive in Asian markets due to its low production costs, proximity to key markets, and favorable pricing mechanisms. This will enable US LNG to capture a larger share of the Asian market, particularly in countries like China, India, and Japan, which are seeking to diversify their energy mix and reduce dependence on coal and oil.\n3. **Impact on Asian LNG prices**: The influx of US LNG is expected to lead to a decline in Asian LNG prices, making natural gas a more attractive option for power generation, industrial, and residential sectors. This, in turn, will spur additional demand for LNG in price-sensitive markets, particularly in countries with growing energy needs and limited domestic gas production.\n4. **Growth in LNG demand**: The increased availability of affordable LNG is expected to drive growth in LNG demand in Asia, particularly in countries like:\n\t* China: Expected to become the world's largest LNG importer by 2025, driven by government policies to reduce air pollution and increase the share of natural gas in the energy mix.\n\t* India: Aims to increase the share of natural gas in its energy mix to 15% by 2030, driven by government initiatives to promote the use of cleaner fuels.\n\t* Japan: Expected to continue to rely heavily on LNG for power generation, with a growing focus on renewable energy and energy efficiency.\n5. **Infrastructure development**: The growth in LNG demand will also drive investment in LNG infrastructure, including regasification terminals, storage facilities, and transportation networks. This will enable more efficient and cost-effective delivery of LNG to end-users, further increasing its competitiveness.\n6. **Diversification of supply**: The increased availability of US LNG will also promote diversification of supply in Asian markets, reducing dependence on traditional suppliers like Qatar, Australia, and Malaysia. This will enhance energy security and reduce the risks associated with over-reliance on a single supplier.\n7. **Renewable energy integration**: The growth of LNG demand in Asia will also be influenced by the integration of renewable energy sources, such as solar and wind power, into the energy mix. As renewable energy becomes more cost-competitive, it may reduce the demand for LNG in some markets, but it will also create opportunities for LNG to play a complementary role in providing flexibility and reliability to the grid.\n\nIn summary, the unprecedented wave of new US LNG export capacity is expected to make natural gas more affordable and competitive in price-sensitive Asian markets, driving growth in LNG demand and infrastructure development. By 2030, US LNG is expected to play a significant role in shaping the Asian energy landscape, promoting energy diversification, and supporting the transition to a lower-carbon economy."
+        ],
+        [
+         "2",
+         "How are the surge in US electricity demand and the 2025 federal emergency policy interventions collectively affecting the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants?",
+         "The surge in US electricity demand and the 2025 federal emergency policy interventions are having a significant impact on the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants. Here are some key effects:\n\n1. **Accelerated retirement schedules**: The increasing cost of operating coal-fired power plants, combined with the rising demand for cleaner energy sources, has led to an acceleration of retirement schedules for many coal-fired plants. The 2025 federal emergency policy interventions, which aim to reduce greenhouse gas emissions and promote renewable energy, are further incentivizing the retirement of coal-fired plants.\n2. **Reduced capacity planning**: As coal-fired plants retire, the overall capacity of the US power grid is being reduced. This reduction in capacity is being partially offset by the addition of new renewable energy sources, such as solar and wind power. However, the variability of these sources means that grid operators must carefully plan and manage capacity to ensure reliable electricity supply.\n3. **Decreased generation output**: The surge in electricity demand is being met by a combination of increased generation from existing power plants, including natural gas-fired and renewable energy sources. Coal-fired plants, which were once the primary source of electricity generation, are now operating at reduced capacity factors, leading to decreased generation output.\n4. **Shift to natural gas and renewables**: The policy interventions are promoting a shift towards natural gas and renewable energy sources, which are becoming increasingly cost-competitive with coal. This shift is leading to a decrease in the market share of coal-fired power plants, making it more challenging for them to remain economically viable.\n5. **Increased focus on grid resilience**: The 2025 federal emergency policy interventions are also emphasizing the importance of grid resilience, which includes the ability to withstand and recover from disruptions, such as extreme weather events. Coal-fired plants, which are often located in areas prone to flooding and other natural disasters, may face additional challenges in maintaining grid resilience.\n6. **Regional disparities**: The impact of the surge in electricity demand and policy interventions is not uniform across the US. Regions with high demand growth, such as the Southwest and California, are experiencing a more rapid transition to renewable energy sources, while regions with existing coal-fired infrastructure, such as the Midwest and Appalachia, are facing more significant challenges in adapting to the changing energy landscape.\n7. **Economic implications**: The retirement of coal-fired power plants and the shift towards renewable energy sources are having significant economic implications for communities that have historically relied on coal mining and power generation. The policy interventions are providing support for workers and communities affected by the transition, but the economic impacts are still being felt.\n\nIn summary, the surge in US electricity demand and the 2025 federal emergency policy interventions are collectively driving a significant transformation of the US power sector, with coal-fired power plants facing accelerated retirement schedules, reduced capacity planning, and decreased generation output. The shift towards natural gas and renewable energy sources is underway, with a focus on grid resilience and regional disparities in the transition."
+        ],
+        [
+         "3",
+         "How are the increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) in Europe altering the revenue expectations and financial agility of developers investing in utility-scale solar PV?",
+         "The increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) in Europe are significantly altering the revenue expectations and financial agility of developers investing in utility-scale solar PV. Here are some key implications:\n\n1. **Negative wholesale electricity prices**: With the growing share of intermittent renewable energy sources, such as solar and wind, wholesale electricity prices are becoming increasingly volatile. Negative prices occur when there is an oversupply of electricity, and generators are forced to pay to feed their excess energy into the grid. This can lead to reduced revenue for solar PV developers, as they may not be able to sell their electricity at a profitable price.\n2. **Two-sided Contracts for Difference (CfDs)**: Two-sided CfDs are a type of contract that exposes both the buyer and seller to price risks. In a two-sided CfD, the developer receives a fixed strike price for their electricity, but they also have to pay the difference if the wholesale price falls below the strike price. This means that developers are now more exposed to market risks and may face significant financial penalties if wholesale prices are low.\n3. **Reduced revenue expectations**: The combination of negative wholesale prices and two-sided CfDs is reducing the revenue expectations of solar PV developers. With the risk of negative prices and the potential for financial penalties, developers may need to reassess their project economics and adjust their revenue projections downward.\n4. **Increased financial risk**: The shift towards two-sided CfDs increases the financial risk for developers, as they are now more exposed to market volatility. This may lead to higher financing costs, as lenders and investors may view these projects as riskier investments.\n5. **Impact on project financing**: The altered revenue expectations and increased financial risk may affect the ability of developers to secure project financing. Lenders may require more stringent credit enhancements, such as higher debt service coverage ratios or more comprehensive risk management strategies, to mitigate the risks associated with two-sided CfDs.\n6. **Need for innovative financing structures**: To mitigate the risks associated with two-sided CfDs, developers may need to explore innovative financing structures, such as revenue put options or proxy revenue swaps, to manage their exposure to market risks.\n7. **Focus on grid-scale energy storage**: The increasing frequency of negative wholesale prices and the shift towards two-sided CfDs may accelerate the development of grid-scale energy storage solutions. By storing excess energy generated during periods of low demand, developers can reduce their exposure to negative prices and increase their revenue potential.\n8. **Diversification of revenue streams**: Developers may need to diversify their revenue streams to reduce their dependence on wholesale electricity prices. This could include exploring alternative revenue sources, such as providing grid services, like frequency response or reserve power, or offering energy storage and balancing services to the grid.\n\nTo maintain financial agility in this new regulatory environment, solar PV developers should:\n\n1. **Conduct thorough market analysis**: Developers should carefully analyze the market and assess the potential risks and opportunities associated with two-sided CfDs.\n2. **Diversify their revenue streams**: Developers should explore alternative revenue sources to reduce their dependence on wholesale electricity prices.\n3. **Implement robust risk management strategies**: Developers should develop comprehensive risk management strategies to mitigate the risks associated with two-sided CfDs.\n4. **Consider innovative financing structures**: Developers should explore innovative financing structures, such as revenue put options or proxy revenue swaps, to manage their exposure to market risks.\n5. **Invest in grid-scale energy storage**: Developers should consider investing in grid-scale energy storage solutions to reduce their exposure to negative prices and increase their revenue potential.\n\nBy adopting these strategies, solar PV developers can navigate the challenges posed by negative wholesale electricity prices and two-sided CfDs, while maintaining their financial agility and competitiveness in the European market."
+        ],
+        [
+         "4",
+         "How do the tax credit modifications under the US \"One Big Beautiful Bill Act\" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalisation of traditional US West Coast refineries?",
+         "The \"One Big Beautiful Bill Act\" is not a real bill, and I couldn't find any information on such legislation. However, I can provide a general analysis of how tax credit modifications could impact the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF) and the potential cascading impact on traditional US West Coast refineries.\n\nThe US government has introduced various tax credits and incentives to promote the production and use of Sustainable Aviation Fuel (SAF). The most notable one is the Sustainable Aviation Fuel (SAF) tax credit, which is part of the Inflation Reduction Act (IRA) of 2022. This tax credit provides a $1.25 per gallon credit for SAF produced from certain feedstocks, such as waste biomass, agricultural waste, and other non-food biomass.\n\nAssuming a hypothetical \"One Big Beautiful Bill Act\" (OBBBA) modifies the tax credit structure for SAF, the impact on investment economics would depend on the specific changes made. Here are a few possible scenarios:\n\n1. **Increased tax credit for domestic feedstocks**: If the OBBBA increases the tax credit for SAF produced from domestic feedstocks, it could make domestic feedstocks more competitive compared to imported feedstocks. This could lead to increased investment in domestic feedstock production, such as waste biomass or agricultural waste, and create new opportunities for farmers, foresters, and waste management companies.\n2. **Reduced tax credit for imported feedstocks**: If the OBBBA reduces or eliminates the tax credit for SAF produced from imported feedstocks, it could make imported feedstocks less competitive. This could lead to a decrease in imports and an increase in demand for domestic feedstocks, which could benefit domestic producers.\n3. **New tax credits for specific feedstocks**: If the OBBBA introduces new tax credits for specific feedstocks, such as algae or camelina, it could create new opportunities for investment in these areas. This could lead to the development of new supply chains and industries.\n\nThe cascading impact of the biofuel transition on traditional US West Coast refineries would depend on various factors, including the level of investment in SAF production, the availability of feedstocks, and the demand for SAF. Here are a few possible scenarios:\n\n1. **Capacity rationalization**: As refineries transition to produce more SAF, they may need to reduce their capacity for traditional petroleum-based fuels. This could lead to a rationalization of refining capacity on the US West Coast, with some refineries potentially being repurposed or closed.\n2. **New investment opportunities**: The transition to SAF could create new investment opportunities for refineries, such as upgrading existing infrastructure to produce SAF or investing in new technologies to produce low-carbon fuels.\n3. **Changes in feedstock demand**: The increased demand for domestic feedstocks could lead to changes in the demand for traditional petroleum-based feedstocks, such as crude oil. This could impact the economics of traditional refining operations and lead to a shift towards more sustainable and low-carbon feedstocks.\n\nIn conclusion, the impact of tax credit modifications on the investment economics of using domestic versus imported feedstocks for SAF would depend on the specific changes made. The cascading impact on traditional US West Coast refineries would depend on various factors, including the level of investment in SAF production, the availability of feedstocks, and the demand for SAF. A detailed analysis of the specific tax credit modifications and their impact on the refining industry would be necessary to fully understand the effects of the OBBBA."
+        ]
+       ],
+       "shape": {
+        "columns": 2,
+        "rows": 5
+       }
+      },
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>query</th>\n",
+       "      <th>answer</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>How is the rapid global expansion of artificia...</td>\n",
+       "      <td>The rapid global expansion of artificial intel...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>How is the unprecedented wave of new US liquef...</td>\n",
+       "      <td>The unprecedented wave of new US liquefied nat...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>How are the surge in US electricity demand and...</td>\n",
+       "      <td>The surge in US electricity demand and the 202...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>How are the increasing frequency of negative w...</td>\n",
+       "      <td>The increasing frequency of negative wholesale...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>How do the tax credit modifications under the ...</td>\n",
+       "      <td>The \"One Big Beautiful Bill Act\" is not a real...</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "                                               query  \\\n",
+       "0  How is the rapid global expansion of artificia...   \n",
+       "1  How is the unprecedented wave of new US liquef...   \n",
+       "2  How are the surge in US electricity demand and...   \n",
+       "3  How are the increasing frequency of negative w...   \n",
+       "4  How do the tax credit modifications under the ...   \n",
+       "\n",
+       "                                              answer  \n",
+       "0  The rapid global expansion of artificial intel...  \n",
+       "1  The unprecedented wave of new US liquefied nat...  \n",
+       "2  The surge in US electricity demand and the 202...  \n",
+       "3  The increasing frequency of negative wholesale...  \n",
+       "4  The \"One Big Beautiful Bill Act\" is not a real...  "
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import json, pandas as pd\n",
+    "base_llm_df = pd.DataFrame({\n",
+    "    'query': BENCHMARK_QUERIES,\n",
+    "    'answer': CACHED_ANSWERS['base_llm']['answers'],\n",
+    "})\n",
+    "base_llm_df.to_csv('outputs_base_llm.csv', index=False)\n",
+    "base_llm_df\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "VQtIcAjgwHB6"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "g5myZ5dOOefc"
+   },
+   "source": [
+    "# **Question Answering using LLM with Prompt Engineering**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "XOGU_GmVVqDL"
+   },
+   "source": [
+    "### Engineer the system prompt to imrpove the output quality"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {
+    "id": "VMZqTudYBCWv"
+   },
+   "outputs": [],
+   "source": [
+    "system_prompt = '''\n",
+    "__________\n",
+    "'''         # Write the system prompt that will improve the quality of the model outputs"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "You are a senior energy markets analyst at Lumina Energy Partners. When answering, structure your response for an investment-committee briefing: (1) Lead with the headline finding. (2) Support with specific quantitative data points wherever possible. (3) Identify cross-sector linkages \u2014 how developments in one energy market (coal, oil, gas, electricity, renewables) affect the others. (4) Flag countervailing forces and key uncertainties. (5) Be concise; aim for 200-350 words. Do not speculate beyond what's reasonable from publicly available data.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Prompt-engineered strategy \u2014 same LLM, analyst system prompt, still no retrieval.\n",
+    "from answer_runners import prompt_engineered_answer, ANALYST_SYSTEM\n",
+    "system_prompt = ANALYST_SYSTEM\n",
+    "print(system_prompt)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "dKi1U1YonJfp"
+   },
+   "source": [
+    "## **Answering the questions**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "0crFsKC6Onf2"
+   },
+   "source": [
+    "### Query 1: How is the rapid global expansion of artificial intelligence data centres impacting overall electricity demand and straining existing power grid infrastructure?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "**Headline Finding:** The rapid growth of artificial intelligence (AI) data centres is driving significant increases in electricity demand, straining existing power grid infrastructure and necessitating substantial investments in new capacity.\n",
+      "\n",
+      "**Quantitative Data Points:** Global AI data centre energy consumption is projected to reach 1,100 TWh by 2025, up from 200 TWh in 2020, representing a compound annual growth rate (CAGR) of 20%. This growth is being driven by the increasing adoption of cloud computing, big data analytics, and machine learning applications. In the US, for example, data centre energy consumption is expected to account for 10% of total electricity demand by 2030, up from 2% in 2020.\n",
+      "\n",
+      "**Cross-Sector Linkages:** The growth of AI data centres is having a ripple effect across the energy sector, driving demand for renewable energy sources, such as solar and wind power, to reduce carbon emissions and mitigate climate change risks. Additionally, the increased electricity demand from data centres is creating opportunities for energy storage technologies, such as batteries, to provide grid stability and backup power.\n",
+      "\n",
+      "**Countervailing Forces and Uncertainties:** While the growth of AI data centres is driving electricity demand, there are concerns about the environmental impact of these facilities, including water usage and e-waste generation. Furthermore, the COVID-19 pandemic has accelerated the shift to remote work, leading to increased demand for cloud computing and data centre services, which may not be sustainable in the long term. As such, investors should closely monitor developments in data centre energy efficiency, renewable energy adoption, and grid infrastructure investments to navigate the opportunities and risks in this space.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: prompt_engineered  \u2014  benchmark query 1\n",
+    "answer = CACHED_ANSWERS['prompt_engineered']['answers'][0]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "E0cL1gWUzUbo"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "Mt0Ty4O3Onf4"
+   },
+   "source": [
+    "### Query 2: How is the unprecedented wave of new US liquefied natural gas (LNG) export capacity expected to impact natural gas affordability and spur additional demand in price-sensitive Asian markets by 2030?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "**Headline Finding:** The surge in US LNG export capacity is expected to increase global supply, putting downward pressure on prices and enhancing natural gas affordability in price-sensitive Asian markets by 2030.\n",
+      "\n",
+      "**Quantitative Data Points:** By 2030, US LNG export capacity is projected to reach 115 million tonnes per annum (mtpa), up from 70 mtpa in 2022. This expansion is expected to increase global LNG supply by 20%, outpacing demand growth. As a result, Asian spot LNG prices are forecast to decline by 10-15% to around $8-10 per million British thermal units (MMBtu) by 2030.\n",
+      "\n",
+      "**Cross-Sector Linkages:** The influx of US LNG exports will not only impact the global gas market but also influence the coal and renewables sectors. As natural gas becomes more competitive, it may displace coal in power generation, particularly in countries like China and India, where coal dominates the energy mix. Additionally, the increased availability of LNG may slow the growth of renewables in some regions, as gas-fired power plants become a more attractive alternative.\n",
+      "\n",
+      "**Countervailing Forces and Uncertainties:** However, several factors may counterbalance the impact of US LNG exports on Asian markets. These include: (1) potential supply chain disruptions, (2) fluctuations in global demand, and (3) evolving climate policies that may favor renewables over fossil fuels. Furthermore, the pace of US LNG export capacity additions and the response of other major LNG producers, such as Qatar and Australia, will also influence the market outlook.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: prompt_engineered  \u2014  benchmark query 2\n",
+    "answer = CACHED_ANSWERS['prompt_engineered']['answers'][1]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "s4wSCiOyzVCB"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "iHjVHlDHOnf4"
+   },
+   "source": [
+    "### Query 3: How are the surge in US electricity demand and the 2025 federal emergency policy interventions collectively affecting the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "**Headline Finding:** The surge in US electricity demand, coupled with 2025 federal emergency policy interventions, is likely to slow the retirement of domestic coal-fired power plants, with a projected 10-15% decrease in planned retirements by 2027.\n",
+      "\n",
+      "**Quantitative Data Points:**\n",
+      "- US electricity demand is expected to grow by 2.5% annually from 2023 to 2025, driven by industrial and commercial sectors.\n",
+      "- Coal-fired power plants, which accounted for 19.3% of US electricity generation in 2022, are projected to increase their output by 5% in 2024 to meet rising demand.\n",
+      "- The 2025 federal emergency policy interventions, including temporary waivers on emissions standards, are expected to reduce compliance costs for coal-fired power plants by 12-18%.\n",
+      "\n",
+      "**Cross-Sector Linkages:**\n",
+      "The surge in electricity demand is also driving increased gas-fired power generation, with a projected 8% growth in 2024. However, the policy interventions supporting coal-fired power plants may slow the transition to renewables, potentially affecting the growth trajectory of solar and wind power.\n",
+      "\n",
+      "**Countervailing Forces and Uncertainties:**\n",
+      "- State-level policies and regulations may continue to drive coal-fired power plant retirements, particularly in regions with stringent emissions standards.\n",
+      "- The long-term impact of the 2025 federal emergency policy interventions on coal-fired power plant economics and environmental sustainability remains uncertain.\n",
+      "- Volatility in natural gas prices may influence the competitiveness of coal-fired power generation, affecting retirement schedules and capacity planning.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: prompt_engineered  \u2014  benchmark query 3\n",
+    "answer = CACHED_ANSWERS['prompt_engineered']['answers'][2]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "uvIVl4NWzV6W"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "s1BS5JFGOnf5"
+   },
+   "source": [
+    "### Query 4:  How are the increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) in Europe altering the revenue expectations and financial agility of developers investing in utility-scale solar PV?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "**Headline Finding:** The increasing frequency of negative wholesale electricity prices in Europe, coupled with the regulatory shift towards two-sided Contracts for Difference (CfDs), is altering the revenue expectations and financial agility of developers investing in utility-scale solar PV, with potential impacts on project viability and returns.\n",
+      "\n",
+      "**Quantitative Data Points:** Negative wholesale electricity prices have been observed in Germany, for example, with an average of 120 hours per year between 2020 and 2022, resulting in a 5-10% reduction in revenue for solar PV projects. Meanwhile, the introduction of two-sided CfDs in the UK has led to a 10-15% decrease in strike prices for solar PV projects, from \u00a350-60/MWh to \u00a340-45/MWh.\n",
+      "\n",
+      "**Cross-Sector Linkages:** The growth of solar PV and other intermittent renewables is driving the increase in negative wholesale electricity prices, which in turn affects the economics of gas-fired power plants and other conventional generators. This shift is also influencing the development of energy storage and grid flexibility solutions, as well as the business models of utilities and independent power producers.\n",
+      "\n",
+      "**Countervailing Forces and Uncertainties:** The impact of negative wholesale prices and two-sided CfDs on solar PV developers will depend on their ability to adapt to changing market conditions, manage price risks, and optimize project design and operations. Key uncertainties include the pace of regulatory evolution, the response of other energy market participants, and the potential for technology innovations to reduce costs and improve project viability.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: prompt_engineered  \u2014  benchmark query 4\n",
+    "answer = CACHED_ANSWERS['prompt_engineered']['answers'][3]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "l2CSqLoKzWkK"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "LO-p3zKFOnf5"
+   },
+   "source": [
+    "### Query 5: How do the tax credit modifications under the US \"One Big Beautiful Bill Act\" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalisation of traditional US West Coast refineries?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "**Headline Finding:** The US \"One Big Beautiful Bill Act\" (OBBBA) tax credit modifications will significantly enhance the investment economics of domestic feedstocks for Sustainable Aviation Fuel (SAF) production, potentially disrupting traditional US West Coast refinery operations.\n",
+      "\n",
+      "**Quantitative Data Points:**\n",
+      "- The OBBBA increases the tax credit for domestic SAF production to up to $1.75 per gallon, compared to $1.00 per gallon for imported feedstocks.\n",
+      "- Domestic feedstock-based SAF production is expected to increase by 30% by 2025, driven by the tax credit incentive.\n",
+      "- Imported feedstock-based SAF production is anticipated to decline by 15% over the same period.\n",
+      "\n",
+      "**Cross-Sector Linkages:**\n",
+      "The shift towards domestic feedstocks for SAF production will increase demand for renewable biomass and waste feedstocks, potentially competing with traditional biomass markets. This, in turn, may drive up feedstock costs for other biofuel producers. Additionally, the growth of SAF production will lead to increased demand for hydrogen, which may be sourced from natural gas, electricity, or other low-carbon sources, affecting these markets.\n",
+      "\n",
+      "**Countervailing Forces and Uncertainties:**\n",
+      "- Feedstock availability and cost volatility may impact the economic viability of domestic SAF production.\n",
+      "- The pace of technology advancements in SAF production and competing low-carbon aviation fuels may influence the transition timeline.\n",
+      "- Regulatory developments, such as changes to the Renewable Fuel Standard (RFS) or carbon pricing mechanisms, may further impact the investment economics of SAF production.\n",
+      "\n",
+      "**Cascading Impact on US West Coast Refineries:**\n",
+      "The increased focus on domestic feedstocks for SAF production may lead to a 10-15% reduction in traditional refining capacity on the US West Coast by 2027, as refineries repurpose or retire existing infrastructure to accommodate growing SAF demand.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: prompt_engineered  \u2014  benchmark query 5\n",
+    "answer = CACHED_ANSWERS['prompt_engineered']['answers'][4]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "xY7A_URCzXSp"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "dHyVJ91xnEuM"
+   },
+   "source": [
+    "## **Storing the generated outputs**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "application/vnd.microsoft.datawrangler.viewer.v0+json": {
+       "columns": [
+        {
+         "name": "index",
+         "rawType": "int64",
+         "type": "integer"
+        },
+        {
+         "name": "query",
+         "rawType": "object",
+         "type": "string"
+        },
+        {
+         "name": "answer",
+         "rawType": "object",
+         "type": "string"
+        }
+       ],
+       "ref": "a720f730-feee-4489-bfa7-2f030d460c2c",
+       "rows": [
+        [
+         "0",
+         "How is the rapid global expansion of artificial intelligence data centres impacting overall electricity demand and straining existing power grid infrastructure?",
+         "**Headline Finding:** The rapid growth of artificial intelligence (AI) data centres is driving significant increases in electricity demand, straining existing power grid infrastructure and necessitating substantial investments in new capacity.\n\n**Quantitative Data Points:** Global AI data centre energy consumption is projected to reach 1,100 TWh by 2025, up from 200 TWh in 2020, representing a compound annual growth rate (CAGR) of 20%. This growth is being driven by the increasing adoption of cloud computing, big data analytics, and machine learning applications. In the US, for example, data centre energy consumption is expected to account for 10% of total electricity demand by 2030, up from 2% in 2020.\n\n**Cross-Sector Linkages:** The growth of AI data centres is having a ripple effect across the energy sector, driving demand for renewable energy sources, such as solar and wind power, to reduce carbon emissions and mitigate climate change risks. Additionally, the increased electricity demand from data centres is creating opportunities for energy storage technologies, such as batteries, to provide grid stability and backup power.\n\n**Countervailing Forces and Uncertainties:** While the growth of AI data centres is driving electricity demand, there are concerns about the environmental impact of these facilities, including water usage and e-waste generation. Furthermore, the COVID-19 pandemic has accelerated the shift to remote work, leading to increased demand for cloud computing and data centre services, which may not be sustainable in the long term. As such, investors should closely monitor developments in data centre energy efficiency, renewable energy adoption, and grid infrastructure investments to navigate the opportunities and risks in this space."
+        ],
+        [
+         "1",
+         "How is the unprecedented wave of new US liquefied natural gas (LNG) export capacity expected to impact natural gas affordability and spur additional demand in price-sensitive Asian markets by 2030?",
+         "**Headline Finding:** The surge in US LNG export capacity is expected to increase global supply, putting downward pressure on prices and enhancing natural gas affordability in price-sensitive Asian markets by 2030.\n\n**Quantitative Data Points:** By 2030, US LNG export capacity is projected to reach 115 million tonnes per annum (mtpa), up from 70 mtpa in 2022. This expansion is expected to increase global LNG supply by 20%, outpacing demand growth. As a result, Asian spot LNG prices are forecast to decline by 10-15% to around $8-10 per million British thermal units (MMBtu) by 2030.\n\n**Cross-Sector Linkages:** The influx of US LNG exports will not only impact the global gas market but also influence the coal and renewables sectors. As natural gas becomes more competitive, it may displace coal in power generation, particularly in countries like China and India, where coal dominates the energy mix. Additionally, the increased availability of LNG may slow the growth of renewables in some regions, as gas-fired power plants become a more attractive alternative.\n\n**Countervailing Forces and Uncertainties:** However, several factors may counterbalance the impact of US LNG exports on Asian markets. These include: (1) potential supply chain disruptions, (2) fluctuations in global demand, and (3) evolving climate policies that may favor renewables over fossil fuels. Furthermore, the pace of US LNG export capacity additions and the response of other major LNG producers, such as Qatar and Australia, will also influence the market outlook."
+        ],
+        [
+         "2",
+         "How are the surge in US electricity demand and the 2025 federal emergency policy interventions collectively affecting the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants?",
+         "**Headline Finding:** The surge in US electricity demand, coupled with 2025 federal emergency policy interventions, is likely to slow the retirement of domestic coal-fired power plants, with a projected 10-15% decrease in planned retirements by 2027.\n\n**Quantitative Data Points:**\n- US electricity demand is expected to grow by 2.5% annually from 2023 to 2025, driven by industrial and commercial sectors.\n- Coal-fired power plants, which accounted for 19.3% of US electricity generation in 2022, are projected to increase their output by 5% in 2024 to meet rising demand.\n- The 2025 federal emergency policy interventions, including temporary waivers on emissions standards, are expected to reduce compliance costs for coal-fired power plants by 12-18%.\n\n**Cross-Sector Linkages:**\nThe surge in electricity demand is also driving increased gas-fired power generation, with a projected 8% growth in 2024. However, the policy interventions supporting coal-fired power plants may slow the transition to renewables, potentially affecting the growth trajectory of solar and wind power.\n\n**Countervailing Forces and Uncertainties:**\n- State-level policies and regulations may continue to drive coal-fired power plant retirements, particularly in regions with stringent emissions standards.\n- The long-term impact of the 2025 federal emergency policy interventions on coal-fired power plant economics and environmental sustainability remains uncertain.\n- Volatility in natural gas prices may influence the competitiveness of coal-fired power generation, affecting retirement schedules and capacity planning."
+        ],
+        [
+         "3",
+         "How are the increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) in Europe altering the revenue expectations and financial agility of developers investing in utility-scale solar PV?",
+         "**Headline Finding:** The increasing frequency of negative wholesale electricity prices in Europe, coupled with the regulatory shift towards two-sided Contracts for Difference (CfDs), is altering the revenue expectations and financial agility of developers investing in utility-scale solar PV, with potential impacts on project viability and returns.\n\n**Quantitative Data Points:** Negative wholesale electricity prices have been observed in Germany, for example, with an average of 120 hours per year between 2020 and 2022, resulting in a 5-10% reduction in revenue for solar PV projects. Meanwhile, the introduction of two-sided CfDs in the UK has led to a 10-15% decrease in strike prices for solar PV projects, from \u00a350-60/MWh to \u00a340-45/MWh.\n\n**Cross-Sector Linkages:** The growth of solar PV and other intermittent renewables is driving the increase in negative wholesale electricity prices, which in turn affects the economics of gas-fired power plants and other conventional generators. This shift is also influencing the development of energy storage and grid flexibility solutions, as well as the business models of utilities and independent power producers.\n\n**Countervailing Forces and Uncertainties:** The impact of negative wholesale prices and two-sided CfDs on solar PV developers will depend on their ability to adapt to changing market conditions, manage price risks, and optimize project design and operations. Key uncertainties include the pace of regulatory evolution, the response of other energy market participants, and the potential for technology innovations to reduce costs and improve project viability."
+        ],
+        [
+         "4",
+         "How do the tax credit modifications under the US \"One Big Beautiful Bill Act\" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalisation of traditional US West Coast refineries?",
+         "**Headline Finding:** The US \"One Big Beautiful Bill Act\" (OBBBA) tax credit modifications will significantly enhance the investment economics of domestic feedstocks for Sustainable Aviation Fuel (SAF) production, potentially disrupting traditional US West Coast refinery operations.\n\n**Quantitative Data Points:**\n- The OBBBA increases the tax credit for domestic SAF production to up to $1.75 per gallon, compared to $1.00 per gallon for imported feedstocks.\n- Domestic feedstock-based SAF production is expected to increase by 30% by 2025, driven by the tax credit incentive.\n- Imported feedstock-based SAF production is anticipated to decline by 15% over the same period.\n\n**Cross-Sector Linkages:**\nThe shift towards domestic feedstocks for SAF production will increase demand for renewable biomass and waste feedstocks, potentially competing with traditional biomass markets. This, in turn, may drive up feedstock costs for other biofuel producers. Additionally, the growth of SAF production will lead to increased demand for hydrogen, which may be sourced from natural gas, electricity, or other low-carbon sources, affecting these markets.\n\n**Countervailing Forces and Uncertainties:**\n- Feedstock availability and cost volatility may impact the economic viability of domestic SAF production.\n- The pace of technology advancements in SAF production and competing low-carbon aviation fuels may influence the transition timeline.\n- Regulatory developments, such as changes to the Renewable Fuel Standard (RFS) or carbon pricing mechanisms, may further impact the investment economics of SAF production.\n\n**Cascading Impact on US West Coast Refineries:**\nThe increased focus on domestic feedstocks for SAF production may lead to a 10-15% reduction in traditional refining capacity on the US West Coast by 2027, as refineries repurpose or retire existing infrastructure to accommodate growing SAF demand."
+        ]
+       ],
+       "shape": {
+        "columns": 2,
+        "rows": 5
+       }
+      },
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>query</th>\n",
+       "      <th>answer</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>How is the rapid global expansion of artificia...</td>\n",
+       "      <td>**Headline Finding:** The rapid growth of arti...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>How is the unprecedented wave of new US liquef...</td>\n",
+       "      <td>**Headline Finding:** The surge in US LNG expo...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>How are the surge in US electricity demand and...</td>\n",
+       "      <td>**Headline Finding:** The surge in US electric...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>How are the increasing frequency of negative w...</td>\n",
+       "      <td>**Headline Finding:** The increasing frequency...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>How do the tax credit modifications under the ...</td>\n",
+       "      <td>**Headline Finding:** The US \"One Big Beautifu...</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "                                               query  \\\n",
+       "0  How is the rapid global expansion of artificia...   \n",
+       "1  How is the unprecedented wave of new US liquef...   \n",
+       "2  How are the surge in US electricity demand and...   \n",
+       "3  How are the increasing frequency of negative w...   \n",
+       "4  How do the tax credit modifications under the ...   \n",
+       "\n",
+       "                                              answer  \n",
+       "0  **Headline Finding:** The rapid growth of arti...  \n",
+       "1  **Headline Finding:** The surge in US LNG expo...  \n",
+       "2  **Headline Finding:** The surge in US electric...  \n",
+       "3  **Headline Finding:** The increasing frequency...  \n",
+       "4  **Headline Finding:** The US \"One Big Beautifu...  "
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "prompt_eng_df = pd.DataFrame({\n",
+    "    'query': BENCHMARK_QUERIES,\n",
+    "    'answer': CACHED_ANSWERS['prompt_engineered']['answers'],\n",
+    "})\n",
+    "prompt_eng_df.to_csv('outputs_prompt_engineered.csv', index=False)\n",
+    "prompt_eng_df\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "y9pUgsavwVu1"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "6mSOnzxnp7fo"
+   },
+   "source": [
+    "# **Analyze**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "DkJi_8nhB8uh"
+   },
+   "source": [
+    "With the baseline LLM responses established, the next step is to introduce a Retrieval Augmented Generation pipeline to ground the model\u2019s outputs in the uploaded report corpus.\n",
+    "\n",
+    "At this stage, the objective is to evaluate how effectively the retrieval component can identify the most relevant sections of the documents in response to a user query. The system retrieves semantically similar text segments from the reports and supplies these passages as contextual input to the language model. The model then generates a response based on both the query and the retrieved content, enabling answers to be grounded in the source material rather than relying solely on the model\u2019s internal knowledge.\n",
+    "\n",
+    "This approach allows the model to reference specific evidence from the documents and better capture relationships, data points, and analytical details contained within the reports. By combining retrieval with generation, the system aims to produce responses that are more accurate, context aware, and traceable to the underlying documents."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "t_O1PGdNO2M9"
+   },
+   "source": [
+    "# **Data Preparation for RAG**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "1jyrMs9olDW8"
+   },
+   "source": [
+    "## Loading the data"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "F1_q3CzSsH84"
+   },
+   "source": [
+    "Extract the PDF reports from the zip files."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {
+    "id": "jC3VrHQNR_Pq"
+   },
+   "outputs": [],
+   "source": [
+    "# Extract the reports\n",
+    "zip_path = \"IEAReports.zip\"           # specify the path/name of the zip file\n",
+    "\n",
+    "with zipfile.ZipFile(zip_path, \"r\") as zip_ref:\n",
+    "    zip_ref.extractall(\"IEAReports\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {
+    "id": "BSs0vdGB-ibE"
+   },
+   "outputs": [],
+   "source": [
+    "# Path to folder with PDFs\n",
+    "DOC_FOLDER = \"IEAReports/\"\n",
+    "pdf_files = glob(DOC_FOLDER + \"*.pdf\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {
+    "id": "aLzCTBVC-j27"
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "['IEAReports/Coal2025.pdf', 'IEAReports/Renewables2025.pdf', 'IEAReports/Electricity2026.pdf', 'IEAReports/Oil2025.pdf', 'IEAReports/Gas2025.pdf']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# View the PDF documents\n",
+    "print(pdf_files)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Corpus overview**\n",
+    "\n",
+    "Five authoritative IEA market reports covering complementary energy sectors:\n",
+    "\n",
+    "| File | Sector | Notes |\n",
+    "|---|---|---|\n",
+    "| `Coal2025.pdf` | Coal | Demand, supply, trade, prices through 2030 |\n",
+    "| `Electricity2026.pdf` | Power systems | Demand growth, grid bottlenecks, system flexibility |\n",
+    "| `Gas2025.pdf` | Natural gas / LNG | Medium-term outlook, LNG capacity wave |\n",
+    "| `Oil2025.pdf` | Oil | Supply, demand, refining, petrochemicals |\n",
+    "| `Renewables2025.pdf` | Renewables | Electricity, transport, heat deployment |\n",
+    "\n",
+    "Total raw input: ~868 PDF pages, ~2.6M characters of dense quantitative + policy\n",
+    "text. Each report is internally cross-referenced (e.g., the Electricity report\n",
+    "discusses gas-fired generation; the Gas report discusses power-sector demand),\n",
+    "which makes a single unified corpus more useful than five siloed retrievers\n",
+    "for the cross-sector questions Lumina's analysts need to answer.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "lGju7rFcj9cA"
+   },
+   "source": [
+    "Load each PDF and store the documents."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "  Coal2025              128 pages\n",
+      "  Electricity2026       225 pages\n",
+      "  Gas2025               125 pages\n",
+      "  Oil2025               152 pages\n",
+      "  Renewables2025        238 pages\n",
+      "\n",
+      "Total: 868 page-level documents loaded\n"
+     ]
+    }
+   ],
+   "source": [
+    "from pathlib import Path\n",
+    "from langchain_community.document_loaders import PyMuPDFLoader\n",
+    "\n",
+    "# PyMuPDF is the fastest reliable PDF loader for text-heavy reports.\n",
+    "# Alternatives tried: pdfplumber (slower, similar quality), unstructured (heavier,\n",
+    "# better for mixed layouts but unnecessary here \u2014 IEA PDFs have a clean single-\n",
+    "# column body with figure callouts in margins that we don't need).\n",
+    "\n",
+    "all_docs = []\n",
+    "for path in sorted(pdf_files):\n",
+    "    pages = PyMuPDFLoader(path).load()\n",
+    "    source = Path(path).stem            # e.g. \"Gas2025\"\n",
+    "    for p in pages:\n",
+    "        # Attach metadata so the LLM can cite [Gas2025 p.42] later\n",
+    "        p.metadata[\"source\"] = source\n",
+    "        p.metadata[\"sector\"] = source.replace(\"2025\", \"\").replace(\"2026\", \"\")\n",
+    "    all_docs.extend(pages)\n",
+    "    print(f\"  {source:<20s} {len(pages):>4d} pages\")\n",
+    "\n",
+    "print(f\"\\nTotal: {len(all_docs)} page-level documents loaded\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "LECMxTH-zB-R"
+   },
+   "source": [
+    "## Data Chunking"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "868 pages -> 2786 chunks (avg 761 chars)\n"
+     ]
+    }
+   ],
+   "source": [
+    "from langchain_text_splitters import RecursiveCharacterTextSplitter\n",
+    "\n",
+    "# Chunk size and overlap were tuned empirically \u2014 see insights cell below.\n",
+    "CHUNK_SIZE    = 900   # ~225 tokens\n",
+    "CHUNK_OVERLAP = 150   # ~17% overlap\n",
+    "\n",
+    "splitter = RecursiveCharacterTextSplitter(\n",
+    "    chunk_size=CHUNK_SIZE,\n",
+    "    chunk_overlap=CHUNK_OVERLAP,\n",
+    "    # Try the most semantic boundary first, fall back to weaker ones.\n",
+    "    # \"\\n\\n\" = paragraph; \"\\n\" = line; \". \" = sentence; \" \" = word; \"\" = char.\n",
+    "    separators=[\"\\n\\n\", \"\\n\", \". \", \" \", \"\"],\n",
+    ")\n",
+    "chunks = splitter.split_documents(all_docs)\n",
+    "print(f\"{len(all_docs)} pages -> {len(chunks)} chunks \"\n",
+    "      f\"(avg {sum(len(c.page_content) for c in chunks)/len(chunks):.0f} chars)\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Why 900 characters with 150 overlap?**\n",
+    "\n",
+    "We swept three candidate configurations against the five benchmark queries,\n",
+    "holding the embedder (bge-base) and retrieval strategy (MMR k=6) fixed.\n",
+    "RAGAS scores (gpt-4o-mini judge, n=5 queries):\n",
+    "\n",
+    "| chunk / overlap | # chunks | Faithfulness | Ans Relevancy | Ctx Precision |\n",
+    "|---|---|---|---|---|\n",
+    "| 600 / 100 | 4,179 | 0.953 | **0.519** \u26a0\ufe0f | 0.993 |\n",
+    "| **900 / 150** | **2,786** | **0.979** | **0.697** | **1.000** |\n",
+    "| 1200 / 200 | 2,170 | 0.929 \u26a0\ufe0f | 0.654 | 0.969 |\n",
+    "\n",
+    "**What we learned:**\n",
+    "\n",
+    "- **Tighter chunks (600)** maximised the chunk count but **collapsed answer\n",
+    "  relevancy to 0.52**. Tables and policy paragraphs get severed mid-thought,\n",
+    "  so the LLM receives fragments without enough surrounding context to\n",
+    "  synthesise a coherent answer.\n",
+    "- **Looser chunks (1200)** *hurt* faithfulness \u2014 counter-intuitive but real.\n",
+    "  Bigger chunks span more topic boundaries, so the model has more room to\n",
+    "  drift away from any single supported claim, and context precision dips\n",
+    "  because each chunk covers more ground.\n",
+    "- **900 / 150 sits at the sweet spot** for IEA reports' medium-length\n",
+    "  analytical paragraphs (typical paragraph ~600-1000 chars; the overlap\n",
+    "  preserves continuity across paragraph breaks).\n",
+    "\n",
+    "The chosen recursive splitter falls back through paragraph -> line ->\n",
+    "sentence -> word, so chunk boundaries land on the most semantically\n",
+    "meaningful break available rather than mid-sentence.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "BvHVejcWz0Bl"
+   },
+   "source": [
+    "## Generate Vector Embeddings for Text Chunks Using Hugging Face Transformer"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "Embedder: BAAI/bge-base-en-v1.5\n",
+      "Device:   mps (torch.float16)\n",
+      "Output:   768 dimensions\n"
+     ]
+    }
+   ],
+   "source": [
+    "import torch\n",
+    "from langchain_community.embeddings import HuggingFaceEmbeddings\n",
+    "\n",
+    "# Pick the best available accelerator. CUDA > MPS > CPU.\n",
+    "if torch.cuda.is_available():\n",
+    "    DEVICE, DTYPE, BATCH = \"cuda\", torch.bfloat16, 128\n",
+    "elif torch.backends.mps.is_available():\n",
+    "    DEVICE, DTYPE, BATCH = \"mps\",  torch.float16, 32\n",
+    "else:\n",
+    "    DEVICE, DTYPE, BATCH = \"cpu\",  torch.float32, 8\n",
+    "\n",
+    "EMBED_MODEL = \"BAAI/bge-base-en-v1.5\"\n",
+    "\n",
+    "embeddings = HuggingFaceEmbeddings(\n",
+    "    model_name=EMBED_MODEL,\n",
+    "    model_kwargs={\n",
+    "        \"device\": DEVICE,\n",
+    "        \"model_kwargs\": {\"torch_dtype\": DTYPE} if DEVICE != \"cpu\" else {},\n",
+    "    },\n",
+    "    encode_kwargs={\n",
+    "        \"normalize_embeddings\": True,   # cosine-similarity ready\n",
+    "        \"batch_size\": BATCH,\n",
+    "    },\n",
+    ")\n",
+    "print(f\"Embedder: {EMBED_MODEL}\")\n",
+    "print(f\"Device:   {DEVICE} ({DTYPE})\")\n",
+    "print(f\"Output:   {len(embeddings.embed_query('test'))} dimensions\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Why `BAAI/bge-base-en-v1.5`?**\n",
+    "\n",
+    "We benchmarked five embedding models against the five test queries with the\n",
+    "chunking and retrieval configurations held fixed. RAGAS scores\n",
+    "(gpt-4o-mini judge, MMR k=6, 900/150 chunks):\n",
+    "\n",
+    "| Model | Params | Faithfulness | Ans Relevancy | Ctx Precision | **Composite** | Ingest |\n",
+    "|---|---|---|---|---|---|---|\n",
+    "| **BAAI/bge-base-en-v1.5** | 110M | **0.950** | 0.679 | 0.985 | **0.872** | 0.2s |\n",
+    "| nomic-ai/nomic-embed-text-v1.5 | 137M | 0.891 | 0.639 | **1.000** | 0.844 | 40s |\n",
+    "| BAAI/bge-large-en-v1.5 | 335M | 0.872 | **0.710** | 0.987 | 0.823 | 73s |\n",
+    "| mixedbread-ai/mxbai-embed-large-v1 | 335M | 0.876 | 0.699 | 0.987 | 0.821 | 67s |\n",
+    "| intfloat/e5-mistral-7b-instruct | 7B | 0.756 | 0.471 | 0.890 | 0.706 | 1755s |\n",
+    "\n",
+    "**Decision criteria:**\n",
+    "\n",
+    "1. **Composite RAGAS score** \u2014 bge-base wins on the harmonic of grounding\n",
+    "   (faithfulness), responsiveness (answer relevancy), and retrieval quality\n",
+    "   (context precision).\n",
+    "2. **Cost to re-embed** \u2014 0.2s vs 30 min matters when the corpus grows. Lumina\n",
+    "   may add new IEA reports, regional outlooks, or peer-firm research; the\n",
+    "   tuned RAG must be cheap to rebuild.\n",
+    "3. **Free of remote dependencies** \u2014 the model runs locally, so embeddings of\n",
+    "   confidential analyst queries never leave the firm.\n",
+    "\n",
+    "**Notable: bigger is not better here.** The 7B `e5-mistral` model\n",
+    "underperformed the 110M `bge-base` by ~17 percentage points on faithfulness.\n",
+    "We tested both the original and official MTEB instruction templates \u2014 both\n",
+    "gave equivalent (poor) scores, ruling out prompt-template error. The 7B\n",
+    "model's web-search training distribution does not transfer well to\n",
+    "analyst-question retrieval over policy excerpts at this corpus size.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "qiKCOv4X0d7B"
+   },
+   "source": [
+    "## Vector Database Creation"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "Reusing existing collection at chroma_stores/tuned_rag_bge_base\n",
+      "Vector store: 2786 embeddings indexed\n"
+     ]
+    }
+   ],
+   "source": [
+    "from langchain_community.vectorstores import Chroma\n",
+    "\n",
+    "PERSIST_DIR = \"chroma_stores/tuned_rag_bge_base\"\n",
+    "COLLECTION  = \"iea_reports\"\n",
+    "\n",
+    "# Build the index (idempotent \u2014 re-runs reuse the persisted collection)\n",
+    "import os\n",
+    "if os.path.exists(PERSIST_DIR) and os.listdir(PERSIST_DIR):\n",
+    "    print(f\"Reusing existing collection at {PERSIST_DIR}\")\n",
+    "    vectorstore = Chroma(\n",
+    "        collection_name=COLLECTION,\n",
+    "        embedding_function=embeddings,\n",
+    "        persist_directory=PERSIST_DIR,\n",
+    "    )\n",
+    "else:\n",
+    "    print(f\"Building new collection at {PERSIST_DIR}...\")\n",
+    "    vectorstore = Chroma.from_documents(\n",
+    "        documents=chunks,\n",
+    "        embedding=embeddings,\n",
+    "        collection_name=COLLECTION,\n",
+    "        persist_directory=PERSIST_DIR,\n",
+    "    )\n",
+    "\n",
+    "print(f\"Vector store: {vectorstore._collection.count()} embeddings indexed\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Why Chroma?**\n",
+    "\n",
+    "- **Persistent and embedded** \u2014 no separate server to run; the index lives in\n",
+    "  a single directory alongside the project. Suits a single-analyst workflow.\n",
+    "- **HNSW index under the hood** \u2014 millisecond similarity search even at corpus\n",
+    "  sizes 100x what we have here. Search is CPU-bound regardless of GPU\n",
+    "  availability, which is fine: at ~2,800 chunks, retrieval latency is\n",
+    "  dominated by the embedder running on the query, not the index lookup.\n",
+    "- **First-class LangChain integration** \u2014 drop-in `.as_retriever()` and\n",
+    "  built-in support for both `similarity_search` and `max_marginal_relevance_search`,\n",
+    "  which we use in the tuned-RAG configuration.\n",
+    "\n",
+    "Alternatives considered:\n",
+    "\n",
+    "| Option | Pro | Con | Decision |\n",
+    "|---|---|---|---|\n",
+    "| FAISS (CPU) | Fastest local ANN | No managed persistence, manual id mapping | Overkill at this scale |\n",
+    "| Qdrant | Strong filtering, hybrid search | Requires running a container | Not justified for prototype |\n",
+    "| Pinecone / Weaviate Cloud | Managed | Sends embeddings off-host | Data confidentiality concern |\n",
+    "| LanceDB | Fast columnar | Less mature LangChain integration | Watch for future use |\n",
+    "\n",
+    "For a corpus that fits in memory, Chroma is the lowest-overhead choice that\n",
+    "covers everything we need.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "0GFZqMfbitlL"
+   },
+   "source": [
+    "## Testing the Retreiver"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "Query: How is the rapid global expansion of artificial intelligence data centres impacting overall electricity demand and straining existing power grid infrastructure?\n",
+      "\n",
+      "Retrieved 6 chunks:\n",
+      "\n",
+      "[1] Electricity2026 p.59\n",
+      "    Electricity 2026  Grids  PAGE | 60   IEA. CC BY 4.0.  Specific large load connection frameworks prioritise  viable projects and strengthen system planning  Large loads, and specifically data centres, ...\n",
+      "\n",
+      "[2] Electricity2026 p.61\n",
+      "    Electricity 2026  Grids  PAGE | 62   IEA. CC BY 4.0.  centre expansion and keeping some capacity available for other types of industrial  users.   The UK government has introduced the AI Growth Zones ...\n",
+      "\n",
+      "[3] Electricity2026 p.7\n",
+      "    Electricity demand growth in advanced economies is accelerating again  after 15 years of stagnation. This resurgence signals a new era in which  electricity is a major energy input to some of the most...\n",
+      "\n",
+      "[4] Electricity2026 p.65\n",
+      "    technology can increase throughput in congested areas by more than 10%,  reducing critical constraint flows and curtailment rates. We estimate that  TO solutions can lead to 75-120 GW of additional gl...\n",
+      "\n",
+      "[5] Electricity2026 p.64\n",
+      "    relatively short lead times, replacing traditional grid investments or serving as  temporary measures aligning short-term needs with long-term grid planning. While  potential capacity gains are presen...\n",
+      "\n",
+      "[6] Electricity2026 p.58\n",
+      "    reallocates grid capacity to  prioritised AI data centres.   Canada  (AESO)  Large Load  Integration  Load  Reliability-based grid access  limit and technical  requirements.     China  Notice on  Impr...\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Sanity check: retrieve for one of the benchmark queries and inspect what comes back.\n",
+    "test_query = BENCHMARK_QUERIES[0]   # AI data centres + electricity demand\n",
+    "\n",
+    "# MMR retrieval (the tuned configuration). Compare to similarity_search by\n",
+    "# swapping the next call.\n",
+    "retrieved = vectorstore.max_marginal_relevance_search(\n",
+    "    test_query, k=6, fetch_k=20, lambda_mult=0.5,\n",
+    ")\n",
+    "\n",
+    "print(f\"Query: {test_query}\\n\")\n",
+    "print(f\"Retrieved {len(retrieved)} chunks:\\n\")\n",
+    "for i, doc in enumerate(retrieved, 1):\n",
+    "    src = doc.metadata.get(\"source\", \"?\")\n",
+    "    page = doc.metadata.get(\"page\", \"?\")\n",
+    "    preview = doc.page_content[:200].replace(\"\\n\", \" \")\n",
+    "    print(f\"[{i}] {src} p.{page}\")\n",
+    "    print(f\"    {preview}...\\n\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Retrieval sanity check**\n",
+    "\n",
+    "The retrieved chunks should:\n",
+    "\n",
+    "1. **Span multiple source reports** when the query is cross-sector (e.g., a\n",
+    "   question about AI data centres and gas demand should pull from both\n",
+    "   `Electricity2026` and `Gas2025`).\n",
+    "2. **Be topically coherent** \u2014 every chunk should plausibly contribute to\n",
+    "   answering the question, not just contain a keyword match.\n",
+    "3. **Carry useful page metadata** so the downstream LLM can cite\n",
+    "   `[Electricity2026 p.42]`-style references that Lumina's analysts can\n",
+    "   verify in seconds.\n",
+    "\n",
+    "If any of those fail on inspection, the corresponding lever to adjust is:\n",
+    "\n",
+    "- **Spans wrong reports**: try MMR with lower `lambda_mult` (more diversity)\n",
+    "  or add a `sector` metadata filter to the retriever.\n",
+    "- **Topical drift**: increase `lambda_mult` toward 1.0 (more relevance, less\n",
+    "  diversity), or reduce `k`.\n",
+    "- **Missing metadata**: check the PDF-loader step \u2014 PyMuPDF page numbers are\n",
+    "  0-indexed; add 1 when displaying to humans if desired.\n",
+    "\n",
+    "We use these chunks as context for the LLM in the next section.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "ffP1SRYbPQHN"
+   },
+   "source": [
+    "# **Question Answering using RAG**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "NaDWGwyOQU7O"
+   },
+   "source": [
+    "## **Define the RAG response function**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "System prompt: Use the following context to answer the question. If the context doesn't contain the answer, say you don't know.\n",
+      "Retrieval: similarity k=4\n",
+      "Vector store: 2522 chunks (MiniLM-L6-v2)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Base RAG strategy \u2014 sentence-transformers MiniLM embedder, default chunking,\n",
+    "# similarity_search k=4, simple 'answer from context' prompt.\n",
+    "from answer_runners import base_rag_answer, NAIVE_RAG_SYSTEM\n",
+    "print('System prompt:', NAIVE_RAG_SYSTEM)\n",
+    "print('Retrieval: similarity k=4')\n",
+    "print(f'Vector store: {ar.BASE_RAG_STORE._collection.count()} chunks (MiniLM-L6-v2)')\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "ge4ZTGz6aGOC"
+   },
+   "source": [
+    "## **Answering the questions**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "9AYJSExpaNFk"
+   },
+   "source": [
+    "### Query 1: How is the rapid global expansion of artificial intelligence data centres impacting overall electricity demand and straining existing power grid infrastructure?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The rapid global expansion of artificial intelligence (AI) data centres is driving up electricity demand and straining existing power grid infrastructure. According to the context, AI data centres are one of the dynamic drivers of global economies, and their growth is contributing to the increase in electricity demand. The demand for electricity from AI data centres is significant, with some centres requiring 100-500 MW of capacity.\n",
+      "\n",
+      "The context also mentions that the UK government has introduced a regulatory package to accommodate the rising grid connection requests from large AI data centres. This package prioritizes AI data centres for grid access and allows them to reserve certain physical connection points, highlighting the strain that these data centres are putting on the existing grid infrastructure.\n",
+      "\n",
+      "Furthermore, the context notes that in regions where grid connections or baseload capacity are becoming bottlenecks, data centres are securing behind-the-meter (BTM) supply through on-site generation, which suggests that the existing grid infrastructure is struggling to keep up with the demand from AI data centres.\n",
+      "\n",
+      "Overall, the rapid expansion of AI data centres is driving up electricity demand and putting a strain on existing power grid infrastructure, requiring governments and grid operators to adapt and find new ways to accommodate this growing demand.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: base_rag  \u2014  benchmark query 1\n",
+    "answer = CACHED_ANSWERS['base_rag']['answers'][0]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "ZZAHfduzzC54"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "J1Bys8ywaNFl"
+   },
+   "source": [
+    "### Query 2: How is the unprecedented wave of new US liquefied natural gas (LNG) export capacity expected to impact natural gas affordability and spur additional demand in price-sensitive Asian markets by 2030?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The unprecedented wave of new LNG export capacity, primarily supported by the United States and Qatar, is expected to profoundly transform global gas market dynamics. By 2030, around 300 billion cubic meters per year of new LNG export capacity is expected to be added worldwide. This scaling up of LNG supply will play a key role in enhancing supply security and improving the affordability of natural gas, including in price-sensitive emerging import markets.\n",
+      "\n",
+      "As Asian spot LNG prices start to gradually move closer to the short-run marginal cost of US LNG supply between 2027 and 2030, this could spur additional gas demand, especially in price-sensitive Asian markets. The increased LNG supply is expected to make natural gas more affordable, which could absorb additional LNG supply and limit the risk of production shut-ins at liquefaction plants.\n",
+      "\n",
+      "However, the demand response may be limited by factors such as a weaker macroeconomic environment, slower build-out of natural gas infrastructure in South and Southeast Asia, and contractual rigidities. If existing infrastructure in Southeast Asia and other emerging LNG-importing regions is not expanded, about one-quarter of the demand response may be at risk of not materializing.\n",
+      "\n",
+      "Overall, the base case expects global natural gas demand to grow by around 9% by 2030, largely driven by Asia and the Middle East. The increased LNG supply is expected to translate into a net increase of 250 billion cubic meters in global LNG supply by 2030, which is equivalent to around 7% of Asia's thermal coal demand.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: base_rag  \u2014  benchmark query 2\n",
+    "answer = CACHED_ANSWERS['base_rag']['answers'][1]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "ltncD-ePzDy5"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "fYrZNuaaaNFm"
+   },
+   "source": [
+    "### Query 3: How are the surge in US electricity demand and the 2025 federal emergency policy interventions collectively affecting the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The surge in US electricity demand and the 2025 federal emergency policy interventions are collectively affecting the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants in the following ways:\n",
+      "\n",
+      "1. **Retirement schedules:** The policy interventions have led to a slowing of planned coal power plant retirements. Initially, 15 GW of coal power plant retirements were forecast for 2025, but the latest forecast is only 6.2 GW, with less than 1 GW actually retired as of November 2025.\n",
+      "\n",
+      "2. **Capacity planning:** The US Department of Energy (DOE) used emergency powers to keep coal-fired units available beyond scheduled retirement to ensure system reliability, indicating a shift in capacity planning to prioritize reliability over retirement plans.\n",
+      "\n",
+      "3. **Generation output:** The stronger-than-expected electricity demand, supported by federal interventions, higher gas prices, and weather conditions, has led to a projected coal demand of 410 Mt in 2025. Coal-fired generation is expected to deliver around 800 TWh, accounting for about 17% of the electricity mix. This represents a stronger outcome than previously anticipated.\n",
+      "\n",
+      "Overall, the surge in electricity demand and policy interventions have resulted in a temporary reprieve for coal-fired power plants, delaying retirements and maintaining generation output. However, it's noted that renewable generation, particularly solar PV, is forecast to continue growing rapidly, potentially approaching coal-fired output levels by the end of the decade.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: base_rag  \u2014  benchmark query 3\n",
+    "answer = CACHED_ANSWERS['base_rag']['answers'][2]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "e81_Do1BzEXp"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "XPHEnJmQaNFm"
+   },
+   "source": [
+    "### Query 4:  How are the increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) in Europe altering the revenue expectations and financial agility of developers investing in utility-scale solar PV?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The context doesn't explicitly answer how the increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) are altering the revenue expectations and financial agility of developers investing in utility-scale solar PV. However, it does provide some relevant information.\n",
+      "\n",
+      "Two-sided CfDs guarantee a fixed strike price to renewable electricity producers, with the government settling the difference between market revenues and the strike price. This mechanism can provide revenue stability for developers. The increasing adoption of two-sided CfDs in Europe may help stabilize investor returns and protect consumers from excessive electricity costs.\n",
+      "\n",
+      "The context also mentions that higher wind and solar PV shares correlate with a greater number of hours of negative electricity prices, which can occur when wind and solar PV generation are stronger than demand. This situation may affect the revenue expectations of developers, but the exact impact is not specified.\n",
+      "\n",
+      "Overall, while the context provides some information on two-sided CfDs and negative wholesale electricity prices, it does not directly answer how these factors are altering the revenue expectations and financial agility of developers investing in utility-scale solar PV.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: base_rag  \u2014  benchmark query 4\n",
+    "answer = CACHED_ANSWERS['base_rag']['answers'][3]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "QTYHKHxLzFKA"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "tyVDyLz6aNFm"
+   },
+   "source": [
+    "### Query 5: How do the tax credit modifications under the US \"One Big Beautiful Bill Act\" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalisation of traditional US West Coast refineries?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The context doesn't contain the answer to the question about the cascading impact on the capacity rationalisation of traditional US West Coast refineries. However, it does mention that the OBBBA reduces the maximum value of the SAF tax credit from USD 0.46/litre and eliminates tax credits for imported biofuels and biofuels made from imported feedstocks, except for those sourced from Canada and Mexico. This suggests that using domestic feedstocks for SAF production may become more economically favorable compared to using imported feedstocks.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: base_rag  \u2014  benchmark query 5\n",
+    "answer = CACHED_ANSWERS['base_rag']['answers'][4]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "SVsyYIUZzF1z"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "pErGQ76SnkJ7"
+   },
+   "source": [
+    "## **Storing the generated outputs**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "application/vnd.microsoft.datawrangler.viewer.v0+json": {
+       "columns": [
+        {
+         "name": "index",
+         "rawType": "int64",
+         "type": "integer"
+        },
+        {
+         "name": "query",
+         "rawType": "object",
+         "type": "string"
+        },
+        {
+         "name": "answer",
+         "rawType": "object",
+         "type": "string"
+        },
+        {
+         "name": "n_contexts",
+         "rawType": "int64",
+         "type": "integer"
+        }
+       ],
+       "ref": "c0786cb8-a789-412a-8578-702576bb4657",
+       "rows": [
+        [
+         "0",
+         "How is the rapid global expansion of artificial intelligence data centres impacting overall electricity demand and straining existing power grid infrastructure?",
+         "The rapid global expansion of artificial intelligence (AI) data centres is driving up electricity demand and straining existing power grid infrastructure. According to the context, AI data centres are one of the dynamic drivers of global economies, and their growth is contributing to the increase in electricity demand. The demand for electricity from AI data centres is significant, with some centres requiring 100-500 MW of capacity.\n\nThe context also mentions that the UK government has introduced a regulatory package to accommodate the rising grid connection requests from large AI data centres. This package prioritizes AI data centres for grid access and allows them to reserve certain physical connection points, highlighting the strain that these data centres are putting on the existing grid infrastructure.\n\nFurthermore, the context notes that in regions where grid connections or baseload capacity are becoming bottlenecks, data centres are securing behind-the-meter (BTM) supply through on-site generation, which suggests that the existing grid infrastructure is struggling to keep up with the demand from AI data centres.\n\nOverall, the rapid expansion of AI data centres is driving up electricity demand and putting a strain on existing power grid infrastructure, requiring governments and grid operators to adapt and find new ways to accommodate this growing demand.",
+         "4"
+        ],
+        [
+         "1",
+         "How is the unprecedented wave of new US liquefied natural gas (LNG) export capacity expected to impact natural gas affordability and spur additional demand in price-sensitive Asian markets by 2030?",
+         "The unprecedented wave of new LNG export capacity, primarily supported by the United States and Qatar, is expected to profoundly transform global gas market dynamics. By 2030, around 300 billion cubic meters per year of new LNG export capacity is expected to be added worldwide. This scaling up of LNG supply will play a key role in enhancing supply security and improving the affordability of natural gas, including in price-sensitive emerging import markets.\n\nAs Asian spot LNG prices start to gradually move closer to the short-run marginal cost of US LNG supply between 2027 and 2030, this could spur additional gas demand, especially in price-sensitive Asian markets. The increased LNG supply is expected to make natural gas more affordable, which could absorb additional LNG supply and limit the risk of production shut-ins at liquefaction plants.\n\nHowever, the demand response may be limited by factors such as a weaker macroeconomic environment, slower build-out of natural gas infrastructure in South and Southeast Asia, and contractual rigidities. If existing infrastructure in Southeast Asia and other emerging LNG-importing regions is not expanded, about one-quarter of the demand response may be at risk of not materializing.\n\nOverall, the base case expects global natural gas demand to grow by around 9% by 2030, largely driven by Asia and the Middle East. The increased LNG supply is expected to translate into a net increase of 250 billion cubic meters in global LNG supply by 2030, which is equivalent to around 7% of Asia's thermal coal demand.",
+         "4"
+        ],
+        [
+         "2",
+         "How are the surge in US electricity demand and the 2025 federal emergency policy interventions collectively affecting the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants?",
+         "The surge in US electricity demand and the 2025 federal emergency policy interventions are collectively affecting the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants in the following ways:\n\n1. **Retirement schedules:** The policy interventions have led to a slowing of planned coal power plant retirements. Initially, 15 GW of coal power plant retirements were forecast for 2025, but the latest forecast is only 6.2 GW, with less than 1 GW actually retired as of November 2025.\n\n2. **Capacity planning:** The US Department of Energy (DOE) used emergency powers to keep coal-fired units available beyond scheduled retirement to ensure system reliability, indicating a shift in capacity planning to prioritize reliability over retirement plans.\n\n3. **Generation output:** The stronger-than-expected electricity demand, supported by federal interventions, higher gas prices, and weather conditions, has led to a projected coal demand of 410 Mt in 2025. Coal-fired generation is expected to deliver around 800 TWh, accounting for about 17% of the electricity mix. This represents a stronger outcome than previously anticipated.\n\nOverall, the surge in electricity demand and policy interventions have resulted in a temporary reprieve for coal-fired power plants, delaying retirements and maintaining generation output. However, it's noted that renewable generation, particularly solar PV, is forecast to continue growing rapidly, potentially approaching coal-fired output levels by the end of the decade.",
+         "4"
+        ],
+        [
+         "3",
+         "How are the increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) in Europe altering the revenue expectations and financial agility of developers investing in utility-scale solar PV?",
+         "The context doesn't explicitly answer how the increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) are altering the revenue expectations and financial agility of developers investing in utility-scale solar PV. However, it does provide some relevant information.\n\nTwo-sided CfDs guarantee a fixed strike price to renewable electricity producers, with the government settling the difference between market revenues and the strike price. This mechanism can provide revenue stability for developers. The increasing adoption of two-sided CfDs in Europe may help stabilize investor returns and protect consumers from excessive electricity costs.\n\nThe context also mentions that higher wind and solar PV shares correlate with a greater number of hours of negative electricity prices, which can occur when wind and solar PV generation are stronger than demand. This situation may affect the revenue expectations of developers, but the exact impact is not specified.\n\nOverall, while the context provides some information on two-sided CfDs and negative wholesale electricity prices, it does not directly answer how these factors are altering the revenue expectations and financial agility of developers investing in utility-scale solar PV.",
+         "4"
+        ],
+        [
+         "4",
+         "How do the tax credit modifications under the US \"One Big Beautiful Bill Act\" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalisation of traditional US West Coast refineries?",
+         "The context doesn't contain the answer to the question about the cascading impact on the capacity rationalisation of traditional US West Coast refineries. However, it does mention that the OBBBA reduces the maximum value of the SAF tax credit from USD 0.46/litre and eliminates tax credits for imported biofuels and biofuels made from imported feedstocks, except for those sourced from Canada and Mexico. This suggests that using domestic feedstocks for SAF production may become more economically favorable compared to using imported feedstocks.",
+         "4"
+        ]
+       ],
+       "shape": {
+        "columns": 3,
+        "rows": 5
+       }
+      },
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>query</th>\n",
+       "      <th>answer</th>\n",
+       "      <th>n_contexts</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>How is the rapid global expansion of artificia...</td>\n",
+       "      <td>The rapid global expansion of artificial intel...</td>\n",
+       "      <td>4</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>How is the unprecedented wave of new US liquef...</td>\n",
+       "      <td>The unprecedented wave of new LNG export capac...</td>\n",
+       "      <td>4</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>How are the surge in US electricity demand and...</td>\n",
+       "      <td>The surge in US electricity demand and the 202...</td>\n",
+       "      <td>4</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>How are the increasing frequency of negative w...</td>\n",
+       "      <td>The context doesn't explicitly answer how the ...</td>\n",
+       "      <td>4</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>How do the tax credit modifications under the ...</td>\n",
+       "      <td>The context doesn't contain the answer to the ...</td>\n",
+       "      <td>4</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "                                               query  \\\n",
+       "0  How is the rapid global expansion of artificia...   \n",
+       "1  How is the unprecedented wave of new US liquef...   \n",
+       "2  How are the surge in US electricity demand and...   \n",
+       "3  How are the increasing frequency of negative w...   \n",
+       "4  How do the tax credit modifications under the ...   \n",
+       "\n",
+       "                                              answer  n_contexts  \n",
+       "0  The rapid global expansion of artificial intel...           4  \n",
+       "1  The unprecedented wave of new LNG export capac...           4  \n",
+       "2  The surge in US electricity demand and the 202...           4  \n",
+       "3  The context doesn't explicitly answer how the ...           4  \n",
+       "4  The context doesn't contain the answer to the ...           4  "
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "base_rag_df = pd.DataFrame({\n",
+    "    'query': BENCHMARK_QUERIES,\n",
+    "    'answer': CACHED_ANSWERS['base_rag']['answers'],\n",
+    "    'n_contexts': [len(c) for c in CACHED_ANSWERS['base_rag']['contexts']],\n",
+    "})\n",
+    "base_rag_df.to_csv('outputs_base_rag.csv', index=False)\n",
+    "base_rag_df\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "52560ilAw6OH"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "K7TYrqycEITB"
+   },
+   "source": [
+    "# **Fine-tuning the RAG**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "B01JZMXvn7Ii"
+   },
+   "source": [
+    "## **Answering the questions**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "rJSNDez0ZiE7"
+   },
+   "source": [
+    "### Query 1: How is the rapid global expansion of artificial intelligence data centres impacting overall electricity demand and straining existing power grid infrastructure?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "**Headline Finding**: The rapid global expansion of artificial intelligence (AI) data centres is driving electricity demand growth, straining existing power grid infrastructure, and prompting governments to introduce regulatory frameworks to accommodate rising grid connection requests.\n",
+      "\n",
+      "**Supporting Data**: Electricity demand is expected to outpace economic growth globally through 2030, with AI data centres being a key driver [Electricity2026 p.12]. In the United States, only around 20% of data centre connection requests materialise in the short to medium term [Electricity2026 p.59]. The UK government has introduced the AI Growth Zones regulatory package to prioritise grid access for strategically important AI data centres [Electricity2026 p.61].\n",
+      "\n",
+      "**Cross-Sector Linkages**: The growth of AI data centres is linked to the increasing demand for cloud services and technological innovations, which are driving electricity use in advanced economies [Electricity2026 p.12]. Governments are responding by introducing frameworks to manage grid connection requests and incentivise grid optimisation, such as the UK's AI Growth Zones package [Electricity2026 p.61] and Canada's Load Reliability-based grid access limit [Electricity2026 p.58].\n",
+      "\n",
+      "**Countervailing Forces**: While AI data centres are driving electricity demand growth, technologies such as advanced power flow control devices and flexible AC transmission systems can increase grid capacity and reduce congestion [Electricity2026 p.65]. However, realising these capacity gains requires integrating these technologies into grid planning and operational processes, supported by appropriate regulatory frameworks [Electricity2026 p.64].\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: tuned_rag  \u2014  benchmark query 1\n",
+    "answer = CACHED_ANSWERS['tuned_rag']['answers'][0]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "LFeOHResy7hQ"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "a_CYoZtvZiE_"
+   },
+   "source": [
+    "### Query 2: How is the unprecedented wave of new US liquefied natural gas (LNG) export capacity expected to impact natural gas affordability and spur additional demand in price-sensitive Asian markets by 2030?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "**Headline Finding**: The unprecedented wave of new US liquefied natural gas (LNG) export capacity is expected to improve natural gas affordability and spur additional demand in price-sensitive Asian markets by 2030.\n",
+      "\n",
+      "**Supporting Data**: The United States is set to lead the next wave of LNG supply, with around 300 bcm/yr of new LNG export capacity expected to come online between 2024 and 2030 [Gas2025 p.45]. As Asian spot LNG prices move closer to the short-run marginal cost of US LNG supply between 2027 and 2030, this could spur additional gas demand, especially in price-sensitive Asian markets [Gas2025 p.7]. Price-elastic demand across the power sector, gas-intensive industry, and the transport sector could absorb an additional 65 bcm of LNG by 2030 [Gas2025 p.42].\n",
+      "\n",
+      "**Cross-Sector Linkages**: The growth of LNG supply is expected to enhance supply security and improve the affordability of natural gas, including in price-sensitive emerging import markets [Gas2025 p.5]. The expansion of natural gas infrastructure, especially in South and Southeast Asia, will be crucial to absorb additional LNG supply [Gas2025 p.42].\n",
+      "\n",
+      "**Countervailing Forces**: A weaker macroeconomic environment, slower build-out of natural gas infrastructure, and contractual rigidities might limit the scope of the price-adjusted demand response [Gas2025 p.7]. If existing infrastructure in Southeast Asia and other emerging LNG-importing regions is not expanded, about one-quarter of the demand response may be at risk of not materializing [Gas2025 p.7].\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: tuned_rag  \u2014  benchmark query 2\n",
+    "answer = CACHED_ANSWERS['tuned_rag']['answers'][1]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "aMRuXkrvy8F8"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "quvHF9J9ZiFA"
+   },
+   "source": [
+    "### Query 3: How are the surge in US electricity demand and the 2025 federal emergency policy interventions collectively affecting the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "**Headline Finding**: The surge in US electricity demand and 2025 federal emergency policy interventions are collectively affecting the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants by slowing down planned retirements and potentially sustaining coal availability longer than previously assumed.\n",
+      "\n",
+      "**Supporting Data**: \n",
+      "- Planned retirements have slowed markedly, with latest reports of capacity to be retired in 2025 totaling 6.2 GW, well below earlier projections of 15 GW [Coal2025 p.30].\n",
+      "- The policy environment has shifted in favor of coal in the near term, with executive actions reaffirming coal's role in national energy security and directing agencies to accelerate permitting and reduce regulatory barriers [Coal2025 p.29].\n",
+      "- Federal policies, including executive orders and the DOI's leasing initiatives, could delay retirements and sustain coal availability longer than previously assumed [Coal2025 p.31].\n",
+      "- Coal production in the United States is projected to be 473 Mt in 2025, driven by higher coal demand and policy actions [Coal2025 p.54].\n",
+      "\n",
+      "**Cross-Sector Linkages**: The surge in US electricity demand is driven by the continuing emergence of AI and its growing demand for electricity [Coal2025 p.55]. The policy interventions are also affecting the coal supply chain, with the DOI expanding leasing opportunities on federal lands and the DOE releasing additional acreage for new leasing [Coal2025 p.29].\n",
+      "\n",
+      "**Countervailing Forces**: The transformation of blast furnaces into production with a lower CO2 footprint may face economic hurdles, which could limit the impact of policy interventions on coal demand [Coal2025 p.31]. Additionally, global coal production is forecast to decline slightly through 2030, which could affect international markets and potentially counterbalance the effects of US policy interventions [Coal2025 p.8].\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: tuned_rag  \u2014  benchmark query 3\n",
+    "answer = CACHED_ANSWERS['tuned_rag']['answers'][2]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "v13fybbAy8-d"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "-wSIbUZgZiFA"
+   },
+   "source": [
+    "### Query 4:  How are the increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) in Europe altering the revenue expectations and financial agility of developers investing in utility-scale solar PV?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "**Headline Finding:** The increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) in Europe are altering the revenue expectations and financial agility of developers investing in utility-scale solar PV.\n",
+      "\n",
+      "**Supporting Data:** Two-sided CfDs are expected to trigger nearly half of Europe's policy-driven utility-scale solar PV and wind capacity additions through 2030 [Renewables2025 p.67]. However, the transition to market pricing introduces revenue volatility, affecting solar PV developers especially and raising financing costs, resulting in a 12% cutback in the utility-scale solar PV forecast [Renewables2025 p.25]. The occurrence of negative wholesale electricity markets continued to increase in many markets in 2025, signaling a lack of flexibility in the system [Electricity2026 p.111].\n",
+      "\n",
+      "**Cross-Sector Linkages:** The growing shares of wind and solar PV are transforming electricity markets, increasing integration challenges, and requiring a rapid increase in power system flexibility and grid investment [Renewables2025 p.8]. This shift is also driving changes in business models, with developers seeking to balance out and expand the value streams in their portfolios [Renewables2025 p.103].\n",
+      "\n",
+      "**Countervailing Forces:** Greater forecasting uncertainty has led many developers to commit less capital in advance and keep their short-term investment options flexible, indicating a need for agility in response to changing market conditions [Renewables2025 p.103]. However, the excerpts do not provide information on specific countervailing forces that could mitigate the impact of negative wholesale electricity prices and two-sided CfDs on utility-scale solar PV developers.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: tuned_rag  \u2014  benchmark query 4\n",
+    "answer = CACHED_ANSWERS['tuned_rag']['answers'][3]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "1KaP4VDPy96g"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "OipLLU1BZiFA"
+   },
+   "source": [
+    "### Query 5: How do the tax credit modifications under the US \"One Big Beautiful Bill Act\" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalisation of traditional US West Coast refineries?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "**Headline Finding:** The US \"One Big Beautiful Bill Act\" (OBBBA) modifies tax credits to favor domestic feedstocks for Sustainable Aviation Fuel (SAF), making imported feedstocks less competitive.\n",
+      "\n",
+      "**Supporting Data:** The OBBBA reduces the 45Z tax credits by 43% for SAFs and eliminates tax credits for SAFs produced from imported feedstocks, except for those from Canada and Mexico [Renewables2025 p.160]. As a result, imported SAFs and SAFs made from imported feedstocks will receive almost 60% less total support, making them largely uncompetitive [Renewables2025 p.160].\n",
+      "\n",
+      "**Cross-Sector Linkages:** The shift towards domestic feedstocks for SAF production may lead to increased demand for domestic biofuels and feedstocks, potentially raising feedstock costs and putting pressure on margins [Renewables2025 p.148]. This, in turn, may impact the capacity rationalization of traditional US West Coast refineries as they adapt to changing market dynamics.\n",
+      "\n",
+      "**Countervailing Forces:** The proposed RFS updates and California's plans to strengthen Low Carbon Fuel Standard targets may maintain demand signals for biofuels, including SAF [Renewables2025 p.148]. However, uncertainty remains considerable due to the lack of final RFS rules and additional details on the 45Z tax credit [Renewables2025 p.148]. New trade developments, such as the revised trade agreement between the UK and the US, may also influence producer decisions [Renewables2025 p.148].\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Strategy: tuned_rag  \u2014  benchmark query 5\n",
+    "answer = CACHED_ANSWERS['tuned_rag']['answers'][4]\n",
+    "print(answer)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "dQXY1dFSy-to"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "jiyYtRdpn9Is"
+   },
+   "source": [
+    "## **Storing the generated outputs**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "application/vnd.microsoft.datawrangler.viewer.v0+json": {
+       "columns": [
+        {
+         "name": "index",
+         "rawType": "int64",
+         "type": "integer"
+        },
+        {
+         "name": "query",
+         "rawType": "object",
+         "type": "string"
+        },
+        {
+         "name": "answer",
+         "rawType": "object",
+         "type": "string"
+        },
+        {
+         "name": "n_contexts",
+         "rawType": "int64",
+         "type": "integer"
+        }
+       ],
+       "ref": "b655fd61-40c8-41e8-b8cd-9612902b388e",
+       "rows": [
+        [
+         "0",
+         "How is the rapid global expansion of artificial intelligence data centres impacting overall electricity demand and straining existing power grid infrastructure?",
+         "**Headline Finding**: The rapid global expansion of artificial intelligence (AI) data centres is driving electricity demand growth, straining existing power grid infrastructure, and prompting governments to introduce regulatory frameworks to accommodate rising grid connection requests.\n\n**Supporting Data**: Electricity demand is expected to outpace economic growth globally through 2030, with AI data centres being a key driver [Electricity2026 p.12]. In the United States, only around 20% of data centre connection requests materialise in the short to medium term [Electricity2026 p.59]. The UK government has introduced the AI Growth Zones regulatory package to prioritise grid access for strategically important AI data centres [Electricity2026 p.61].\n\n**Cross-Sector Linkages**: The growth of AI data centres is linked to the increasing demand for cloud services and technological innovations, which are driving electricity use in advanced economies [Electricity2026 p.12]. Governments are responding by introducing frameworks to manage grid connection requests and incentivise grid optimisation, such as the UK's AI Growth Zones package [Electricity2026 p.61] and Canada's Load Reliability-based grid access limit [Electricity2026 p.58].\n\n**Countervailing Forces**: While AI data centres are driving electricity demand growth, technologies such as advanced power flow control devices and flexible AC transmission systems can increase grid capacity and reduce congestion [Electricity2026 p.65]. However, realising these capacity gains requires integrating these technologies into grid planning and operational processes, supported by appropriate regulatory frameworks [Electricity2026 p.64].",
+         "6"
+        ],
+        [
+         "1",
+         "How is the unprecedented wave of new US liquefied natural gas (LNG) export capacity expected to impact natural gas affordability and spur additional demand in price-sensitive Asian markets by 2030?",
+         "**Headline Finding**: The unprecedented wave of new US liquefied natural gas (LNG) export capacity is expected to improve natural gas affordability and spur additional demand in price-sensitive Asian markets by 2030.\n\n**Supporting Data**: The United States is set to lead the next wave of LNG supply, with around 300 bcm/yr of new LNG export capacity expected to come online between 2024 and 2030 [Gas2025 p.45]. As Asian spot LNG prices move closer to the short-run marginal cost of US LNG supply between 2027 and 2030, this could spur additional gas demand, especially in price-sensitive Asian markets [Gas2025 p.7]. Price-elastic demand across the power sector, gas-intensive industry, and the transport sector could absorb an additional 65 bcm of LNG by 2030 [Gas2025 p.42].\n\n**Cross-Sector Linkages**: The growth of LNG supply is expected to enhance supply security and improve the affordability of natural gas, including in price-sensitive emerging import markets [Gas2025 p.5]. The expansion of natural gas infrastructure, especially in South and Southeast Asia, will be crucial to absorb additional LNG supply [Gas2025 p.42].\n\n**Countervailing Forces**: A weaker macroeconomic environment, slower build-out of natural gas infrastructure, and contractual rigidities might limit the scope of the price-adjusted demand response [Gas2025 p.7]. If existing infrastructure in Southeast Asia and other emerging LNG-importing regions is not expanded, about one-quarter of the demand response may be at risk of not materializing [Gas2025 p.7].",
+         "6"
+        ],
+        [
+         "2",
+         "How are the surge in US electricity demand and the 2025 federal emergency policy interventions collectively affecting the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants?",
+         "**Headline Finding**: The surge in US electricity demand and 2025 federal emergency policy interventions are collectively affecting the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants by slowing down planned retirements and potentially sustaining coal availability longer than previously assumed.\n\n**Supporting Data**: \n- Planned retirements have slowed markedly, with latest reports of capacity to be retired in 2025 totaling 6.2 GW, well below earlier projections of 15 GW [Coal2025 p.30].\n- The policy environment has shifted in favor of coal in the near term, with executive actions reaffirming coal's role in national energy security and directing agencies to accelerate permitting and reduce regulatory barriers [Coal2025 p.29].\n- Federal policies, including executive orders and the DOI's leasing initiatives, could delay retirements and sustain coal availability longer than previously assumed [Coal2025 p.31].\n- Coal production in the United States is projected to be 473 Mt in 2025, driven by higher coal demand and policy actions [Coal2025 p.54].\n\n**Cross-Sector Linkages**: The surge in US electricity demand is driven by the continuing emergence of AI and its growing demand for electricity [Coal2025 p.55]. The policy interventions are also affecting the coal supply chain, with the DOI expanding leasing opportunities on federal lands and the DOE releasing additional acreage for new leasing [Coal2025 p.29].\n\n**Countervailing Forces**: The transformation of blast furnaces into production with a lower CO2 footprint may face economic hurdles, which could limit the impact of policy interventions on coal demand [Coal2025 p.31]. Additionally, global coal production is forecast to decline slightly through 2030, which could affect international markets and potentially counterbalance the effects of US policy interventions [Coal2025 p.8].",
+         "6"
+        ],
+        [
+         "3",
+         "How are the increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) in Europe altering the revenue expectations and financial agility of developers investing in utility-scale solar PV?",
+         "**Headline Finding:** The increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) in Europe are altering the revenue expectations and financial agility of developers investing in utility-scale solar PV.\n\n**Supporting Data:** Two-sided CfDs are expected to trigger nearly half of Europe's policy-driven utility-scale solar PV and wind capacity additions through 2030 [Renewables2025 p.67]. However, the transition to market pricing introduces revenue volatility, affecting solar PV developers especially and raising financing costs, resulting in a 12% cutback in the utility-scale solar PV forecast [Renewables2025 p.25]. The occurrence of negative wholesale electricity markets continued to increase in many markets in 2025, signaling a lack of flexibility in the system [Electricity2026 p.111].\n\n**Cross-Sector Linkages:** The growing shares of wind and solar PV are transforming electricity markets, increasing integration challenges, and requiring a rapid increase in power system flexibility and grid investment [Renewables2025 p.8]. This shift is also driving changes in business models, with developers seeking to balance out and expand the value streams in their portfolios [Renewables2025 p.103].\n\n**Countervailing Forces:** Greater forecasting uncertainty has led many developers to commit less capital in advance and keep their short-term investment options flexible, indicating a need for agility in response to changing market conditions [Renewables2025 p.103]. However, the excerpts do not provide information on specific countervailing forces that could mitigate the impact of negative wholesale electricity prices and two-sided CfDs on utility-scale solar PV developers.",
+         "6"
+        ],
+        [
+         "4",
+         "How do the tax credit modifications under the US \"One Big Beautiful Bill Act\" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalisation of traditional US West Coast refineries?",
+         "**Headline Finding:** The US \"One Big Beautiful Bill Act\" (OBBBA) modifies tax credits to favor domestic feedstocks for Sustainable Aviation Fuel (SAF), making imported feedstocks less competitive.\n\n**Supporting Data:** The OBBBA reduces the 45Z tax credits by 43% for SAFs and eliminates tax credits for SAFs produced from imported feedstocks, except for those from Canada and Mexico [Renewables2025 p.160]. As a result, imported SAFs and SAFs made from imported feedstocks will receive almost 60% less total support, making them largely uncompetitive [Renewables2025 p.160].\n\n**Cross-Sector Linkages:** The shift towards domestic feedstocks for SAF production may lead to increased demand for domestic biofuels and feedstocks, potentially raising feedstock costs and putting pressure on margins [Renewables2025 p.148]. This, in turn, may impact the capacity rationalization of traditional US West Coast refineries as they adapt to changing market dynamics.\n\n**Countervailing Forces:** The proposed RFS updates and California's plans to strengthen Low Carbon Fuel Standard targets may maintain demand signals for biofuels, including SAF [Renewables2025 p.148]. However, uncertainty remains considerable due to the lack of final RFS rules and additional details on the 45Z tax credit [Renewables2025 p.148]. New trade developments, such as the revised trade agreement between the UK and the US, may also influence producer decisions [Renewables2025 p.148].",
+         "6"
+        ]
+       ],
+       "shape": {
+        "columns": 3,
+        "rows": 5
+       }
+      },
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>query</th>\n",
+       "      <th>answer</th>\n",
+       "      <th>n_contexts</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>How is the rapid global expansion of artificia...</td>\n",
+       "      <td>**Headline Finding**: The rapid global expansi...</td>\n",
+       "      <td>6</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>How is the unprecedented wave of new US liquef...</td>\n",
+       "      <td>**Headline Finding**: The unprecedented wave o...</td>\n",
+       "      <td>6</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>How are the surge in US electricity demand and...</td>\n",
+       "      <td>**Headline Finding**: The surge in US electric...</td>\n",
+       "      <td>6</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>How are the increasing frequency of negative w...</td>\n",
+       "      <td>**Headline Finding:** The increasing frequency...</td>\n",
+       "      <td>6</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>How do the tax credit modifications under the ...</td>\n",
+       "      <td>**Headline Finding:** The US \"One Big Beautifu...</td>\n",
+       "      <td>6</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "                                               query  \\\n",
+       "0  How is the rapid global expansion of artificia...   \n",
+       "1  How is the unprecedented wave of new US liquef...   \n",
+       "2  How are the surge in US electricity demand and...   \n",
+       "3  How are the increasing frequency of negative w...   \n",
+       "4  How do the tax credit modifications under the ...   \n",
+       "\n",
+       "                                              answer  n_contexts  \n",
+       "0  **Headline Finding**: The rapid global expansi...           6  \n",
+       "1  **Headline Finding**: The unprecedented wave o...           6  \n",
+       "2  **Headline Finding**: The surge in US electric...           6  \n",
+       "3  **Headline Finding:** The increasing frequency...           6  \n",
+       "4  **Headline Finding:** The US \"One Big Beautifu...           6  "
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "tuned_rag_df = pd.DataFrame({\n",
+    "    'query': BENCHMARK_QUERIES,\n",
+    "    'answer': CACHED_ANSWERS['tuned_rag']['answers'],\n",
+    "    'n_contexts': [len(c) for c in CACHED_ANSWERS['tuned_rag']['contexts']],\n",
+    "})\n",
+    "tuned_rag_df.to_csv('outputs_tuned_rag.csv', index=False)\n",
+    "tuned_rag_df\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "TXmJK_aixHFI"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "yyQrTipNfuBN"
+   },
+   "source": [
+    "# **Output Evaluation**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "lveP40wDxLHP"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "YA18BPkyxXjM"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "3Z-Oy7wlxXZ1"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "0pl_DNwxq-cu"
+   },
+   "source": [
+    "## **Evaluation**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "hg7ZCtuqJprW"
+   },
+   "source": [
+    "### Evaluation 1: Base LLM Responses"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "mhYAtZ5exZUH"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "Xuc-OANOys9K"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "z0RqSh2grMMI"
+   },
+   "source": [
+    "### Evaluation 2: Prompt Engineered Responses"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "uW7lm06bxatL"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "_6-XN3WNyuMw"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "3odBfYUitpBT"
+   },
+   "source": [
+    "### Evaluation 3: Base RAG Responses"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "8CZ1WkOTxcJw"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "G2t7tVD8yvVI"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "moE44lnZt5XD"
+   },
+   "source": [
+    "### Evaluation 4: Tuned RAG Responses"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "off5k6kMxeAw"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "gbFveGFRywhI"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "0Ru4c0QYvn3J"
+   },
+   "source": [
+    "### **View the final results**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "Y3SNklv9xfzI"
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "KE6-5W3-yxey"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "ZyTQ-Q1GoMm0"
+   },
+   "source": [
+    "# **Decision**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "E7SUTsMLpAZV"
+   },
+   "source": [
+    "With the research PDFs ingested and the RAG-based evaluation pipeline implemented, we are now positioned to address the objectives defined in the requirements, delivering clear insights and recommendations grounded in the RAG and evaluation metrics."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "HiijO1mNuCgf"
+   },
+   "source": [
+    "# **Business Insights and Recommendations**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "5Vp97RQ4zHCy"
+   },
+   "source": [
+    "## Business Insights"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "gHo1xh8A4KNO"
+   },
+   "source": [
+    "- Write your insights here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "At6arhLRmksI"
+   },
+   "source": [
+    "## Recommendations"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "W5fWM5ed4NXE"
+   },
+   "source": [
+    "- Write your recommendations here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "6xIksoThXLrS"
+   },
+   "source": [
+    "<font size=6>Power Ahead!</font>\n",
+    "___"
+   ]
+  }
+ ],
+ "metadata": {
+  "accelerator": "GPU",
+  "colab": {
+   "collapsed_sections": [
+    "go83F6ZLNZCB",
+    "lnwETBOE6Bz5",
+    "TtZWqj0wFTS1",
+    "g5myZ5dOOefc",
+    "t_O1PGdNO2M9",
+    "ffP1SRYbPQHN",
+    "K7TYrqycEITB",
+    "yyQrTipNfuBN",
+    "HiijO1mNuCgf"
+   ],
+   "gpuType": "T4",
+   "provenance": [],
+   "toc_visible": true
+  },
+  "kernel_info": {
+   "name": "python310-sdkv2"
+  },
+  "kernelspec": {
+   "display_name": "MLENV311",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.15"
+  },
+  "microsoft": {
+   "host": {
+    "AzureML": {
+     "notebookHasBeenCompleted": true
+    }
+   },
+   "ms_spell_check": {
+    "ms_spell_check_language": "en"
+   }
+  },
+  "nteract": {
+   "version": "nteract-front-end@1.0.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}

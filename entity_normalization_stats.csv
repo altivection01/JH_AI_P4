@@ -1,0 +1,2 @@
+threshold,n_pairs,n_clusters,n_aliases_merged,entities_before,entities_after,compression_pct,edges_after,singletons_after,singleton_reduction_pct
+0.85,9737,1186,4615,12202,7587,37.82,41367,5496,43.89

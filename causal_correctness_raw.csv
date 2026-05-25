@@ -1,0 +1,11 @@
+technique,trial,mean_causal_correctness,n_scored_queries,wall_seconds
+graph_rag,1,0.915909090909091,5,273.5
+graph_rag,2,0.9068181818181819,5,264.1
+graph_rag,3,0.915909090909091,5,259.2
+graph_rag,4,0.925909090909091,5,245.1
+graph_rag,5,0.925,5,245.8
+graph_rag_cov,1,0.9488888888888889,5,240.2
+graph_rag_cov,2,0.9309090909090909,5,262.5
+graph_rag_cov,3,0.9509090909090909,5,264.2
+graph_rag_cov,4,0.9509090909090909,5,263.8
+graph_rag_cov,5,0.928888888888889,5,243.3

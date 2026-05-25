@@ -1,0 +1,31 @@
+query_id,is_benchmark,query_preview,overlap@5,jaccard@5,overlap@10,jaccard@10,rbo_p0.9
+1,True,How is the rapid global expansion of artificial intelligence data centres impact,0.4,0.25,0.5,0.3333333333333333,0.20335799712857142
+2,True,How is the unprecedented wave of new US liquefied natural gas (LNG) export capac,0.6,0.42857142857142855,0.6,0.42857142857142855,0.36521275094714284
+3,True,How are the surge in US electricity demand and the 2025 federal emergency policy,0.4,0.25,0.5,0.3333333333333333,0.31536707705714284
+4,True,How are the increasing frequency of negative wholesale electricity prices and th,0.4,0.25,0.5,0.3333333333333333,0.22600006277142856
+5,True,"How do the tax credit modifications under the US ""One Big Beautiful Bill Act"" (O",0.4,0.25,0.3,0.17647058823529413,0.12245219827714283
+6,False,"What is the projected coal production level in China for 2025, and how does it c",0.2,0.1111111111111111,0.1,0.05263157894736842,0.23541639942571427
+7,False,How much renewable energy capacity is expected to be added in the European Union,0.0,0.0,0.1,0.05263157894736842,0.008657173890000001
+8,False,"What are the anticipated changes in global oil demand by 2025, particularly in t",0.0,0.0,0.0,0.0,0.0
+9,False,How is the growth of hydrogen production technologies expected to influence natu,0.0,0.0,0.1,0.05263157894736842,0.008657173890000001
+10,False,"What is the expected share of renewables in the global electricity mix by 2026, ",0.0,0.0,0.1,0.05263157894736842,0.022227899425714286
+11,False,How does the implementation of carbon pricing in Canada affect the competitivene,0.2,0.1111111111111111,0.1,0.05263157894736842,0.045191399425714276
+12,False,What impact will the recent US infrastructure investments have on the expansion ,0.2,0.1111111111111111,0.4,0.25,0.12995864663142856
+13,False,How does the anticipated increase in energy efficiency standards in the US affec,0.0,0.0,0.0,0.0,0.0
+14,False,What are the expected implications of the EU Green Deal on coal phase-out timeli,0.4,0.25,0.4,0.25,0.3098795691314285
+15,False,How do the projected natural gas prices in the US compare to those in Europe and,0.2,0.1111111111111111,0.2,0.1111111111111111,0.07726079885142856
+16,False,What role will battery storage technologies play in balancing the grid as renewa,0.4,0.25,0.2,0.1111111111111111,0.18060779885142855
+17,False,How does the growth of offshore wind capacity in the UK impact the overall elect,0.4,0.25,0.2,0.1111111111111111,0.15383279885142856
+18,False,What are the projected investment trends in renewable energy technologies in eme,0.0,0.0,0.1,0.05263157894736842,0.01463588514
+19,False,How does the shift towards electric vehicles in India influence the demand for c,0.0,0.0,0.2,0.1111111111111111,0.023293059030000004
+20,False,What is the expected impact of the US-China trade tensions on the supply chains ,0.2,0.1111111111111111,0.1,0.05263157894736842,0.13541639942571423
+21,False,How do the projected coal consumption levels in India for 2025 compare to those ,0.4,0.25,0.3,0.17647058823529413,0.16248997274142857
+22,False,What is the anticipated effect of the International Maritime Organization's (IMO,0.2,0.1111111111111111,0.3,0.17647058823529413,0.08591797274142855
+23,False,How does the integration of smart grid technologies in Australia affect the reli,0.0,0.0,0.0,0.0,0.0
+24,False,What are the expected changes in the global investment landscape for oil and gas,0.2,0.1111111111111111,0.1,0.05263157894736842,0.13541639942571423
+25,False,How does the rise of decentralized energy systems in Germany impact traditional ,0.0,0.0,0.1,0.05263157894736842,0.0038742048900000004
+26,False,What is the projected growth rate of solar photovoltaic installations in Latin A,0.2,0.1111111111111111,0.4,0.25,0.14950808341714283
+27,False,How do the anticipated changes in energy policies in Brazil affect the competiti,0.2,0.1111111111111111,0.2,0.1111111111111111,0.09548579885142856
+28,False,What are the implications of the recent US federal incentives for carbon capture,0.0,0.0,0.3,0.17647058823529413,0.05536245845571428
+29,False,How does the expected increase in global electricity demand by 2026 influence in,0.0,0.0,0.0,0.0,0.0
+30,False,What are the projected trends in natural gas consumption in the Middle East by 2,0.2,0.1111111111111111,0.3,0.17647058823529413,0.07594777820571427

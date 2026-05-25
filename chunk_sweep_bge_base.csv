@@ -1,0 +1,4 @@
+chunk_size,chunk_overlap,n_chunks,ingest_seconds,faithfulness,answer_relevancy,context_precision
+600,100,,30.08,0.953,0.519,0.993
+900,150,,0.06,0.979,0.697,1.0
+1200,200,,25.19,0.929,0.654,0.969

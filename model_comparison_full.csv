@@ -1,0 +1,6 @@
+model,faithfulness,answer_relevancy,context_precision,ingest_seconds,avg_query_seconds,wall_seconds
+BAAI/bge-base-en-v1.5,0.9504,0.6794,0.9853,0.22,4.48,47.8
+BAAI/bge-large-en-v1.5,0.872,0.7104,0.9867,0.07,3.61,46.9
+mixedbread-ai/mxbai-embed-large-v1,0.876,0.6992,0.9867,0.06,3.6,44.3
+nomic-ai/nomic-embed-text-v1.5,0.8908,0.6392,1.0,40.36,4.52,102.2
+intfloat/e5-mistral-7b-instruct,0.7778,0.4882,0.922,1717.69,3.87,1904.7

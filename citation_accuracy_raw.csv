@@ -1,0 +1,17 @@
+technique,trial,pass,page_offset,mean_citation_accuracy,n_scored_queries,wall_seconds
+tuned_rag,1,chunk_meta,0,0.9690476190476192,5,263.7
+tuned_rag,2,chunk_meta,0,0.9690476190476192,5,258.8
+tuned_rag,3,chunk_meta,0,0.9690476190476192,5,258.7
+graph_rag,1,chunk_meta,0,0.8380952380952381,5,256.4
+graph_rag,2,chunk_meta,0,0.8380952380952381,5,255.5
+graph_rag,3,chunk_meta,0,0.8380952380952381,5,257.6
+opus_tuned_rag,1,chunk_meta,0,0.9805555555555555,5,313.9
+opus_tuned_rag,2,chunk_meta,0,0.9805555555555555,5,317.2
+opus_tuned_rag,3,chunk_meta,0,0.9805555555555555,5,316.1
+graph_rag_cov,1,chunk_meta,0,0.8416666666666668,5,259.5
+graph_rag_cov,2,chunk_meta,0,0.8416666666666668,5,260.6
+graph_rag_cov,3,chunk_meta,0,0.8416666666666668,5,253.9
+tuned_rag,1,analyst_view,-1,0.23214285714285712,5,264.9
+graph_rag,1,analyst_view,-1,0.41238095238095235,5,276.0
+opus_tuned_rag,1,analyst_view,-1,0.21164141414141416,5,323.9
+graph_rag_cov,1,analyst_view,-1,0.43809523809523815,5,255.8

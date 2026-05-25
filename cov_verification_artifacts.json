@@ -1,0 +1,617 @@
+[
+  {
+    "query": "How is the rapid global expansion of artificial intelligence data centres impacting overall electricity demand and straining existing power grid infrastructure?",
+    "claims": [
+      {
+        "text": "The rapid global expansion of artificial intelligence (AI) data centres is significantly impacting overall electricity demand.",
+        "type": "causal",
+        "entities": [
+          "artificial intelligence (AI) data centres",
+          "global",
+          "electricity demand"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that the rapid expansion of AI data centres is a major driver of electricity demand growth globally and in key regions, with data centres (including those for AI) expected to account for about half of projected demand growth in the US and significant impacts noted worldwide."
+      },
+      {
+        "text": "Data centres are expected to account for almost half of the projected growth in electricity demand.",
+        "type": "quantitative",
+        "entities": [
+          "data centres",
+          "electricity demand",
+          "global"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Electricity2026 p.154 explicitly states that data centres\u2019 electricity consumption is expected to account for almost half of the projected growth in electricity demand."
+      },
+      {
+        "text": "In the United States, the rapid expansion of data centres is expected to make up about 50% of demand growth out to 2030.",
+        "type": "quantitative",
+        "entities": [
+          "United States",
+          "data centres",
+          "demand growth",
+          "2030"
+        ],
+        "verdict": "supported",
+        "reasoning": "Multiple evidence excerpts (Electricity2026 p.17, p.154, p.8) explicitly state that the rapid expansion of data centres is expected to make up about 50% of electricity demand growth in the United States out to 2030."
+      },
+      {
+        "text": "Global electricity demand is forecast to increase at a brisk average annual rate of 3.6% over the 2026-2030 forecast period.",
+        "type": "quantitative",
+        "entities": [
+          "global electricity demand",
+          "3.6%",
+          "2026-2030"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Electricity2026 p.7 explicitly states that global electricity demand is forecast to increase at a brisk average annual rate of 3.6% over the 2026-2030 forecast period."
+      },
+      {
+        "text": "Rising consumption from industry, electric vehicles, air conditioning, and data centres supports the forecasted increase in global electricity demand.",
+        "type": "causal",
+        "entities": [
+          "industry",
+          "electric vehicles",
+          "air conditioning",
+          "data centres",
+          "global electricity demand"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that rising consumption from industry, electric vehicles, air conditioning, and data centres is supporting the forecasted increase in global electricity demand (see Electricity2026 p.7 and p.12), directly confirming the causal relationship in the claim."
+      },
+      {
+        "text": "The UK government has introduced the AI Growth Zones regulatory package to accommodate rising grid connection requests from large \u2018AI data centres\u2019.",
+        "type": "procedural",
+        "entities": [
+          "UK government",
+          "AI Growth Zones",
+          "grid connection requests",
+          "AI data centres"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that the UK government has introduced the AI Growth Zones regulatory package to accommodate rising grid connection requests from large \u2018AI data centres\u2019, confirming the claim directly."
+      },
+      {
+        "text": "The growth in data centres is linked to the increasing demand for cloud services and artificial intelligence, which in turn drives the need for more electricity.",
+        "type": "causal",
+        "entities": [
+          "data centres",
+          "cloud services",
+          "artificial intelligence",
+          "electricity demand"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that the growth in data centres is partly explained by the increasing demand for cloud services and artificial intelligence, and that this expansion is a major contributor to rising electricity demand."
+      },
+      {
+        "text": "The expansion of data centres also affects the industrial sector, with new industries such as semiconductor production and battery manufacturing contributing to growth.",
+        "type": "causal",
+        "entities": [
+          "data centres",
+          "industrial sector",
+          "semiconductor production",
+          "battery manufacturing"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Electricity2026 p.154 and p.17 explicitly states that the expansion of data centres is a major contributor to electricity demand growth, and that new industries such as semiconductor production and battery manufacturing in the industrial sector are also significant contributors to this growth."
+      },
+      {
+        "text": "Grid connection queues and insufficient baseload capacity are becoming bottlenecks for data centre development.",
+        "type": "causal",
+        "entities": [
+          "grid connection queues",
+          "baseload capacity",
+          "data centre development"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that grid connection queues and insufficient baseload capacity are becoming bottlenecks for data centre development, with data centres seeking alternative supply options in regions where these issues are present."
+      },
+      {
+        "text": "Regulatory frameworks, such as the AI Growth Zones package in the UK, aim to manage the impact of data centre growth on the grid.",
+        "type": "procedural",
+        "entities": [
+          "regulatory frameworks",
+          "AI Growth Zones",
+          "UK",
+          "data centre growth",
+          "grid"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Electricity2026 p.61 explicitly states that the UK government's AI Growth Zones regulatory package was introduced to accommodate rising grid connection requests from large AI data centres and aims to accelerate their interconnection while managing grid access, thus directly supporting the claim that such frameworks aim to manage the impact of data centre growth on the grid."
+      },
+      {
+        "text": "The use of behind-the-meter (BTM) supply through on-site generation assets is emerging as a trend to mitigate grid connection issues.",
+        "type": "procedural",
+        "entities": [
+          "behind-the-meter (BTM) supply",
+          "on-site generation assets",
+          "grid connection issues"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Electricity 2026 p.61 explicitly states that an emerging trend in regions with grid connection or baseload capacity bottlenecks is for data centres to secure behind-the-meter (BTM) supply through on-site generation assets to mitigate these issues."
+      }
+    ],
+    "n_supported": 11,
+    "n_inferred": 0,
+    "n_unsupported": 0,
+    "wall_seconds": 41.2
+  },
+  {
+    "query": "How is the unprecedented wave of new US liquefied natural gas (LNG) export capacity expected to impact natural gas affordability and spur additional demand in price-sensitive Asian markets by 2030?",
+    "claims": [
+      {
+        "text": "The unprecedented wave of new US liquefied natural gas (LNG) export capacity is expected to enhance supply security and improve the affordability of natural gas, particularly in price-sensitive Asian markets, by 2030.",
+        "type": "causal",
+        "entities": [
+          "US",
+          "liquefied natural gas (LNG)",
+          "natural gas",
+          "Asian markets",
+          "2030"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that the unprecedented scaling up of US LNG export capacity is expected to enhance supply security and improve the affordability of natural gas, including in price-sensitive Asian markets, by 2030."
+      },
+      {
+        "text": "Around 300 billion cubic meters per year of new LNG export capacity is expected to be added worldwide by 2030, primarily supported by liquefaction capacity expansions in the United States and Qatar.",
+        "type": "quantitative",
+        "entities": [
+          "300 billion cubic meters per year",
+          "LNG export capacity",
+          "worldwide",
+          "2030",
+          "United States",
+          "Qatar"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Gas2025 p.45 explicitly states that around 300 bcm/yr of new LNG export capacity is expected to come online worldwide by 2030, primarily supported by liquefaction capacity expansions in the United States and Qatar."
+      },
+      {
+        "text": "This wave of new LNG production capacity is set to profoundly transform global gas market dynamics.",
+        "type": "causal",
+        "entities": [
+          "LNG production capacity",
+          "global gas market dynamics"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that the coming wave of new LNG production capacity is set to profoundly transform global gas market dynamics, directly supporting the claim."
+      },
+      {
+        "text": "In the high case, gross LNG imports into other Asian markets could grow by nearly 150% by 2030, compared with 2024 levels.",
+        "type": "quantitative",
+        "entities": [
+          "gross LNG imports",
+          "Asian markets",
+          "150%",
+          "2030",
+          "2024"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Gas2025 p.48 explicitly states that in the high case, gross LNG imports into other Asian markets could grow by nearly 150% by 2030 compared with 2024 levels."
+      },
+      {
+        "text": "The growth of LNG imports in Asia will hinge on important gas infrastructure and network developments, as well as continued policy support.",
+        "type": "causal",
+        "entities": [
+          "LNG imports",
+          "Asia",
+          "gas infrastructure",
+          "network developments",
+          "policy support"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that LNG import growth in South and Southeast Asia will hinge on important gas infrastructure and network developments as well as on continued policy support, directly matching the claim."
+      },
+      {
+        "text": "A highly interconnected and flexible LNG market remains a key balancing lever in the face of potential shocks, both demand- or supply-driven, regional or global.",
+        "type": "procedural",
+        "entities": [
+          "LNG market",
+          "demand shocks",
+          "supply shocks",
+          "regional",
+          "global"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Gas2025 p.48 explicitly states that 'a highly interconnected and flexible LNG market remains a key balancing lever in the face of potential shocks \u2013 both demand- or supply-driven, regional or global,' directly supporting the claim."
+      },
+      {
+        "text": "A weaker macroeconomic environment, together with a slower build-out of natural gas infrastructure and contractual rigidities, might limit the scope of the price-adjusted demand response.",
+        "type": "causal",
+        "entities": [
+          "macroeconomic environment",
+          "natural gas infrastructure",
+          "contractual rigidities",
+          "price-adjusted demand response"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Gas2025 p.5 and p.7 explicitly states that a weaker macroeconomic environment, slower build-out of natural gas infrastructure, and contractual rigidities might limit the scope of the price-adjusted demand response, directly supporting the causal claim."
+      },
+      {
+        "text": "A prolonged period of lower LNG prices could reduce the incentive for project developers to invest in LNG liquefaction projects and in upstream and midstream infrastructure, potentially leading to a tightening of global gas markets post-2030.",
+        "type": "causal",
+        "entities": [
+          "LNG prices",
+          "project developers",
+          "LNG liquefaction projects",
+          "upstream infrastructure",
+          "midstream infrastructure",
+          "global gas markets",
+          "post-2030"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Gas2025 p.5 explicitly states that a prolonged period of lower LNG prices could reduce the incentive for project developers to invest in LNG liquefaction projects and in upstream and midstream infrastructure, which in turn could lead to a potential tightening of global gas markets post-2030."
+      }
+    ],
+    "n_supported": 8,
+    "n_inferred": 0,
+    "n_unsupported": 0,
+    "wall_seconds": 58.73
+  },
+  {
+    "query": "How are the surge in US electricity demand and the 2025 federal emergency policy interventions collectively affecting the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants?",
+    "claims": [
+      {
+        "text": "The surge in US electricity demand and 2025 federal emergency policy interventions are collectively affecting the retirement schedules, capacity planning, and generation output of domestic coal-fired power plants, leading to a slower decline in coal demand.",
+        "type": "causal",
+        "entities": [
+          "US electricity demand",
+          "2025 federal emergency policy interventions",
+          "domestic coal-fired power plants",
+          "coal demand"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that in the US, higher electricity demand and federal emergency policy interventions (such as DOE emergency powers, executive actions, and support for coal plant retrofits and delayed retirements) have collectively slowed the pace of coal plant retirements, affected capacity planning, and led to a slower decline or even a rebound in coal demand and generation output."
+      },
+      {
+        "text": "US coal demand is projected to reach 410 Mt in 2025, with power generation accounting for the majority of consumption.",
+        "type": "quantitative",
+        "entities": [
+          "US coal demand",
+          "410 Mt",
+          "2025",
+          "power generation"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Coal2025 p.29 explicitly states that US coal demand is projected to reach 410 Mt in 2025, with power generation continuing to account for the majority of consumption."
+      },
+      {
+        "text": "Coal-fired generation is expected to deliver around 800 TWh, corresponding to about 17% of the electricity mix.",
+        "type": "quantitative",
+        "entities": [
+          "coal-fired generation",
+          "800 TWh",
+          "17%",
+          "electricity mix"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from [Coal2025 p.14] states that global electricity generation is expected to reach over 38,000 TWh by 2030, with coal's share falling to 27%, and [Electricity2026 p.36] confirms the 27% share for coal by 2030; 27% of 38,000 TWh is 10,260 TWh, so the claim of 800 TWh and 17% is not supported by the evidence, which points to a much higher coal generation and share, thus the claim is contradicted."
+      },
+      {
+        "text": "Planned retirements of coal power plants have slowed markedly, with latest reports totaling 6.2 GW in 2025, well below earlier projections of 15 GW.",
+        "type": "quantitative",
+        "entities": [
+          "planned retirements",
+          "coal power plants",
+          "6.2 GW",
+          "2025",
+          "15 GW"
+        ],
+        "verdict": "supported",
+        "reasoning": "Multiple evidence excerpts (Electricity2026 p.155, Coal2025 p.30) explicitly state that planned coal power plant retirements in 2025 have slowed, with the latest reports totaling 6.2 GW, well below earlier projections of 15 GW."
+      },
+      {
+        "text": "Coal capacity is forecast to decline from 172 GW as of July 2025 to a level of 153 GW in 2030.",
+        "type": "quantitative",
+        "entities": [
+          "coal capacity",
+          "172 GW",
+          "July 2025",
+          "153 GW",
+          "2030"
+        ],
+        "verdict": "unsupported",
+        "reasoning": "None of the provided evidence excerpts explicitly mention coal capacity figures (in GW) for July 2025 or 2030, nor do they forecast a decline from 172 GW to 153 GW; the evidence focuses on coal demand and consumption, not capacity."
+      },
+      {
+        "text": "The growth in renewable generation, particularly solar PV, is expected to increase at an average annual rate of 5.7% per year, supported by federal policies and state-level initiatives.",
+        "type": "quantitative",
+        "entities": [
+          "renewable generation",
+          "solar PV",
+          "5.7% per year",
+          "federal policies",
+          "state-level initiatives"
+        ],
+        "verdict": "unsupported",
+        "reasoning": "None of the evidence excerpts explicitly state or directly paraphrase that renewable generation, particularly solar PV, is expected to increase at an average annual rate of 5.7% per year; while strong growth rates and policy support are discussed, no specific average annual growth rate of 5.7% is mentioned or calculated in the provided text."
+      },
+      {
+        "text": "The expansion of natural gas and nuclear power is also expected to play a role in meeting additional global electricity demand.",
+        "type": "causal",
+        "entities": [
+          "natural gas",
+          "nuclear power",
+          "global electricity demand"
+        ],
+        "verdict": "inferred",
+        "reasoning": "The evidence shows that natural gas demand growth is primarily driven by the power sector in multiple regions and that nuclear restarts are contributing to lower gas use in power generation, but it does not explicitly state that the expansion of both natural gas and nuclear power is expected to play a role in meeting additional global electricity demand; this relationship is plausible and implied by sectoral growth data, but not directly stated."
+      },
+      {
+        "text": "The role of coal in the US power mix is evolving, with coal-fired generation expected to rebound due to policy measures and reliability concerns.",
+        "type": "causal",
+        "entities": [
+          "coal",
+          "US power mix",
+          "coal-fired generation",
+          "policy measures",
+          "reliability concerns"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that in the United States, policy measures and reliability concerns are slowing the pace of coal plant retirements and that coal-fired power generation is expected to rebound as a result."
+      },
+      {
+        "text": "Global coal demand for power generation is projected to plateau at around 5,700 Mt, with its share of the electricity mix falling from 35% in 2024 to 27% by 2030.",
+        "type": "quantitative",
+        "entities": [
+          "global coal demand",
+          "power generation",
+          "5,700 Mt",
+          "35%",
+          "2024",
+          "27%",
+          "2030"
+        ],
+        "verdict": "supported",
+        "reasoning": "Coal2025 p.14 explicitly states that global coal demand for power generation is projected to plateau at around 5,700 Mt, with its share of the electricity mix falling from 35% in 2024 to 27% by 2030."
+      }
+    ],
+    "n_supported": 6,
+    "n_inferred": 1,
+    "n_unsupported": 2,
+    "wall_seconds": 67.9
+  },
+  {
+    "query": "How are the increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) in Europe altering the revenue expectations and financial agility of developers investing in utility-scale solar PV?",
+    "claims": [
+      {
+        "text": "The increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided Contracts for Difference (CfDs) in Europe are altering the revenue expectations and financial agility of developers investing in utility-scale solar PV.",
+        "type": "causal",
+        "entities": [
+          "negative wholesale electricity prices",
+          "two-sided Contracts for Difference (CfDs)",
+          "Europe",
+          "revenue expectations",
+          "financial agility",
+          "developers",
+          "utility-scale solar PV"
+        ],
+        "verdict": "inferred",
+        "reasoning": "The evidence confirms both the increasing frequency of negative wholesale electricity prices and the regulatory shift towards two-sided CfDs in Europe, and describes how two-sided CfDs provide revenue stability for investors, but it does not explicitly state that these factors are altering the revenue expectations and financial agility of utility-scale solar PV developers; this relationship is plausible and implied, but not directly stated."
+      },
+      {
+        "text": "Around 45% of all policy-driven utility-scale solar PV and wind additions in Europe will be contracted through two-sided CfDs.",
+        "type": "quantitative",
+        "entities": [
+          "45%",
+          "policy-driven utility-scale solar PV",
+          "wind additions",
+          "Europe",
+          "two-sided CfDs"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Renewables2025 p.67 explicitly states that 'around 45% of all policy-driven utility-scale solar PV and wind additions in Europe will be contracted through two-sided CfDs,' directly matching the claim."
+      },
+      {
+        "text": "Two-sided CfDs are prevalent in utility-scale solar PV and onshore wind additions, contributing roughly 35-40%.",
+        "type": "quantitative",
+        "entities": [
+          "two-sided CfDs",
+          "utility-scale solar PV",
+          "onshore wind additions",
+          "35-40%"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Renewables2025 p.68 explicitly states that two-sided CfDs are prevalent in utility-scale solar PV and onshore wind additions, contributing roughly 35-40%, which directly supports the claim."
+      },
+      {
+        "text": "The number of negative-price hours increased 12-fold in France, doubled in Germany, and grew 9-fold in the United Kingdom.",
+        "type": "quantitative",
+        "entities": [
+          "negative-price hours",
+          "France",
+          "Germany",
+          "United Kingdom",
+          "12-fold",
+          "doubled",
+          "9-fold"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Renewables2025 p.115 explicitly states that from 2023 to 2024, the number of negative-price hours increased 12-fold in France, doubled in Germany, and grew 9-fold in the United Kingdom, directly matching the claim."
+      },
+      {
+        "text": "The growth of renewable energy sources, such as solar PV and wind, is driving the increase in negative wholesale electricity prices.",
+        "type": "causal",
+        "entities": [
+          "renewable energy sources",
+          "solar PV",
+          "wind",
+          "negative wholesale electricity prices"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that higher wind and solar PV shares correlate with a greater number of hours of negative electricity prices, and explains that this phenomenon occurs when wind and solar PV generation exceed demand, directly supporting the claim that the growth of renewables is driving the increase in negative wholesale electricity prices."
+      },
+      {
+        "text": "The use of two-sided CfDs is becoming more widespread, with 19 European countries having implemented or announced their use by 2025.",
+        "type": "quantitative",
+        "entities": [
+          "two-sided CfDs",
+          "19 European countries",
+          "2025"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that by 2025, 19 European countries had either implemented or announced the use of two-sided CfDs."
+      },
+      {
+        "text": "The increasing frequency of negative wholesale electricity prices may reduce project developer revenues, potentially discouraging future investments.",
+        "type": "causal",
+        "entities": [
+          "negative wholesale electricity prices",
+          "project developer revenues",
+          "future investments"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Renewables2025 p.139 explicitly states that negative electricity prices reduce project developer revenues and may discourage future investments, directly supporting the causal claim."
+      },
+      {
+        "text": "Two-sided CfDs can provide revenue stability for developers, mitigating the impact of negative prices.",
+        "type": "causal",
+        "entities": [
+          "two-sided CfDs",
+          "revenue stability",
+          "developers",
+          "negative prices"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that two-sided CfDs provide revenue stability for developers through an agreed strike price, which mitigates the impact of negative prices by guaranteeing a fixed revenue regardless of market fluctuations."
+      }
+    ],
+    "n_supported": 7,
+    "n_inferred": 1,
+    "n_unsupported": 0,
+    "wall_seconds": 54.98
+  },
+  {
+    "query": "How do the tax credit modifications under the US \"One Big Beautiful Bill Act\" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalisation of traditional US West Coast refineries?",
+    "claims": [
+      {
+        "text": "The US 'One Big Beautiful Bill Act' (OBBBA) modifies tax credits to favor domestic feedstocks for Sustainable Aviation Fuel (SAF), making imported feedstocks less competitive.",
+        "type": "causal",
+        "entities": [
+          "OBBBA",
+          "tax credits",
+          "domestic feedstocks",
+          "SAF",
+          "imported feedstocks"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that the OBBBA reforms 'significantly reshaped SAF credit eligibility to favour domestic feedstocks,' that 'SAFs produced from imported feedstocks no longer qualify for tax credits,' and that imported SAFs and those made from imported feedstocks 'will now receive almost 60% less total support,' making them 'largely uncompetitive,' directly supporting the claim."
+      },
+      {
+        "text": "The OBBBA eliminates tax credits for imported biofuels and biofuels made from imported feedstocks, except for those sourced from Canada and Mexico.",
+        "type": "procedural",
+        "entities": [
+          "OBBBA",
+          "tax credits",
+          "imported biofuels",
+          "imported feedstocks",
+          "Canada",
+          "Mexico"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that the OBBBA eliminates tax credits for imported biofuels and biofuels made from imported feedstocks, except for those sourced from Canada and Mexico."
+      },
+      {
+        "text": "Imported SAFs and SAFs made from imported feedstocks will receive almost 60% less total support.",
+        "type": "quantitative",
+        "entities": [
+          "imported SAFs",
+          "imported feedstocks",
+          "total support"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Renewables2025 p.160 explicitly states that imported SAFs and SAFs made from imported feedstocks will now receive almost 60% less total support than in 2025, directly supporting the claim."
+      },
+      {
+        "text": "Imported SAFs and SAFs made from imported feedstocks will be largely uncompetitive.",
+        "type": "causal",
+        "entities": [
+          "imported SAFs",
+          "imported feedstocks",
+          "competitiveness"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Renewables2025 p.160 explicitly states that imported SAFs and SAFs made from imported feedstocks will now receive almost 60% less total support than in 2025, making them largely uncompetitive under existing market conditions."
+      },
+      {
+        "text": "The 45Z tax credits were extended to 2029.",
+        "type": "quantitative",
+        "entities": [
+          "45Z tax credits",
+          "2029"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Renewables2025 p.160 explicitly states that the 45Z tax credits were extended to 2029."
+      },
+      {
+        "text": "The value of 45Z tax credits was reduced by 43% for SAFs.",
+        "type": "quantitative",
+        "entities": [
+          "45Z tax credits",
+          "SAFs",
+          "43%"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that 'the 45Z tax credits were extended to 2029, their value was reduced by 43% for SAFs,' directly supporting the claim."
+      },
+      {
+        "text": "The shift towards domestic feedstocks may impact the capacity rationalization of traditional US West Coast refineries, as they may need to adapt to changing demand patterns and feedstock availability.",
+        "type": "causal",
+        "entities": [
+          "domestic feedstocks",
+          "capacity rationalization",
+          "US West Coast refineries",
+          "demand patterns",
+          "feedstock availability"
+        ],
+        "verdict": "unsupported",
+        "reasoning": "The evidence discusses capacity rationalization, changing demand patterns, and adaptation needs for US West Coast refineries, but does not explicitly link a shift towards domestic feedstocks as a causal factor impacting capacity rationalization; the relationship is not directly stated or clearly implied."
+      },
+      {
+        "text": "The demand for biofuels, including SAF, is expected to continue growing, driven by policies such as the EU ReFuelEU Aviation mandate and the UK target of 10% SAF use by 2030.",
+        "type": "causal",
+        "entities": [
+          "biofuels",
+          "SAF",
+          "EU ReFuelEU Aviation mandate",
+          "UK target",
+          "10% SAF use",
+          "2030"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that most growth in aviation biofuel use is stimulated by the EU ReFuelEU Aviation mandate and the UK target of 10% SAF use by 2030, directly supporting the claim that these policies are driving continued growth in biofuels including SAF."
+      },
+      {
+        "text": "The UK target is 10% SAF use by 2030.",
+        "type": "quantitative",
+        "entities": [
+          "UK target",
+          "10% SAF use",
+          "2030"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence explicitly states that the United Kingdom is mandating 10% SAF (Sustainable Aviation Fuel) by 2030."
+      },
+      {
+        "text": "Despite the reduced tax credit value under the OBBBA, SAF demand in the United States is still expected to increase, supported by LCFS credits, RFS incentives, and state-level support.",
+        "type": "causal",
+        "entities": [
+          "OBBBA",
+          "tax credit value",
+          "SAF demand",
+          "United States",
+          "LCFS credits",
+          "RFS incentives",
+          "state-level support"
+        ],
+        "verdict": "supported",
+        "reasoning": "The evidence from Renewables2025 p.148 explicitly states that despite a 40% reduction in SAF tax credit value under the OBBBA, SAF demand in the United States is still expected to increase, supported by the combination of LCFS credits, RFS incentives, state-level support, and remaining tax credits."
+      }
+    ],
+    "n_supported": 9,
+    "n_inferred": 0,
+    "n_unsupported": 1,
+    "wall_seconds": 74.97
+  }
+]

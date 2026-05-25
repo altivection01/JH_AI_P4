@@ -1,0 +1,4 @@
+config,faith_mean,faith_std,ar_mean,ar_std,cp_mean,cp_std,n,composite_mean,composite_std
+hybrid_rerank_pool30,0.9381,0.0354,0.7715,0.1477,1.0,0.0,5,0.9032,0.0506
+mmr_baseline,0.9543,0.0217,0.8468,0.0044,0.9973,0.0037,5,0.9328,0.0075
+mmr_with_rerank,0.9092,0.0359,0.7809,0.0862,1.0,0.0,5,0.8967,0.0311

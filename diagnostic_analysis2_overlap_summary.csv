@@ -1,0 +1,2 @@
+n_queries,overlap@5_mean,overlap@5_std,overlap@5_min,overlap@5_max,overlap@10_mean,overlap@10_std,jaccard@10_mean,rbo_p0.9_mean,bench_overlap@10_mean,synth_overlap@10_mean
+30,0.193,0.178,0.0,0.6,0.223,0.17,0.136,0.111,0.48,0.172

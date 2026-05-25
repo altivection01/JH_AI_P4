@@ -1,0 +1,3001 @@
+<!-- image -->
+
+## Electricity 2026
+
+Analysis and forecast to 2030
+
+## INTERNATIONAL ENERGY AGENCY
+
+The IEA examines the full spectrum of energy issues including oil, gas and coal supply and demand, renewable energy technologies, electricity markets, energy efficiency, access to energy, demand side management and much more. Through its work, the IEA advocates policies that will enhance the reliability, affordability and sustainability of energy in its 32 Member countries, 13 Association countries and beyond.
+
+This publication and any map included herein are without prejudice to the status of or sovereignty over any territory, to the delimitation of international frontiers and boundaries and to the name of any territory, city or area.
+
+Source: IEA. International Energy Agency Website: www.iea.org
+
+## IEA M ember countries:
+
+Australia Austria Belgium Canada Czech Republic Denmark Estonia Finland France Germany Greece Hungary Ireland Italy Japan Korea Latvia Lithuania Luxembourg Mexico Netherlands New Zealand Norway Poland Portugal Slovak Republic Spain Sweden Switzerland Republic of Türkiye United Kingdom United States
+
+The European Commission also participates in the work of the IEA
+
+## IEA A ssociation countries:
+
+Argentina Brazil China Egypt India Indonesia Kenya Morocco Senegal Singapore South Africa Thailand Ukraine
+
+<!-- image -->
+
+## Abstract
+
+Global power demand growth continues to rise rapidly as the Age of Electricity gathers pace, supported by the increasing electrification of industry, transportation,  and  the  buildings  sectors.  Growing  consumption  is  also coming from some of the most dynamic segments of global economies, such as artificial intelligence (AI), data centres, and evolving technological innovations.
+
+Against  this  backdrop, Electricity  2026 -  the  IEA's  annual  report  on  global electricity systems and markets - provides in-depth analysis of the recent trends and  policy  developments  underpinning  this  new  era.  It  includes  forecasts  for electricity  demand,  supply  and  carbon  dioxide  (CO2)  emissions  for  select countries,  by  region  and  worldwide.  This  year  the  forecast  period  has  been expanded  to  five  years,  2026-2030,  compared  with  the  previous  three-year outlook.
+
+As electricity use grows, power systems will need greater flexibility to securely and cost-effectively  integrate  an  increasingly  diverse  mix  of  electricity  generation sources while accommodating evolving demand patterns and technologies. This year's report has a special focus on these challenges with chapters on grids and flexibility. It also includes detailed updates on demand response and utility-scale battery developments.
+
+## Acknowledgements, contributors and credits
+
+This study was prepared by the Electricity Systems and Markets (ESM) Division of  the  International  Energy  Agency's  (IEA)  Directorate  of  Energy  Markets  and Security  (EMS).  The  study  was  designed  and  directed  by  Eren  Çam,  Energy Analyst for Electricity, who also co-ordinated the production of the report.
+
+The lead authors of the report were Eren Çam, Marc Casanovas, John Moloney, and  Matthew  Davis.  Other  IEA  colleagues  provided  important  contributions, including Javier Jorquera Copier, Chaerin Kim and Jacques Warichet.
+
+The  work  greatly  benefitted  from  strategic  guidance  from  Keisuke  Sadamori, Director  of  EMS  and  Maria  Sicilia,  Head  of  ESM.  Valuable  comments  and guidance were provided by other senior management within the IEA, in particular, Laura Cozzi and Tim Gould. In addition, expert guidance and valuable input from Carlos  Fernández  Álvarez,  Senior  Energy  Analyst,  is  greatly  appreciated.  The work benefitted from the guidance and input from Dennis Hesseling, Head of Gas and Coal Markets Division.
+
+The report also benefited from analysis and data from Nadim Abillama, Jenny Birkeland, Esra Bozk ı r Broekman, Gyuri Cho, Johanna Dahl, Celeste Del Vecchio, Carole  Etienne,  Adrian  Gao,  Grace  Henry,  Lydia  Jayakumar,  Javier  Jorquera, Natalie Kauf, Yu Kawasaki, Jinil Kim, Ja Hyun Kim, Claire Lesieur, Augustin Lorne, Akos  Losz,  Rita  Madeira,  Edward  McDonald,  Gergely  Molnar,  Pedro  Nino  de Carvalho,  Ranya  Oualid,  Camille  Paillard,  Isaac  Portugal,  Frederick  Ritter, Stephan  Terhorst,  Ottavia  Valentini,  Matthew  Van d er  Beeuren,  Peerapat Vithayasrichareon, and Hasti Wiandita.
+
+IEA  colleagues  across  the  agency  provided  valuable  input,  comments  and feedback, in particular, Heymi Bahar, Stéphanie Bouckaert, Federico Callioni, Dan Dorner, Michael Drtil, Araceli Fernandez Pales, Paolo Frankl, Pablo Hevia-Koch, Martin  Küppers,  Rebecca  McKimm,  Tetsuya  Mizuno,  Apostolos  Petropoulos, Zubin  Postwalla,  Brendan  Reidenbach,  Max  Schönfisch,  Anthony  Vautrin  and Brent Wanner.
+
+The  authors  would  also  like  to  thank  Diane  Munro  for  skilfully  editing  the manuscript and the IEA Communication and Digital Office, in particular, Jethro Mullen, Oliver Joy, Isabelle Nonain-Semelin and Astrid Dumond. We also thank Einar Einarsson for his assistance in setting up the peer review.
+
+Many  experts  from  outside  of  the  IEA  reviewed  the  report  and  provided valuable  comments. They include: Michel Augonnet (CIGRE), Harmeet Bawa (Hitachi Energy), Edith Bayer (Oregon Department  of  Energy), Soukaina Boudoudouh (IRESEN), Salma Boumhaouad (IRESEN),  Marco Baroni  (Baroni  Energy  Consulting),  Jesse  Burton  (E3G/ESRG,  UCT),  Samir Chandra  Saxena  (POSOCO),  Peter  Claes  (Febeliec),  Bram  Claeys  (RAP), Norberto Cuenca (Enel Green Power), Ganesh Doluweera (CER), Fernando Dominguez (EU DSO Entity), Keith Everhart (Secretariat Economists), Peter  Fraser  (PeterLFConsulting),  Kerry  Galloway  (AEMO),  Paul Giesbertz  (EP  NL),  Michael  Grubb  (UCL),  Xue  Han  (IREP),  Donghoon  Kim (SKI),  Francisco  Laverón  (Iberdrola),  Xiaomeng  Lei  (CEC),  Rannveig  Loken (CIGRE), Christoph Maurer (Consentec), Tatiana Mitrova (Columbia University),  Noor  Miza  Razali  (Tenaga  Nasional  Berhad),  Victoria  Mollard (AEMC), Emmanuel Neau (EDF), Mika Ohbayashi (Renewable Energy Institute),  Jonatan  Olsen  (Danish  Energy  Agency),  Lars  Stephan  (Fluence), Eli Pack (AEMO), Yannick Phulpin (EDF), Marcio  Szechtman  (CIGRE), Andreas  Ulbig  (RWTH  Aachen  University),  Arjon  Valencia  (IEMOP),  Matthew Wittenstein  (ESCAP),  Jingjie  Zhang  (CEC)  and Romain Zissler (Renewable Energy Institute).
+
+## Table of contents
+
+| Executive Summary................................................................................................................. 8                                             |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Demand.................................................................................................................................... 13                                    |
+| The Age of Electricity has arrived, underpinned by strong demand growth ........... 13                                                                                           |
+| Demand in advanced economies rebounds after a long period of stagnation ................. 13                                                                                     |
+| Electricity consumption set to rise strongly across all sectors.......................................... 15                                                                     |
+| Electricity demand breaks with history, outpacing global GDP growth............................. 16                                                                              |
+| US and EU electricity demand forecast to post robust growth ......................................... 18                                                                         |
+| Per capita electricity consumption will reach new record highs........................................ 19                                                                        |
+| China's electricity demand on a solid growth path............................................................ 21                                                                 |
+| Peak load and demand rise across India.......................................................................... 27                                                              |
+| Supply...................................................................................................................................... 36                                  |
+| Renewables and nuclear keep growing and setting records..................................... 36                                                                                  |
+| Share of renewables and nuclear in global generation to reach 50% by 2030................ 36                                                                                     |
+| Growth in renewables, natural gas and nuclear to meet additional demand.................... 37                                                                                   |
+| Uncharacteristic trends in coal-fired generation during 2025 ........................................... 39                                                                      |
+| Strong solar PV growth remains a common trend across the regions ............................. 41                                                                                |
+| Grids ........................................................................................................................................ 46                                |
+| Grids are emerging as a bottleneck for connecting supply, demand and storage . 46                                                                                                |
+| Grid technologies and regulatory reforms unlock grid capacity.... .............. ...................... 46                                                                       |
+| Record-high connection queues and rising curtailment as grids become congested...... 49                                                                                          |
+| More efficient use of grids via targeted regulatory and policy frameworks....................... 51                                                                              |
+| Grid-enhancing technology unlocks capacity.................................................................... 64                                                                |
+| Synchronisation of Baltic electricity system marked a major milestone ........................... 69                                                                             |
+| Flexibility ................................................................................................................................. 72                                 |
+| Evolving generation and demand patterns reshape power system needs .............. 72                                                                                             |
+| Demand response offers breakthrough benefits, yet potential is untapped..................... 72                                                                                  |
+| Solar PV capture rates decline, but storage can boost system value .............................. 81                                                                             |
+| Utility-scale batteries are strengthening system flexibility................................................. 84                                                                 |
+| Managing high solar and wind output during low demand................................................ 97                                                                         |
+| Emissions.............................................................................................................................. 105                                      |
+| Electricity sector emissions are increasingly decoupling from demand growth .. 105 CO 2 emissions from electricity generation are forecast to plateau through 2030.......... 105 |
+| Global CO 2 intensity decline accelerates as low-carbon energy expands ..................... 106                                                                                 |
+
+| Prices.....................................................................................................................................   | 109                 |
+|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
+| Affordability and competitiveness take centre stage................................................                                           | 109                 |
+| Wholesale electricity prices continue to differ across regions.. . ......................................109                                  |                     |
+| Negative wholesale pricing trends diverged across markets in 2025.............................                                                | 112                 |
+| Price gaps for energy-intensive industries persist ..........................................................                                 | 113                 |
+| Residential electricity prices remain elevated.................................................................                               | 117                 |
+| Reliability...............................................................................................................................    | 123                 |
+| Largescale outages amid system instability and weather impacts.........................                                                       | 123                 |
+| Voltage management increasingly important for power system stability........................                                                  | 123                 |
+| Major power supply disruptions triggered by equipment failures....................................                                            | 124                 |
+| Extreme weather events continued to cause major power outages...............................                                                  | 125                 |
+| Regional Focus.....................................................................................................................           | 128                 |
+| Asia Pacific........................................................................................................................          | 129                 |
+| Electricity demand to increase strongly after mild weather tempered growth ................                                                   | 129                 |
+| Americas............................................................................................................................          | 153                 |
+| Solar PV and natural gas-fired generation see strong growth through 2030 .................                                                    | 153                 |
+| Europe................................................................................................................................        | 168                 |
+| Power demand is increasingly met by renewables while coal use falls rapidly..............                                                     | 168                 |
+| Eurasia ...............................................................................................................................       | 192                 |
+| Russian electricity demand contracted, while regional growth stable in 2025                                                                   | ............... 192 |
+| Middle East ........................................................................................................................          | 195                 |
+| Gas-fired generation rises rapidly while renewables post sharp gains...........................                                               | 195                 |
+| Africa ..................................................................................................................................     | 204                 |
+| Growth supported by targeted efforts to expand electricity access................................                                             | 204                 |
+| Annexes.................................................................................................................................      | 216                 |
+| Summary tables...............................................................................................................                 | 216                 |
+| Regional and country groupings .....................................................................................                          | 221                 |
+| Abbreviations and acronyms...........................................................................................                         | 223                 |
+| Units of measure .............................................................................................................                | 223                 |
+
+## Executive Summary
+
+## Electricity demand is set to grow strongly through 2030 as the Age of Electricity takes hold
+
+Global electricity demand is forecast to increase at a brisk average annual rate  of  3.6%  over  the  2026-2030  forecast  period,  supported  by  rising consumption  from  industry,  electric  vehicles,  air  conditioning  and  data centres. Worldwide electricity demand grew by 3% year-on-year in 2025. This followed growth of 4.4% in 2024, when intense heat waves and strong industrial activity in many regions boosted electricity use. Looking ahead, annual demand growth over the next five years is set to be 50% higher on average compared with the average across the previous decade.
+
+For  the  first  time  in  three  decades,  excluding  periods  of  crisis -related disruption, global electricity demand outpaced economic growth in 2024 in what is set to become a broader trend in the coming years. Despite a slight reversal  in  2025  due  to  weather  conditions  that  affected  electricity  demand,  a fundamental shift in the longstanding relationship between electricity demand and economic activity is set to be a defining feature of the forecast period. Through 2030, electricity  consumption is projected to grow at least 2.5 times as fast as overall energy demand.
+
+Emerging  economies  continue  to  be  the  main  pillar  of  demand  growth, accounting  for  nearly  80%  of  additional  electricity  consumption  through 2030. While India and Southeast Asia are increasingly set to drive rising energy demand over the coming decade, China is forecast to remain the single largest contributor to global electricity demand growth through 2030, accounting for close to 50% of the increase. Over the next five years, China alone is expected to add demand equivalent to the total electricity consumption of the European Union (EU) today, with average growth of 4.9% annually. This is close to its 2025 pace of 5% but slower than its 6.5% average over the past decade. India and Southeast Asia's share of electricity demand growth among emerging economies is forecast to rise substantially by 2030, driven by robust economic growth and rapidly rising demand for air conditioning, which is set to boost both annual consumption and peak loads.
+
+Electricity  demand  growth  in  advanced  economies  is  accelerating  again after  15 years  of  stagnation. This  resurgence  signals  a  new  era  in  which electricity is a major energy input to some of the most dynamic drivers of global economies,  such  as  artificial  intelligence  (AI),  data  centres  and  advanced manufacturing. In 2025, advanced economies accounted for almost 20% of global electricity demand growth, up from 17% in 2024. We expect this share to remain near  the  20%  level  on  average  over  the  forecast  period,  driven  by  expanding industrial activity and the continued growth of data centres, electric vehicles and other end -uses of electricity. In the United States, electricity demand rose by 2.1% in 2025 and is projected to grow by nearly 2% annually through 2030, with around half of the total increase driven by the rapid expansion of data centres. After rising by less than 1% in 2025, electricity demand in the European Union is expected to grow  more  strongly. Assuming  a  moderate  rebound  in  industrial activity, EU demand  is  forecast  to  increase  by  around  2%  per  year  through  2030  although consumption is not expected to return to 2021 levels before 2028. Many other advanced economies - such as Australia, Canada, Japan and Korea - are also expected to see faster electricity demand growth through 2030.
+
+## Half of the world's electricity is forecast to come from renewables and nuclear by 2030
+
+Total generation from renewables is overtaking coal, in line with previous IEA forecasts. With solar PV generating record amounts of electricity, renewable output rose rapidly in 2025, virtually matching the level of coal -fired generation based on the latest available data. This was despite weaker hydropower output in some regions and lower -than -average wind speeds, particularly in Europe, which tempered overall growth in renewable generation. Renewable output is forecast to grow by about 1 000 terawatt-hours (TWh) annually through 2030, with solar PV alone accounting for over 600 TWh. In percentage terms, renewable generation is forecast to rise at an annual rate of 8% per year. Renewables and nuclear are together expected to account for around half of global electricity generation by 2030.
+
+Nuclear generation set a new record in 2025 and is set to continue rising steadily through 2030. Nuclear power output in 2025 was supported by reactor restarts  in  Japan,  higher  generation  in  France,  and  new  capacity  additions  in China, India and other countries. While most of the growth in nuclear generation through  2030  is  expected  to  occur  in  emerging  economies,  with  China  alone accounting for around 40% of the global increase, nuclear energy is also regaining strategic importance in many advanced economies, underpinned by supportive policy frameworks to extend the lifetime of reactors and add new capacity.
+
+## Although coal generation is set to lose ground globally, it remains the single largest source of electricity in 2030
+
+Globally, coal -fired generation remained broadly flat in 2025, but regional trends diverged in ways not seen in previous years. Coal use declined in India and China due to slower electricity demand growth and the rapid expansion of renewables, and it increased in the United States as higher natural gas prices compared with 2024 and a slowdown in the retirement of coal plants, supported by federal policy, prompted higher coal use in the power sector. In the European Union, record solar generation was partially offset by weak hydropower and wind output, limiting the overall decline in coal use.
+
+Over the 2026-2030 period, renewables, natural gas and nuclear together are expected  to  meet  all  additional  global  electricity  demand  in  aggregate. Complementing renewable and nuclear output, gas -fired generation is set to grow by an average of 2.6% per year through 2030 - similar to its growth rate in 2019 and significantly faster than the annual average of about 1.4% seen over the past five years. This growth is driven primarily by rising US electricity demand and fuel switching from oil to gas in the Middle East. Renewables, gas and nuclear together are expected to displace generation from coal, which is forecast to decline slightly and return to near its 2021 level by 2030. With coal -fired output in China expected to  decline  slightly,  increases  in  India,  Southeast  Asia  and  other  regions  are forecast to be more than offset by declines in Europe and the Americas. Taken together, renewables are set to contribute the highest share of global electricity generation  by  2030,  though  coal  will  remain  the  single  largest  fuel  source  for power generation.
+
+## Rapidly evolving power systems are bringing grids and flexibility to the forefront of policymaking
+
+The Age of Electricity requires a fast and efficient expansion of grids and system flexibility to securely and cost -effectively integrate a changing mix of generation, demand and storage .  Variable output from solar PV and wind continues to expand quickly, with their share of global generation set to rise from 17% today to 27% by 2030. Meanwhile, newer sources of demand - such as electric vehicles, heat pumps and highly concentrated loads, such as data centres - are expected to grow rapidly. At the same time, more than 2 500 gigawatts (GW) worth of projects - encompassing renewables, storage, and projects with large loads, such as data centres -remain stalled in grid connection queues worldwide. Since grid investment has lagged well behind investment in generation capacity, many power systems are already experiencing rising congestion -related curtailment. Meeting forecasted electricity demand through 2030 would require annual  grid  investment  to  increase  by  roughly  50%  by  2030  from  today's USD 400 billion, alongside a significant scaling up of grid-related supply chains. At  the  same  time,  grids  built  for  peak  capacity  often  have  substantial  unused capacity during off -peak periods. As grids and flexibility rise up the policy agenda, making more efficient use of existing systems can help relieve congestion and accelerate integration while grid expansion efforts continue.
+
+Complementary  measures,  such  as  grid -enhancing  technologies  and regulatory reforms, can also unlock significant near -term capacity while grid expansions advance. IEA analysis for this report shows that these measures together could free up enough capacity to connect around 1 200 GW to 1 600 GW of advanced -stage projects currently stuck in queues worldwide. About 750 GW to 900 GW of projects could be enabled via more flexible, non-firm grid connection agreements.  These  agreements  typically  allow  faster  grid  access,  with  some limitations,  and  can  create  extra  hosting  capacity  before  grid  upgrades  are completed.  Another  450 GW  to  700 GW  could  be  unlocked  by  deploying grid -enhancing technologies such as dynamic line rating and advanced power -flow control,  as  well  as  larger  upgrades  like  reconductoring  and  voltage uprating. Realising this potential would require updates to regulatory frameworks and the timely deployment of technical solutions.
+
+Utility-scale battery deployment is accelerating rapidly, becoming  a significant  source  of  short-term  flexibility. While  conventional  power  plants remain  the  primary  source  of  power  system  flexibility,  the  growing  fleet  of large -scale batteries is playing a rising role in supporting security of supply. The strong growth is especially notable in regions with rapidly rising shares of solar PV and wind in electricity generation. Markets such as California, Germany, South Australia,  Texas  and  the  United  Kingdom  have  all  seen  strong  growth  in utility -scale  battery  capacity  in  recent  years.  Battery  costs  continue  to  fall, enhancing  their  competitiveness,  but  efforts  to  reduce  market  barriers  and address integration challenges can help unlock their full potential.
+
+## Global emissions from electricity generation are forecast to plateau through 2030
+
+Global power sector emissions remained flat in 2025 and are forecast to plateau over the 2026-2030 period as renewables and nuclear account for a growing share of generation. Electricity generation remains the largest source of  energy -related  emissions,  producing  around 13 900 million tonnes  of carbon dioxide (CO2) annually. After increasing by an average of 1.4% per year between 2022  and  2024,  CO2  emissions  from  electricity  generation  stabilised  in  2025. Compared with a decade earlier, the global CO2 intensity of electricity was down by  14%,  and  it  is  set  to  decline  more  rapidly  through  2030  as  the  share  of low -emissions generation continues to rise.
+
+## Affordability and competitiveness take centre stage
+
+Affordability  remains  a  key  concern,  with  household  electricity  prices  in many countries rising  faster  than  incomes  since  2019. While  energy -and supply -related components of electricity prices have eased from their crisis peaks, they remain well above 2019 levels. Non -energy components - such as network charges,  taxes  and  other  levies  -  continue  to  account  for  a  large,  and  often growing, share of household bills. In addition, electricity is also taxed more heavily than  natural  gas  in  many  countries,  weakening  incentives  for  households  to electrify  heating,  cooking  or  hot  water  use.  As  a  result,  policymakers  are increasingly  focusing  on  policy  frameworks,  market  designs  and  regulation  to improve  affordability and  encourage  electrification.  Ensuring  prices  remain affordable  while  still  reflecting  costs  and  incentivising  demand -side  flexibility  is emerging  as  a  central  challenge.  More  flexible  and  efficient  use  of  existing infrastructure can help contain future system costs and deliver greater savings for consumers.
+
+## Electricity price gaps across regions persist, adding competitive pressures.
+
+Average wholesale electricity prices in 2025 rose year-on-year in several regions and countries, including in the European Union and the United States, reflecting higher  natural  gas  prices.  Meanwhile,  prices  fell  in  other  countries,  such  as Australia and India. Competitive pressures are most acute for energy -intensive industries, with significant differences continuing to be observed across regions.
+
+## Safeguarding the security and resilience of power systems is a critical priority
+
+Recent large -scale power outages worldwide underscore the importance of electricity security for modern economies and societies. Power systems face rising risks from ageing infrastructure, extreme weather events, cyberthreats and other  emerging  vulnerabilities.  Blackouts  in  Chile,  the  Iberian  Peninsula  and Mexico in 2025 had widespread impacts. Recent incidents, such as the EstLink-2 cable outage between Finland and Estonia, the Heathrow substation fire and the Berlin  arson  attack,  exposed  critical  vulnerabilities.  Strengthening  the  physical protection  of  critical  infrastructure  and  deploying  advanced  monitoring  and early -detection systems will be essential to guard against threats. As electrification increases,  ensuring  reliable  supply  depends  on  strong  grids,  resilient  supply chains  and  diverse  flexibility  resources.  Meeting  evolving  system  needs  also requires  modernised  operational  frameworks,  including  updated  grid  codes, refined reserve requirements and adaptive regulatory structures.
+
+## Demand
+
+## The Age of Electricity has arrived, underpinned by strong demand growth
+
+As the Age of Electricity moves apace, demand is on a solid upward trajectory in our five-year forecast period from 2026 to 2030. Amid robust growth, the next five years will add on average 50% more electricity demand per year than the annual average  additions  over  the  past  decade.  The  brisk  pace  will  be  supported  by growing  industries,  electric  vehicles,  space  cooling,  and  data  centres,  among many other end uses. Electricity consumption is now projected to grow at least 2.5 times faster than overall energy demand, hastening the world's transition to an electricity-based economy. In tandem, the relationship between electricity demand and economic growth is undergoing a paradigm shift. Traditionally, electricity use has  closely  tracked  economic  expansion,  excluding  periods  of  global  financial crises. However, in a marked departure from the past, electricity demand is now expected to outpace economic growth on a global scale through 2030.
+
+While emerging economies continue to be the main pillars of growth in electricity use, demand in advanced economies is now rising again after a 15-year period of stagnation. The resurgence signals a new era in which electricity is a major energy input to some of the most dynamic drivers of global economies, such as artificial intelligence (AI), data centres, technological innovations, and the 'electrification of everything'. As a result, both total and per capita electricity consumption will reach new record highs in many regions of the world through 2030.
+
+This  chapter  presents  our  global  electricity  demand  forecast  and  a  detailed overview of emerging trends in major economies, which highlight the urgent need for  greater  power  system  flexibility  (see  separate  chapters  on  'Grids'  and 'Flexibility').  In  addition,  individual  regions  and  countries  are  covered  more  indepth in the Regional Focus chapter of our report.
+
+## Demand in advanced economies is rising after a long period of stagnation
+
+Electricity demand in advanced economies is on an upward trajectory again after a  15-year  period  of  stagnation.  Flat  or  declining  demand  in  many  advanced economies  reflected efficiency  improvements  across  end-use  sectors  and industrial  restructuring.  Advanced  economies  saw  overall  electricity  demand relatively static in 2015-2020 and their share of global growth rising only to 10%
+
+in  2020-2025.  The  shift  to  growth  became  apparent  in  2025,  when  advanced economies accounted for almost 20% of additional global demand, up from 17% in 2024. We expect this share to remain close to 20% through 2030, as electricity demand continues to grow due to a combination of increasing consumption from data  centres,  electric  vehicles,  air  conditioners  and  heat  pumps,  among  many other sectors.
+
+<!-- image -->
+
+Over the 2026-2030 outlook period, we expect electricity demand growth to gather pace across the advanced economies. Electricity consumption in the United States is set to rise by close to 2% on average per year - more than twice the rate of the past decade - with data centre expansions continuing to be a major driver. The European Union is forecast to see its electricity demand grow at an average annual rate of 2.3% out to 2030. However, we do not expect EU electricity demand to rise back to its 2021 level before 2028.
+
+India  and  Southeast  Asia  are  emerging  as  major  engines  of  overall  energy demand. However, in the electricity sector to 2030, the People's Republic of China (hereafter, 'China') remains the dominant source of growth, accounting for nearly 50% of the global increase due to its much larger market size. Over the next five years, China alone is set to add electricity demand equivalent to the European Union's current consumption. Electricity demand growth in China is expected to moderate to an average of 4.9% annually over the 2026-2030 forecast period, down from the 6.5% average recorded over the previous decade. By contrast, India is expected to post an increase of 6.4% and Southeast Asia at 5.3%, an acceleration from the slower rates in 2025, based on expectations of continued robust economic growth and rising electrification.
+
+<!-- image -->
+
+Notes: Data for 2026-2030 are forecast values. The plots start from 2019, whereas the x-axis labels are shown only for the even years due to limited space.
+
+## Electricity consumption set to rise strongly across all sectors
+
+Global electricity demand increased year-on-year by 3% in 2025, following 4.4% in 2024. While intense heatwaves across many regions bolstered power use in 2024, comparably milder weather and weaker industrial and manufacturing activity in some regions tempered the overall pace in 2025. However, we expect demand growth to pick up in 2026-2030, to an average 3.6% over the next five years - a significant acceleration compared to the 2.8% annual rate of the past decade. This corresponds to adding on average approximately 1 100 TWh each year through 2030 globally - versus an average 700 TWh per year from 2015 to 2025. Global electricity  consumption will reach 33 600 TWh in 2030, up from 28 200 TWh in 2025.
+
+Many  major  electricity  consuming  countries  and  regions  saw  weaker  demand growth in 2025 versus the year earlier, largely due to a slowdown in industry and manufacturing  amid  uncertain  trade  policies,  combined  with  milder  weather patterns  compared  to  2024.  China  and  India  experienced  moderate  growth  of 5.1% and 1.4%, respectively. Southeast Asia also saw lower growth of around 3% y-o-y, down from a much higher 8.6% in 2024. Electricity demand growth in the United States eased marginally to 2.1% in 2025, from 2.8% the previous year. In the European Union, demand rose at the more modest pace of 0.9%, following a moderate recovery of 1.6% in 2024.
+
+In 2025, approximately 58% of the increase in global electricity demand came from China,  compared  to  52%  in  2024.  Overall,  emerging  markets  and  developing economies (EMDEs), including China, accounted for about 80% of global growth in 2025, and are expected to maintain that share over the next five years. This compares  with  an  average  95%  in  the  past  decade,  reflecting  an  increasing contribution from advanced economies.
+
+Over the forecast period, electricity demand is projected to post strong growth across all major consuming segments. The buildings sector - including residential and commercial - is expected to see the largest absolute growth, and contribute 49% to additional global demand between 2025 and 2030. Higher electricity use from space cooling, data centres and heat pumps make up almost half of the growth  in  the  buildings  sector  worldwide  out  to  2030.  Industrial  electricity consumption  is  also  expected  to  accelerate  compared  to  the  past  decade,  in particular from light industries. At the same time, fuelled by the rapid uptake of electric vehicles, transportation's share of demand growth is forecast to rise to more than 10%, double from the past five years. As the world's transition to an electricity-based  economy  is  hastened,  the  share  of  electricity  in  total  final consumption is set to increase from 21% in 2025 to 24% in 2030.
+
+## Global electricity demand growth by sector and end-use, 2015-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+## Electricity demand breaks with three -decade history, outpacing global economic growth
+
+A trend shift in the link between electricity demand and economic growth is taking place on a global scale, amid strong demand increases from electricity-intensive industries, air conditioning (AC), data centres and continued electrification of enduse sectors. Over the past three decades, global electricity consumption has only grown significantly faster than the world economy during periods associated with economic shocks, such as the aftermath of the 2000-2001 recession, the 2008-
+
+2009 financial crisis or during 2020 amid the pandemic. However, 2024 marked the first normal year when electricity demand grew much more rapidly than the economy. Although this trend saw a slight reversal in 2025 amid weather impacts, electricity  demand  growth  is  projected  to  eclipse  the  pace  of  GDP  expansion throughout our forecast period.
+
+## Global electricity demand and GDP trends, 1995-2030
+
+<!-- image -->
+
+Note: Data for 2026-2030 are forecast values. GDP is based on the IMF World Economic Outlook.
+
+The shifting trend in electricity demand growth compared to the pace of economic growth  can  already  be  observed  in  a  number  of  regions.  China's  electricity consumption  has  been  growing  faster  than  its  economy  since  2020.  While electricity demand gains have traditionally been significantly lower than economic growth rates in the United States and the European Union, this is changing as the gap between electricity consumption and GDP begins to close.
+
+## Year-on-year percent change in electricity demand and GDP in selected regions, 2002-2030
+
+2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Data for 2026-2030 are forecast values. 3YMA = three-year moving average. GDP is based on the IMF World Economic Outlook.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+## US and EU electricity demand forecast to post robust growth over 2026-2030
+
+Electricity demand rose in both the United States and the European Union in 2024 and 2025, with  continued  strong  growth  forecast  for  2026-2030.  However,  the sectoral composition of this growth and its underlying drivers differ between the two economies.
+
+Electricity demand in the United States increased by 2.1% in 2025, following 2.8% growth in 2024, when hotter summer temperatures boosted consumption. In both years, the buildings sector - residential and commercial combined - accounted for  over  70%  of  the  country's  demand  growth.  In  2025,  in  addition  to  strong economic activity and expanding data -centre loads, higher space -heating needs due to colder winter temperatures, with about 10% higher heating degree days (HDDs), also supported demand.
+
+US electricity use is set to add more than 420 TWh in total over the next five years. The rapid expansion of data centres is expected to make up about 50% of demand growth out to 2030. The buildings sector excluding data centres will also remain a significant  contributor  to  growth,  largely  due  to  rising  consumption  from  space cooling  and  heat  pumps.  Growth  from  the  industrial  sector  is  expected  to  be another major driver, supported by reshoring and other new large loads such as semiconductor  and  battery  manufacturing  plants.  The  transport  sector  is  also expected to contribute to demand growth with rising numbers of EVs.
+
+## Electricity demand growth by sector and end-use in the United States, 2015-2030
+
+<!-- image -->
+
+The European  Union 's  electricity  consumption  rose  by  an  estimated  0.9%  in 2025, following a 1.6% increase in 2024. Higher space -heating needs, due to a spike in colder winter temperatures in Q1 2025, combined with a sharp rise in AC use  in  the  commercial  and  residential  sectors,  in  the  wake  of  record-breaking summer  heatwaves,  significantly  boosted  the  region's  electricity  demand.  The continued uptake of EVs and heat pumps were also key drivers of growth in 2025. A detailed analysis of the EU demand trends in 2025 can be found in the regional focus section of our report.
+
+EU electricity demand is forecast to increase by about 300 TWh, over the next five years. This comes after two years of declines in 2022-2023 and modest recovery since then. Electricity consumption in the EU industrial sector fell by about 6% in both 2022 and 2023, driven by the production declines in the energy-intensive industries amid the energy crisis. Although the industrial sector's demand decline reversed in 2024, with a modest close to 2% increase, a meaningful recovery has yet to emerge, as we estimate demand remained broadly flat in 2025.
+
+Assuming EU industrial demand recovers at a moderate pace over our outlook period,  around  50 TWh  of  growth  is  forecast  by  2030.  The  buildings  sector  is expected to be the main contributor to demand growth. While rising power use from data centres will provide a sizeable share, demand from cooling and heat pumps, as well as continued growth in the commercial sector, will account for most of the increase in the buildings sector. Transport follows closely behind, with EV adoption accelerating, adding more than 100 TWh to demand through 2030.
+
+## Electricity demand growth by sector and end-use in the European Union, 2015-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+## Per capita electricity consumption will reach new record highs in many regions
+
+In line with rising demand, electricity consumption per capita is set to reach new highs in many regions. After growing until around 2009, electricity use per capita has been declining in many advanced economies since then, including the United States, the European Union and Japan. As demand growth accelerates over the coming years, we expect a reversal of this trend.
+
+US electricity consumption per capita will reach a new high by 2030, surpassing its previous 2005 peak of 13 700 kWh/capita. Similarly, EU electricity consumption per capita is expected to exceed its previous high of 6 410 kWh/capita observed in  2008.  Japan  and  Korea  are  also  expected  to  see  gradual  per  capita  gains. Electricity consumption per capita in China eclipsed that in the European Union in 2022 and is forecast to continue rising steadily in 2026-2030. However, per capita electricity use of households in China is still below the average for EU households. Middle East per capita consumption has been steadily expanding over the past decades, as the region's economy grows and use of AC increases. While per capita consumption was below the global average roughly three decades ago, it is now almost as high as that of the European Union and will continue to increase further over our forecast period.
+
+<!-- image -->
+
+Electricity consumption per capita in Southeast Asia and India have been rising strongly over the past decade, with both regions doubling the rate since 2009.
+
+However, Africa's progress is hindered by the slow growth of its access to energy supply. Over the past 30 years, electricity use per capita in sub -Saharan Africa has remained relatively flat, despite recent progress. Today, around 600 million people in the region still lack access to reliable electricity, significantly constraining economic development. Although reliable electricity is not the sole determinant of economic prosperity, its scarcity continues to impede progress across much of the region.
+
+## China's electricity demand is on a solid growth path through 2030
+
+China's net electricity demand surpassed 9 500 TWh in 2025, up by 5.1% y-o-y. This is a slowdown compared to the previous two years, when demand grew by 6.6% in 2023 and 7.0% in 2024. While demand growth in buildings and transport remained strong, led mainly by increased AC use during summer heatwaves, and a  growing  fleet  of  EVs,  global  economic  uncertainty,  trade  restrictions  and  a structural  slowdown  in  domestic  demand  resulted  in  limited  gains  in  China's industrial sector in 2025. Despite this, industry remains the major driver of growth in the country, which accounted for half of the total gains in electricity demand in the past five years.
+
+We  expect  these  trends  to  continue  over  the  next  five  years,  with  electricity demand set to rise by an annual average 4.9%. While a slowdown compared to the 6.5% average observed over the 10-year 2016-2025 period in relative terms, in  absolute  terms,  average  annual  demand  growth  rises  from  450 TWh  to 520 TWh. Out to 2030, China is expected to add about 2 600 TWh to electricity consumption, roughly equivalent to the current demand of the European Union.
+
+## Industry leads China's demand growth, followed by the buildings and transport sectors
+
+After rising at a moderate 3.7% y-o-y in H1 2025, electricity demand growth in China recovered in H2 2025 amid warmer summer and autumn temperatures, and a mild recovery in industrial growth. Nationwide, monthly consumption surpassed 1 000  TWh for  the  first  time  in  July  and  then  again  in  August.  Demand  in  the industrial sector, responsible for around 60% of China's total demand, grew by 3.7% in 2025, 1.4 percentage points (pp) lower than the previous year. However, this was compensated for by strong demand growth in the services sector of 8.2% y-o-y, the residential sector of 6.3%, and road transport, where consumption at EV public  charging  stations  grew  by  nearly  50%.The  weather  impact  in  2025  on electricity demand was less pronounced on an annual basis, as the total number of cooling and heating degree days remained relatively unchanged compared with 2024.  Demand  in  the  ICT  and  digital  services  subsector,  which  includes  data centres and 5G networks, increased by 17% y-o-y.
+
+Over the five-year period from 2021 to 2025, the industrial sector (including the energy industry) contributed to about 50% of the increase in China's electricity demand, 4 percentage points (pp) lower than the previous five years. Most of the growth within the industry sector took place in non-heavy industries, particularly the machinery subsector, including the electricity-intensive manufacturing of solar PV modules and batteries, among others.
+
+The contribution of  industry to  total  demand  growth  has  been  decreasing  over time, with the growing prominence of the tertiary sector within the economy, in addition to light industries, increasing their share in overall activity in China. In our 2026-2030 outlook, we expect the industries' share of electricity demand growth to decrease further, by 6 pp, as industrial growth rates stabilise between 3-4%, with  electrification  of  processes,  including  heat  pump  deployment,  and  robust factory output as the main drivers.
+
+## Estimated drivers of change in electricity demand in China, 2015-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Buildings corresponds to residential and commercial sectors. Sources: IEA analysis based on data from IEA World Energy Balances (2025), National Bureau of Statistics of China (2025).
+
+The  buildings  sector  accounted  for  another  41%  of  the  demand  growth  in  the 2021-2025 period, almost equally split between the commercial and residential segments. AC penetration in offices and households accounted for close to 17% of the growth within buildings, while the electrification and growing number of enduses in the residential sector also contributed significantly. The development of services such as data centres and telecommunication networks resulted in this subsector providing more than 7% of the growth in buildings compared to 2020. Rising  air conditioning  use  and  expanding  data centre  activity  are  expected  to make  up  an  increasing  share  of  buildings sector  demand  growth,  with  each contributing roughly 15% through 2030.
+
+The transport sector has seen very strong electricity consumption growth during the past five years, contributing to around 6% of total demand gains. Demand in this sector in 2025 was estimated to be 2.2 times the value in 2020, mainly driven by  a  900%  higher  New  Energy  Vehicles  (NEV) 1 stock.  New  national  policies incentivising  switching  from  internal  combustion  engines  (ICE)  cars  to  EVs contributed to NEV sales growing by close to 30%, and surpassing 45% of total passenger vehicle sales in 2025. With China's NEV stock forecast to triple by 2030, we expect EV charging to contribute 10% to total demand growth over the forecast period, while further development in rail transport increases this share to over 13% in total for the transport sector.
+
+## Growth rates of sectoral electricity demand and GDP in China, 2000-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: 3YMA = 3-year moving average. GDP growth is based on the IMF World Economic Outlook, October 2025.
+
+In terms of peak electricity load in China, structural growth in demand, expanding AC stock, and continued increases in cooling degree days in July and August led to  nationwide  load  repeatedly  hitting  new  record  highs,  reaching  1 508 GW  on 17 July, up 3.9% from the 1 451 GW peak in 2024. Many Chinese provinces saw multiple record high peak loads last summer, leading to a peak of 442 GW in the East  China  Grid  on  21 August  2025,  up  5%  y-o-y.  A  higher  cooling  load contributed to this peak, adding over 160 GW (37%). In Southern coastal urban areas, such as Shenzhen, AC load accounts for over 40% of the cities' grid peak load in summer. More generally, in the Guangdong province, which peaked at 164 GW in 2025 (up 4.4% y-o-y), load increases between 3 GW and 5 GW for every 1ºC rise in temperature above 35ºC.
+
+The electrification of the Chinese economy, defined as the share of electricity in total final consumption, has outpaced that of any other major economy, particularly over the last 15 years. While electrification shares have stagnated just above 20%
+
+1 New Energy Vehicle is a term commonly used in China to describe all types of electric vehicles, including battery-powered, fully electric as well as plug-in hybrid vehicles.
+
+in  the  United  States,  the  European  Union,  Australia  and  New  Zealand,  and between 25% and 30% in Japan (the most electrified major economy globally), China's electrification has doubled since 2005, surpassing 27% in 2025.
+
+<!-- image -->
+
+## China's industrial demand growth is increasingly driven by electrified manufacturing outside heavy industry
+
+Heavy  industry,  which  covers  iron  and  steel,  non-metallic  minerals  and  the chemicals  and  petrochemicals  industries,  has  seen  its  contribution  to  total electricity demand growth decrease in recent years. While its share in demand growth was between 15-20% in the 2010s, this has fallen to well below 10% in the last five years, and is expected to decline further to around 6% over the forecast period,  despite  support  measures  and  significant  growth  in  the  chemical  and petrochemical subsector through 2030. Non-heavy industries have followed the opposite  trend,  reaching  a  more  than  40%  share  of  China's  demand  growth between 2020 and 2025, from 33% in 2010-2015. This growth has been driven by subsectors such as machinery, non-ferrous metals, transport equipment, textile and food industry. New energy products also had a very significant impact on this growth, as noted in our Electricity 2025 report.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Note: Values correspond to the contribution to growth in annual electricity demand within each five-year period.
+
+Part of the demand growth from industry in recent years has been driven by what China's authorities call internal involutionary competition, namely excessive, lowefficiency competition between firms that expand capacity and lower prices rather than by improving productivity and innovation. Involution competition is prominent across  China's  industrial  sector,  as  illustrated  by  the  producer  price  index  for industrial  products,  which  has  recorded  negative  year-on-year  growth  since October  2022.  The  sales  rate  of  industrial  products  has  also  trended  lower  in recent years, with the 2025 average at 96%, indicating that domestic and external demand combined have been insufficient to absorb industrial output. Oversupply and overcapacity particularly affect new industrial sectors such as EVs, batteries and  PV  manufacturing.  In  the  case  of  PV  modules,  oversupply  led  to  module inventories  in  China  reaching  an  estimated  165 GW  at  the  end  of  2024,  15% higher  than  net  capacity  additions  across  advanced  economies  that  year.  To address  the  situation,  China  launched  an  anti-involution  campaign  in  2025,  in which the key element is the guideline from the National Development and Reform Commission  (NDRC)  to  build  a  national  unified  market,  aiming  at  eventually resolving regional distortions by standardising and unifying economic, regulatory and technical rules.
+
+<!-- image -->
+
+Note: Values for January and February have been estimated based on the 2-month aggregate provided by the National Bureau of Statistics of China.
+
+Source: IEA analysis based on data from the National Bureau of Statistics of China (2025).
+
+Even before the effect of these measures is observed, some industries related to new energy products (NEPs) started to self-regulate, often through agreements between the largest manufacturers to acquire and shut down capacity from smaller manufacturers. In the solar PV industry, top polysilicon producers were in talks in August 2025 to create a USD 7 billion fund to acquire and shut down one-third of the production capacity in the country. In December 2025, the China Photovoltaic Industry Association (CPIA) announced the launch of a platform for polysilicon consolidation  aimed  at  addressing  involution  competition  in  the  sector  through government  guidance,  industry  collaboration  and  market-based  mergers  and acquisitions. In addition, Chinese authorities announced plans to shut down any polysilicon producers which would not meet new energy consumption thresholds within one year. Polysilicon production in China declined in 2025, compared to the previous year, for the first time since 2013, while wafer production also saw its first year-on-year contraction since 2009.
+
+Despite corrections in the short term, we expect demand from China's non-heavy industries to grow by close to 1 000 TWh over the five-year 2026-2030 period, even if growth rates are expected to remain slightly lower than what was observed in 2023 and 2024.
+
+## Industrial capacity utilisation rates by selected subsector, China, Q1-Q3, 2019-2025
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Source: IEA analysis based on data from the National Bureau of Statistics of China (2025).
+
+## Peak load and demand rise across India, driven by cooling, industry and agriculture
+
+After four years of growth rates above 6%, India's demand grew by a modest 1.4% in 2025. Despite strong fundamentals supporting increased demand of 5.8% in the first four months of the year, the early arrival of monsoon in May brought milder temperatures  and  increased  precipitation,  leading  to  lower  use  of  AC  and agricultural pumping. Cooling degree days were more than 7% lower in 2025 than in 2024, with a particularly sharp decrease in June (-12%), when hot weather has driven, on average, 15% of monthly demand nationwide in recent years.
+
+In the five-year period between 2021 and 2025, net electricity demand in India grew by close to 430 TWh. Space cooling contributed 15% to total demand growth, and to around one-third of the gains in the buildings sector. This sector, which includes households and services, has driven half of the total growth in India over the past five years. Industry accounted for 36% of total growth, while agriculture and transport provided the rest.
+
+Over the forecast period, we expect demand in India to grow at an average 6.4% per year through 2030, in line with IMF's GDP forecasts. India is expected to add over  570 TWh  to  its  annual  consumption  in  the  next  five  years.  The  industrial sector  is  expected  to  contribute  to  a  third  of  this  growth,  while  the  share  of households and services will decrease slightly compared to the past five years. The  growing  stock  and  usage  of  AC  units  in  2026-2030  results  in  cooling  to account for over 20% of total demand growth in our forecast. Electrification and development of India's agriculture and transport infrastructure lead to these two sectors jointly driving around one-fifth of total demand growth to 2030.
+
+## Electricity demand growth by sector and end use in India, 2015-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+## Distinct factors shape growing peak load in India's five regional grids
+
+Electricity demand across India has shown significant seasonal variations over the past decade, with a cumulative increase in peak loads of 54%, from 162 GW in 2017 to 250 GW in 2024. In recent years, the national peak load consistently hit its  highest levels during the summer months amidst long heatwaves, reflecting increased cooling demand and high pre-monsoon agricultural electricity use.
+
+<!-- image -->
+
+The interplay between regional loads determines the profile of India's electricity demand and offers opportunities for interregional trade given diverse seasonality. The  country's  national  power  grid  is  divided  into  five  regional  grids:  Northern Region (NR), Western Region (WR), Southern Region (SR), Eastern Region (ER) and  Northeastern  Region  (NER).  These  grids,  which  were  initially  isolated, reached full interconnection at a national level in 2013. The current inter-regional capacity  of  the  grid  is  above  120 GW,  while  both  inter-state  and  intra-state transmission  capacity  is  growing  steadily  under  India's  Green  Energy  Corridor schemes.  These  grid  expansions  are  essential  to  integrate  India's  target  of 500 GW of non-fossil installed capacity by 2030, up from 267 GW in December 2025, but also to meet the energy and peak load requirements of each region and state.
+
+## Subnational electricity grids in India and main indicators, 2025
+
+| Grid                      | Most populated states                 | Electricity supplied annually (share)   | Record-high met peak load (date)   | Nature of demand                             |
+|---------------------------|---------------------------------------|-----------------------------------------|------------------------------------|----------------------------------------------|
+| Northern Region (NR)      | Uttar Pradesh, Rajasthan, Punjab      | 475 TWh (29%)                           | 90.8 GW (June 2025)                | Agriculture, residential, services           |
+| Western Region (WR)       | Maharashtra, Madhya Pradesh, Gujarat  | 517 TWh (32%)                           | 80.5 GW (February 2025)            | Heavy industry, services, residential        |
+| Southern Region (SR)      | Tamil Nadu, Karnataka, Andhra Pradesh | 419 TWh (26%)                           | 69.9 GW (March 2025)               | Services, industry, residential, agriculture |
+| Eastern Region (ER)       | Bihar, West Bengal, Odisha            | 191 TWh (12%)                           | 33.5 GW (July 2025)                | Industry, residential, agriculture           |
+| Northeastern Region (NER) | Assam, Tripura, Meghalaya             | 20 TWh (1%)                             | 4.1 GW (July 2025)                 | Residential, agriculture                     |
+
+Note: Electricity supplied data covers financial year 2023/24.
+
+Source: IEA analysis based on data from Central Electricity Authority (2025).
+
+In the Northern Region, peak load trends closely follow the national pattern, with the  highest  demands  recorded  during  the  summer  months,  typically  in  May  or June. This is largely due to the extreme temperatures experienced in this region, leading to increased use of air conditioning. Close to 30% of the annual national demand comes from this region, which also sees substantial demand during the post-monsoon  period, driven by the agricultural sector's irrigation needs. Conversely,  winter  months  from  December  to  March  see  a  significant  dip  in demand,  despite stronger heating requirements and other industrial and commercial activities.
+
+The Western Region, while experiencing high summer peak loads, benefits from a more diversified industrial base, including energy-intensive and heavy industries, which can distribute electricity demand more evenly across the year. Historically,  peaks  have  typically  occurred  during  Q4  or  Q1  as  businesses increase production and operations as they approach the end of the financial year.
+
+The Southern Region also shows a pronounced peak in electricity demand during the early summer months, which result from the combination of hot, humid weather boosting cooling demand and continued industrial activity. In addition, the SR's peak  loads  are  notably  high  during  the  monsoon  season  from  mid-June  to September.  The  SR's  demand  is  more  evenly  distributed  across  seasons compared to other regions, although the winter period still records the lowest peak loads.
+
+The  Eastern  Region,  with  lower  overall  peak  loads,  has  a  balanced  mix  of residential, agricultural, and industrial electricity use. The lowest subnational peak loads in Northeastern Region reflect its smaller population and lower industrial activity,  with  minor  seasonal  peaks  driven  largely  by  residential  heating  and cooling needs.
+
+Relative growth in subnational yearly peak loads has remained roughly similar across regions between 2017 and 2025, with values growing by 57% in the NR and WR, 65% in the SR, 60% in the ER, 43% in the NER.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Note: 2025 data include values for the January-June period.
+
+Source: IEA analysis based on data from NITI Aayog (2025), Grid-India (2025).
+
+Policies such as PM-KUSUM for the agricultural sector, and the generalisation of Time of Day (ToD) tariffs, have contributed to shifting part of the evening load growth to daytime, leading to an increased concentration of demand during hours in  which  solar  PV  output  is  at  its  highest.  Nationwide  deadlines  for  ToD  tariff implementation were defined in the Electricity (Rights of Consumers) Amendment Rules, 2023, stating that this type of tariff should be made available for industrial and  commercial  consumers  from  April  2024,  and  for  other  consumers  except agricultural  from  April  2025.  However,  in  practice,  only  consumers  with  smart meters have access to these tariffs, and the deployment of smart meters has been uneven across India, with more than 29% of approved meters installed in the WR versus less than 5% in the SR. Overall, 22% of approved smart meters have been installed  in  India  as  of  December  2025.  Further  progress  in  these  projects  will unlock more demand flexibility from peak evening hours to solar hours.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Data covers all consumer categories billed by DISCOMs, and all IS-16444 standard certified Smart Meter deployment schemes/projects. 'Approved' covers projects formally authorised. 'Awarded' covers contracts or tenders granted. 'Installed' covers systems physically deployed. Consumer meters include the following sectors: residential, commercial, public services, and agriculture.
+
+Source: IEA analysis based on data from India, Ministry of Power (2025), NITI Aayog (2025).
+
+## The early monsoon season moderated nationwide peak load in 2025
+
+Data from February-March 2025 show that increased development of industrial and commercial activities, together with higher agricultural and residential use, significantly drove daily load upwards structurally in all regions compared to 2024. In addition to 6.6% GDP growth in 2025, industrial production rose by 3.5%, while sales of appliances continue to grow over 10% annually, and data centre demand expanded by close to 50%. This is particularly visible in the WR, where industrial states like Maharashtra, also home to more than half of India's operating data centre capacity, outpaced national economic growth. In this grid region, more than 6 GW were added to the February-March average load at 11 am (+9%).
+
+<!-- image -->
+
+Source: IEA analysis based on data from NITI Aayog (2025), Grid-India (2025).
+
+After a particularly hot summer with heatwaves covering the country as early as April, India witnessed the arrival of an abundant monsoon around 9 days earlier than the 10-year average in May 2025. Torrential rains led to significant damage and a decrease in temperatures compared to 2024, limiting nationwide peak load to 241 GW on 9 June, fully met by growing installed capacity.
+
+Data from May-June shows that the load increase observed in the first quarter of 2025 compared to a year earlier faded away as a result of lower temperatures and increased precipitation,  leading  to  a  decrease  in  the  use  of  ACs  and  irrigation pumps. Average demand was weaker in all regions, with the most significant drop seen in the WR, where average load was 7 GW lower than in 2024 at 3 pm (-10%).
+
+<!-- image -->
+
+Source: IEA analysis based on data from NITI Aayog (2025), Grid-India (2025).
+
+IEA. CC BY 4.0.
+
+The impact of weather in moderating the 2025 nationwide peak demand becomes visible  when  comparing  daily  peak  load  with  average  temperature  and  rainfall values for India's most populated state, Uttar Pradesh (NR). Growing AC stock and electric irrigation pumps are major drivers of demand and peak load growth, particularly in the NR.
+
+Between May-June 2024 and the same period in 2025, an increase of close to 2 GW is observed in daily peak load trendlines. Considering Uttar Pradesh's peak load in 2024 was 30.6 GW, the value for 2025 could have surpassed 32.5 GW if summer temperatures in this state had reached the same levels as the previous year.  However,  given  lower  overall  temperatures,  the  maximum  load  for  2025 remained below 31.5 GW. Since 2017, additional peak load associated with a 1°C increase in average temperature has risen fivefold, indicating a sharp increase in AC penetration in the state.
+
+In the agricultural sector, accounting for 16% of total demand in Uttar Pradesh, irrigation  pumps  are  increasingly  electrified  and  connected  to  feeders  with distributed solar PV resources. Given that various programmes have encouraged their use during daytime hours, part of the typical evening load has switched to the  afternoon,  increasingly  contributing  to  the  daily  peaks  in  summer  and  the monsoon season. The use of irrigation pumps decreases when monsoon rainfall levels are high, resulting in a reduction of close to 5.5 GW in the state's daily peak per  1 mm/h  (24 mm/day)  of  precipitation,  compared  to  an  impact  of  less  than 1 GW in 2017.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Data for July-August 2025 were not available at the time of publication.
+
+Sources: IEA analysis based on data from NITI Aayog (2025), Grid-India (2025), IEA Weather for Energy tracker (2025).
+
+## Regional grids secure adequacy as peak load becomes more pronounced
+
+Resource adequacy plans led by the Central Electricity Authority (CEA) found that a majority of states will likely have significant shortages by 2034 even if all planned capacity is commissioned on time, thus requiring further annual capacity contracts by  source,  mainly  coal-fired,  variable  renewable  energy  (VRE)  and  storage capacity. The plans state that unserved energy could surpass 38 TWh (14.9%) in Uttar Pradesh (NR) in 2030, 20 TWh (10.1%) in Tamil Nadu (SR), 11 TWh (11%) in West Bengal (ER) or 7 TWh (30%) in Assam (NER) the same year. Meanwhile, adequacy forecasts are more manageable in Maharashtra (WR), where values of unserved energy could remain just above 3 TWh (1.6%) in 2030. This is despite the declining rates of yearly unserved energy and unmet peak load in recent years in all regions. Between 2017 and 2025, values for the former have dropped by more than 7 TWh, or 97%, nationwide, while unmet peak load decreased by 78% over the same period.
+
+## Energy not supplied (left), and unmet yearly peak demand (right), by India's subnational grids, 2017-2025
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Note: NR = Northern Region, WR = Western Region, SR = Southern Region, ER = Eastern Region, NER = Northeastern
+
+Region. Source: IEA analysis based on data from Central Electricity Authority (2025).
+
+With  regional  and  national  peak  loads  rising  faster  than  average  demand, generation  asset  planning  across  India  has  expanded  focus  from  energy requirements to meeting peak load. Load factors, defined here as hourly demand expressed  as  a  share  of  yearly  peak  demand,  are  an  important  indicator  to understand the relative magnitude of demand peaks. Load duration curves, which show the distribution  of  load  factors  across  the  year,  have  become  steeper  in recent years, indicating an increasing concentration of high load levels in a limited number of hours per year. This is particularly the case in the SR, where load levels at or above 80% of peak demand are currently observed in only 17% of yearly hours, compared to two-thirds of yearly hours in 2017. Load factors above 80% are attained in 15% and 38% of the yearly hours in the NR and WR respectively. Among other factors, the decrease in energy not supplied and unmet yearly peak demand shown above contributes to this trend, as outages at peak hours tend to flatten load duration curves.
+
+Source: IEA analysis based on data from NITI Aayog (2025), Grid-India (2025).
+
+<!-- image -->
+
+Overall,  India  has  made  remarkable  progress  in  narrowing  supply-demand imbalances in recent years, with unmet peak load and unserved energy values declining steadily between 2017 and 2025. Despite the positive results in 2025, continued  structural  growth  in  both  annual  demand  and  peak  load,  driven  by economic activity and cooling needs, will continue to put attention on adequacy, particularly in the Northern Region. Expanded generation capacity across thermal, renewable  and  nuclear  sources,  improved  coal  fleet  availability,  strengthened inter-state interconnections, demand response and batteries are essential tools for addressing these challenges.
+
+## Supply
+
+## Renewables and nuclear keep growing and setting records
+
+Global electricity generation will reach multiple new milestones in our 2026-2030 forecast period. This is particularly the case for low-emissions generation sources -  renewables  and  nuclear  -  which  will  continue  expanding  and  setting  new records.  Renewable  energy  is  now  outpacing  coal,  with  nuclear  generation simultaneously reaching historic highs. Constrained by growth in low-emissions sources, coal-fired generation globally is forecast to record slight declines, where demand growth through 2030 will be met by renewables, natural gas and nuclear. While trends for individual fuels vary by region, a common theme is the strong expansion of solar PV in many power systems. This chapter provides an overview of global supply developments in 2025 and a summary of our forecasts through 2030 for the major economies. A detailed coverage of other individual regions and countries can be found in the Regional Focus section of the report.
+
+## Share of renewables and nuclear in global electricity generation reaches 50% by 2030
+
+Global renewable generation is overtaking coal -fired output, consistent with the IEA's previous forecast. Renewable generation virtually reached the levels of coalfired output in 2025 based on the latest available data, even though declines in hydropower in Europe and Eurasia and lower -than -normal wind speeds, particularly in Europe, slowed the pace of growth. Renewables share surpassed the one-third threshold in 2025, up from only 23% a decade ago.
+
+Renewable  electricity  generation  is  expected  to  rise  each  year  by  roughly 1 050 TWh. Of this, more than 600 TWh on average is set to come from solar PV alone annually to 2030, thanks to rapid uptake in many regions of the world amid strong cost declines. In 2025, growth in global electricity generation from solar PV saw  the  largest  year-on-year  increase,  at  620 TWh,  compared  to  450 TWh  in 2024. Solar PV generation is expected to overtake wind and nuclear by 2026 and hydropower by 2029.
+
+Low-emissions energy sources - renewables, led by solar, and nuclear - will see their share in global electricity generation rise to 50% through 2030, up from 42% in 2025. Strong growth in renewables and a steady rise in both nuclear and gas output in many regions will displace global coal-fired generation in our forecast.
+
+Coal use in the power sector is expected to shift to a declining trajectory, with its share of the electricity mix falling to 27% by 2030, from 34% in 2025.
+
+## Global electricity generation by source, 2019-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP), and ocean energy. Data for 2026-2030 are forecast values.
+
+## Growth in renewables, natural gas and nuclear set to meet additional demand
+
+Low -emissions  sources  maintained  strong  growth  momentum  in  2025,  with renewables rising by 9%. This was slightly lower than the 9.6% increase in 2024, as  weather  conditions  dampened  growth  in  wind  and  hydropower  generation. Nonetheless, 2025 growth was still well above the 6.4% average observed over the past decade. Coal-fired generation remained relatively flat in 2025, following a 1.4% increase in 2024. Declines in China and India were offset by gains in the United States, Eurasia and other Asian markets. Natural gas-fired output grew by around  0.5%  y-o-y,  a  moderation  from  the  2.2%  in  2024,  amid  gas-to-coal switching in various regions due to higher gas-prices compared to 2024. Nuclear generation was up 1.2% y-o-y, supported by restarts in Japan, higher output in France,  and  newly  commissioned  reactors  in  China  and  other  countries.  By contrast,  oil-fired  generation  declined  by  around  2%,  largely  due  to  oil-to-gas switching in the Middle East.
+
+In  the  2026-2030  forecast,  coal-fired  output  contracts  by  0.9%  on  average annually. Despite the declining trend, coal will remain the largest single source of electricity through 2030. The plateauing trend of coal-fired generation in China, where more than half of world's coal-fired output takes place, is a major catalyst in this trend. By contrast, global gas-fired output is set to grow at an accelerated rate  of  2.6%  in  2026-2030.  This  is  supported  by  strong  growth  in  gas-fired generation in the United States amid robust electricity demand and in the Middle East with rapidly expanding oil-to-gas switching, especially in Saudi Arabia.
+
+Renewables are forecast to maintain robust growth out to 2030, at an average 8.4%. The share of variable renewable energy (VRE) is set to sharply increase over  the  forecast,  with  solar  PV  and  wind  combined  rising  from  17%  of  total generation in 2025 to 27% by 2030. Solar PV sees the strongest growth among all  generation  sources,  adding  on  average  more  than  600 TWh  annually,  and almost doubling its share to 15%, up from around 8% in 2025. Wind generation is forecast to grow at an average annual rate of around 10%.
+
+<!-- image -->
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP), and ocean energy. Data for 2026-2030 are forecast values.
+
+Nuclear generation is set to increase by an average of 2.8% over our forecast period, more than double the 1.3% growth rate in 2021 -2025. The gains are led by new reactors being commissioned in China, India, Korea and other countries, restarts in Japan, and robust output in France from the planned advancement of the maintenance works. Nuclear electricity output is expected to remain relatively stable in both the United States and the European Union over the forecast period, while it increases strongly in China, where almost 30 GW of new nuclear capacity is expected to come online over the five-year 2026-2030 outlook.
+
+Nuclear generation in China is expected to increase by nearly 6% per year on average through 2030, while output in the United States and the European Union remains broadly stable. Consequently, China's share of global nuclear generation is projected to rise from 17% in 2025 to 20% in 2030, whereas the United States' share declines from 29% to 25% and the European Union's share falls from 23% to  20%.  Despite these falling  shares,  increasing  nuclear  generation  is  a  major focus in the United States, with new small modular reactor (SMRs) capacity slated to come online just outside our 2026-2030 forecast period. There is also strong interest in many countries of the European Union, with policies in place for lifetime extensions and expansion of nuclear capacities.
+
+Globally, SMRs are receiving particularly high levels of attention, both from the public  sector  and  also  from  private  industry,  such  as  from  large  technology companies, as the modular designs and smaller scale of SMRs make them more attractive for financing and deployment by the private sector. Nevertheless, as highlighted in the IEA's report The Path to a New Era for Nuclear Energy, the success of the technology depends on a combination of government commitment and supportive policies, timely regulatory  design  reviews,  continued  innovation from technology developers, and financing from both public and private sectors.
+
+## Global nuclear generation by countries and regions, 1975-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Note: Data for 2026-2030 are forecast values.
+
+## Uncharacteristic trends in coal-fired generation observed during 2025
+
+Fossil-fired generation trends varied in 2025 across major economies, showing some uncharacteristic developments. In contrast to the overall trends observed in recent  years,  coal-fired  generation  declined  year-on-year  in  India  and  China, whereas it increased in the United States, and declined less than expected in the European Union. 2025 also marked the first time in five decades that coal-fired generation declined simultaneously both in India and China.
+
+In India, coal -fired output declined as rapid renewable expansion outpaced slower electricity  demand  growth.  A  strong  early  monsoon  curbed  consumption,  while renewable generation saw its largest-ever annual increase, displacing coal. By contrast, coal-fired generation in the United States rose, as higher natural gas prices compared with the previous year, strong electricity demand growth and a slowdown in coal plant retirements due to federal policy support led to higher coal use in the power sector. In the European Union, despite record-breaking solar PV generation, declines in wind and hydropower resulted in higher year-on-year gasfired  generation  and  stronger-than-expected  coal-fired  output.  In  China,  strong growth in renewables and nuclear -combined with slower demand growth than in 2024 -led to a decline in coal -fired generation.
+
+We expect the structural trend in China observed in 2025 to continue through 2030,  with  coal-fired  output  edging  down  as  renewables  and  nuclear  keep expanding. Over our forecast period, both the European Union and the United States are expected to see declines in coal-fired generation. By contrast, India's recent  decline  is  expected  to  be  temporary,  with  coal -fired  output  projected  to resume rising over the forecast period.
+
+## Year-on-year change in electricity generation by source in selected regions, 2025
+
+<!-- image -->
+
+Coal Natural gas Other non-RES
+
+Nuclear Other RES
+
+Hydropower Solar PV
+
+Wind Net change IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP), and ocean energy.
+
+In China , solar PV generation increased by more than 40% y-o-y in 2025 and wind by around 12%. The annual VRE share in overall electricity generation reached 22%, up from 18% in 2024. Hydropower generation posted growth of 2.8%, while nuclear  output  rose  by  7.7%,  supported  by  new  capacity  additions.  Gas-fired generation, which only accounts for around 3% of the electricity generation mix, is estimated to have increased by around 2%, compared to 7% in 2024. Coal-fired generation declined by around 1%, due to weaker demand and growth in lowemissions sources, versus a rise of 1.3% in 2024.
+
+Renewable  electricity  generation  grew  in India by  20%  in  2025,  posting  their absolute strongest annual increase (+82 TWh) on record. Growth was led by solar PV  generation  (+24%  y-o-y),  with  33 TWh  of  additional  generation.  This  is  a notable  rise  from  the  already  strong  15%  growth  seen  in  2024.  Wind  power generation  was  up  28%,  while  hydropower  rose  by  14%  amid  improved hydrological  conditions.  By  contrast,  nuclear  generation  decreased  by  1.6%. Given strong increases in low-emissions sources in a year when the country's overall electricity demand growth rate remained relatively muted at 1.4%, coalfired generation fell by 3.2%, after a 5% rise in 2024. Gas-fired generation similarly is estimated to have declined by 9%, after rising by 6% in 2024.
+
+In  the United  States ,  electricity  demand  remained  strong,  rising  by  2.1%. Electricity  generation  from  solar  PV  rose  by  70 TWh  (+26%)  in  2025.  Total renewable output increased by more than 8%, with higher solar PV generation alone accounting for about 80% of the gains. By contrast, wind generation growth slowed to 2.9%, compared to 7.6% in 2024. Coal-fired electricity was up by a sharp 13% y-o-y in 2025, rebounding strongly following a contraction of almost 3% in 2024, while gas-fired generation declined by 3.6%.
+
+In the European Union , solar PV and wind generation combined surpassed fossilfired generation in 2025, marking a milestone. Renewables share in total electricity generation  approached  48%.  Solar  PV  generation  rose  by  a  substantial  22%, overtaking  hydropower  to  become  the  second-largest  source  of  renewable electricity, behind only wind energy. At the same time, amid reduced wind speeds, wind generation was down 2.6% y-o-y and hydropower fell by around 13% due to reduced rainfall. Nuclear generation remained stable in 2025 amid robust output in France and a number of other countries. Even though EU electricity demand growth was less than 1%, lower wind and hydropower generation contributed to higher  gas  burn  in  the  power  sector,  which  increased  by  around  8%.  Equally, weather  effects  led  to  a  more  moderate  6%  decline  in  coal -fired  generation, compared with an average annual decline of more than 20% in 2023 and 2024.
+
+## Strong solar PV growth through 2030 remains a common trend across the regions
+
+In many parts of the world, electricity generation from ever-cheaper solar PV is showing the largest growth among supply sources. Over our forecast period, the share of solar PV in the total electricity generation mix will surpass 10% in many major economies, and even reach 20% in some of these countries. In terms of absolute  and  relative  growth  in  solar  PV, China leads  the  way  among  major economies. The solar PV share surpassed the 10% threshold in China in 2025 and  is  set  to  exceed  the  20%  mark  in  2030.  After  a  year-on-year  increase  of
+
+360 TWh in 2025, solar PV generation is forecast to rise by 320-360 TWh every year out to 2030, meeting around 60% of the average annual demand growth.
+
+We expect all of China's additional electricity demand in 2026-2030 to be met by low-emissions  sources,  renewables  and  nuclear  energy.  The  total  increase  in solar  PV  generation  in  China  over  the  next  five  years  will  be  larger  than  the combined increase in solar PV generation in the rest of the world. Similarly, with an annual average growth rate of 13%, the increase in wind generation in the same period is forecast to be higher than all the growth in wind generation globally. The VRE share in electricity generation is expected to reach 37% by 2030, up from 22% in 2025 and the share of total renewables is forecast to approach the 50% mark, rising from 37%.
+
+In addition to renewables, nuclear generation is also set to expand strongly, at an annual  average  rate  of  5.9%.  As  a  result,  despite  forecast  4.9%  growth  for electricity demand, coal-fired generation in China is expected to stay at a plateau as low-emissions sources constrain coal-fired generation. By contrast, gas-fired generation  is  set  to  rise  on  average  by  around  5%  annually  through  2030, supported by expectations of lower LNG prices due to expanding global supply.
+
+## Change in electricity generation by source in selected regions, 2025-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP), and ocean energy.
+
+In India , around 50% of the additional demand growth through 2030 is forecast to be met by solar PV and 25% by coal, with the remainder supplied by wind, nuclear, hydropower  and  gas.  Solar  PV  generation  is  expected  to  rise  by  an  average annual 24%, with its share in total generation set to reach the 10% mark in 2026 and approach 18% in 2030. Wind generation is also forecast to increase  at  a strong pace, growing by 8.2% on average annually. As a result, the VRE share in total electricity generation is expected to reach 24% in 2030, rising from 14% in
+
+2025. The total renewables share is set to surpass the one-third mark in 2030, up from 24%. At the same time, nuclear generation is forecast to post strong gains, rising by an average rate of 15% over the forecast period, as new reactors become operational.
+
+Despite a slowdown in growth in 2025 amid weather impacts, electricity demand in India is expected to increase at a strong annual average 6.4% through 2030. As  a  result,  higher  coal  burn  in  the  power  sector  is  set  to  continue,  rising  on average by around 2.5% over the next five years. Coal will maintain its role as the main source of electricity supply, though its share in generation is expected to fall from around 70% in 2025 to 60% by 2030. Gas-fired generation is forecast to rise annually  by  9.7%  on  average,  supported  by  a  more  favourable  LNG  price environment.
+
+In the United States , we expect substantial growth in gas-fired output, followed by  solar  PV  expansion  and  slight  increases  in  wind  generation,  to  meet  rising demand over the 2026-2030 period, while coal-fired generation decreases. The United States is the only major economy where despite substantial growth in solar PV, its share in total generation rises at a more modest pace, as other sources such as natural gas are expected to increase at significant rates. Having exceeded 7% in 2025, solar PV's share in US electricity generation is expected to reach 10% in 2028, increasing to 11% in 2030. By contrast, the share of wind is expected to stay at around 10% in 2030, similar to its share in 2025. The VRE share in the electricity generation mix is forecast to rise from 18% in 2025 to 23% in 2030, with the total renewables share increasing to 29%. During the same period, nuclear generation is expected to remain stable, at slightly higher levels than in 2025.
+
+Strong growth in electricity demand through 2030 contributes to sustained growth in natural-gas fired generation, which is forecast to rise at an annual average rate of 3%. Coal-fired generation looks set to decline by an average 6.3% per year. Nevertheless,  the  decline  rate  is  highly  dependent  on  the  progression  of  coal power plant retirements. The government has demonstrated a willingness to delay the retirement of coal-fired power plants, and has taken steps to do so, in response to strong growth in electricity consumption, including demand from data centres.
+
+In the European Union ,  we expect renewables to meet all the demand growth over our forecast period, displacing fossil-fired generation. Solar PV generation already eclipsed the 10% mark in 2024 and will reach 20% by 2030. In 2026-2030, more than 400 GW of net renewable energy capacity is projected to be added, with 70% coming from solar PV alone. Wind power generation is also forecast to post strong gains, up by 10% on average annually. Wind is set to be the largest source of electricity generation in the European Union over the forecast horizon, overtaking  nuclear  energy,  and  its  share  will  rise  from  17%  to  25%  by  2030. Similarly, the share of VRE is expected to reach 46% in 2030, up from 30% in
+
+2025. By 2026, EU renewable generation will be higher than the combined nonrenewable generation. Correspondingly, the share of renewables in total electricity generation is set to reach 63% in 2030, up from 48% in 2025. Combined with nuclear energy, the share of low-emissions sources is forecast to reach 84% by 2030.
+
+As  renewables  continue  their  strong  growth  and  nuclear  power  generation remains  stable,  fossil-fired  generation  will  continue  to  be  displaced.  Coal-fired generation will decline through 2030, falling on average by 16% annually, while at the same time coal phase out plans in various EU countries continue to take place through  2030.  Natural  gas-fired  supply  is  also  forecast  to  post  declines,  at  an average rate of close to 6%. Nevertheless, gas-fired generation will continue to play an important role in providing seasonal flexibility as well as ancillary services for system stability.
+
+## Shares of energy sources in total electricity generation in select regions, 2025-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Total VRE = variable renewable energy (solar PV + wind); Total RES = renewable energy sources (VRE + other renewables); Total low-emissions = Total RES + nuclear energy. Data for 2030 are forecast values.
+
+The common trend of strong solar PV growth is also seen in many other regions over our forecast period, alongside different energy sources. The Middle East is forecast to add about 115 TWh of solar PV, while at the same time gas-fired output rapidly rises to displace oil-fired generation. Central and South America is similarly expected  to  post  about  110 TWh  of  solar  PV  generation  growth  out  to  2030, alongside significant increases in wind generation. Southeast Asia is set to see more than 35% of additional demand met by coal and close to 35% by gas, while 15% (65 TWh) is expected to be met by solar PV. In Africa, close to 28% (55 TWh) of the additional supply is expected to come from solar PV, alongside significant growth  in  gas-fired  generation,  followed  by  expanding  hydropower,  wind  and nuclear output.
+
+The strong growth of weather-dependent variable renewable energies and their rising share in many power systems during our forecast period further underscores the importance of system flexibility. Accompanying these technologies with flexible supply,  storage  and  demand  response,  as  well  as  interconnections  where possible, will be crucial for their cost-effective system integration. These aspects are  discussed  more  in  detail  in  the  following  dedicated  Grids  and  Flexibility chapters of our report.
+
+## Grids
+
+## Grids are emerging as a bottleneck for connecting supply, demand and storage
+
+A lack of grid capacity is emerging as a critical bottleneck in many regions, driving higher  levels  of  congestion  and  slowing  the  deployment  of  new  electricity generation, storage and demand. Grid connection queues have reached record levels worldwide. In response, this year's report examines the range of measures that  regulators  and  system  operators  are  adopting  to  'move  fast  and  connect things': enabling more capacity to be integrated more quickly through regulatory reforms  and  deployment  of  technologies  that  can  deliver  rapid  grid  upgrades. Greater  demand-side  participation  and  the  expansion  of  utility-scale  battery storage  are  additional  levers  for  enhancing  system  flexibility  and  managing congestion, which are addressed in detail in the subsequent chapter on Flexibility.
+
+This chapter on grids also includes a dedicated section on the synchronisation of the  Baltic  power  system  in  February  2025,  a  landmark  technical  and  political achievement.
+
+## Grid technologies and regulatory reforms unlock grid capacity
+
+Accelerating the build out of grids is a key imperative as the new era of electricity evolves around the world. Over 2 500 GW of renewable, large -load and storage projects  are  currently  stalled  in  grid  queues  worldwide.  With  grid  investment lagging far behind that for generation projects, many power systems already face rising congestion -related curtailment. Meeting electricity demand through 2030 will require annual grid investment to increase by approximately 50% by 2030 from today's  USD 400 billion,  alongside  a  scale -up  in  grid supply  chains  and  more effective management of work force challenges.
+
+The urgency becomes especially apparent given the mismatch in the time required to  plan  and  build  new  grids  compared  to  generation  projects  or  data  centres. Planning, permitting and completing new grid infrastructure can take anywhere from 5 to 15 years, whereas new builds on the supply and demand side are much faster at 1-5 years for renewables projects such as solar PV and wind, 1-3 years for data centres, and 1-2 years for EV charging infrastructure. At the same time, prices for key grid components have nearly doubled over the past five years.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Late stage refers to projects at advanced stages of the grid connection process with a high likelihood of completion. Grid  connection  queue  numbers  can  shift  from  month  to  month  with  project  progress,  cancellations,  and  operator reassessments. Data presented here should therefore be regarded as indicative for 2025.
+
+While ramping up investment in the construction of new grids is crucial and needs to accelerate, significant additional hosting capacity 1 can be unlocked in the near term by using existing grids more efficiently. This is especially relevant, as grids are built to serve peak demand, but often have substantial unused capacity during non -peak periods.
+
+Complementary measures, such as grid -enhancing technologies and regulatory adjustments,  can  unlock  near -term  grid  capacity,  delivering  net  system-wide economic benefits. Together, they could free enough hosting capacity to connect between 1 200-1 600 GW of advanced -stage projects currently stuck in queues worldwide.  About  750-900 GW  could  be  enabled  through  conditional  non -firm connection agreements, with the remainder unlocked by grid -enhancing solutions such  as  dynamic  line  rating,  advanced  power -flow  control,  and  various  other options, as well as more extensive upgrades such as reconductoring and voltage uprating.
+
+1 Hosting capacity refers to the amount of new resources (generation, storage or load), in GW, that can be connected to the grid safely and reliably before system upgrades are required to avoid issues such as reaching operational limits or violating safety constraints. Hosting capacity can also include non-firm capacity, i.e. for which output or consumption may be limited at certain times.
+
+## Estimated grid hosting capacity that can be unlocked via non-firm connection agreements and technology upgrades by source (left), and by region (right), 2025
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: C&amp;S America stands for Central and South America. The calculation of unlocked capacity via non-firm connection agreements is based on the assessment of public statements by system operators, regulators and governments in markets where this type of contract has already been implemented, taking into account power system characteristics and indicative levels of congestion. Technology upgrades considered are dynamic line rating, dynamic transformer rating, advanced power flow control, topology optimisation, storage as a transmission asset, reconductoring and voltage uprating. The calculation of unlocked capacity  via  technology  upgrades  is  based  on  review  of  expert  papers,  reports,  statements  and  case  studies providing quantitative assessments of unlocked capacity and technical/economic viability by solution across a diverse range of transmission networks worldwide. For both non-firm connections and technology upgrades, potentials of unlocked capacity by region and globally have been calculated using existing country- or region-level transmission grid length by voltage range, conductor types, current rating, number of circuits, congestion, average and peak demand. Hosting capacity values are provided as a high-level estimation based on transmission capacity gains and can differ from real-world applications based on grid- and project-specific detailed connection studies to verify constraints which are not considered in this analysis, e.g. voltage, short-circuit, substation capacity, generation and load profiles, among others.
+
+A non-firm connection agreement is an arrangement between a system operator and the grid user (such as a generator, consumer, or storage facility) that typically enables  faster  grid  access,  but  with  the  condition  that  the  user's  output  or consumption may be limited at certain times. This built-in flexibility helps unlock additional hosting capacity by allowing more assets to connect before major grid reinforcements are completed.
+
+Beyond non-firm connections, standard congestion-management tools and robust regulatory frameworks that support the co-location of multiple power plants and battery energy storage systems (BESS) at a single connection point can further ease grid constraints. By enabling several assets to share existing infrastructure, these measures help bring more projects into operation in a timely manner.
+
+In parallel, grid capacity auctions, stricter requirements for obtaining and retaining grid capacity, and faster processing of connection requests can contribute to more effective management of grid connection queues. These mechanisms help ensure that scarce capacity is allocated efficiently, prioritising the highest-value and most deliverable projects while reallocating capacity from projects unlikely to proceed.
+
+In addition to targeted regulatory and policy measures, unlocking the full potential of  today's  power  networks  will  increasingly  depend  on  the  deployment  of advanced  grid -enhancing  technologies. These  solutions can  increase grid flexibility,  ensure greater reliability and help reduce overall investment costs by relieving different types of binding operational constraints and improving utilisation of  existing  assets.  Grid-enhancing  technologies  such  as  dynamic  line  rating (DLR), dynamic transformer rating (DTR), advanced power flow control (APFC), topology optimisation (TO), and storage as a transmission asset (SATA) will also play  a  key  role  in  expanding  existing  capacity.  In  addition,  more  substantial upgrades  to  grid  systems  such  as  reconductoring  and  voltage  uprating,  can significantly increase the capacity of existing transmission infrastructure.
+
+## Record-high connection queues and rising curtailment as grids become congested
+
+Globally, at least 1 700 GW of renewable energy projects in advanced stages 2 and more than 600 GW of battery storage projects were in connection queues as of 2025. A similar situation can also be observed on the demand side, where at least 150 GW of queued data centre projects are estimated to be in advanced stages. One-fifth of the global data centre build out is at risk of delay due to grid congestion. In addition, a significant amount of EV charging infrastructure, battery storage plants, and large industrial or other commercial loads are also waiting to be connected in highly congested regions.
+
+Lengthy grid connection queues are increasingly becoming a detrimental factor for a wide range of grid users. In some countries, such as Germany, these queues have already become a chokepoint for battery -storage deployment. The federal regulator  (BNetzA)  noted  that  in  2024  alone,  network  operators  received 9 710 connection requests for battery storage at or above medium-voltage level, corresponding  to  around  400 GW  (661 GWh)  of  capacity.  Network  operators caution that a significant portion of these projects are 'phantom' projects, including speculative and duplicative requests.
+
+Many  countries  face  over-reservation  of  capacity  in  their  connection  queues through  duplicate  or  phantom  projects.  This  happens  when  project  developers deliberately reserve capacity in excess of project needs or maintain connection requests  for  stalled  projects,  leading  to  inefficiencies  in  allocation  processes, blocked access for more viable projects in the queue, and uncertainty in network planning. Regulators and system operators are adapting their mechanisms to limit the consequences of this virtual grid saturation phenomenon, with an overview of the measures being implemented provided in various parts of this chapter.
+
+2 Projects at advanced stages include projects at late stages in their connection requests and those that are under review. It excludes projects that are at early stages of the process as well as those that are unlikely to materialise.
+
+<!-- image -->
+
+Notes: Late stage refers to battery storage projects at advanced stages of the grid connection process with a high likelihood of  completion.  Grid  connection  queue  numbers can shift from month to month with project progress, cancellations, and operator reassessments. The figures presented here should therefore be regarded as indicative for 2025. Sources: IEA (2025), Renewables 2025, and IEA analysis based on data from Terna (2025), Bundesnetzagentur (2025), METI (2025), and ESS News (2025).
+
+In parallel with queue -management challenges, operational data show that grid bottlenecks are already limiting output through increasing curtailment. With rapidly expanding  variable  renewable  energy  (VRE)  capacities,  technical  curtailment 3 due to grid bottlenecks has been rising in many regions. In the United Kingdom, 8.5% of onshore wind generation was curtailed in 2024, up from 8% in 2023 and 6% in 2022. In Chile, 15% of wind and solar PV generation was curtailed in 2024, the highest rate observed since 2017. In Germany, rates for wind (both onshore and offshore) were above 5% since 2022, while solar PV also started to gradually increase, rising to 2% in 2024. In China, 4.1% of wind generation and 3.2% of solar PV generation were curtailed in 2024, up from 2.7% and 2%, respectively, in 2023. Preliminary data for 2025 suggests that curtailment rates in China rose above 5% for both wind and solar.
+
+3 Technical curtailment is the dispatching-down of renewable energy for network or system reasons; dispatched-down energy due to economic or market conditions is not included.
+
+## Evolution of technical curtailment rates of VRE in selected countries, 2021-2024
+
+IEA. CC BY 4.0.
+
+<!-- image -->
+
+Notes: VRE = variable renewable energy. Figures represent the share of total solar PV and wind energy potential that is technically curtailed. Figures are based on officially reported curtailed or constrained energy generation and combine various schemes, depending on the country. VRE refers to solar PV and wind unless otherwise specified. The United Kingdom includes  wind  only.  Technical  curtailment  is  the  dispatching-down  of  renewable  energy  for  network  or  system  reasons; dispatched-down energy due to economic or market conditions is not included.
+
+Source: IEA (2025), Renewables 2025.
+
+VRE  curtailment  implies  unused  low-emissions  energy.  Depending  on  market specifics,  high  levels  of  curtailment  can  lead  to  sizeable  losses  of  revenue  for generators. It  can  also  lead  to  higher  CO2  emissions  from  power  generation  if predominantly  fossil-fuel-fired  plants  are  dispatched  in  the  redispatch  process, notably to solve technical constraints, as highlighted in the IEA's Integrating Solar and Wind report. In systems with high levels of VRE penetration, particularly with structural oversupply at times such as midday solar PV peaks, keeping curtailment close to zero as a policy decision may lead to higher system costs, compromising the cost-effectiveness of the system. Additionally, allowing for some curtailment may enable more of the capacities in connection queues to be connected at a faster  pace  while  the  grid  expansion  takes  place.  Addressing  curtailment,  grid congestion  and  new  connections  in  a  cost-effective  way  requires  a  joint assessment of these factors, where the underlying factors such as transmission capacity, VRE penetration, demand structure and available flexibility, among other relevant aspects, need to be taken into account.
+
+## More efficient use of grids is possible via targeted regulatory and policy frameworks
+
+In the short term, several regulatory mechanisms can help optimise the use of existing  grids,  reduce  congestion,  and  unlock  significant  additional  capacity. These  include  various  types  of  non -firm  connection  agreements,  congestion management tools such as redispatch, and co -location of multiple power plants or battery energy storage systems. In addition, managing grid connections through measures such as grid capacity auctions and stricter eligibility requirements can increase the efficiency of the connection system by prioritising the highest value projects, and de-prioritising others that are unlikely to be completed.
+
+## Non-firm connections can unlock near-term grid capacity, but complexities need to be well-managed
+
+We  estimate  that  application  of  non-firm  connection  agreements  alone  could free  up  enough  grid  hosting  capacity  to  integrate 75 090 0  GW  of  projects  in connection queues  globally,  while  grids  are  being  expanded.  Historically,  most connection agreements between grid operators and energy suppliers have  been  firm  connection contracts, where the end user has an allotment to withdraw or inject energy  up  to a fixed power  level, which  is typically dimensioned to match the size of the equipment on site. The grid user is allowed to reach this static limit whenever they  wish,  under  normal  conditions  without congestion. Traditionally,  congestion  problems have been  rare, but have increased in recent years in many  regions.  When the transmission or distribution  network  is  congested,  countries  use  a variety  of  management mechanisms  to  adjust  the  output  of  assets.  These  include  redispatch and security  constrained  economic  dispatch  (SCED),  generally  with  compensation to assets impacted by the constraints, socialised across grid users.
+
+While  redispatch  and  SCED  measures  take  place  during  the  operational stage,  non-firm connection  agreements  are  established  earlier,  during  the planning  phase, typically before the asset is connected. These are agreements between a grid  operator  and  a  grid  user,  detailing  how  usage  can  be  limited 4 during  times  of  congestion,  based  on  different  arrangements  and  conditions. While the operator benefits  from  having  more  visibility  and  control  over  grid usage to mitigate constraints, the user  may  benefit  from  a  faster grid connection, lower connection charges  or reduced  grid tariffs. During the operational stage, when curtailment is required,  the  operator  typically  restricts the  production  or  consumption  of  users  with non-firm agreements. Users with firm agreements are normally curtailed only after all suitable users with non-firm agreements are curtailed. Compared to a user with firm connection, the nonfirm connected user typically receives no compensation  during this phase  because  they  have  agreed  to  bear  curtailment  risk, depending on the arrangements.
+
+4 Non-firm connection agreements are only used to limit a load's consumption or a generator's output. In contrast, redispatch and SCED adjustments are not always a reduction. Depending on the grid conditions and where the grid users are located, they may also be ordered to increase production/consumption to relieve congestion.
+
+## Timeline of measures and market structures for managing grid congestion
+
+<!-- image -->
+
+## Connection phase
+
+- Non-firm connection agreements
+- Grid capacity auction/prioritisation
+
+<!-- image -->
+
+## Electricity price formation
+
+- Locational Marginal Pricing (nodal prices)
+- Co-optimisation of energy and constraints
+
+<!-- image -->
+
+## Ex-post
+
+- Redispatch
+
+IEA. CC BY 4.0.
+
+Notes: The effects of some measures and structures may extend across the temporal boundaries shown. Non-firm connection agreements are signed during the planning phase, but the decision about when to curtail the grid connection may be made dynamically during later phases. Other tools such as locational marginal pricing can influence siting decisions in the planning phase, as investors anticipate the impact of location on revenue.
+
+Different types of non -firm connection agreements exist, and similar arrangements may be referred to by different names across jurisdictions. However, they can generally be categorised by two key features: whether their capacity limits are fixed or dynamic, and whether curtailment is foreseen - such as in scheduled or predictable operating envelopes - or unforeseen, as in fully flexible arrangements. These approaches are increasingly being codified through legislation or regulatory guidance  across  countries,  supported  by  digital  monitoring  tools  and  closer integration with local flexibility markets.
+
+Examples of types of non-firm connection agreements based on the temporary variability of capacity limits and the predictability of curtailment
+
+<!-- image -->
+
+Source: Adapted from Romero Monterde et al. (2025), 'Non-Firm Grid Connections: A Review of Access Types, Mechanisms, and Regulatory Frameworks', Current Sustainable/Renewable Energy Reports, CC BY 4.0.
+
+While  non-firm  connection  agreements  can  provide  substantial  benefits  in providing faster grid connections until the grid expansion takes place, they can also introduce complexities related to grid utilisation, curtailment uncertainty and fair allocation of costs across different grid users. Introduction of such agreements therefore  requires  a  thorough  assessment  of  market  conditions  (including  the extent of unbundling) and the associated trade-offs. The broader adoption of nonfirm connection agreements may require addressing such complexities. Well-defined,  harmonised  regulatory  frameworks,  supported  by  interoperable digital systems, can play a central role in ensuring consistent application across jurisdictions.
+
+When considering non-firm agreements, grid users such as generators, storage operators, and consumers, may need to assess the trade-off between the benefits of an earlier commencement date and lower grid fees, with a reduction in revenues when curtailed. For time-varying capacity limits, projects may additionally need to consider  any  potential  correlation  between  curtailment  periods  and  high  price events,  which  may  lead  to  disproportionate  reductions  in  revenue  during  price spikes.
+
+For periods with congestion, a grid operator may need to choose which of several assets with non-firm connection agreements must have its output adjusted. There are several methods for such prioritisation. Last In, First Out (LIFO) is used by the UK's National Grid, whereby the most recently connected asset is the first to be curtailed. Another approach is a curtailment index, which is used to target an equal number of hours of reductions or equal forgone energy per asset, in the long run, potentially weighted by generator size. Alternatively, reductions could be applied to the generator/load with the highest/lowest energy bid first to minimise the cost of  congestion. If  all  assets  had  non-firm  connection  agreements, prioritising  by their energy bid price would be similar to security constrained economic dispatch (SCED), such as the Electric Reliability Council of Texas (ERCOT) and Australia's NEM 5 . Whereas prioritising based on a dedicated congestion bid would be similar to  market-based  redispatch.  Non-firm  connection  agreements  can  be  used  to manage  distribution  level  constraints,  whereas  alternatives  such  as  SCED commonly consider only transmission level constraints.
+
+## Regulatory frameworks are being updated to allow for more efficient usage of grids
+
+An array of non-firm connection agreements are being implemented in a bid to optimise excess grid capacity to manage new customers. In the European Union Directive 2024/1711  mandates  regulators  to  develop  a  framework  for  system operators to offer flexible connection agreements (FCAs) in cases where there is limited or no network capacity available. This acts as a temporary measure until network reinforcements are developed or as a permanent measure where network reinforcement  is  not  efficient.  The  European  Grids  Package,  launched  in December 2025, included a Guidance on Efficient and Timely Grid Connections, which  also  highlights  the  need  for  offering  frameworks  for  FCAs.  Several EU countries  have  transposed  this  into  existing  legislation  or  proposals  to  be adopted in coming months, and 15 members have already implemented FCAs as of November 2025.
+
+5  The equivalency depends on whether assets impacted by congestion are compensated. In ERCOT they are, in Australia's NEM they are not.
+
+The Netherlands Authority  for  Consumers  and  Markets  (ACM)  regulator  is requiring system operators to use the existing grid more efficiently by applying congestion management procedures as well as by introducing new tariffs and nonfirm contract types to encourage flexibility and lower peak-hour consumption. With the new rules, transmission system operator (TSO) TenneT estimates that 9 GW of hosting capacity will be freed up, enabling a significant number of customers to be connected. As of April 2025, more than 70 GW of projects had applied for this type of contracts, in large part because they provide accelerated grid access and no charge for the contracted capacity, resulting in a tariff discount up to 50% 6 .
+
+In Denmark , grid operators offer FCAs for new generation and demand requests, with accelerated connection and reduced connection costs. Under the agreement, large loads can be disconnected or ordered to decrease load at any time in case of constraints.
+
+In France ,  transmission  operator  RTE  estimated  that  optimal  grid-connection sizing for VRE generators through static non-firm connection agreements, which have been in place since 2021, unlocked 18 GW of hosting capacity in four years.
+
+In Ireland ,  ESB  Networks  estimated  that  up  to  1 GW  of  capacity  could  be connected to the grid by extending non-firm connection agreements.
+
+The United Kingdom's National Grid offers flexible and curtailable connection agreements in congested areas, both for generators and loads, through its Active Network Management (ANM) system. The UK government expects regulatory and system operator-led connection reforms across transmission and distribution to release around 100 GW of capacity from queues, more than is currently connected to the transmission network.
+
+In Japan , non-firm connection agreements are systematically applied to generators intending to connect to the grid, regardless of whether the area has capacity  available.  By  October  2024,  this  type  of  connection  request  reached 26 GW nationwide.  However, mandatory frameworks  have faced  opposition  in other markets.
+
+6 The discount can reach 65% if a grid user both responds to the new time-of-use network tariff on top of benefiting from the non-firm discount.
+
+## Grid access is being prioritised via queue management and grid capacity auctions
+
+In  order  to  manage  the  grid  connection  queues  more  effectively,  various  new measures  are  being  introduced  in  many  countries.  Broadly,  reform  proposals across several jurisdictions often include prioritising projects based on maturity, likelihood  of  realisation,  and  expected  contribution  to  system  needs,  using predefined technical criteria or, in some cases, price-based mechanisms, rather than the timing of application submissions. In addition to overall grid connection queue reforms, separate frameworks for large loads are also being developed in some countries.
+
+One  type  of  regulatory  development  includes  prioritisation  frameworks  for connection  queues,  namely  replacing  the  traditional  'first-come,  first-served' principle in favour of 'first-ready, first-served' or milestone-based approaches. The Dutch regulator ACM, for example, is working on establishing a framework with three categories whose  grid  connections  will be  prioritised: the so-called 'congestion  softeners'  that  provide  additional  capacity  are  given  the  highest priority, followed by projects contributing to national security, including hospitals, and basic needs such as residential, education and public transport.
+
+German TSO Amprion introduced a EUR 50 000 processing fee for connection applications and reported that 65% of battery projects in its queue were not being pursued further. The existing first-come, first-served connection regime without additional prioritisation  criteria risks  delaying more mature projects behind less developed  ones,  adding  to  the  backlog  and  increasing  uncertainty  for  project developers. Against this backdrop, TSOs such as 50Hertz have called for new allocation  procedures, arguing that the current approach no longer reflects the needs of the energy transition.
+
+In  the  United  States,  only  8%  of  battery  storage  projects  that  applied  for connection between 2000 and 2019 had been built by the end of 2024, though projects that are insufficiently developed may inflate such queues. Withdrawals are frequent, particularly when restudies change upgrade scopes or connection dates.  Historically,  this  was  worsened  by  speculative  or  duplicate  applications, which prompted reforms such as FERC's Order No. 2023 that introduced stricter readiness requirements to discourage this behaviour. For example, developers must now demonstrate clear rights to develop at least 90% of the land at the time of  interconnection  request,  meaning  legally  enforceable  rights  to  occupy  and develop  the  land,  such  as  ownership  or  a  lease,  and  submit  a  commercialreadiness deposit.
+
+In  addition  to  queue  management,  networks  and  regulators  are  focusing  on approaches to accelerate and streamline the process on the approver side when processing the projects in the queue. MISO in the United States automated part of their System Impact Study, which they expect will reduce processing times by a factor of eight. Australia imposed strict time limits on the response time from AEMO and networks, reduced friction for small or sensible changes, and made changes to avoid holding generators responsible for changes outside their control. Similarly, the United States recently started imposing penalties on transmission providers that fail to complete studies before newly imposed deadlines. China has introduced  a  'green  channel'  to  accelerate  the  planning  and  construction  of 500 kV+  transmission  corridors  for  key  clusters  of  new  renewable  generators under  a  framework  where  generation  and  network  infrastructure  are  tightly co-ordinated. Similarly, upgrades of lower voltage lines are also being streamlined. On the load side, China's 'Three Provinces' policy streamlined connections for large  loads,  reducing  connection  time  by  more  than  40%.  For  small  load connections, the 'Three Zeros' policy reportedly contributed to saving CNY 300 billion (Yuan renminbi), [USD 43 billion], over the last five years.
+
+Separately to existing capacity markets for generation itself, some jurisdictions are introducing new auctions to allocate grid capacity. In Australia, the South West Renewable Energy Zone Access Scheme was introduced in 2024, which allocates capped grid capacity via tenders for grid access for VRE and storage. Romania recently  launched  nationwide  grid  capacity  auctions  for  VRE  and  storage. Meanwhile, Spain introduced auctions for connecting large loads.
+
+## Examples of recent regulatory and policy developments in securing grid capacity and connecting generators, storage and large loads
+
+| Regulation Type                | Country        | Title                                  | Scope                        | Description                                                                       |
+|--------------------------------|----------------|----------------------------------------|------------------------------|-----------------------------------------------------------------------------------|
+| Non-firm connection agreements | Netherlands    | Time-Dependent Transport Rights (TDTR) | Load and storage             | Full capacity guaranteed 85% of time, 15% flexible.                               |
+| Non-firm connection agreements | United Kingdom | Active Network Management (ANM)        | Generation, storage and load | Controls assets, prioritising older assets over newer.                            |
+| Non-firm connection agreements | Japan          | Non-firm connection rule               | Generation and storage       | Controls assets connected to the local bulk grids with less available capacities. |
+
+| Regulation Type                                  | Country               | Title                                              | Scope                           | Description                                                                                                                                      |
+|--------------------------------------------------|-----------------------|----------------------------------------------------|---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                  | United Kingdom        | Gate 2 to Whole Queue (G2TWQ)                      | Generation and storage          | Readiness criteria for joining the queue and network studies are batched.                                                                        |
+| Milestone- based project development             | United States (MISO)  | Definitive Planning Phase (DPP)                    | Generation and storage          | Connection applications must reach key milestones, otherwise they will be forcefully withdrawn, with loss of deposit.                            |
+| Site- dependent connection tariff                | United Kingdom        | Transmission Network Use of System Charges (TNUoS) | Generation, storage and load    | Deeper, more localised and less volatile network charges reflecting planned grid availability.                                                   |
+| Site- dependent connection tariff                | India                 | Inter-state transmission charge exemption for ESS  | Storage                         | No inter-state transmission charges for batteries co- located with VRE.                                                                          |
+| Site- dependent connection tariff                | Australia, NSW        | Southwest Renewable Energy Zone Access Scheme      | Generation (VRE) and storage    | Tenders for grid access rights for VRE and batteries.                                                                                            |
+| Site- dependent connection tariff                | Romania               | Grid Allocation Market                             | Generation and storage          | Auctions 10-year grid connection.                                                                                                                |
+| Grid capacity auction or prioritisation          | Chinese Taipei        | Grid Capacity Allocation for Offshore Windfarms    | Generation (Offshore windfarms) | Allocates 15 GWof grid capacity based on the lowest PPA price.                                                                                   |
+| Grid capacity auction or prioritisation          | Spain                 | Grid Access Tender                                 | Loads                           | Allocates 3.7 GWof grid capacity, prioritised based on biggest carbon reduction.                                                                 |
+| Grid capacity auction or prioritisation          | United States (CAISO) | ISO Interconnection Reforms                        | Generation and storage          | Prioritisation of a capped connection queue, based on commercial interest, project viability, and system need.                                   |
+| Connection assessment fast-track or streamlining | Netherlands           | Prioritisation Framework                           | Storage and load                | Prioritise 'congestion softeners' first, then 'security' (e.g. hospitals, policy stations), then 'basic needs' (e.g. schools, public transport). |
+| Connection assessment fast-track or streamlining | United States (MISO)  | Expedited Resource Additions Study (ERAS)          | Generation and storage          | Expedites grid connection request reviews for 5.3GW of selected assets.                                                                          |
+
+| Regulation Type                                              | Country              | Title                                                                                     | Scope                           | Description                                                                                                                                                                                    |
+|--------------------------------------------------------------|----------------------|-------------------------------------------------------------------------------------------|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                              | United States (MISO) | Definitive Planning Phase (DPP)                                                           | Generation, storage and load    | Automated System Impact Study, reducing time taken from months to days. Total queue length is capped.                                                                                          |
+| Connection assessment fast-track or streamlining (continued) | China                | Green Channel                                                                             | Network                         | Accelerated approvals for select network upgrades for new renewables.                                                                                                                          |
+| Connection assessment fast-track or streamlining (continued) | Australia (NEM)      | NEM access standards Package 1                                                            | Generation, storage and network | Streamlines technical requirements for grid connection application for VRE, batteries, synchronous condensers and HVDC.                                                                        |
+| Connection assessment fast-track or streamlining (continued) | Australia (NEM)      | R1 Capability Assessment                                                                  | Generation and storage          | Streamlines approvals, and shift risks from generation/storage to the network. Imposes time limits for responses from networks, and mandates justifications for requests for more information. |
+|                                                              | United States        | Department of Energy (DOE) Ensuring the Timely and Orderly Interconnection of Large Loads | Generation, storage and load    | Expedites grid connection studies, enables joint studies for generation-load co- location and large loads to share upgrade costs.                                                              |
+| Large load framework                                         | United States (SPP)  | High Impact Large Loads (HILLs)                                                           | Load                            | Accelerated pathway for large loads agreeing to FCA or paired with generation.                                                                                                                 |
+| Large load framework                                         | United Kingdom       | AI Growth Zone                                                                            | Load                            | Removes speculative data centre demand and reallocates grid capacity to prioritised AI data centres.                                                                                           |
+| Large load framework                                         | Canada (AESO)        | Large Load Integration                                                                    | Load                            | Reliability-based grid access limit and technical requirements.                                                                                                                                |
+| Large load framework                                         | China                | Notice on Improving Renewable Integration for High-Quality Development                    | Generation, storage and load    | Co-optimised planning of network and generator construction, and improved data sharing from networks to generators.                                                                            |
+
+## Specific large load connection frameworks prioritise viable projects and strengthen system planning
+
+Large  loads,  and  specifically  data  centres,  play  a  key  role  in  the  growing connection  queues  in  various  regions.  While  the  growth  in  cloud  services  and artificial  intelligence  partly  explains  these  trends,  similar  to  the  situation  with generation  and  storage  assets,  demand  connection  queues  are  artificially expanded  by  duplicative  or  phantom  projects  which  are  not  expected  to materialise. Our analysis based on data reported by utilities in the United States indicate  a  trend  of  only  around  20%  of  the  data  centre  connection  requests materialising in the short to medium term. Similarly, in the case of Australia, the consulting company Oxford Economics, commissioned by Amazon Web Services (AWS),  estimates  that  out  of  44 GW  of  data  centre  connection  requests,  only 8 GW  are  likely  to  enter  service.  In  Brazil,  data  centre  connection  requests surpassed 26 GW by November 2025, but according to Brazil's Energy Research Office (EPE) only 6 GW were under review or at late stages at that time.
+
+Obtaining a realistic estimate of what part of the demand queue would accept a connection offer once capacity is available is key for regulators, system operators and utilities to accurately perform system planning and optimise investments and asset  management.  To  identify  which  projects  are  viable  and  which  projects should be filtered out from the queue, some countries are developing separate grid connection frameworks for large loads.
+
+## Data centres in connection queues by selected utilities in the United States, 2025
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Grid connection queue numbers can shift from month to month with project progress, cancellations, and operator reassessments. The data presented here should therefore be regarded as indicative for 2025. Sources: IEA analysis based on data from AEP (2025), Data Center Dynamics (2025), Oncor (2025), Utility Dive (2025), Industrial Info Resources (2025), Financial Times (2025), Data Center Dynamics (2025), Broadband (2025), Latitude Media (2025), Dominion Energy (2025), The Wall Street Journal (2025), Utility Dive (2025).
+
+In the United States , large loads, including data centres, are already addressed through specific processes in many areas, as generation and grid expansion plans are closely linked to data centre connection requests. Nationwide, the Department of Energy (DOE) directed the Federal Energy Regulatory Commission (FERC) in October 2025 to initiate procedures with the aim to reduce large load connection times and grid upgrade costs, while allowing joint co-located (generation and load) grid access requests.
+
+In September 2025, the Southwest Power Pool (SPP) agreed a 90-day study and approval pathway for data centres and other large loads paired with generation or agreeing to a curtailable supply. In California, PG&amp;E introduced Electric Rule 30 reducing large load connection timelines from 18-22 months to around 2-5 months for  applicants  that  agree  to  pay  for  necessary  transmission  infrastructure  work upfront.
+
+ERCOT was one of the first US independent system operators (ISOs) to develop an interim large load interconnection process in 2022, and this was updated in May  2025  via  the  Nodal  Protocol  Revision  Request  1234.  The  new  ERCOT protocol  establishes  more  stringent  modelling  and  study  requirements,  and  a dedicated  interconnection  process  with  a  new  fee,  aiming  to  accelerate  the pathway for viable projects and filter out speculative requests from the growing queue.
+
+In addition, utilities across the United States are developing specific frameworks for  data  centres,  focused  on  discouraging  speculative/duplicative  large  load interconnection requests and securing long-term revenue for the allocated grid capacity. Dominion Energy Virginia proposed a new rate class for high energy users, in which they are required to make a 14-year commitment to pay 60% of generation costs and 85% of network costs even if they use less power than they applied for. Other utilities have increased large load application deposits, as is the case of ComEd in Illinois, which charges a USD 1 million refundable deposit for data centre requests of 50 MW or more.
+
+European regulators  and  system  operators  are  also  adapting  their  policies  to effectively  deal  with  large  loads  within  their  growing  demand  interconnection queues. In December 2025, the Irish regulator CRU published a specific large energy users connection policy requiring, among other measures, that all new data centres  connecting  to  the  grid  provide  dispatchable  generation  and/or  storage capacity,  matching  the  site's  maximum  import  capacity.  In  addition,  they  must source at least 80% of annual demand from renewable electricity generated in Ireland. EirGrid has restricted data centre connection in the greater Dublin area since 2021 due to congestion. Elia, the Belgian TSO, could set a cap on data centre capacity allocation based on its own grid development plans, limiting data centre expansion and keeping some capacity available for other types of industrial users.
+
+The UK government has introduced the AI Growth Zones regulatory package to accommodate  rising  grid  connection  requests  from  large  'AI  data  centres'  of 100-500 MW capacity. Under this framework, AI data centres are prioritised for grid access and allowed to reserve certain physical connection points, if they are considered 'strategically important.' The  package  aims  to accelerate the interconnection of viable AI data centres by filtering out speculative requests, while enabling project developers to build their own grid infrastructure, including highvoltage lines and substations.
+
+As data centres strive to get deployed without delays, an emerging trend in regions where grid connections or insufficient baseload capacity are becoming bottlenecks is  for  data  centres  to  secure  behind-the-meter  (BTM)  supply  through  on-site generation assets. Given their high reliability requirements as well as depending on regulatory frameworks, many data centres can choose or be required to stay connected to the grid despite having sufficient BTM generation.
+
+## Various market-specific structures or processes can inherently help manage and reduce congestion
+
+There are also other market structures or processes which can help with managing and  reducing  congestion  by  design.  Security  constrained  economic  dispatch (SCED) ensures that transmission constraints between price regions are directly incorporated into the bid clearing process. Increasing the geographical granularity of  prices  increases  the  number  of  constraints  considered  in  this  way.  By disaggregating  prices  into  several  zones  per  country  (such  as  in  Italy  and Sweden), key transmission bottlenecks can be incorporated into bid clearing. Subnational zonal prices can thus help with congestion, while additional congestion management mechanisms can be applied at the same time.
+
+Locational marginal pricing can be further disaggregated to more granular nodal pricing (e.g. ERCOT, California Independent System Operator (CAISO) and PJM in the United States, and markets in Chile, Mexico, New Zealand). Prices on either side of a constraint diverge and constrained bid clearing results in power flows which  satisfy  the  constraint,  implicitly  rewarding  generation,  storage  and  load, which relieve the constraint. Disaggregating pricing further into distribution level nodes  is  generally  not  common  and  may  be  infeasible,  so  other  congestion management mechanisms may still be used for distribution level constraints. The potential  benefits  as  well  as  various  challenges  associated  with  more  granular locational  price  signals  are  discussed  in  detail  in  the  IEA's  Electricity  Market Design report.
+
+Some markets, including Australia and the Philippines, use hybrid approaches in which  intra -regional  transmission  constraints  are  incorporated  directly  into  the market -clearing process that matches supply and demand to determine prices and dispatch targets. This produces  location -specific prices used  for dispatch decisions,  similar  to  nodal  pricing.  However,  all  generators  and  loads  within  a region ultimately settle at a single regional price. As a result, power flows respect transmission  constraints  by  adjusting  the  highest -bid  generators  first,  without requiring a separate congestion payment mechanism.
+
+Various market and system structures that can indicate which assets should be adjusted first during congestion
+
+## Market-based
+
+- Locational Marginal Pricing (Nodal Prices)
+
+(e.g. New Zealand, PJM, ERCOT, Chile, Mexico, MISO, CAISO)
+
+- Co-optimisation of energy and intra-region transmission constraints (e.g. Australia (NEM), the Philippines)
+- Market-based Redispatch (e.g. the Netherlands)
+
+## Rule-based
+
+- Cost-based redispatch (e.g. Germany)
+- Non-firm connection agreements:
+- Last In First Out (LIFO) (e.g. UK National Grid)
+- Proportional to size (e.g. New York National Grid)
+- Fraction of quota hours remaining (e.g. UK Electricity North West)
+
+IEA. CC BY 4.0.
+
+'Oversizing' 7 is  another  approach  that  can  make  grid  connections  more economically  efficient  while  enabling  the  connection  of  greater  capacities  of variable renewable energy. In a common situation without oversizing, renewable assets are connected to the grid with a connection that is rated for the generator's maximum capacity. With oversizing, the generator's maximum capacity is larger than  the  available  grid  capacity,  effectively  capping  the  generator's  maximum feed-in into the grid. While the system outcome would be typically equivalent to that of a fixed capacity-limited connection agreement between a grid operator and a  grid  user,  oversizing  is  a  design  choice  that  would  be  taken  by  the  project developer.
+
+Although oversizing results in lower generated electricity volumes compared to having a larger connection, the average market value of each unit of electricity fed into  the  grid  is  higher.  This  is  because  the  periods  when  an  oversized  VRE generator  must  leave  sunshine  or  wind  unused  are  generally  when  it  is  most plentiful,  which  is  correlated  with  low  prices.  The  increase  in  revenue  from oversizing  compared  to  a  smaller  installation  may  offset  the  increase  in  cost, resulting in higher system value. The system value can improve further when solar and wind are co-located, as their complementary generation profiles make better use of shared grid infrastructure. Integrating batteries can also provide additional benefits when faced with limited grid connection availability.
+
+7 'Oversizing' is also commonly referred to as 'overplanting'.
+
+## Conceptual explanation of oversizing trade-offs in the example of a solar PV plant
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: The chart shows an example of a grid connection that is smaller than the maximum output of the connected 'oversized' generator, so some potential power must remain unused. Suppose a solar project developer wants a grid connection of size H. However, they are only able to obtain a grid connection of size L. They can choose to install fewer solar panels to match this lower limit (equi-dimensioned) to avoid any restriction below available power. Alternatively, they could install the larger number of panels as per the original plan, and then restrict the output to size L, below the available power during the period when the connection constraint binds, foregoing area A. This oversizing approach will cost more to build than the equidimensioned approach, but yields additional energy and additional revenue (area B). In regions with high VRE penetration, the hours with bright sunlight and strong wind are typically correlated with low prices, because plentiful supply puts downward pressure on prices. Therefore, the additional energy (area B) may yield disproportionately high revenue, and a higher capture price, which might outweigh the increase in installation cost compared to the equi-dimensioned installation. The same tradeoffs apply to wind power. These revenue and price curves have been stylised for visual clarity, and should not be interpreted as the exact shape.
+
+In  addition  to  the  above-mentioned  structures  and  mechanisms,  demand-side flexibility (e.g. via services such as vehicle-to-grid) can also greatly help increase effective  capacity  on  grids,  allowing  for  more  efficient  utilisation.  The  topic  of demand response is covered more fully in the following chapter on Flexibility.
+
+## Grid-enhancing technology unlocks capacity at relative low costs and with short lead times
+
+Alongside updating regulatory frameworks, significant grid capacity can be also unlocked  in  the  near  term  by  applying  various  grid-enhancing  technologies.  In addition,  upgrades  like  reconductoring  and  voltage  uprating  can  significantly increase the capacity of existing transmission infrastructure. These solutions can enhance  grid  flexibility, ensure  greater  reliability and  help  reduce  overall investment costs, and are already being applied across regions. We estimate that the implementation and rollout of these grid technology solutions globally could unlock sufficient capacity to connect 450-700 GW of projects at advanced stages in connection queues, assuming all other factors remain unchanged.
+
+## Estimated grid hosting capacity that can be unlocked globally through selected technology upgrades by technology and voltage level, 2025
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes:  The  combined  capacity  increase  is  lower  than  the  sum  of  individual  technology  contributions,  as  multiple  gridenhancing solutions often address the same binding constraints. As a result, capacity gains are not additive, and the effect of deployment in a combined application is lower than in cases where each technology is implemented on a standalone basis. The calculation of unlocked capacity via technology upgrades is based on literature review of papers, reports, statements and case studies providing quantitative assessments of unlocked capacity and technical/economic viability by solution across a  diverse  range  of  transmission  networks  worldwide.  Potentials  of  unlocked  capacity  by  region  and  globally  have  been calculated using existing country-level or region-level power grid length by voltage range, conductor types, current rating, number of circuits, congestion, average and peak demand. Hosting capacity values are provided as a high-level estimation based on transmission capacity gains and can differ from real-world applications based on grid- and project- specific detailed connection  studies  to  verify  constraints  which  are  not  considered  in  this  analysis,  e.g.  voltage,  short-circuit,  substation capacity constraints, generation and load profiles, among others. Sources used to develop these methodologies are provided where relevant in the text below.
+
+Most of the technology solutions described below can be deployed on the grid with relatively  short  lead  times,  replacing  traditional  grid  investments  or  serving  as temporary measures aligning short-term needs with long-term grid planning. While potential capacity gains are presented individually by technology, benefits cannot be stacked additively, as several solutions address the same thermal, voltage or congestion constraints. Realising these capacity gains also requires integrating these  technologies  into  both  strategic  grid  planning  and  operational  planning processes, supported by appropriate regulatory frameworks that incentivize grid optimization and operational procedures that enable system operators to leverage the additional capacity effectively.
+
+Global  experience  shows  that  after  implementing dynamic line  rating  (DLR) , transmission  lines  can  typically  carry  20-30%  additional  capacity  above  their maximum rating for around 90% of the time in a given year, representing a largely untapped  resource  that  can  be  mobilised  relatively  quickly.  This  additional capacity is weather-dependent rather than firm capacity, available when ambient conditions  such  as  temperature  and  wind  enable  safe  operation  above  static ratings. Our analysis shows that DLR systems alone could unlock 165-230 GW of additional global transmission capacity - an upward revision from our previous estimate, based on updated inputs and assumptions reflecting recent deployment experience.  However, realising these benefits depends on the quality of weather forecasts, real-time  monitoring capabilities, and  the willingness  of  system operators to optimise line loading while maintaining adequate corrective remedial actions.  The  barriers  to  broader  DLR  adoption  are  predominantly  institutional rather than  technical, reflecting cautious operational cultures and  lack of regulatory  incentives  for  efficiency  innovations,  despite  DLR's  proven  ability  to safely increase transmission capacity.
+
+An equivalent technology for transformers instead of lines is dynamic transformer rating (DTR) ,  which  uses  real-time  monitoring  of  operational  and ambient conditions to safely load transformers above their nominal rating without impacting  its  design  life,  freeing  up  latent  capacity.  Like  DLR,  DTR  provides weather-dependent capacity rather than firm capacity. Recent case studies and literature show that the average safe rate of transformer overloading via DTR is around 10%, with significant variation by ambient temperature at the location, as colder  climates  allow  higher  overloading  while  warmer  climates  limit  it.  We estimate  that  DTR  by  itself  could  unlock  75-115 GW  of  non-firm  grid  capacity globally.
+
+Topology optimisation (TO) software finds the optimal network configuration to relieve constraints and unlock capacity, by switching circuit breakers in substations.  Recent  case  studies,  mainly  in  the  United  States  show  that  this technology  can  increase  throughput  in  congested  areas  by  more  than  10%, reducing  critical constraint flows and  curtailment rates.  We  estimate  that TO solutions  can  lead  to  75-120 GW  of  additional  global  grid  capacity  when deployed individually.
+
+Advanced  power  flow  control  (APFC) devices,  a  subcategory  of  flexible AC transmission  systems  (FACTS),  can  also  unlock  165-260  GW  of  capacity globally  and  resolve  network  congestion  issues  by  dynamically  diverting  flows from overburdened lines to others with available capacity. These modular power electronics-based devices achieve this by modifying the reactance of lines where they  are  deployed. In  the  United  Kingdom, the  targeted  implementation of this technology in the highly congested area of Northern England led to over 2 GW of capacity being unlocked, or over 4% of Great Britain's peak load. Various APFC
+
+projects  in  Colombia  have  freed  up  more  than  1.2 GW  of  capacity  across  its transmission  network,  or  almost  12%  of  its  peak  load,  increasing  capacity  in congested nodes by up to 80%.
+
+Projects  deploying  storage  as  a  transmission  asset  (SATA) have  shown promising results in increasing capacity of the transmission grid by reducing spare line  capacity kept for N-1 security. In Germany, the 'Grid Booster' project was granted a permit in 2025, and should start operations in 2026. Instead of being operated at around 70% to leave headroom in case a parallel circuit trips, lines equipped with SATA can be operated much closer to the 100% thermal rating, as batteries  alleviate  overloads.  The  operational  300 MW/450 MWh  utility-scale Victorian Big Battery project in Geelong, Australia has a grid services contract with AEMO and unlocks 250 MW of peak capacity on the existing Victoria to New South Wales Interconnector during the summer. By itself, SATA could provide around 95-140 GW of additional grid capacity globally.
+
+As discussed in a recent IEA commentary, other grid-enhancing solutions include reconductoring ,  which  corresponds  to  retrofitting  lines  with  higher-capacity conductors to allow up to double power flows in the case of advanced conductors like High-Temperature Low-Sag (HTLS) conductors. Advanced conductors can be installed  on  existing  towers  and  supporting  structures,  thereby  avoiding  full permitting  procedures,  reducing  implementation  time  and  costs.  In  the  United States, over 70% of utilities have deployed advanced conductors at least on a limited basis, and around 20% of existing transmission and distribution lines are potential candidates for retrofitting, particularly short lines of less than 50 miles. The Speed to Power Initiative launched by the US DOE in September 2025 aims to  accelerate  generation  and  transmission  projects to  support  demand growth, including  reconductoring  and  using  existing  connection  capacity  from  retired thermal  generation  plants.  The  initiative  focuses  on  projects  that  can  enable between 3-20 GW of incremental load individually. In the Netherlands, as part of its 'Making better use of the existing 380 kV grid' project, TenneT is reconductoring part  of  its  high  voltage  (HV)  grid,  increasing  ratings  from  2.5 kA  to  4 kA. Reconductoring, as an individual technology upgrade, could unlock 255-320 GW of firm capacity globally.
+
+Voltage  uprating to  increase  the  voltage  levels  to  boost  capacity  is  another application, albeit costlier than other technology upgrades. This process typically involves  replacing  towers,  insulators,  HV  equipment,  transformers,  and  other components. It is often carried out to reuse existing transmission corridors, with the aim of shortening permitting timelines and reducing overall project complexity. Capacity  in  the  concerned  part  of  the  grid  increases  with  the  nominal  voltage uprate. In Ireland, for example, ESB Networks is upgrading its 10 kV mediumvoltage  network  to  20 kV,  quadrupling  capacity  and  reducing  system  losses. National Grid is building three new substations in the centre of England which will enable  the  uprating  of  the  existing  transmission  network  in  the  area  from  the existing 275 kV to 400 kV. This will contribute to the additional 20 GW of capacity needed to transfer electricity between the North of England and the Midlands by 2035. Statnett, the Norwegian TSO, has also been upgrading part of its 300 kV networks to 420 kV for more than a decade that could result in savings of over USD 1 billion compared to new built HV lines. Globally, we estimate that grid firm capacity could be expanded by 360-460 GW through voltage upgrade of existing HV lines.
+
+No single technology can alleviate system-wide congestion issues, therefore an appropriate  combination  of  technologies  tailored  to  local  needs  is  required  to provide the highest overall benefit. Achieving these benefits is possible together with  calculated  risk-based  approaches  to  grid  operation,  backed  by  robust forecasting capabilities and appropriate corrective measures. At the same time, various other barriers may need to be overcome. Regulatory frameworks need to evolve  to  incentivise  grid  optimisation  and  to  create  structured  pathways  for moving from pilot projects to standard operational practice. For grid operators, developing  internal  expertise  that  bridges  traditional  power-system  knowledge with emerging technological capabilities is essential in this context. Due to their strong  focus  on  security, utilities  and  system  operators  may  tend  to  be conservative  regarding  applying  new  technologies.  Providing  the  necessary regulatory incentives for efficiency-related innovations can help with this.
+
+## Overview of grid technology upgrades and their characteristics
+
+| Technology                      | Capacity increase   | Potential global coverage   | Cost   | Firm capacity   | Implementation lead time   |
+|---------------------------------|---------------------|-----------------------------|--------|-----------------|----------------------------|
+| Dynamic Line Rating             | 20-30%              | 5-15%                       | $      | ●               | 1-2 years                  |
+| Dynamic Transformer Rating      | 5-15%               | 5-15%                       | $      | ●               | 1-2 years                  |
+| Topology Optimisation           | 5-15%               | 10-20%                      | $      | ●●              | 1-2 years                  |
+| Advanced Power Flow Control     | 10-20%              | 10-20%                      | $$     | ●●              | 2-3 years                  |
+| Storage As a Transmission Asset | 30-40%              | 1-5%                        | $$     | ●●              | 2-3 years                  |
+| Reconductoring                  | 50-100%             | 1-5%                        | $$$    | ●●●             | 3-4 years                  |
+| Voltage uprating                | 100-200%            | 1-5%                        | $$$$   | ●●●             | 4-7 years                  |
+| New HV lines                    | -                   | -                           | $$$$$  | ●●●             | 7+ years                   |
+
+Notes: Firm capacity refers to the extent to which the estimated capacity increase can be considered reliably available across operating  conditions.  Capacity  classified  as  high  firmness  is  largely  independent  of  weather  and  short-term  operational assumptions,  while  medium  and  low  firmness  reflect  increasing  dependence  on  favourable  conditions,  active  system management, or probabilistic availability, and may not be simultaneously available at all times or under all contingencies.
+
+## Synchronisation of Baltic electricity system with Europe marked a major milestone
+
+The  recent  synchronisation  of  the  Estonian,  Latvian  and  Lithuanian  electricity systems with Continental Europe represents not only a major technical achievement but also a political  milestone.  In  February 2025,  the  Baltic  states completed their de-synchronisation from the Russian and Belarussian frequency area  after  nearly  two  decades  of  preparation.  On  9 February 2025  at  14:05 Eastern European Time, Estonia, Latvia, and Lithuania successfully synchronised their electricity grids with the Continental Europe Synchronous Area (CESA), just one day after permanently disconnecting all electricity interconnections with the Russian Federation (hereafter, 'Russia') and Belarus.
+
+Integration into the EU internal energy market allows the Baltic states to operate under  common  and  transparent  European  rules,  enhancing  their  electricity security. The three countries now have access to Continental Europe's balancing products  and  can  participate  fully  in  wholesale  electricity  markets,  expanding opportunities  for  their  renewable  energy  production  and  access  to  diverse generation sources across Europe. The share of imports from Russia in the Baltic states' electricity supply averaged around 10% before 2022, though commercial imports had already ceased following Russia's full-scale invasion of Ukraine.
+
+## Share of electricity imports in power supply in the Baltics by origin, 2015-2024
+
+<!-- image -->
+
+## Extensive political and technical planning enables the complex synchronisation
+
+Since  the  Soviet  era,  the  Baltic  electricity  systems  were  integrated  into  the IPS/UPS 8  grid.  Following  independence,  they  remained  part  of  the  BRELL Agreement (which stands for Belarus-Russia-Estonia-Latvia-Lithuania) signed in 2001, where the Moscow operation centre maintained control over balancing the entire  interconnection,  including  a  high-voltage  loop  across  the  three  states, Belarus, and Kaliningrad.
+
+The synchronisation project started soon after the three Baltic states joined the European  Union  in  2004.  Following  Russia's  2014  annexation  of  Crimea,  the project accelerated significantly. The timeline was further compressed in the wake of the full-scale invasion of Ukraine, when Ministers agreed to bring the deadline forward from end-2025 to February 2025.
+
+Poland's transmission system operator (TSO) PSE played a particularly critical role  in  overall  co-ordination  and  project  management  as  the  direct  neighbour physically connecting the Baltic States to Continental Europe. The co-operation extended  beyond  infrastructure  to  include  extensive  technical  preparation  and joint  operational  procedures  developed  through  ENTSO-E  and  the  Continental TSOs.
+
+Years of infrastructure reinforcement preceded the final synchronisation. Grid upgrades were implemented across all three Baltic states. Power plants were equipped with the necessary control systems, and transmission system operators (Elering in  Estonia,  AST in Latvia, and Litgrid in Lithuania) deployed assets to support isolated operations in case of emergencies.
+
+## Further reinforcements of interconnectors and security enhancements are planned
+
+The 500 MW LitPol Link between Lithuania and Poland, an EU Project of Common Interest  commissioned  in  2015,  is  currently  the  sole  alternating  current  (AC) interconnection providing the synchronous link to Continental Europe. The Baltic system is further connected to the Nordic system through the 700 MW NordBalt cable between Lithuania and Sweden, and the two cables EstLink 1 and EstLink 2, respectively 350 MW and 650 MW, between Estonia and Finland. Currently, the LitPol interconnection is used primarily for stability, with a transfer capacity under 200 MW, as the AC interface with Poland lacks redundancy. Reinforcement of interconnectors are planned for 2026, with a major step of the completion with the Harmony Link in 2030, leading to trade volumes up to 1 200 MW in both directions.
+
+8  IPS/UPS is the interconnection consisting of the Unified Power System of Russia and the Integrated Power System that currently consists of Azerbaijan, Belarus, Georgia, Kazakhstan, Kyrgyzstan, Mongolia, Tajikistan and Uzbekistan.
+
+Numerous physical disruptions and potential acts of sabotage reported against EU infrastructure have demonstrated the importance of protecting critical energy infrastructure. On 25 December 2024, the Baltic states experienced such a threat firsthand, when the EstLink 2 cable connecting Estonia and Finland was severed, with the cable's restoration being completed only six months later. Civilian and military co-operation on critical infrastructure protection has since increased, as demonstrated by the Baltic Sentry initiative launched in January 2025.
+
+The Baltic synchronisation offers a powerful model for regions worldwide seeking to  integrate  their  electricity  systems.  The  combination  of  strong  political  will, substantial  financial  support,  phased  technical  implementation,  and  regional co-operation provides a blueprint applicable far beyond Europe's borders. The project received over EUR 1.23 billion in grants from the EU's Connecting Europe Facility  for  Energy,  covering  around  75%  of  investment  costs,  plus  additional investments through the Recovery and Resilience Facility. This strong EU support, channelled  through  the  Baltic  Energy  Market  Interconnection  Plan  (BEMIP), demonstrated the strategic importance placed on energy security in the region.
+
+## Flexibility
+
+## Evolving generation and demand patterns reshape power system needs
+
+The  Age  of  Electricity  is  underpinned  by  rising  investments  in  new  resources. These  include  growing  converter-based  variable  solar  PV  and  wind,  battery storage systems, as well as spatially and temporally concentrated demand from EVs, heat pumps and large loads like data centres. Combined with the expansion and upgrade of transmission and distribution grids, substantial increases in the flexibility of power systems are required for secure and cost-effective integration of generation, load and storage technologies that characterise this new era.
+
+Last year's report, Electricity 2025, focused on measures to enhance flexibility on the supply side of electricity markets by reducing the various technical, regulatory or contractual inflexibilities affecting generation. This year, we focus on demandside  applications  for  providing  and  improving  flexibility.  In  addition,  we  have updated our analysis on supply side flexibility to include further examination of falling 'capture rates' for solar and wind generation and the spectacular growth of battery storage systems amid declining costs in various markets.
+
+Finally, markets with high shares of solar and wind are challenged by periods of overabundance,  when  supply  has  the  potential  to  exceed  demand  for  grid electricity, necessitating operators to implement measures to balance the system. Different options are addressed, from increasing control of output from small solar installations,  to  higher  battery  deployment,  to  refining  price  signals,  including offering free electricity to customers.
+
+## Demand response offers breakthrough benefits, yet its potential is largely untapped
+
+With the share of variable renewable energy (VRE) sources in electricity supply rising rapidly in many regions and end-use sectors such as heating and transport becoming  progressively  more  electrified,  demand  flexibility  has  become  an essential  component  for  power  systems.  In  this  evolving  energy  landscape, demand  response  (DR)  programmes  are  becoming  an  increasingly  important flexibility tool, enabling households and businesses to shift or shed their electricity use in response to grid or market signals.
+
+In  exchange,  DR  plans  offer  financial  incentives,  typically  through  contractual arrangements or participation in programmes with utilities, aggregators or system operators, or by direct participation in power markets in the case of large industrial consumers.  For  end-users,  DR  flexibility  contracts  provide  inducements  in  the form of direct payments, rebates, or bill credits for curbing consumption during high-priced, peak-demand periods. When deployed at scale, DR providers can reduce peak capacity requirements, defer grid investment, lower integration costs for renewables, and strengthen resilience during system stress (see IEA's The Value of Demand Flexibility report, December 2025).
+
+The  potential  for  demand  response  is  enormous.  Yet,  despite  its  substantial system-wide and consumer benefits, DR implementation globally largely remains untapped. Our analysis shows that, as of 2024, only around 100 GW of demand response  is  utilised  on  a  global  basis.  For  example,  aluminium  production accounts for around 160 GW of peak electricity demand in the world, but only a small  share  of  this  is  currently  leveraged  for  demand  response.  Similarly, residential air conditioning (AC) contributes around 600 GW, yet flexible demand response from AC loads remains marginal. Unlocking a larger share of the overall demand response potential would be possible by applying various technologies already available today, as well as by adjusting market frameworks and regulatory mechanisms accordingly across different sectors.
+
+## Demand response utilisation in industry and buildings, and peak demand contributions from aluminium smelting and air conditioning, world, 2024
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: The contribution to peak electricity demand of end uses shown in the chart are global values corresponding to the sum of peak load contributions of selected end uses in the individual power systems of the world. The transport sector is not included because its current demand response utilisation is negligible compared with the industry and buildings sectors.
+
+Demand response potential can be characterised in different ways, depending on assumptions on technology availability, deployment levels, costs, and real -world participation,  including  adoption  barriers. Currently  utilised  demand  response refers to the capacity already active in markets or programmes. However, in many cases, only part of the economically viable potential is realised because market barriers, regulatory frictions, and behavioural inertia prevent full participation.
+
+Unlocking  more  of  this  economic  potential  becomes  possible  when  adoption constraints and market barriers are reduced or removed. Going beyond this scope towards the technically enabled potential requires valuing flexibility appropriately. Technically enabled  potential includes all  loads  that  already  possess  the monitoring and control capabilities needed for participation, though this remains significantly below the theoretical potential. Theoretical potential encompasses all electricity  demand that could, in principle, be shifted or reduced, assuming full deployment of enabling technologies and subject only to physical and end -use service constraints.
+
+<!-- image -->
+
+Currently, the industrial sector provides the largest share of demand response across  all  sectors,  with  around  75 GW  of  utilisation.  Industries  across  many regions  currently  participate  in  explicit  DR  where  large  consumers  commit  to reduce consumption during periods of system stress, typically in exchange for financial incentives such as capacity payments or activation payments when load is  curtailed.  Large  industrial  facilities  with  batch-based  processes  or  on-site flexibility options often have processes that can be curtailed or shifted for short durations with relatively limited impact on output, allowing for a meaningful portion of their technical flexibility to be mobilised.
+
+Much  greater  potential  exists  for  industrial  DR.  Many  industrial  processes, especially those that rely on heat or operate in batches, can shift their electricity use more routinely via automation or thermal storage. This includes cold-storage and compressor-driven systems in manufacturing as well as melting and heattreatment furnaces in metal processing. Overall, DR-enabling measures can raise the share of industrial load that can be adjusted with limited impact on production, yet they are not fully deployed today, leaving a high share of flexibility unused.
+
+In  the buildings sector,  demand  response  utilisation  is  estimated  at  around 30 GW globally. Many building loads, such as space heating, cooling and water heating, can respond to price signals or automated controls when equipped with controllable technologies, giving the sector large long-term DR potential. However, only  a  small  portion  of  this  potential  is  currently  being  realised.  In  practice, flexibility can often be delivered through short-duration measures, such as brief compressor cycling or small thermostat set-point adjustments, with limited impact on occupant comfort, underscoring that the DR potential in buildings is far greater than current utilisation.
+
+Limited  market  penetration  of  enabling  technologies,  such  as  smart  meters, controllable appliances and home energy management systems, together with low awareness and behavioural inertia, mean that much of the demand flexibility in the  buildings  sector  has  yet  to  be  mobilised.  In  addition,  in  many  markets consumers are not directly exposed, or only partially, to short-term wholesale price signals and there are regulatory barriers that restrict aggregation of small loads to limit participation in DR. This will require more attractive financial business cases for  households  as  well  as  acceptance  of  automated  control  and  incentives  for utilities and aggregators to invest in the necessary infrastructure and capabilities to enable participation in DR programmes.
+
+In the transport sector, utilised DR capacity remains comparatively small at less than 5 GW. However, the EV fleet in many regions is expanding rapidly, and if managed through smart charging systems that can respond automatically to price signals  or  external  controls,  the  transport  sector  could  become  an  important provider of demand response.
+
+## Demand response creates value across the system, yielding billions of dollars in savings
+
+Demand response creates value across wholesale markets, networks, ancillary services and emergency operations. Two main participation pathways for demand response exist. Incentive-based (explicit) DR involves pre-agreed commitments, activated by operators or aggregators when needed. During extreme events, DR can provide rapid load reductions to maintain system balance and avoid blackouts.
+
+Price-based (implicit) DR relies on time-varying tariffs or price signals, ranging from static time-of-use pricing to dynamic tariffs indexed to wholesale electricity prices. Flexible loads can lower demand during high-price periods and increase it when prices are low or negative, supporting renewable integration and reducing curtailment.  Targeted  flexibility,  directed  at  local  network  constraints  or  peak demand periods, can defer costly infrastructure upgrades, while aggregated loads (e.g. EVs)  can  deliver  ancillary  services  such  as  frequency  response.  Where market rules allow, DR resources can access different market segments, enabling flexibility to be allocated to the services where it is most valuable and improving overall system efficiency. In some jurisdictions, DR can also participate in capacity mechanisms, competing with generation and storage to ensure system adequacy.
+
+In  markets such as France, Ireland, Italy, Korea and the United States explicit demand response already corresponds to a meaningful percentage of peak load, ranging from 4% to 9%. The variation across countries in the share of peak load covered by explicit demand response largely reflects differences in the scale and design of national  DR programmes. In all markets shown below, industrial DR represents  the  largest  share  of  explicit  DR,  with  systems  in  countries  such  as Ireland  and  Italy  the  shares  reach  8-9%,  operating  sizeable  contracted  or dispatchable industrial demand response programmes relative to their peak loads. By contrast, larger systems like the United States, Korea and France have greater DR capacity in absolute terms, but it represents a smaller fraction of their much higher system peaks.
+
+## Explicit demand response capacity as a percentage of peak load for selected electricity systems
+
+<!-- image -->
+
+Note: Values represent explicit demand response capacity (contracted or technically available) as a share of each system's peak load.
+
+Sources: IEA analysis based on data from EirGrid (2024), Terna (2024), Taipower (2024), KPX (2025), RTE (2024), EIA (2025).
+
+Evidence from recent studies highlights the scale of potential savings. For the United States, studies indicate that large-scale deployment of DR could reduce system costs by USD 15 billion annually by 2030. These savings are attributed to avoided generation and grid build out, as well as lower energy costs. Modelling for ERCOT  suggests  USD 3.3-5 billion  in  net  savings  annually,  largely  due  to deferring costs from new  investment. EU-wide  analysis finds that broad deployment of flexibility by 2030 could reduce future system costs by EUR 19-37 billion  each  year  by  cutting  generation  costs,  reducing  balancing expenditures  and  deferring  or  avoiding  network  reinforcements,  while  also enabling even greater cost savings for consumers.
+
+## As regulations are updated accordingly, participation of aggregated demand resources is gaining pace
+
+Regulatory barriers typically remain one of the main challenges to scaling demand response participation, especially with regards to aggregated demand resources. Aggregators can face contract design constraints such as market entry requirements,  retail  supplier  consent,  compensation  arrangements  to  manage wholesale market exposures, complex measurement and verification rules, and minimum  bid  sizes  in  wholesale  or  balancing  markets  that  exclude  smaller distributed  resources.  Additionally,  market  settlement  systems  are  often  built around retail suppliers, making it hard to recognise demand-side contributions and to  compensate  consumers  or  aggregators  directly.  Many  of  these  are  legacy barriers  stemming  from  times  when  the  demand  side  was  considered  largely inelastic and power systems had ample overcapacity. However, with increasing electrification and flexibility needs, greater demand-side participation is becoming essential, necessitating appropriate adjustments to regulatory frameworks.
+
+At the same time, demand response participation depends heavily on technology and infrastructure.  Technically-enabled  potential  reflects  what  is  feasible  given available monitoring and control capability, but converting this potential into actual participation depends on system integration, operational use and market uptake. Many regions still lack widespread smart meter coverage, limiting granular data and complicating settlement. Even where smart meters exist, automation remains limited by device capabilities and integration costs. Interoperability standards and DR-ready  features  for  appliances  are  still  under  development  but  gaining adoption,  and  industrial  sites  may  need  costly  upgrades  to  provide  verifiable demand reductions. Understanding how consumers react to price signals is also important  for  determining  how  much  flexibility  can  come  from  price-based responses versus event-based programmes.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Figures represent the most recent available smart meter penetration data from the listed sources. The chart shows the share of customers with smart or advanced meters. In every case, these are communicating interval meters that allow remote readings and support time-varying tariffs. However, the level of functionality may differ across countries. Sources: IEA analysis based on data from ACER and CEER (2024), ESB Networks (2025), EIA (2025), ERSE (2025), EControl (2025), Berg Insight (2024), The Peninsula Qatar (2025), NSGM (2025), DESNZ (2025), Bundesnetzagentur (2025) and Elec Times (2024).
+
+New  technologies  such  as  smart-charged  EVs,  heat  pumps  with  advanced controls, and behind-the-meter storage are expanding potential flexibility. Much of this  emerging  demand  is  flexible,  with  controllability  largely  determined  by  the underlying  end-use  service,  though  the  degree  of  flexibility  varies  across technologies  and  depends  on  factors  like  building  characteristics  and  control capabilities. However, barriers persist, including fragmented interoperability and interface requirements, uneven implementation of secure communications, and concerns  over  privacy  and  cybersecurity.  Customer  consent  and  trust  also continue to be essential, alongside access to reliable information and simple, lowdisruption  participation  pathways.  Without  these  foundations,  many  smaller consumers  remain  locked  out  of  flexibility opportunities, and  the  system underuses its available resources.
+
+Several  jurisdictions  have  introduced  reforms  to  overcome  these  barriers  and unlock  DR.  In  the United  States ,  aggregated  demand  resources  are  being enabled across wholesale energy, capacity and ancillary services, under FERC Order 2222, as part of distributed energy resource aggregation, with all RTOs and ISOs  having  submitted  initial  compliance  filings.  Emergency  events  have  also demonstrated  reliability  value,  with  ERCOT  deploying  Load  Resources  (LR) during  a  September  2023  Energy  Emergency  Alert.  LR  programmes  enable system operators to instruct large industrial, commercial, or institutional electricity consumers to temporarily reduce their power consumption (curtail load), including during periods of system stress, to help maintain grid stability. These consumers are  paid  to  be  available  to  rapidly  reduce  demand  when  called,  allowing  the operator to use demand reduction as a fast-acting alternative to firing up traditional power  plants  when  reserves  are  low.  ERCOT  has  had  recent  progress  in  the Aggregate Distributed Energy Resource (ADER) pilot project, which has begun to clarify  pathways  for  aggregated,  behind-the-meter  resources.  This  includes controllable  demand  adjusted  by  the  party  co-ordinating  the  aggregation  per instructions to participate in wholesale markets beyond emergency conditions.
+
+In Canada ,  Québec  demonstrates  how  residential  DR  programmes  can  scale significantly  over  time.  Hydro-Québec  has  progressively  expanded  residential schemes that combine implicit and explicit DR mechanisms. The Winter Credit Option allows customers to stay on the standard residential tariff while earning bill credits  for  reducing  consumption  during  winter  peak  events.  Rate  Flex  D  is  a dynamic pricing tariff offering lower prices for most of the winter and higher prices during a limited number of critical peak periods. Hydro-Québec introduced these offerings  in  the  winter  of  2019/20,  enrolling  around  20 000 customers.  In  the 2024/25  season,  participation  had  expanded  to  about  340 000 customers, including roughly 260 000 in the Winter Credit Option and 80 000 under Flex rates. The associated power shed per peak event rose from about 16 MW to around 330 MW over the same period, while the number of households represented per event rose from about 2 300 to 44 000.
+
+In Europe , a legal framework supporting demand flexibility was implemented in 2019, with EU rules requiring member states to allow DR through aggregation to participate alongside generators in all electricity markets on a non-discriminatory basis. In liberalised retail markets with customer choice, time-varying retail tariffs often  provide  a  low-friction  pathway  for  implicit  DR.  In  March  2025,  ACER submitted a draft EU-wide network code on demand response to the European Commission to harmonise roles, data access, baselining and aggregator entry. It then released a report with 12 'no-regret' actions to unlock flexibility, including stronger price signals, proportionate baselines, simpler market entry for aggregators  and  faster  smart-meter  rollout.  In  France,  reforms  to  peak  and off-peak time windows for retail electricity contracts under the 'heures pleines/heures creuses' option are progressively adding more daytime off-peak windows, particularly in summer, to better reflect system needs and periods of high renewable output. ACER-CEER's 2024 Market Monitoring Report underlines the implementation gap by showing that access to time-varying retail tariffs and enabling  technologies  remains  uneven  across  member  states.  At  the  national level, many countries provide routes for DR, although the design varies. France's NEBEF is notable as it allows aggregators to monetise load reductions directly in energy markets without requiring supplier consent, while Ireland's Demand Side Units participate in the Single Electricity Market and receive capacity payments for their contributions to system adequacy.
+
+In  the United  Kingdom ,  one  of  the  largest  household  demand  response programmes has emerged through the Demand Flexibility Service (DFS). First launched  in  winter  2022/23,  DFS  enabled  households  and  businesses  to participate through their suppliers or aggregators, with more than 1.6 million customers participating in the first year. Over winter 2023/24, participation grew to 2.6 million households and businesses, with DFS delivering 3.7 GWh of downward demand response across all events during the winter. In winter 2024/25, DFS shifted to a merit-based, year-round margin tool, procuring DR based on priced offers, with lower-cost flexibility dispatched first to support system margins. Across 44 events, around 5.4 GWh of DR was procured, with approximately 3.9 GWh delivered.
+
+In Japan ,  demand response aggregators are formally recognised as 'specified wholesale  suppliers'  under  the  amended  Electricity  Business  Act.  Ministry  of Economy, Trade and Industry (METI) materials describe the aggregator authorisation  regime  and  the  Organization  for  Cross-regional  Coordination  of Transmission Operators' (OCCTO) FY 2024 statistics lists 60 specified wholesale suppliers. Japan's capacity market includes 'activation-command resources', a category  that  can  include  demand  response,  customer-sited  generation,  and aggregated small-scale units. In the main capacity market auction conducted in FY 2024 for the FY 2028 delivery year, 6.4 GW of activation-command resources were  contracted,  representing  around  4%  of  total  cleared  capacity.  OCCTO conducted a one-year-ahead additional capacity auction in 2024 for the FY 2025 delivery year, in which 270 MW of activation-command resources were offered and contracted. Following the additional auction, activation-command resources amounted to around 3.2 GW of total capacity secured in the capacity market for FY 2025.
+
+Australia has brought flexible demand into wholesale dispatch via the Wholesale Demand Response Mechanism. AEMO's annual 2025 Wholesale Demand Report shows around 74 MW of registered capacity across 158 sites, representing less than  1%  of  peak  demand.  Wholesale  demand  response  was  dispatched  on 23 days (240 MWh) between July 2024 and May 2025, reflecting small-scale but operational integration into wholesale dispatch. In January 2026, the government also  announced  the  Solar  Sharer  Offer,  which  is  scheduled  to  begin  on 1 July 2026 in New South Wales, South Australia and South East Queensland. This scheme would require retailers to offer at least three midday hours of free electricity  in  their  default  (standing)  offer,  to  encourage  consumption  during periods of high solar output, aiming to shift demand away from more expensive evening peaks.
+
+In India ,  the  Ministry  of  Power  mandated  time-of-day  tariffs  for  all  consumers, except  agriculture,  by  April 2025.  As  of  January 2026,  around  53 million  smart meters have been installed. At the state level, Maharashtra mandated demand response  through  'Demand  Flexibility  Portfolio  Obligations',  which  requires distribution companies to procure demand flexibility resources equal to 1.5% of the  previous  financial  year's  peak  demand  in  FY 2025/26,  rising  to  3.5%  by FY 2029/30.  In  practice,  this  requires  distribution  companies  to  assemble  a portfolio of consumers or controllable loads capable of adjusting demand during peak  periods,  with  compliance  verified  through  at  least  one  annual  demand flexibility event under the state's measurement and verification framework.
+
+In China ,  demand  response  expanded  through  provincial  programmes,  where industrial and commercial consumers are enrolled to shift or curtail load during peak periods. The National Development and Reform Commission's 2023 revised demand-side  management  measures  highlighted  demand  response  as  a  core element  of  flexibility  provisions  alongside  storage  and  interconnection,  setting targets through 2025. In 2024, the National Development and Reform Commission, the National Energy Administration and the National Data Administration jointly issued the Action Plan for Accelerating the Construction of a New  Power  System  (2024-2027).  This  plan  outlines  how  demand  response capacity should achieve at least 5% of peak load while also making efforts to reach 10% of peak load in certain areas. In parallel, China is promoting market-oriented DR through aggregators, enabling distributed loads and storage to participate in electricity markets, marking a shift away from purely administrative DR.
+
+In the United Arab Emirates, Dubai's DEWA introduced a residential DR pilot with  smart  thermostats, allowing  the  utility  to  adjust  AC  set-points  during  peak periods in return for customer incentives. Abu Dhabi's Department of Energy is implementing DR programmes with major industrial and commercial consumers, with their 2024 pilot programme reducing peak demand by an average of 106 MW across multiple events, with a maximum reduction of 210 MW.
+
+## Solar PV capture rates decline, but storage can help boost system value
+
+The rapid expansion of VRE capacity across markets between 2018 and 2025, particularly solar PV (+337 GW in Europe, +201 GW in the United States, +34 GW in  Australia),  together  with  other  inflexible  generation  and  lagging  demand flexibility  have  reshaped  hourly  price  patterns.  This  is  especially  notable  in declining capture rates 1  for solar PV, impacting the business cases of projects.
+
+1 Electricity market capture rates measure the relative market value of different generation technologies or fuel types, by comparing generation-weighted average price earned by one unit of energy from each source to the unweighted average wholesale market price over the same period. A capture rate below 100% indicates that a source tends to generate during low-price  hours,  while  values  above  100%  reflect  operation  predominantly  in  higher-price  periods.  Phrased  differently, capture rate is the total spot revenue for a generator(s) divided by its total volume (MWh) to get USD/MWh, divided by unweighted average price (USD/MWh). If a generator produced a constant power output for the whole time period, the capture rate would be 100%.
+
+For example, in Germany very low or negative prices increasingly coincide with solar PV output, where 25% of its generation volume is now during negative price periods. In Australia, this share has surpassed 40% in Queensland and Victoria. Greater  flexibility  on  the  supply  and  demand  sides,  especially  supported  with storage, can help to boost the market value of solar PV generation by shifting generation to higher-priced hours.
+
+## Share of utility-scale solar PV yearly generation volume at negative prices in selected countries and regions, 2019-2025
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Note:  In  Spain,  negative  electricity  prices  on  the  day-ahead  market  were  permitted  in  December  2023  following  the implementation of updated rules on the operation of electricity markets.
+
+Source: IEA analysis based on data from IEA Real-Time Electricity Tracker (2025).
+
+Capture rates of utility-scale solar have shown a sharp downward trend in recent years,  falling  from  more  than  100%  in  2018  to  below  60%  in  2025  in  many European  markets  such  as  France,  Spain,  Germany  and  the  Netherlands. European levels of capture rates for utility-scale  solar  PV  are  now  in  line  with regions that have historically low capture rates such as CAISO (California), where more than 20% of utility-scale solar PV generation takes place during negatively priced hours.
+
+In  Australia,  these  rates  have  decreased  even  more  significantly  in  various National Electricity Market (NEM) regions, from around 100% in 2018 to less than 30% in Victoria and Queensland, and to below 50% in South Australia in 2025. Wind  generation  capture  rates  also  face  downward  pressure  in  some  areas, although these have shown more resilience in recent years by remaining generally above  80%.  By  contrast,  in  the  considered  markets  in  this  analysis,  flexible dispatchable technologies such as hydropower and natural gas have capture rates 2 to 3 times the value obtained by utility-scale solar PV, up from less than 1.1 in 2018.  Natural  gas  capture  rates  have  reached  record-highs  in  Victoria,  above 340% in 2025, and are rising in Europe, not only in countries where gas accounts for a marginal share in the mix like France (3%) but also in Spain, Germany, the United Kingdom, Denmark, Ireland or the Netherlands.
+
+## Capture rate of generators by fuel type in selected countries and regions, 2018-2025
+
+<!-- image -->
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Electricity market capture rates measure the relative market value of different generation technologies or fuel types, by comparing generation-weighted average price earned by one unit of energy from each source to the unweighted average wholesale market price over the same period. A capture rate below 100% indicates that a source tends to generate during low-price  hours,  while  values  above  100%  reflect  operation  predominantly  in  higher-price  periods.  Phrased  differently, capture rate is the total spot revenue for a generator(s) divided by its total volume (MWh) to get USD/MWh, divided by unweighted average price (USD/MWh). If a generator produced a constant power output for the whole time period, the capture rate would be 100%.
+
+Source: IEA analysis based on data from IEA Real-Time Electricity Tracker (2025).
+
+These trends indicate the rising value of flexible  supply  with  the  ability  to  shift generation to higher-priced periods. Utility-scale batteries can especially result in higher  market  values  of  VRE.  While  doing  so,  they  can  also  contribute  to increasing  the  system  value  by  improving  dispatchability,  reducing curtailment, and  lowering  total  system  costs.  While  most  battery  energy  storage  systems (BESS)  currently  taking  part  in  electricity  markets  are  standalone,  pairing VRE projects with energy storage is becoming more common.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Series are presented as a 3-month moving average. Storage is defined as a BESS with no grid charging, 50% storage power ratio and 2-hour storage duration.
+
+Source: IEA analysis based on data from Pexapark (2025).
+
+## Utility-scale batteries are expanding rapidly, strengthening system flexibility
+
+Battery storage has become one of the most versatile tools for providing shortterm power system flexibility. They can support the integration of wind and solar power  by  responding  quickly  to  provide  system  balancing  and  grid  support services,  contribute  to  security  of  supply  through  capacity  provision,  and  shift renewable generation to periods of high demand. As a result, they help defer or reduce the need for some network upgrades. Battery storage can also help greatly with the secure and cost-effective integration of new types of loads such as EVs, heat pumps and data centres, where the consumption can be highly correlated across location and time.
+
+Costs have declined significantly in recent years, with battery storage project costs falling  by  about  40%  in  2024  to  around  USD 150/kWh,  underpinning  a  strong increase in deployment. In 2024, utility-scale battery storage additions reached 63 GW,  marking  another  record  year  and  bringing  total  installed  capacity  to 124 GW.  The  contribution  of  utility-scale  batteries  in  meeting  peak  demand  is increasing in many power systems. In California, the ratio of installed utility-scale battery storage to peak load stood at almost 25% in 2024, and around 15% in South Australia and the United Kingdom, which were all less than 5% in 2019.
+
+## Utility-scale battery project costs, VRE share and utility-scale battery storage capacity relative to peak load, by region, 2019-2024
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: These figures use batteries' nameplate capacities. The actual battery discharge during a peak load event may be significantly below aggregate nameplate capacity. This can be because of temperature derating, noting that peak demand events are correlated with extreme temperatures. Additionally, batteries may not be fully charged when peak demand events start, and may have a duration which is less than the duration of the demand spike. Some capacity may be assigned to provide ancillary services, in a way which precludes them from providing energy during a peak demand event. These figures refer  to  grid-scale  batteries,  and exclude industrial  and  domestic  batteries. In  some countries, such  as  Germany,  home storage capacity is far larger than grid-scale storage.
+
+Sources: IEA analysis based on data from AEMO (2025), AER (2025), CAISO (2025), EIA (2025), DESNZ (2025), ERCOT (2025), Open Electricity (2025) and MaStR (2025).
+
+Large project pipelines for utility-scale batteries reflect strong investor interest, but many projects face multi-year delays in securing grid connection and permitting, including planning approval processes and addressing local opposition related to issues such as fire safety. Projects also encounter uncertain and volatile revenue streams, or struggle to access financing on suitable terms.
+
+## Average battery size is increasing overall, though average duration varies by market
+
+Global battery storage additions in the power sector surged in 2024, with around 63 GW of new utility-scale capacity installed. A key driver of this expansion has been the rapid decline in lithium-ion battery pack costs. In 2024, average pack prices fell by around 20%, followed by a further decrease of about 8% in 2025.
+
+Average  capacity  of  utility-scale  battery  storage  has  been  increasing  in  many markets, in line with the evolving market needs for flexibility and capacity as VRE penetration increases. In the United States, average capacity more than doubled from about 15 MW in 2021 to around 35 MW in 2024. This trend is also seen in Europe, where a 1 000 MW (4 000 MWh) battery storage system is being built by LEAG and Fluence in Germany, set to become the largest battery storage project on the continent. In Australia, the Eraring battery storage system is set to expand from a capacity of 460 MW to 700 MW (and a volume of 2 800 MWh) in 2027, which  will make  it the country's largest utility-scale project. Saudi Arabia commissioned a 500 MW (2 000 MWh) battery storage facility in Bisha in 2025, adding to the growing number of large-scale projects worldwide.
+
+China has become the largest market globally for battery storage, both in terms of annual additions and cumulative installed capacity. China added about 42 GW (101 GWh) of new-type energy storage capacity  2  in 2024, corresponding to an average  duration  of  around  2.3 hours.  By  end-2024,  Inner  Mongolia  was  the leading  province  in  China,  with  around  10.2 GW  of  new-type  energy  storage. About  66 GW (189 GWh)  was  also  added  in  2025,  bringing  the  cumulative capacity to approximately 145 GW by the end of the year. By the end of 2025, standalone energy storage accounted for 58% of cumulative installations.
+
+The  rapid  declines  in  costs  are  particularly  apparent  in  batteries  with  higher storage durations. In Great Britain, 98% of new capacity added in Q4 2024 had a duration  of  2  hours  or  more.  In  Australia's  National  Electricity  Market,  95%  of capacity post-2024 is designed for 2 hours or more, and is expected to increase average  duration  from  1.5 hours  in  2024  to  2.5 hours  in  2027.  In  China,  the average duration of cumulative new-type energy storage installations increased from about 2.1 hours in 2021 to around 2.6 hours in 2025. California stands out for  its  concentration  of  battery  storage  with  a  4-hour  duration,  in  part  due  to Resource Adequacy rules that assign capacity value based on sustained output over this period. This reflects a trend in some markets, where new battery projects are being built with longer durations to provide greater energy shifting potential.
+
+Beyond  these  market-driven  trends,  several  countries  are  introducing  statebacked procurement schemes to support longer-duration battery storage. In Italy, the first MACSE auction has already contracted 10 GWh of utility-scale battery storage for delivery in 2028, including about 1.3 GWh from battery storage with durations of 8 hours or more. Italy's auction mechanism aims to procure 50 GWh of BESS capacity by 2030 to support renewable energy integration. Great Britain has introduced a long-duration energy storage cap and floor scheme requiring projects  to  discharge  at  full  power  for  at  least  eight  hours,  with  an  indicative capacity range of 2.7 to 7.7 GWh by 2035.
+
+2 New-type energy storage excludes pumped hydropower and includes both front-of-the-meter and user-side installations.
+
+## Distribution of capacity and duration of existing battery storage projects in selected markets
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: The dashed lines indicate the capacity-weighted average duration. Australia refers to the National Electricity Market of Australia. Each band on the x-axis represents the range of values covered by that interval. For example, 0-1 includes all values greater than or equal to 0 and less than 1, 1-2 includes values from 1 up to but not including 2, and so on. The final band (4+) includes all values greater than or equal to 4. Data for the United States is up to the end of 2024, data for Australia is up to the end of Q2 2025, and data for Germany is up to January 2026.
+
+Sources: IEA analysis based on data from AEMO (2025), EIA (2025) and MaStR (2025).
+
+## Battery storage revenues can shift as deployment scales
+
+Battery projects increasingly draw on multiple revenue streams to build a viable business  case.  In  most  markets,  the  main  sources  of  revenue  are  ancillary services (e.g. frequency control), energy arbitrage, and, where in place, capacity mechanisms that remunerate availability to ensure that sufficient firm capacity is available during periods of peak demand. Other revenue sources are from locally procured congestion or constraint management services in some regions. Under these arrangements, system or network operators procure flexibility from available providers to adjust net injections or withdrawals at specific locations or times to help alleviate network constraints. As battery use has expanded, the composition of these revenues has evolved. Utility-scale batteries dominate various ancillary services across many regions. They are, for example, now the primary providers of flexible regulation services in California and Texas, account for the largest share of frequency control ancillary services in Australia, and they currently supply most of the dynamic containment frequency response in Great Britain.
+
+As battery penetration expands, ancillary service markets can become increasingly competitive, reducing revenues and narrowing profit margins for new battery projects. Prices for fast-frequency services, which rose sharply when new products were first introduced and supply was limited, have declined as battery capacity  has  increased.  For  example,  for  ERCOT  the  total  cost  of  ancillary services per MWh fell by 74% in 2024. In Australia's NEM, total Frequency Control Ancillary  Services  (FCAS)  costs  were  AUD 13 million  (Australian  dollars)  in Q1 2025, a 55% decline compared with the same quarter the previous year, driven by lower FCAS prices.
+
+Notes: Australia refers to the National Electricity Market of Australia. Values for Australia are based on total quarterly battery revenue from wholesale electricity and ancillary service markets only. The 100% scale refers to the composition of revenue categories. The revenue stack in the European countries shown considers a hypothetical 1 MW/2 MWh BESS and includes only  revenues  from  energy  shifting  and  frequency  regulation;  capacity-related  revenues  are  excluded  and  may  not  be available in all markets.
+
+<!-- image -->
+
+Sources: IEA analysis based on data from AEMO (2025) and Pexapark (2025).
+
+While early battery projects in many markets primarily targeted ancillary services, recent capacity additions are increasingly used for energy shifting and capacity provision.  Battery  storage  is  well  suited  to  short-term  intraday  energy  shifting, typically in the 1-4 hour range, enabling solar generation to be moved into evening peak periods. In California, battery storage has significantly contributed to meeting evening  peak  demand,  at  times  supplying  about  a  quarter  of  peak  load  and displacing  higher-cost,  higher-emissions  gas-fired  generation.  This  shift  is  also reflected in the rising share of systems with 2-hour or longer durations, which can achieve higher revenues by capturing intraday price spread.
+
+Beyond intraday and day-ahead energy shifting, battery storage is more frequently deployed to manage short-term imbalances resulting from forecasting errors and rapid  changes  in  net  load.  In  systems  with  rising  shares  of  VRE,  deviations between day-ahead schedules and real-time conditions can become significant, particularly during ramping periods, thereby raising the value of fast-responding storage assets. In the United States, for example, California's battery storage is increasingly dispatched in real-time energy  markets  to correct short-term deviations from day-ahead schedules. In Great Britain, battery storage plays an expanding role in the Balancing Mechanism, supporting system balancing during real-time  operation.  In  Germany,  continuous  intraday  trading  has  become  an important channel for battery storage to  monetise its flexibility, enabling adjustment of positions close to delivery as renewable output evolves.
+
+## Annual average hourly battery output across selected markets
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Negative power output means the battery is charging, while positive output means it is discharging, based on net energy-market battery output to the grid. The analysis includes batteries dispatched explicitly as storage in CAISO and excludes hybrid resources whose operation is dispatched jointly with generation.
+
+Sources: IEA analysis based on data from ERCOT (2025) and CAISO (2025).
+
+The revenue potential from energy shifting is directly related to price spreads in spot wholesale electricity markets. The normalised annual average of the daily cumulative price differences between the highest and lowest prices provides a useful  indicator  of  this  potential.  A  downward  slope  in  the  normalised  annual average daily spread curve indicates that expanding the number of hours in the energy shifting  window reduced the average spread captured per hour, with a steeper slope signalling a larger drop-off in incremental value as additional hours are included.
+
+The size of these multi-hour spreads varies by region and year, with South Australia consistently recording the largest spreads. California, Texas and Great Britain show more moderate spreads, with levels in 2024 generally lower than in 2023. Year-on-year movements are mixed, influenced by factors such as fuel  prices  and  weather  conditions,  but  the  widening  of  spreads  with  larger numbers of hours highlights the opportunity for battery storage capable of multihour  shifting.  While  the  rising  share  of  batteries  in  energy  shifting  can  put downward pressure on the price spreads, the simultaneously growing share of VRE provides an upward pressure. Therefore, the evolution of price spreads will strongly depend on market-specific dynamics.
+
+## Normalised annual average daily cumulative price difference between highest and lowest hourly prices by region, 2021-2025
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Note: The plotted metric is also referred to as TBn, where n denotes the number of hours considered. TBn represents the annual average of the daily difference between the sum of the n highest-priced hours and the sum of the n lowest-priced hours. This is then normalised by dividing the cumulative spread by n. For example, for TB2, the cumulative spread is divided by 2, for TB3, it is divided by 3, etc.
+
+## Different instruments can help de-risk utility-scale battery project development
+
+As with many other capex-intensive assets, batteries benefit greatly from contracts or mechanisms that provide long-term revenue stability that allow for de-risking to access better financing conditions, complementing the wholesale electricity price signals on the spot market. In well-functioning and sufficiently liquid markets, price signals with adequate spatial and temporal granularity play an essential role in indicating the value of additional flexibility in the system and can incentivise the deployment of flexibility sources such as batteries. Therefore, allowing for such price signals is crucial for a cost-effective market-based deployment of flexibility resources.  However,  despite  the  growing  potential  for  energy  shifting  in  many markets, long-term revenue uncertainty can still be a challenge. This is especially relevant as opportunities for energy shifting can be quite variable, depending on renewable output, transmission constraints and fuel price trends, resulting in a revenue  base  that  is  technically  diverse  and  financially  volatile,  which  can complicate debt financing and raise the cost of capital.
+
+Financial hedging instruments commonly used in power markets, such as forward contracts, can help with hedging price risks, but their limited horizon (often one year)  can  be  insufficient  to  secure  long-term  price  stability  in  markets  where amortisation periods are longer, which can make mechanisms and contract types with  longer  durations  more  desirable.  In  addition,  such  conventional  financial instruments may not be well-suited  to  batteries'  multi-service  revenue  profiles. These  instruments  typically  hedge  price  levels  rather  than  a  battery's  charge- discharge margins associated with energy arbitrage. Also, they are designed for assets typically with a single, dominant revenue stream, whereas batteries can have  diverse  and  relatively  volatile  revenue  streams  (e.g.  energy  arbitrage, ancillary services and capacity payments).
+
+From a project finance perspective, long-term contracts of around 15 years are generally  viewed  as  favourable  for  reducing  merchant  risk  and  supporting bankability,  however  such  long  tenors  are  rare.  In  California,  the  Resource Adequacy scheme mandates that load-serving entities sign private contracts to pay for capacity up to 3 years in advance. In 2025, these capacity obligations were disaggregated  into  each  hour  of  the  day,  under  the  Slice  of  Day  framework. Capacity payment schemes such as these attempt to shift downside risk away from investors by providing a revenue floor for each megawatt of capacity. By contrast,  contracts-for-difference  (CfD)  and  schemes  such  as  the  Long-Term Energy  Service  Agreements  (LTESAs)  in  New  South  Wales,  are  intended  to provide  a  revenue  floor  for  each  megawatt-hour  of  energy.  LTESAs  have  a maximum duration of 20 years, although in 2025 some successful bidders opted for shorter terms to increase the competitiveness of their bids. Capacity payments and price hedging schemes can make projects more bankable for investors, but do so by shifting some of the downside risk to consumers or the public sector.
+
+The diversity of support schemes in use reflects different approaches to allocating risk between investors and consumers. One approach has been to provide capitalbased investment support to reduce upfront financing requirements. For example, in  Poland,  the  European  Commission  approved  a  EUR 1.2 billion  scheme  to support investments in electricity storage, financed partly by the Recovery and Resilience Facility, and partly by the Modernisation Fund. This scheme provides upfront support, including grants and loans, to lower capital costs while leaving projects exposed to ongoing market revenues.
+
+One  example  of  a  mechanism  designed  to  mitigate  revenue  risk  is  Greece's support scheme for battery storage, illustrating how these principles are applied in practice. It combines an upfront investment grant with a ten-year, two-way CfD style operating support applied to annual market revenues. Under this arrangement, projects bid an annual 'Base Revenue' in EUR/MW-year, representing the  level  required  for  financial  viability,  while  the  realised  'Market Revenues' from participating in day-ahead, intraday and balancing markets are determined from market settlement data under a methodology set by the regulator. If Market Revenues fall below the Base Revenue, the CfD provides a top-up; if they  exceed  it,  the  surplus  is  returned  through  a  claw-back.  This  structure effectively  establishes  a  revenue  floor  with  two-way  adjustment  across  the covered market revenue stack, supporting long-term cash flows.
+
+In addition to policy support mechanisms, ownership structures also influence how revenue risk is managed. Across regions, utility-scale battery storage assets are owned  by  a  mix  of  specialist  developers,  listed  funds,  independent  power producers and integrated utilities. In Great Britain, listed funds such as Gresham House and Gore Street, together with developers and owners such as BW ESS, are among the largest owners of operational battery storage capacity. In Australia, ownership includes global investors and developers such as Akaysha Energy as well as integrated utilities like Origin and AGL. In California and the wider United States, independent power producers and utilities, including LS Power, Vistra and NextEra Energy Resources, own many of the largest grid-scale storage projects. These differing investor profiles shape the degree of merchant exposure they are willing to accept and their interest in long-term contracting arrangements.
+
+Alternative contractual agreements are often relied upon to help improve revenue certainty  and  bankability.  For  example,  a  tolling  agreement  provides  the  asset owner with a fixed payment while a third-party optimiser operates the battery and assumes  market  risk.  Another  option  is  the  revenue  floor  contract,  which guarantees a minimum income when using a third-party optimisation service. The guaranteed  revenue  under  a  floor  contract  is  typically  lower  than  in  a  tolling agreement,  as  the  owner  retains  some  exposure  to  market  conditions  and therefore the potential for upside returns. By contrast, merchant strategies carry more downside risk, which raises the required rate of return. Recent examples in the United Kingdom such as Gresham House's long-term revenue floor with EDF and the 7-year tolling contract between BW ESS, Penso Power and Shell show how these structures are being adopted to provide more revenue certainty.
+
+Several countries are introducing regulated remuneration mechanisms to reduce investment  risk  for  battery  storage.  For  example,  in  Italy  the  MACSE  scheme offers long-term contracts of up to 15 years through competitive auctions, under which successful projects receive a regulated premium (EUR/MWh-year) linked to contracted storage capacity, with revenues from market participation settled under predefined rules. In the most recent MACSE auction held in September 2025, around  10 GWh  of  battery  storage  was  awarded,  with  projects  expected  to become operational by 2028. This approach strengthens bankability while helping to contain overall system costs.
+
+## Capacity payments offer extra revenue, though value varies by accreditation method
+
+Capacity payments are linked to the availability of resources and can provide an important revenue stream for battery storage projects. This is particularly relevant in markets where system adequacy or flexibility needs are not sufficiently reflected in wholesale electricity or ancillary services prices due to various factors such as specific designs and maturity of markets.
+
+Where capacity mechanisms exist, the value that battery storage projects receive in  these  frameworks  can  differ  significantly  based  on  the  specifics  of  the accreditation methodology. These methods assign an accredited capacity value reflecting a resource's reliable contribution to system adequacy during periods of highest  system  stress.  For  battery  storage,  this  value  is  typically  lower  than nameplate capacity, reflecting limitations related to storage duration and uncertainty over state of charge at the onset of a stress event. In many schemes, these  'derating  factors'  or  'effective  load  carrying  capability'  are  determined ex ante through modelling, with additional performance obligations or penalties applied ex post if assets underperform during realised scarcity events. Typically, shorter-duration  battery  storage  tends  to  receive  lower  capacity  credit,  while longer-duration systems receive higher capacity credit and are treated more like other firm resources. As a result, peaking gas plants remain the most common source of firm capacity in many markets, even as storage begins to play a larger role.  In  California,  for  example,  gas-fired  plants continue to provide  the  largest share  of  accredited  capacity  in  the  resource  adequacy  programme,  although batteries now account for just under one-fifth of accredited resource capacity.
+
+In  Great  Britain,  the  Capacity  Market  credits  storage  based  on  its  modelled reliability  contribution,  known as the de-rating factor, with providers required to deliver their contracted capacity when called during system stress events. This factor  declines  as  duration  decreases  and  is  recalculated  annually  to  reflect updated system conditions. In the United States, PJM applies an Effective Load Carrying Capability (ELCC) methodology that similarly adjusts accredited capacity depending on duration, reducing the value for shorter-duration systems. California's resource adequacy framework accredits storage based on the output it can sustain over 4 hours, with shorter-duration battery storage receiving lower capacity credit.
+
+## Assigned capacity contribution to reliability by storage duration and technology in Great Britain
+
+<!-- image -->
+
+Notes: The capacity contribution values shown here indicate the share of each technology's nameplate capacity that counts toward reliability in Great Britain's Capacity Market. These values, known as 'de-rating factors,' reflect how much dependable capacity each resource is expected to provide during system stress events. Values correspond to the T-1 Capacity Market auction (one-year ahead of delivery), which secures capacity closer to real-time needs. T-4 auctions are held four years in advance and may use slightly different de-rating factors based on projected system conditions.
+
+Source: IEA analysis based on data from the Electricity Capacity Report.
+
+## Regulatory and market barriers can limit the uptake of utility-scale batteries
+
+Tariffs and network charges can weigh on the economics of battery storage. In some  jurisdictions,  storage  still  faces  'double  charging',  paying  use-of-system fees and levies both when charging and discharging, which can materially affect project economics. Some markets have introduced reforms to address this, such as Great Britain's move in 2023 to apply a Balancing Services Use of System charge only to final demand, removing a key double charge on battery storage. Under the European Union's Directive 2019/944, member states are required to ensure  energy  storage  is  not  subject  to  double  charging,  including  network charges. Several countries are moving to align with this directive, for example, France's TURPE-7 framework will introduce an optional 'injection-withdrawal' tariff for storage from 1 August 2026 in eligible zones with predictable constraints.
+
+Metering arrangements can add further cost and complexity, especially for colocated  solar  and  storage  projects.  In  Germany,  for  example,  the  regulatory treatment of electricity used for battery storage can differ depending on whether charging  occurs  from  the  grid  or  on-site  renewable  generation.  For  co-located projects,  this  can  require  additional  metering  and  accounting  to  demonstrate compliance with charging and settlement rules, or restrictions on how storage can be  charged,  which  raises  compliance  costs  and  limits  operational  flexibility. Recent regulatory changes are beginning to simplify these configurations, such as the Australian NEM's Integrated Resource Provider model, which allows storage and co-located plants to register and participate as bidirectional units.
+
+Export and import limits set the physical cap on how much power a site can deliver to and draw from the grid, while separate metering rules can require solar and storage to be metered and dispatched as distinct units, which may prevent them from  using  spare  export  headroom  and  can  indirectly  constrain  total  power delivery.  For  example,  in  Great  Britain,  distribution  connections  agreements specify  Maximum  Export/Import  Capacity,  and  Distribution  Network  Operators may require  compliance  within  these  limits.  Where  locational  price  signals  are weak or non-existent, batteries that could relieve congestion are not rewarded for doing so, meaning the value of deferred network investment is not reflected in project cash flows. Dynamic export limits or similar approaches may help address such issues.
+
+Differences in market access and operational integration continue to shape how battery  storage  operates  in  electricity  markets.  While  some  systems  now  offer standard products for very fast services such as fast frequency response, others lack  these,  and  inertia  is  often  procured  through  specific  tenders.  Duration  or bidding rules can also restrict simultaneous participation across services, within operational constraints, although recent reforms in several markets have sought to improve the ability to stack revenues across services. One example is ERCOT's Real-Time Co-optimization  Plus  Batteries  (RTC+B) market,  which  incorporates ancillary service dispatch into real-time energy dispatch. Introduced in December 2025,  this  is  expected  to  save  USD 1 billion  per  year  through  more  efficiently harmonising battery availability across services. A further example is ISO New England's Day-Ahead Ancillary Service Initiative, which commenced operations from 1 March 2025. This initiative co-optimises energy and ancillary services in the day-ahead market, aligning energy schedules with reserve requirements and enabling battery storage to optimise participation in different market products. In Great  Britain,  the  Office  of  Gas  and  Electricity  Markets'  (Ofgem)  June 2025 decision establishing the market facilitator policy framework set out common rules and  processes  to  align  local  and  national  flexibility  markets,  with  the  aim  of reducing barriers to participation and service stacking.
+
+In addition to various regulatory and market barriers mentioned previously, policy uncertainty is among the key factors influencing battery investment decisions. The timing  and  predictability  of  policy  and  market  decisions  can  largely  affect investment planning. Infrequent tenders, pauses during market reforms, and slow rulemaking create stop start signals that are hard for investors and supply chains to manage. Even where reforms are under way, the lag between consultation and implementation can stretch over several years, during which time projects face uncertainty around product definitions and accreditation rules.
+
+## Frequency and inertia products, and participation limits for storage across electricity markets
+
+| Market        | Fast frequency service                                                             | Inertia products                                                                                                              | Main participation limit                                                                                                                                                                                                                                               |
+|---------------|------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Great Britain | Dynamic Containment, ~1-second to full delivery (post-fault), procured day- ahead. | Inertia tenders via the Stability Market.                                                                                     | Under the Enduring Auction Capability, providers can split a unit's capacity across multiple response services in the same service window, but each MWcan only be committed subject to physical capability constraints, with the auction co-optimising the allocation. |
+| Germany       | Frequency Containment Reserve (FCR), fully activated within 30 seconds.            | Market based procurement of inertia for local grid stability, implemented via a fixed-price scheme, starting in January 2026. | FCR must be provided symmetrically and meet full activation and prequalification requirements, which can limit simultaneous provision across services.                                                                                                                 |
+
+| Market               | Fast frequency service                                                                                                                | Inertia products                                                            | Main participation limit                                                                                                                                                                              |
+|----------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Australia, NEM       | Very Fast FCAS raise/lower, 1-second delivery, co-optimised with energy and other frequency services (5 second, 60 second, 5 minute). | Inertia contracts/trials for grid-forming assets; no NEM-wide spot product. | Co-optimisation with energy and state-of- charge management allows batteries to simultaneously offer full capacity (for a given state of charge) in each product category.                            |
+| United States, ERCOT | Fast Frequency Response (FFR) with Responsive Reserve Service (RRS), trigger near 59.85 Hz, full response within 15 cycles.           | No separate inertia product; managed operationally.                         | RRS-FFR requires deployment within 15 cycles at 59.85 Hz, sustain up to 15 minutes, and restoration within 15 minutes; Since December 2025, this is now co-optimised with energy and state of charge. |
+| United States, CAISO | No dedicated FFR product. Fast Response obligations exist but are not a separate paid sub-second product.                             | No separate inertia product; addressed via planning and operations.         | Resource Adequacy obligations and state-of- charge requirements limit simultaneous participation in other services or energy shifting.                                                                |
+
+Notes: Inertia is the instantaneous physical or emulated resistance of the system to a change in frequency. It limits the initial rate  of  change  of  frequency  immediately  after  a  disturbance  and  is  often  procured  through  dedicated  inertia  or  stability services where these exist. Fast frequency response services consist of active control actions within one second to arrest frequency deviations and stabilise the system, before slower frequency control services restore frequency toward its nominal value.
+
+## Connection queues are becoming a major bottleneck in deployment for batteries
+
+As highlighted in the Grids chapter, lengthy connection queues are becoming a bottleneck for utility-scale battery deployment. Despite rapid growth in installed capacity, the project pipeline remains far larger than operating capacity in many regions,  and  the  pace  of  conversion  from  announcement  to  commissioning continues to lag.
+
+The study process itself is a source of delay and uncertainty for battery storage developers.  Such  studies  require  substantial  engineering  resources  and  can trigger repeated restudies when there are material modifications, for example if an upstream  project  changes  technology,  capacity,  location,  or  withdraws.  These delays are particularly disruptive for battery storage developers, whose construction  lead  times  are  short  and  whose  project  economics  rely  on  timely access to revenue streams.
+
+Cost allocation for network upgrades can also be complex, with a small number of projects facing disproportionately high connection upgrade costs compared with the majority. Uncertainty around required grid upgrades, cost allocation and the timing of connection makes it difficult for battery storage developers to commit to investment schedules and can leave otherwise viable projects stranded. Recent changes in Australia deliberately shift some of these delay risks to the networks.
+
+Environmental permitting and physical grid connection requirements are also a source of delay. Physical grid constraints frequently determine how quickly battery storage projects can move from design to operation. Long lead times for key grid components such as high-voltage transformers, switchgear, protection systems and  substation  equipment  often  determine  the  pace  of  connection  works, sometimes exceeding the time required to install batteries and inverters. There may  be  siting  constraints  in  urban  load  centres  such  as  New  York  City,  and construction  schedules  can  be  constrained  by  seasonal  or  environmental restrictions. Even if transmission level capacity limits are not reached, distribution networks  may  lack  hosting  capacity  for  large  distribution-connected  batteries without reinforcement. Where operators provide hosting-capacity maps and use standardised,  time-bound  connection  procedures,  siting  is  more  efficient,  and study timelines are more predictable.
+
+## Managing periods with high solar and wind output during low electricity demand
+
+As the share of weather -dependent variable renewable energy sources such as solar PV and wind increases in many power systems, managing periods of very low or very high VRE output has become increasingly important for security of supply. This includes episodes of insufficient generation during VRE droughts, as well as times when excess production exceeds the system's ability to absorb it. In our  previous  Electricity  2025  report,  we  covered  VRE  droughts  such  as Dunkelflaute events in detail. Such events can pose challenges to the system, especially when the reduced VRE generation coincides with elevated electricity demand and insufficient dispatchable capacity.
+
+The opposite situation, namely having high levels of VRE output during periods with very low electricity demand, brings with it other challenges. This phenomenon is  sometimes  referred  to  as Hellbrise ,  meaning  'bright  breeze'  in  German, reflecting conditions of abundant sunshine and wind. Excess electricity generation (also referred to as incompressibility or overproduction) amid high VRE output in low-demand periods, more common during holidays and weekends in off-peak months with longer daytime hours, can pose flexibility challenges with the need for additional downward flexibility. This is because electricity supply and demand needs to be continuously balanced for system stability, whilst some VRE generation, particularly rooftop solar, is typically not price sensitive or not yet physically configured for curtailment. In some cases, such conditions may lead to reverse power flows from distribution grids to transmission grids, congestion and local overvoltage issues, requiring adequate planning and corresponding operational measures.
+
+High VRE output lowers the net load 3 , reducing the part of the load that would be met by dispatchable generators and/or imports. At the same time, some of the conventional generators need to be kept online to provide system services such as inertia, frequency and voltage regulation as well as due to technical constraints or cogeneration. Hence, under limited capability of storage, demand response and exports, very low net load levels may require increased curtailment and redispatch measures.  At  which  net  load  level  these  measures  intensify  is  highly  system dependent. Having interconnections and the possibility for exporting electricity can provide a good degree of flexibility, though as weather conditions (hence solar PV and  wind  generation)  are  typically  highly  correlated  across  a  wider  area,  this flexibility may not be always available at its fullest during such events.
+
+Smaller systems with the ability to export a higher share of their generation to other  regions  regularly  see  very  low,  and  even  negative,  net  load  levels (e.g. Denmark, South Australia). Whereas net load levels in larger systems with lower shares of power exports are typically higher (e.g. Brazil, the United Kingdom, Germany), though negative net loads may also be observed (as in the example of Germany). Moving forward, as the share of VRE continues to increase in many regions, it will be important to accompany this growth with a sufficient increase in flexibility in the system.
+
+## Very low net load periods can necessitate technical curtailment and targeted operational measures
+
+Brazil experienced a very low net load instance on 10 August 2025, which was managed successfully without any impacts to reliability. The incident occurred on a Sunday with particularly low demand 4 . Around midday, distributed solar PV met almost  40%  of  the  demand,  or  about  23 GW  of  the  58 GW  load,  pushing  the system toward its minimum load limits and requiring rapid curtailment to maintain stability.  The  country's  National  Electric  System  Operator  (ONS)  reduced  the production  of  hydropower  and  thermal  power  plants,  as  well  as  reportedly curtailing around 98% of the scheduled utility-scale wind and solar PV generation. High VRE generation amid limited transmission capacity and insufficient storage has been resulting in increased curtailment rates in Brazil. Curtailment rates of wind  and  solar  PV  in  Brazil  reportedly  averaged  26%  for  the  month  of August 2025.
+
+3 Net load refers to the part of the load that has to be met by dispatchable resources and/or imports, after the VRE output (solar PV and wind generation) is subtracted from the load. Net load can be negative, if the system is able to export the excess electricity.
+
+4 Demand was lower than usual due to many people being outside in good weather to celebrate Father's Day.
+
+<!-- image -->
+
+Notes: Net load = load - (wind + solar PV generation). Curtailment includes both technical and economic curtailment. Source: IEA analysis based on data from Operador Nacional do Sistema Elétrico (2025).
+
+With VRE deployments accelerating, lower net load levels in many systems are being observed, with some systems starting to see negative net loads for the first time. Negative net load means that VRE generation exceeds demand while the excess is exported to interconnected neighbours. Negative net loads have been observed in California since 2023. Similarly, negative net loads have also been observed in Germany since  2023, as VRE growth outpaced the timid demand recovery following the energy crisis. In Germany, the typical 'duck curve' shape has  intensified,  with  midday  dips  becoming  deeper,  while  evening  ramps becoming more pronounced. At the same time, technical curtailment rates in the country have been increasing. This is especially noticeable for solar PV. While solar  PV  curtailments  had  been  around  0.1-0.2 TWh  before  2021,  they  have shown a rapidly increasing trend in recent years, rising to almost 1.5 TWh in 2024, or about 2% of the annual potential solar PV generation. While this is significantly lower than wind onshore curtailments at 4%, the strong growth trend is important to note, as it parallels the trajectory of declining net load.
+
+## Share of occurrences of negative net load (left) and net load profile during the days when the lowest net load over a year was observed (right), Germany, 2019-2025
+
+<!-- image -->
+
+Notes: Net load = load - (wind + solar PV generation). Data has quarter-hourly resolution. Load includes storage charging. Source: IEA analysis based on data from Energy-Charts.
+
+Alongside  falling  net  load  levels  with  excess  VRE  generation,  high  shares  of technically uncurtailable rooftop solar PV have become common in recent years in various systems, including in Germany. This can become a point of concern in instances when electricity demand in the system remains below the technically uncurtailable rooftop solar PV generation. As of the end of 2024, about 40 GW of the  operational  100 GW  of  solar  PV  capacity  in  Germany  was  technically  not controllable/curtailable.  Very  low  net  load  instances  in  the  country  have  been managed successfully so far without any impact to reliability, thanks to generation curtailments, exports and other flexibility measures.
+
+Germany has introduced the Solar Peak Act in 2025, which aims to improve the technical  ability  to  curtail  distributed  solar  PV  generation,  among  many  other measures.  The  law  caps  grid  feed-in  for  new  PV  installations  with  capacities ranging from 2 kW to 100 kW at 60% of their maximum feed-in capacity unless they have the intelligent metering systems installed for remote controllability by the grid operator. The law also suspends subsidies during negative price hours under certain conditions.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes:  Negative  net  imports  means  net  exports.  Negative  net  storage  means  charging  and  positive  net  storage  means discharging. Storage in Germany is predominantly pumped hydro storage. All the other renewable energy sources, excluding wind and solar PV, are categorised as dispatchable RES for the purpose of this analysis. Source: IEA analysis based on data from Energy-Charts.
+
+The relevance of excess VRE generation during low demand periods for security of supply planning is being increasingly recognised in Europe. The Belgian TSO Elia stated in its Summer Outlook 2025, for the second year in a row, that the likelihood  of  overproduction  during  sunny  days  with  low  consumption  has increased  amid  surging  solar  PV  capacity.  Similarly,  Amprion,  one  of  the  four TSOs of Germany, covers the phenomenon in its Market Report 2025, stressing the importance of market-side flexibility, storage and flexible operation of smallscale distributed PV. ENTSO-E introduced for the first time an analysis of excess renewable generation during low demand periods in its Summer Outlook 2025. The  country  feedback  to  the  report  included  the  suggestion  of  incorporating predefined  controllability  factors  for  renewable  energy  sources  to  the  analysis, indicating that the controllability of VRE is considered as an important lever in such instances by the grid operators.
+
+## Reducing various regulatory, contractual and technical barriers can help unlock additional downward flexibility
+
+Allowing for price signals that reflect the system situation is an important element for fostering flexible supply and demand. Very low net load periods are commonly associated with close to zero or even negative electricity prices on the wholesale market (in markets where they are allowed). These price signals are useful as they incentivise  price-responsive  generators  (both  conventional  and  renewable)  to decrease  their  generation  and  consumers  that  are  subject  to  price  signals  to increase their consumption. However, various generators and consumers may not be able to do so due to technical, regulatory or contractual reasons, which can contribute  to  system  inflexibility.  Addressing  such  barriers  can  help  unlock additional flexibility for the system. A detailed discussion of these aspects was provided in our Electricity 2025 report.
+
+Batteries,  thanks  to  their  rapidly  declining  costs,  are  expected  to  play  an increasingly important role for providing downward flexibility to manage low net load periods. At the same time, greater demand response and smart charging of electric vehicles, alongside sector coupling such as power-to-heat, and hydrogen production  via  electrolysers,  can  provide  additional  demand  for  absorbing  the excess  electricity  in  a  system-optimal  manner.  On  the  grids  side,  having interconnections with sufficient export capacity, if possible, is another essential lever  to  manage  situations  with  overproduction.  Also,  various  grid  enhancing technologies (GETs), combined with increasing digitalisation of grids, can offer improvements  in  the  monitoring  and  control  of  system-wide  and  local  grid flexibility.
+
+## Controllable distributed PV helps manage low grid load as self -consumption grows
+
+Another aspect relevant for various power systems is the rapid growth in selfconsumption from rooftop solar PV. It is important to estimate the growth of selfconsumption accurately as it can contribute to declining grid load, which typically needs to be kept above certain thresholds for stability. Reduced grid load levels can be observed particularly during off-peak months in low demand periods such as  on  weekends  and  public  holidays  amid  sizeable  self-consumption  from distributed PV generation.
+
+Grid  load  falling  below  certain  levels  is  not  desirable  as  the  grid  requires  a minimum operational level of demand to maintain stable operation. Traditionally, conventional synchronous generators have supplied key system services such as fault current, voltage waveform stability, inertia, as well as voltage and frequency control.  However,  during  very  low -demand  periods,  there  may  not  be  enough operational headroom to dispatch these generators above their minimum output levels, limiting their ability to deliver essential security services. As a result, low grid  load  instances  can  introduce  technical  challenges  that  must  be  managed proactively.
+
+Greater supply -side flexibility, more flexible loads, as well as increased storage for energy shifting and for ancillary services can help manage low grid load events. More widescale capability to control distributed solar PV and the ability to curtail the supply in the case of contingencies is another important lever. As the share of synchronous generators declines in the electricity mix, system strength can be reinforced by various technical measures  such  as  deploying  grid -forming inverters, and by installing synchronous condensers.
+
+Australia 's NEM is one example of a grid where this trend is pronounced, with new records being set every year for minimum grid load. According to Australia's AEMO, the new record for the minimum grid load in NEM was 9.7 GW in October 2025 5 , 40% lower than what it was in 2020.
+
+## Minimum grid load in Australia, NEM (left), and installed solar PV capacity in Australia (right), 2020-2025
+
+<!-- image -->
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes:  Minimum  grid  load  is  referred  to  as  minimum  operational  demand  by  AEMO.  Total  load  is  grid  load  plus  selfconsumption, such as self-consumed rooftop solar. The minimum of total load each year is shown. Presented Installed solar PV capacity figures are not only for NEM but for all of Australia.
+
+Source: IEA analysis based on data from AEMO.
+
+AEMO, in its 2024 report, projected the minimum grid load 6  to continue declining by 1.2 GW per year out to 2029, as distributed PV penetration continues to rise. AEMO estimates 4.3 GW of minimum grid load is required to support the minimum generation levels for a stable system, where the threshold could increase to 7 GW at times of planned outages. Some of the main measures suggested by AEMO to manage the secure operation of the system in such events are to improve the flexibility of supply (both for conventional and renewable generators), as well as flexible loads, increased energy storage, and more widescale capability to curtail distributed  PV in the case of contingencies. As a backstop measure, technical curtailment of rooftop solar PV has successfully taken place in South Australia in various  minimum  grid  load  events,  although  some  other  regions  lack  this capability. AEMO launched a process in December 2025 to receive expressions of  interest  from  potential  service  providers  to  trial  new  technologies,  or  new applications  of  existing  technologies,  that  can  expand  the  range  of  solutions available for minimum grid load.
+
+5  The new minimum grid load of 9.7 GW record was broken at 12:00 on 4 October 2025 on Saturday, 4% lower than the previous record in 2024. During this instance, distributed solar PV supplied 58% of total demand. In general, AEMO estimates
+
+that for each 1 MW of installed distributed solar PV, minimum grid load reduces around 0.7-0.8 MW.
+
+6  Minimum grid load is referred to by AEMO as the minimum operational demand.
+
+Encouraging higher consumption during periods of surplus solar PV generation and  low  grid  load  can  also  significantly  support  the  management  of  system imbalances. Time -of -use tariffs and similar measures that encourage electricity consumption  during  periods  of  abundant  VRE  generation  -  when  prices  are typically lower - can help manage instances of very low grid load. In Australia, the government has announced the Solar Sharer Offer, which is scheduled to begin on 1 July 2026 in New South Wales, South Australia and South East Queensland. Under this scheme, retailers would be required to offer at least three hours of free electricity around midday to encourage consumption during periods of high solar output,  supporting  grid  load  while  also  helping  shift  demand  away  from  more expensive evening peaks.
+
+## Emissions
+
+## Electricity sector emissions are increasingly decoupling from demand growth
+
+Global CO2 intensity of electricity, which measures the amount of carbon dioxide emitted per unit of electricity produced worldwide, has been falling as the share of low-emissions sources - renewables and nuclear - continues to rapidly expand in the generation mix. Over the past decade, the improvement in global CO2 intensity has been significant, declining by 14% to 435 g CO2/kWh in 2025. Nonetheless, emissions  from  electricity  generation  rose  by  13%  during  the  same  period,  to about  13 900 Mt CO2,  accounting  for  around  40%  of  worldwide  emissions. Mitigating emissions from fossil fuelled-fired generation with clean energy sources amid rising electricity demand remains a key challenge for the power sector. This chapter  provides  an  overview  of  emerging  trends  in  global  emissions  from electricity generation and the evolving trajectory of its CO2 intensity.
+
+## CO2 emissions from electricity generation are forecast to plateau through 2030
+
+In 2025, global emissions from electricity generation remained flat, after increasing 1.5% and 1.4% in in the previous two years, respectively. Even with strong gains in electricity demand, growth in power sector emissions is showing marked signs of slowing down as fossil-fired generation is constrained by the rapid deployment of renewables and rising nuclear power generation. As this trend continues, we forecast global emissions from power generation to plateau over our 2026-2030 outlook  period  due  to  significant  increases  in  clean  energy  sources,  despite electricity  demand growth of an average 3.6% annually - a sharp acceleration from the 2.8% pace of the past decade. Economic shocks and deviations from normal weather conditions, such as intense heat waves, cold spells or low water availability  for  hydropower  generation,  can  cause  an  increase  in  emissions  in individual  years.  However,  the  transformative  trend  of  low-emissions  energy sources limiting fossil-fired output is expected to remain resilient.
+
+In 2025, reduced emissions from electricity generation in India and China were largely offset by increases in the United States, other Asia Pacific (excluding India and China), Eurasia and the Middle East. India saw a decline of 3.3% y-o-y as coal-fired  generation  contracted  amid  moderate  demand  growth  and  strong renewables  expansion.  China  saw  a  slight  decrease  of  around  1%.  In  the European Union, emissions from electricity generation fell by 2.2%. By contrast, US emissions increased by 4.3% due to higher coal-fired generation.
+
+Between 2026 and 2030, China's CO ₂ emissions from electricity generation are forecast to fall on average by 0.2% per year as low-emissions energy sources constrain  coal-fired  output,  and  despite  continued  robust  electricity  demand growth. Following the decline in 2025, India is forecast to see emissions rise by an annual average of 2.4%, as demand posts steady growth through 2030, with coal  remaining  the  dominant  source  of  supply  in  the  power  sector.  The United States is expected to resume its declining trend in emissions, at an average annual  rate  of  1.4%.  In  the  European  Union,  emissions  are  projected  to  drop substantially, by an average 11% per year over the forecast period.
+
+## CO2 emissions from electricity generation in selected regions, 2015-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Note: Data for 2026-2030 are forecast values.
+
+## Global CO2 intensity decline accelerates as low-carbon generation rapidly expands
+
+Global CO2-intensity from electricity generation contracted by an estimated 3% in 2025, after a 2.6% reduction in in 2024. An increasing share of renewables and robust output in nuclear energy generation are driving this trend. We forecast CO2 intensity to fall even faster over our forecast period, at an annual average rate of 3.7%, down from 435 g CO2/kWh in 2025 to 360 g CO2/kWh in 2030.
+
+Many regions are expected to register substantial declines in CO2 intensity in the 2026-2030 outlook. The European Union is forecast to post the sharpest fall in emissions intensity from electricity generation, with an annual reduction of around 13%, dropping from 170 g CO ₂ /kWh to 90 g CO ₂ /kWh over the period. Similarly, China is forecast to record an average decline rate of 4.8% per year, though from significantly higher levels of 530 g CO ₂ /kWh in 2025 to 415 g CO ₂ /kWh in 2030, with  the  CO2  intensity  approaching  the  global  average.  The  United  States  is projected  to  see  a  3.2%  average  annual  reduction.  CO2  intensity  in  India  is expected  to  fall  by  3.4%  annually,  from  695 g CO2/kWh  to  585 g CO2/kWh. However, Southeast Asia sees a muted average decline of 0.7% over the forecast period, from 640 g CO2/kWh to 615 g CO2/kWh. Hence, over the forecast period, India's emission intensity is set to fall below that of Southeast Asia, with the latter becoming the highest emission intensity region.
+
+<!-- image -->
+
+Note: CO2 intensity is calculated as total CO2 emissions divided by total generation.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: CO2 intensity is calculated as total CO2 emissions divided by total generation. Data for 2026-2030 are forecast values.
+
+## Prices
+
+## Affordability and competitiveness take centre stage
+
+Average wholesale electricity prices in 2025 rose year-on-year in multiple regions and countries, including Europe and the United States, while others such as India and Australia saw lower prices compared to 2024. Looking at electricity prices for energy-intensive industries, significant variations across regions remain. EU electricity prices for energy -intensive industries stayed elevated in 2025, again averaging over twice US levels and nearly 50% above those in China, similar to 2024, adding competitive pressure.
+
+At  the  same time, negative wholesale electricity prices became more common across  many  markets.  Exceptions  include  the  Nordic  region  in  Europe  and California  in  the  United  States,  which  recorded  year-on-year  declines  in  the numbers of negatively  priced  hours  in  2025.  These  reductions  were  driven  by more price -responsive supply and demand, alongside the growing deployment of battery storage, which helped absorb excess generation and smooth short -term imbalances.
+
+Affordability remains a concern, as household electricity prices in many countries have  risen  faster  than  incomes  and  inflation  since  2019.  While  energy -related price components have fallen from crisis highs, they remain above 2019 levels, and non -energy charges - such as networks, taxes and fees - continue to take up a large share of bills. Electricity is also often taxed more heavily than natural gas, raising  its  relative  cost  and  weakening  incentives  for  households  to  electrify heating,  cooking  and  hot  water.  As  a  result,  policy  makers  are  increasingly focusing  on  market  and  regulatory  reforms  to  improve  affordability  while  still ensuring prices reflect costs and encourage demand -side flexibility.
+
+## Wholesale prices continue to differ across regions
+
+Many markets recorded wholesale prices increased year-on-year in 2025 amid higher  gas  prices,  following  declines  in  2024  compared  to  2023.  The  average EU wholesale price in 2025 was up around 10% y-o-y to about USD 95/MWh, in line with the 9% increase in the Title Transfer Facility (TTF) natural gas price at the trading hub  in the Netherlands. This was  also  supported  by  higher EU Emissions  Trading  System  (EU-ETS)  prices,  which  rose  by  15%  y-o-y, averaging around EUR 75/t CO2 in 2025. Average EU wholesale electricity price remained the highest among the markets analysed in 2025 - roughly twice that of the United States and India, and markedly above levels in Australia (+65%) and Japan  (+25%).  Cold  snaps  in  January  2026  boosted  heating  and  electricity demand, contributing to higher natural gas spot and forward prices. Higher gas prices,  in  turn,  put  upward  pressure  on  power futures.  EU  futures  prices  as  of 26 January 2026 averaged around USD 95/MWh for 2026, broadly in line with 2025 levels, before easing to roughly USD 85/MWh in 2027.
+
+The  average  wholesale  electricity  price  in  Germany  was  20%  (+14%  in EUR/MWh) higher y-o-y in 2025, at an average USD 100/MWh. Alongside higher gas prices compared to 2024, the significant drop in wind energy production due to less favourable weather conditions also contributed to the higher levels. This resulted in increased gas and coal-fired power generation in order to meet the demand,  which  put  upward  pressure  on  electricity  prices.  German  futures contracts for 2026 point to a 10% increase, while the 2027 contracts indicate an easing to similar price levels in 2025. The premium in German futures over French prices remains in place, averaging more than USD 40/MWh.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Prices are in nominal values, converted to USD based on the average exchange rate of the quarterly period. Prices for Australia and the United States are calculated as the demand-weighted average of the available prices of their regional
+
+markets. Continuous lines show historical data and dashed lines refer to forward prices.
+
+Sources:  IEA  analysis  based  on  data  from  RTE  (France)  -  accessed  via  the  ENTSO-E  Transparency  Platform; Bundesnetzagentur  (2026),  SMARD.de;  the  Australian  Energy  Market  Operator  (AEMO),  2026,  Aggregated  price  and demand data; EIA (2026), Short-Term Energy Outlook, January 2026; IEX (2025), Day-Ahead Market; EEX (2026), Power Futures; ASX (2026), Electricity Futures © ASX Limited ABN 98 008 624 691 (ASX) 2026. All rights reserved. This material is reproduced with the permission of ASX. This material should not be reproduced, stored in a retrieval system or transmitted in any form, whether in whole or in part, without the prior written permission of ASX. Latest update: 26 January 2026.
+
+In France , average wholesale electricity prices rose 8% y-o-y to USD 70/MWh in 2025 (+4% in EUR/MWh). Even though hydropower was almost 20% lower in 2025, robust nuclear output helped moderate price rises. French futures prices for 2026 are broadly aligned with 2025 levels, while contracts for 2027 were trading at around 10% below the 2025 average.
+
+Wholesale electricity prices in the United Kingdom increased by 18% y-o-y in 2025 (+14% in GBP/MWh), to an average of USD 105/MWh. Colder weather and lower wind generation in early 2025 had a significant market impact, resulting in both higher output from gas-fired generation and higher wholesale prices. Futures prices for 2026 and 2027 indicate price levels broadly similar to those observed in 2025.
+
+Wholesale electricity prices in the Nordics remained the lowest in Europe in 2025, despite having increased by 15% y-o-y to USD 45/MWh (+10% in EUR/MWh). Market data show that average futures prices are close to USD 70/MWh for 2026, before easing to about USD 50/MWh in 2027. The Nordics are the only market in Europe with comparable price levels to those in the United States.
+
+In the United States , wholesale electricity prices rose on average by around 30% y-o-y  to  USD  50/MWh  in  2025.  Higher  natural  gas  prices  compared  to  2024 pushed up US wholesale electricity costs. US Henry Hub natural gas spot prices were up by about 56% y-o-y, but lower than in 2021. While summer temperatures on average were milder than in the previous year, with 6% less cooling degree days (CDD) in 2025, colder-than-normal winter weather led to a 9% increase in heating degree days (HDD), contributing to higher prices. The Energy Information Administration's (EIA) Short-Term Energy Outlook price projections published in January 2026 indicate an average price level of about USD 45/MWh in 2026 and USD 50/MWh in 2027.
+
+In Japan , wholesale electricity prices declined slightly in 2025 by 2% y-o-y (-3% in JPY/MWh), averaging about USD 75/MWh. The upward pressure from slightly higher gas prices was more than offset by an increasing share of low-marginal-cost nuclear and renewable generation. Although rising spot LNG prices increased generation costs in the first half of 2025 - pushing wholesale prices  higher  -  market  conditions  eased  in  the  second  half  of  the  year  as LNG supply availability improved. On average, Platts JKM prices were around 2% higher in 2025 compared with 2024.
+
+In 2025, Australian average wholesale electricity prices fell by around 20% y-o-y to USD 57/MWh (-18% in AUD/MWh), even though periods of extreme weather, including  heatwaves  in  the  southeast  of  the  country,  occasionally  led  to  price surges. Despite growth in overall electricity demand, higher renewable generation and lower market volatility contributed to the fall in wholesale prices. Rising battery output,  as  new  storage  capacity  came  online,  helped  mitigate  price  surges  by displacing more expensive gas and coal generation during peak demand periods. Futures prices for 2026-2027 indicate a price level around USD 60/MWh.
+
+In India ,  wholesale  electricity  prices  declined  by  16%  y-o-y  in  2025  (-13%  in INR/MWh,  [Indian  rupees/MWh]),  to  an  average  of  USD 46/MWh.  A  drop  in seaborne thermal coal prices to a four-year low in the first half of the year eased input costs for coal-fired generation, despite a mild price recovery later in 2025. Increased  availability  from  thermal  and  renewable  capacity  additions,  together with  strong  hydro  output,  strengthened  market  liquidity  and  exerted  downward pressure  on  prices.  The  early  arrival  of  the  monsoon,  and  lower  overall  MayAugust temperatures versus a year earlier, led to limited demand growth. Robust output from low-emissions sources contributed to near-zero prices during several time periods on 25 May and again on 25 August.
+
+## Negative wholesale pricing trends diverged across markets in 2025
+
+The occurrence of negative wholesale electricity markets continued to increase in many markets in 2025, though some diverging regional trends were observed. Negative prices broadly signal a lack of flexibility in the system due to technical, regulatory  or  contractual  reasons,  particularly  during  times  of  low  electricity demand and abundant electricity generation. Negative prices are a market signal indicating a need for more flexibility. A comprehensive analysis on the reasons behind rising occurrence of negative prices can be found in a dedicated section in our Electricity 2025 report.
+
+Many European markets continued to see more frequent negative prices, with the proportion of hours with negative prices reaching 6% in 2025 in countries such as France, Germany, the Netherlands, and Spain - compared to around 3-5% in 2024.  Spain  recorded  the  largest  year -on -year  increase,  with  the  number  of negatively priced hours doubling. This was followed by France, where these hours rose by 45% y-o-y, while in Germany and the Netherlands they were each about 25% higher.
+
+The frequency of negative prices continued to rise in some Australian regions, such as South Australia and Victoria. This was largely due to increases in wind generation, particularly during the night. AEMO also reported that during negative price events in Australia's NEM in 2025, prices were closer to AUD 0 /MWh on average amid lower prices for largescale green certificates.
+
+Several  regions  saw  a  reversal  of  the  trend  of  increasing  negative  prices.  In Europe, Finland had the highest number of negatively priced hours in 2024 at 8% of  the  time,  followed  by  Sweden  with  7%.  In  2025,  both  countries  observed  a significant drop in negative pricing, with the number of hours declining by about
+
+40% in Finland and by almost 30% in Sweden. This may be due to a range of structural factors, including the introduction of flow-based market coupling used for calculating and allocating cross-border electricity trading capacity, growth in storage, and generation becoming more price-responsive. In addition, this may be driven by Finland's continued electrification of district heating, up around 70%, from 1.5 TWh in 2024 to 2.6 TWh in 2025, which can be price responsive.
+
+In the United States, California and Texas also recorded declines in the frequency of negative price events. This shift may be linked to rising electricity demand and, in  particular,  to  the  rapid  expansion  of  battery energy  storage  systems  in  both states -reflected  in  the  marked  increase  in  average  hourly  battery  charging around midday.
+
+## Fraction of negative hourly wholesale electricity prices in selected regions, 2019-2025
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes:  Southern  California  corresponds  to  area  SP15 in  the  state's  zonal  regions,  Central  California  to  area  ZP26  and Northern California to area NP15. In Spain, negative electricity prices on the day-ahead market were permitted in December 2023 following the implementation of updated rules on the operation of electricity markets. For South Australia and Victoria, five-minute interval prices were converted to hourly averages to enable comparison.
+
+Source: IEA (2025), Real-Time Electricity Tracker (data explorer).
+
+## Price gaps for energy-intensive industries persist across regions in 2025
+
+In 2025, electricity prices for energy-intensive industries remained broadly stable across our tracked regions compared to the previous year. In the European Union, after two years of significant declines since their 2022 peak, prices rose by over 7%  in  2025,  mainly  due  to  an  8%  increase  in  wholesale  prices.  As  a  result, EU prices for these large industries are stabilising at around 1.6 times the levels seen in 2019, putting pressure on competitiveness, particularly as they are more than double the prices in the United States and more than 50% higher than in China and India. These trends can have an impact on employment as well, and the European Central Bank estimates that a hypothetical permanent rise of 10% in  electricity  prices  can  lead  to  a  2%  loss  of  employment  in  energy-intensive industries, affecting specific areas such as Germany's southern region and the Ruhr urban area, and northern Italy.
+
+## Estimated final electricity prices for large industrial customers in energy-intensive industries, 2019-2025
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Values for 2025 are preliminary. This analysis considers electricity prices of industries with greater than 150 GWh of annual electricity consumption for European countries, based on Eurostat data. Electricity price compensation is included for countries  that  participate  in  the  EU-ETS.  For  the  calculation  of  the  maximum  possible  state  aid  for  electricity  price compensation  in  the  European  Union,  the  analysis  assumes  that  the  specific  product  has  an  electricity  consumption benchmark of  0.8  and  that  the  company  in  question  receives  the  maximum  possible  state  aid  once  this  benchmark  is incorporated into the maximum aid calculation. The final electricity price for the United States is based off the final electricity price for industry in Texas. The prices for the United States and China are indicative of the average reported prices, while prices for individual industries depend on their energy consumption levels and where they are located.
+
+## Europe steps up its efforts to reduce prices for energyintensive industries
+
+In February 2025, the European Commission (EC) launched the Action Plan for Affordable Energy, in which Pillar I focuses on lowering electricity prices through network  charges,  increased  demand-side  flexibility,  lower  taxation,  reduced exposure to natural gas price volatility, implementation of long-term contracts, and enhanced  energy  efficiency.  Noting  that  following  the  energy  crisis,  prices remained  much  higher  compared  to  various  other  regions  and  that  energyintensive industries needed a relief quickly, the European Commission set seven key actions to bring down energy prices in October 2025. Among these actions, the commission urged member states to make full use of the Clean Industrial Deal State Aid Framework (CISAF), allowing more flexibility with state aid rules. CISAF allows a temporary subsidy of up to 50% of the yearly average wholesale market price in the bidding zone where the industry is connected. This applies to no more than  50%  of  yearly  consumption,  resulting  in  a  reduced  price  but  not  below EUR 50/MWh for the eligible consumption, and at least 50% of the aid must be allocated to new or modernised assets such as renewable generation, storage or demand-side flexibility.
+
+In  Italy,  the  Energy  Release  2.0  mechanism  was  approved  by  the  Ministry  of Environment and Energy Security in November 2025. The measure supports an industrial  electricity  price  of  EUR 65/MWh  through  a  two-way  CfD,  for  a  total annual consumption of 24 TWh, assigned to participants based on the results of a  competitive  process.  Among  other  requirements,  the  mechanism  obliges selected industries to develop new solar PV, wind or hydro capacity equal to at least twice the capacity needed to generate over 20 years the amount of electricity advanced under the scheme. The benefit is expected to last three years.
+
+In Germany, the government announced a subsidised industrial electricity price of EUR 50/MWh  to  be  retroactively  applied  from  1 January  2026.  Approximately 2 000  energy-intensive  industrial  companies  in  Germany,  with  a  total  annual consumption of around 100 TWh and a current electricity price of EUR 70-110/MWh, would benefit from this subsidy, with an estimated total support volume of EUR 3.3 billion. The support scheme is designed for a duration of three years, for 50% of the consumption of these companies during the period, and at least 50% of the funds received must be reinvested in decarbonisation. However, CISAF excludes double funding, therefore the around 350 companies eligible for EU-ETS compensation will need to choose between the two subsidies.
+
+Beyond the European Union, the UK government introduced various measures to support energy-intensive industries through its Modern Industrial Strategy 2025 and the British Industrial Competitiveness Scheme. This scheme aims to reduce electricity  prices  by  up  to  25%,  or  GBP 40/MWh,  from  2027  for  over  7 000 businesses  by  granting  exemptions  from  key  electricity  levies,  including  the renewables obligation, feed-in tariffs and the capacity market. In addition, around 500 eligible industries in sectors such as steel, cement, glass and chemicals will see their existing network charge exemptions increased from 60% to 90% starting April 2026, reportedly saving up to GBP 420 million annually.
+
+## How do industries procure their electricity in China?
+
+While  some  of  China's  largest  industrial  consumers  procure  their  electricity  by trading  directly  in  wholesale  markets,  many  use  the  proxy  pricing  mechanism, particularly  in  provinces where wholesale markets are not yet fully developed or access is limited. Introduced by the National Development and Reform Commission (NDRC) in October 2021, the proxy pricing mechanism represented a key milestone in  China's  power  market  reform.  Developed  in  response  to  the  severe  power shortages  and  coal  price  surges  that  year,  it  replaced  the  previous  fixed-tariff system of electricity prices for industries and businesses in China.
+
+Under this system, power retailers in China act as purchasing agents for industries and businesses which do not participate directly in the wholesale market. In this case,  retailers  procure  electricity  through  competitive  market  trading  in  each province and resell it to industries at a market-linked proxy price.
+
+Proxy prices reflect the weighted average cost of market purchases plus regulated transmission fees and government surcharges. Since they aim to reflect trends in wholesale  markets,  levels  vary  by  province  and  region,  reflecting  differences  in electricity  demand,  resource  availability,  and  market  conditions.  Initially,  proxy purchases  were  conducted  via  monthly  listings  but  were  later  replaced  by centralised market auctions. Proxy prices are recalculated monthly and applied to all users of similar type and voltage level. The mechanism also provides flexibility for users to switch between direct market participation and proxy pricing, although those returning to the proxy system after direct trading typically incur a temporary 50% price premium to discourage frequent switching.
+
+Given  that  proxy  prices  in  the  country  are  based  on  trends  and  levels  of  each province's wholesale market, their values show a west-to-east gradient reflecting inexpensive generation in resource-rich inland provinces versus high demand and fuel costs in coastal regions. Industries in Western and Southwestern provinces, particularly in Yunnan, Sichuan and Gansu, benefit from large shares of hydropower and  VRE,  in  addition  to  cheap  coal,  which  provide  a  competitive  advantage. Northern provinces are generation-surplus regions with abundant coal, resulting in low prices in Inner Mongolia and Shanxi, which are core exporters of electricity and home to China's heaviest industries, while Hebei's prices are slightly higher given limited  coal  reserves  and  a  mild  supply  deficit.  Proxy  prices  in  central  China provinces are closer to the national average given their mixed supply and more diversified demand. Finally, industries in coastal Chinese provinces face the highest proxy prices in the country, with Guangdong prices twice as high as in Yunnan in the January-September 2025 period, reflecting stronger demand, import dependence, transmission constraints, and exposure to gas and coal markets.
+
+<!-- image -->
+
+## Residential electricity prices remain elevated across many regions
+
+Electricity  prices  for  residential  consumers  have  been  subject  to  significant variations across regions in the last five years, as geopolitical events, wholesale market trends, rising network costs, and relief measures drove high volatility. Record level prices were observed between 2022 and 2024 in markets such as the  European Union, the United Kingdom, Japan and Korea. Although prices have since retreated from their peaks, they remain elevated in many countries, affecting affordability and posing a risk to the expansion of electrification of end uses such as space cooling and water heating.
+
+## Electricity price for households in selected countries and regions, 1990-2025
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Note: Data for 2025 are preliminary. Complete data for the European Union and Canada were not available at the time this report was published; consequently, data for these regions are presented only up to 2024. Source: IEA analysis based on data from IEA Energy Prices (2025).
+
+In the first half of 2025, the average EU residential price was USD 322/MWh and remained  broadly  flat  compared  to  2024,  although  trends  varied  significantly between member countries. Prices increased by 9% or more in Austria, Spain, Sweden, Poland and Ireland, among others, but fell by 6% or more in France, Denmark, Finland and Slovenia. During H1 2025, average EU residential prices were 34% higher than in 2019, with large relative increases observed in Poland (+89%), Czechia (+81%), Lithuania (+68%), France (+44%), and Italy (+42%).
+
+In the United States, electricity prices for households rose by 5% y-o-y in 2025, with  an  average  of  USD 174/MWh  in  the  first  eleven  months  of  the  year. Nationwide prices are now 32% higher than in 2019 but have increased more significantly in states like California (+68%), New York (+47%) and Illinois (+38%).
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Values for countries marked with an asterisk (*) refer to full year 2024, due to H1 2025 data being unavailable at the time of publication. The value for California includes the 2025 Climate Credit. Prices reflect annual consumption levels from 2 500 kWh to 4 999 kWh, where available.
+
+Source: IEA analysis based on data from IEA Energy Prices (2025), Eurostat (2025), US EIA (2025), California Public Utilities Commission (CPUC), (2025), Australian Energy Regulator (AER), (2025), Victoria, Australia Essential Services Commission (ESC), (2025).
+
+One of the key components of residential electricity prices, together with energy and  supply  costs,  taxes,  levies,  fees  and  charges,  is  network  costs.  This component charge covers transmission and distribution network tariffs and losses, as well as system, service and metering costs, among others. Between 2019 and 2024, network costs increased by 30% on average in the European Union, and by 53% in the United Kingdom. Despite this growth, the share of network costs in electricity  prices  for  households  has  decreased  slightly  on  average  in  the European Union, from 28% in 2019 to 27% in 2024, and in the United Kingdom from 22% to 21%, as other price components grew faster.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Sources: IEA analysis based on data from Eurostat (2025), UK DESNZ (2025). Negative values in the taxes, fees, levies and charges component reflect government interventions such as subsidies, tax reductions and rebates to shield households from surging electricity prices, demonstrating strong support measures.
+
+## Affordability concerns persist as electricity price increases outpace income growth and inflation
+
+The rise in electricity prices for households has outpaced growth in income and general inflation rates since 2019 in many countries, leading to costlier bills for residential consumers. Between 2019 and 2024, electricity prices for households increased  by  36%  on  average  in  the  European  Union  and  by  26%  in  the United States.  During  the  same  period,  annual  net  earnings  for  a  two-earner couple with two children increased by 25% in the European Union, and by 23% in the  United States,  while  inflation  rates  during  this  period  were  22%  and  23%, respectively.
+
+Household demand for electricity is generally price-inelastic, meaning it responds only modestly to variations in retail prices given the essential nature of many end uses (like lighting, refrigeration, cooking, electronic devices). Therefore, increases in  prices  tend  to  translate  into  higher  household  expenditure  on  electricity, especially in the short term.
+
+Recent changes in electricity prices have altered the weight of electricity in total household expenditure, but the effect varies by region. In advanced economies such as many EU countries, the United Kingdom, or Korea, recent increases in electricity prices, when adjusted for inflation and purchasing power parity, have led to a rise in the share of electricity in total household expenditure. By contrast, the United States (on average) and Japan exhibited a mild decrease in this share. In  developing economies such as China, India, Indonesia, Kenya and Senegal household  expenditure  on  electricity  grew  more  slowly  than  overall  household expenditure due to relatively stable residential electricity prices. It should be noted that  while  our  analysis  across  all  the  regions  looks  at  the  average  trends,  the impact  on  affordability  depends  highly  on  the  income  levels  of  individual households,  with  the  lower  and  moderate-income  households  typically  more disproportionately affected.
+
+## Electricity price versus share of electricity in total household expenditure in selected countries, 2024 vs. 2019
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Share of electricity in total household expenditure is calculated as the total consumption of electricity by households times the nominal price, divided by total final consumption expenditure by households in a country. Source: IEA analysis based on data from IEA Energy Prices (2025).
+
+## Heavier taxation of electricity hinders the shift from gas in households, dampening the pace of electrification
+
+Taxes, fees, levies and charges are applied to electricity prices for households across regions, making up a significant proportion of the bills paid by consumers. In the first half of 2025, this component accounted for just under EUR 80/MWh or 28% of the average electricity price for EU households, and surpassed 30% in countries such as Denmark, Sweden, Germany and Spain. During this period, in absolute  value  per  MWh,  the  average  tax  component  of  residential  electricity prices in the European Union was 2.2 times the tax component of the natural gas price, with particularly significant differences in Spain (4.2 times) and Germany (3.2 times). In Denmark and Germany, the tax component of electricity prices was more expensive than the total price of natural gas for households in H1 2025.
+
+Because total electricity prices for households are generally higher than those of natural gas, variable taxes such as VAT translate into higher absolute amounts for electricity, despite similar VAT rates of around 15%. Beyond VAT, non-VAT taxes, fees, levies and charges on electricity bills remain nearly twice as high as those on gas bills across EU countries. In other OECD economies such as Japan and Korea, despite the tax component on electricity prices being 2.2 and 2.6 times, respectively, the ones on gas in total shares of the tax component of prices are at 9-12% - less than half the levels observed in the European Union, enabling further electrification in households.
+
+<!-- image -->
+
+Note: Values for California include the 2025 Climate Credit.
+
+Sources: IEA analysis based on data from Eurostat (2025), IEA Energy Prices (2025), Ofgem (2025), CPUC (2025).
+
+Lowering taxation on electricity is one of the seven key actions identified by the European Commission to bring down electricity prices, and some countries are going in this direction to promote electrification and affordability for households. Denmark's 2026 finance bill includes a 99% reduction in the tax component of residential electricity prices for years 2026 and 2027, in a measure which will cost the state close to EUR 2 billion. In the United Kingdom, the budget approved in November  2025  includes  a  75%  decrease  in  the  Renewables  Obligation  for households and a removal of the Energy Company Obligation, resulting in a yearly reduction in electricity expenditures of around GBP 150 per household.  However, as governments move away from temporary relief measures introduced in 20212022, which in some cases involved VAT, other countries reinstated pre-crisis VAT rates in 2025. This was the case in Spain, which reinstated the 21% rate, up from a reduced 10%, and in France, which proposed the reinstatement of the full 20% rate, up from a reduced 5.5% applied to the fixed part of the bill. A general increase
+
+IEA. CC BY 4.0.
+
+in the standard VAT rate in 2025 impacted electricity prices in other EU countries, such as Finland (25.5% up from 24%) and Estonia (24% up from 22%).
+
+As noted in our Electricity 2025 report, given their high efficiency, heat pumps can reduce  energy  bills  significantly  for  households  in  countries  with  comparable prices of electricity and natural gas, but can lead to higher bills in countries where electricity prices are more than three times the prices of gas.
+
+<!-- image -->
+
+Source:  IEA  analysis  based  on  data  from  Eurostat  (2025).  Negative  values  reflect  government  interventions  such  as subsidies, tax reductions and rebates to shield households from surging electricity prices, demonstrating strong support measures.
+
+## Reliability
+
+## Largescale outages amid system instability, equipment failures and weather impacts
+
+As  the  Age  of  Electricity  evolves,  with  steadily  rising  electrification  rates  and electricity demand, blackouts can impact a vast part of economies and social life. Outages induced by operational failures, technical error, or climate-driven events illustrate the importance of redundancy, resilience, and thorough oversight. The following list of outage incidents in 2025 underscores how ensuring the security, reliability and resilience of power systems is evolving from a technical challenge to a strategic necessity that requires unwavering attention from system operators, regulators, and policy leaders.
+
+## Voltage management increasingly important for power system stability
+
+On  28 April 2025  at  about  12:33  local  time,  the Iberian  Peninsula suffered  a widespread  blackout,  the  largest  European  outage  since  the  2003  Italian Peninsula blackout. According to the initial report by ENTSO-E, and the analysis conducted  by  the  Spanish  system  operator  Red  Eléctrica  and  the  national authorities  within  the  Committee  established  by  the  Spanish  Government,  the incident  was  of  multifactorial  origin,  caused  by  a  combination  of  high  voltage volatility, limited reactive absorption at that moment, strong power oscillations, and rapid disconnections leading to a further surge in voltage. In the half hour prior to the incident, two distinct modes of oscillation occurred in the Continental Europe Synchronous Area (CESA). The respective system operators enacted a series of standard mitigating measures, including reduction in export flows from Spain to France  and  Portugal,  and  reconfiguration  of  internal  power  lines.  While  these measures had the desired effect of dampening oscillation, they also increased voltage  in  the  Iberian  power  system  and  scaled  down  reactive  absorption. Disconnection of generators prompted the voltage level in several nodes to further spike beyond the 435 kV operational limit.
+
+The over-voltage set off a chain reaction of generation losses and a decline in the Spanish and Portuguese power system frequency. The Iberian Peninsula was completely  desynchronised  from  the  Continental  European  power  system  and cascading disconnections swept across the region, affecting Spain, Portugal, and a  small  border  region  of  France.  System  collapse  happened  in  a  matter  of seconds, bringing the Iberian Peninsula to a powerful voltage blackout.
+
+Leveraging cross-border interconnections with France and Morocco  while domestic  black-start  units  came  online  significantly  accelerated  the  restoration process  in  Spain,  demonstrating  the  benefits  of  regional  interconnectivity.  The rapid restoration - completed within 12-16 hours - reflects the effectiveness of established restoration procedures and cross-border co-ordination, underscoring the importance of the EU's electricity interconnection objectives.
+
+Another significant power outage associated with voltage instability took place in North Macedonia .  In  the  early  morning  of  18 May 2025, a grid failure led to a partial  blackout.  Several  power transformers  tripped  due  to  overvoltage,  which weakened  the  system  and  led  to  the  eventual  separation  of  the  country's transmission networks. Nearly 79% of the total system load was lost as a result of this disruption. Although the wider Continental European power system remained unaffected, the Bulgarian control area enacted an alert state for eight hours on account of high voltages on the same day. The country's transmission system operator, MEPSO, identified low electricity consumption and cross-border transit as the probable cause of high voltage levels on the grid.
+
+## Major power supply disruptions were triggered by equipment failures
+
+On 25 February 2025 at about 15:16 local time, Chile was hit by its worst blackout in  15 years.  A  failure  in  the  protection  system  caused  the  main  north-south transmission  line  to  shut  down  unexpectedly.  This  sudden  dual-circuit  outage spread with subsequent disconnections, leading to a system separation between the northern and southern parts of Chile. The North Zone, which was exporting power before the incident and where 30% of the national demand is located, lost electricity supply due to voltage instability. South-Central Chile, which had been importing  power  from  the  north  and  serves  the  remaining  70%  of  demand, collapsed within seconds of the failure, losing 1 800 MW of supply as contingency defence schemes malfunctioned. This incident plunged 14 of Chile's 16 regions, accounting  for  about  98%  of  the  population,  into  darkness  and  incurred  an estimated  USD 450 million  in  economic  losses.  Around  half  of  the  country regained access to electricity later that night, and the system returned to normal around 9 AM the following day.
+
+On 21 March 2025, London's Heathrow Airport , one of the busiest travel hubs in the world, was submerged in darkness and had to close operations for an entire day.  More  than  300 000 passengers  and  1 350 flights  were  affected  by  the incident.  According  to  the  final  report  published  by  National  Energy  System Operator (NESO), one transformer in an adjacent electrical substation had caught fire, most likely caused by moisture ingress in the insulation around wires. While the airport had three power supply routes, the system was unable to ensure supply continuity following the single transformer failure, leaving the facility without power. Another incident caused by a substation fire occurred on 14 October in southern Brazil ,  which  resulted  in  10 000 MW  of  lost  load,  with  more  than  1 million customers affected.
+
+Cuba suffered  from  two  major  outages  in  2025,  adding  to  the  series  of  three nationwide  blackouts  in  the  second  half  of  2024.  On  14 March,  a  substation breakdown near the country's capital  propagated  into  an  island-wide  blackout, affecting around 10 million inhabitants. The second mass outage struck the island again six months later, on 10 September, which was related to a thermoelectric plant malfunction according to its Ministry of Energy and Mines.
+
+On 2 May 2025, Bali, Indonesia ,  also experienced an expansive power outage that interrupted operations at the island's airport and other public infrastructure. Around 80% of the province and more than 940 000 residents suffered from loss of  electricity  supply.  Indonesia's  state  utility,  Perusahaan  Listrik  Negara  (PLN), attributed the blackout to a disruption in the subsea cables connecting Bali's grid to the electricity system on Java Island.
+
+A mass blackout that hit the eastern and northern parts of the Czech Republic on 4 July  was  initiated  by  the  fall  of  a  phase  conductor,  according  to  the  Czech transmission system operator (ČEPS). Several transmission lines automatically disconnected, and a power plant was knocked out, rendering parts of the electricity network to perform in an island mode that later became inoperable. This event affected roughly 1 500 MW of generation and 2 700 MW of consumption.
+
+On 26 September, more than 2 million customers in three states of the Yucatán Peninsula, Mexico ,  also  suffered  a  widespread  power  outage.  It  was  later announced maintenance work on high-voltage lines had triggered the incident, switching off nine power plants and 16 generation units, totalling approximately 2 200 MW of electricity supply.
+
+Outages due to attacks on infrastructure are also becoming a challenge, with the situation in Ukraine covered in detail in the Regional Focus section of our report.
+
+## Extreme weather events continued to cause major power outages in 2025
+
+In the United States , major weather-related power outages started at the onset of  the  New  Year.  Seven  states  were  hit  by  widespread  power  outages  on 6 January 2025 as Winter Storm Blair left more than 300 000 people without heat or electricity. A state of emergency was declared and authorities warned citizens to  steer  clear  of  downed  wires  and  damaged  equipment.  Meanwhile,  in  Los Angeles,  starting  from  7 January,  a  powerful  windstorm  and  massive  fires  left more  than  200 000 households  and  businesses  without  electricity.  Powerful windstorms, thunderstorms, blizzards and tornadoes swept the country again in March,  causing  outages  in  more  than  20 states,  affecting  500 000 homes  and businesses. On 29 April, severe wind swept across Pennsylvania, toppling trees and  crippling  utility  poles,  resulting  in  power  outages  that  impacted  over 450 000 consumers. About a month later, on 26 May, a combination of heavy rain, hail, and strong winds caused extensive damage to electrical equipment and cut power to more than 130 000 customers in Texas.
+
+Across the Atlantic, Ireland was also hit by record-breaking wind gusts of Storm Éowyn in January, which brought about unprecedented and immense damage to electricity infrastructure. Over 768 000 customers were affected and 39 000 people  in  remote  and  rural  communities  remained  without  power  for  a week after restoration efforts began. ESB Networks, Ireland's distribution system operator, announced 3 000 electricity poles across the country needed replacement and approximately 900 km of new conductor cable was to be installed after the event.
+
+In Australia ,  as  Cyclone  Alfred  swept  across  South  East  Queensland  and northern  New  South  Wales  in  March  2025,  more  than  500 000 customers  lost power. Fallen trees and tree branches had to be lifted off power lines, which led to protracted restoration efforts and left many without electricity for multiple days. South  East  Queensland  and  the  Victoria  region  suffered  from  power  outages again on the morning of 27 October, as high wind gusts and large hailstones swept through the area. Around 26 000 households in Queensland and 1 300 customers in Victoria woke up in the dark as the extreme weather caused significant damage to the power network.
+
+On 22 September, Super Typhoon Ragasa made landfall in the Philippines with torrential downpours and raging winds. This coincided with the ongoing monsoon season in the region, exacerbating flooding and causing landslides. The tropical cyclone later made its way toward China . The typhoon significantly damaged key infrastructure, including transmission facilities and distribution utilities, triggering large scale outages. Hospitals, water facilities, and telecommunication stations had to resort to emergency generators to maintain essential services. Approximately 750 000 households in the Philippines and 56 000 in China were affected by the blackouts. The National Electrification Administration (NEA) of the Philippines later announced that electric co-operatives in the typhoon-hit region incurred substantial infrastructure damages.
+
+On  28 October,  Hurricane  Melissa  made  landfall  in Jamaica as  a  Category 5 storm, causing widespread outages that left more than 530 000 people without electricity. Power restoration efforts were delayed by damaged infrastructure such as impassible roads, which is a common challenge in the aftermath of extreme weather  events,  further  burdening  these  affected  communities.  Despite  the government's prioritisation and co-ordination of recovery efforts, some outages persisted for more than three weeks after the hurricane.
+
+Meanwhile, unusually high temperatures of nearly 50 ºC in Iraq led to shutdown of two transmission lines, which resulted in a nationwide blackout on 11 August 2025.  According  to  the  Iraqi  Ministry  of  Electricity,  the  shutdown triggered 'a sudden loss of more than 6 000 MW on the grid', which forced power plants offline and the grid to eventually collapse under the pressure. This incident demonstrates the conundrum of maintaining stable system operations under the dual pressures of rising temperatures and surging consumer demand.
+
+## Regional Focus
+
+## Asia Pacific
+
+## Electricity demand set to increase strongly after mild weather tempered growth in 2025
+
+Electricity  demand in the Asia Pacific region increased by 4.1% y-o-y in 2025, easing from the 6% pace in 2024. Milder weather conditions in 2025, compared to the previous year, moderated growth in many parts of the region, especially in India and Southeast Asia. Nevertheless, two-thirds of the global demand increase came from Asia Pacific. Over the 2026-2030 five-year forecast period, we expect the region to record robust gains of an average 4.7% annually. China will account for almost 70% of the region's additional demand, but India (15%) and Southeast Asia (11%) also will be significant contributors. Japan and Korea are forecast to see a resurgence in demand growth. By 2030, 56% of world's electricity use will be in Asia Pacific, up from 53% in 2025.
+
+<!-- image -->
+
+Notes: Data for 2026-2030 are forecast values. The plots start from 2019, whereas the x-axis labels are shown only for the even years due to limited space.
+
+Solar PV and wind are the fastest growing sources of electricity generation across the Asia Pacific, together meeting 86% of the additional demand over the outlook period, with nuclear and natural gas supplying most of the rest. By 2027, solar PV will become the largest renewable source of electricity in the region, surpassing hydropower. Coal will remain the dominant single source of electricity generation, though  its  role  in  the  power  mix  is  evolving.  New  coal  capacity  is  still  being commissioned in Asian markets, notably in China and India. However, the rising share of renewables in the system result in coal-fired power plants increasingly providing  system  flexibility  and  backup  for  variable  renewable  energy  (VRE), limiting  their  capacity  utilisation.  Natural  gas-fired  output  is  forecast  to  see  an acceleration  in  growth  over  the  outlook  period,  driven  by  lower  LNG  price assumptions. Southeast Asia is expected to be a major catalyst, accounting for a substantial 44% of gas-fired generation growth in Asia Pacific.
+
+## Electricity generation by source in Asia Pacific, 2019-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP), and ocean energy. Data for 2026-2030 are forecast values.
+
+## China
+
+## China is expected to provide around half of the global growth in electricity demand through 2030
+
+Electricity demand in China rose by 5.1% in 2025, slightly slower than the 7% increase recorded in 2024. Demand is forecast to rise at an average annual 4.9% from 2026 to 2030, a moderation from the 6% average of the past decade. While ongoing  economic  restructuring  continues,  demand  growth  will  be  driven  by sustained electrification, expanding manufacturing and the services sector.
+
+Warmer winter temperatures reduced heating needs in early 2025, but recordbreaking  summer  heatwave  in  July  drove  peak  electricity  demand.  Surging temperatures  in  the  southern  provinces  further  boosted  electricity  demand  in October.  At  the  same  time,  efficiency  gains,  including  consumer  appliance upgrades and government targets to reduce energy consumption per unit of GDP by 3%, are also other relevant developments contributing to demand trends.
+
+In 2025, solar PV generation surged by 43% and wind by 12%, with the share of VRE in overall electricity generation reaching 22%, up from 18% the previous year. The  steep  increase  was  underpinned  by  record  capacity  additions.  Between January and December, 316 GW (AC) of solar and 119 GW of wind were added, with more than a quarter of this capacity commissioned in May alone. The surge in renewable capacity additions in early 2025 was mainly triggered by producers accelerating  project  commissioning  ahead  of  the June 2025  deadline  ending fixed-price remuneration in line with the implementation of market-based pricing reforms. These changes replaced fixed tariffs with competitive auctions awarding Contract for Differences (CfDs), which are expected to narrow profit margins for developers. While capacity additions increased, grid integration challenges remain significant. In the first eleven months of 2025, the solar curtailment rate reportedly rose  to  5.2%  from  3%  over  the  same  period  in  2024,  while  wind  curtailment climbed to 5.7% from 3.7%.
+
+Coal-fired generation in China declined by an estimated 1.2% in 2025, reversing a  modest  rise  in  2024.  This  shift  highlights  coal's  evolving  role  in  the  power system, which is increasingly used to provide flexibility and backup for intermittent renewable sources. While coal remains the largest source of electricity generation in absolute terms, its share of overall generation will gradually be eroded by rapid growth in renewables, falling from 55% in 2025 to 43% in 2030. Nonetheless, coal power capacity continues to expand, with 21 GW commissioned in the first half of 2025  and  46 GW  of  projects  starting  or  restarting  construction.  This  reflects  a delayed response to the permitting boom of 2022-2023. Previously approved coal projects are expected to continue driving high commissioning levels through 2027. Only 1 GW of coal-fired capacity was retired in the first  half  of  2025, with  just 16 GW retired since 2021. Despite new coal power plants coming online, rising renewables are expected to increasingly push coal units into flexibility and backup roles, reducing their capacity utilisation.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP), and ocean energy. Data for 2026-2030 are forecast values.
+
+In  2025,  nuclear  generation  rose  by  7.7%  y-o-y,  supported  by  new  capacity additions. Hydropower output increased by 2.8% y-o-y due to more favourable hydrological  conditions  in  the  second  half  of  the  year,  compared  to  a  weak H1 2025. Gas-fired generation, which accounted for a small 3% of the electricity mix in 2025, saw an estimated growth of around 2%, a slowdown from 7.5% in 2024.  This  was  mainly  due  to  the  reduced  competitiveness  of  gas  versus renewables and coal.
+
+China's electricity generation mix will shift further towards low-carbon sources in the outlook period. Solar PV and wind are forecast to continue expanding at a brisk pace. Solar generation is expected to rise at an average annual rate of over 19% through 2030, while wind stabilises at around 13% per year. Over the same period, nuclear generation is projected to grow at close to 6% annually, supported by the commissioning of new reactors. In a marked reversal of trend, coal-fired output is expected to plateau and decline only slowly, by an average of less than 0.5% per  year  in  the  forecast,  compared  to  growth  of  3.9%  in  the  2018-2024 period, as low-emissions sources gain further ground. At the same time, pumped hydro storage, alongside expanding battery storage, will play a growing role in balancing variable renewables.
+
+## Battery storage emerges as a central pillar in China's electricity system transformation
+
+Battery storage is playing an increasingly important role in China's power system transformation. Preliminary data indicates that China has installed 66 GW/189 GWh of additional new energy storage 1  capacity in 2025, more than 50% and an above 70% year-on-year increase in storage capacity and volume, respectively.
+
+In  September  2025,  China's  National  Development  and  Reform  Commission (NDRC) and the National Energy Administration (NEA) issued a three-year action plan aiming to boost new-type energy storage solutions, which includes scaling up storage applications in power generation and accelerating technological innovation designed to ensure the stability of the grid and integrate renewables. The plan is targeting over 180 GW of installed capacity by 2027, up from 74 GW in  2024.  Recent  regulatory  changes  removing  the  energy  storage  pairing obligation  for  new  wind  and  solar  projects  imply  that  new  installations  will  be mainly driven by market signals.
+
+Coal-fired power plants are also undergoing a transformation to support system flexibility. In April 2025, the government released an implementation plan setting technical requirements for minimum output levels to allow for deep peak shaving, and load ramping capabilities for coal-fired power plants in 2025-2027. The plan also states that new coal plants should have 10-20% lower CO2 emissions per unit of electrical energy generated than the 2024 fleet.
+
+1 China's definition of 'new energy storage' includes electrochemical, compressed air, flywheel and supercapacitor energy storage systems, excluding pumped hydro storage.
+
+## China continued advancing electricity market reforms and policies aimed at effective integration of renewables
+
+China submitted its 2035 Nationally Determined Contribution (NDC) in November 2025, aiming to reduce economy-wide greenhouse gas emissions by 7-10% from their peak by 2035. While no base year has been specified, this is the first absolute emission-reduction target set for China. The newly submitted NDC also includes a target to increase the share of non-fossil fuels in total energy consumption to over 30%. These announcements are in addition to plans already in place such as  peaking  whole-of-economy  emissions  before  2030  and  phasing  down  coal consumption between 2026-2030.
+
+Electricity  market  reforms  are  also  advancing  in  China.  The  NDRC  and  NEA released  the  Notice  on  Comprehensively  Accelerating  the  Construction  of  the Electricity  Spot  Market  in  April  2025,  requiring  full  coverage  of  provincial  spot markets by the end of 2025. Currently, seven spot markets are operational, with pilot programmes at different stages of implementation in 22 other provinces. For provinces where renewables account for more than 40% of the electricity mix, the NDRC and NEA have allowed a reduction in the requirement for wholesale buyers to  contract  80%  of  their  demand  through  medium-  and  long-term  contracts, lowering  it  to  60%.  This  adjustment  provides  greater  scope  for  spot  market procurement and continues to adapt the market framework to growing renewable penetration.
+
+The latest set of basic rules governing China's power markets was released in 2025. This included new rules for the Electricity Ancillary Services Market and for Power Market Metering and Settlement, as well as updated rules for medium- and long-term electricity trading. According to the Chinese authorities, the '1+6' policy framework for the national unified power market is now complete, with the '1' referring to the overarching rules on power market operation and the '6' to the supporting sets of specific rules.
+
+Network tariffs revisions were released by NRDC in November 2025, clarifying the regulatory  frameworks  for  provincial,  regional  and  inter-provincial  transmission tariffs. These provisions notably introduce a two-part tariff for the use of the interprovincial network comprising of a capacity and energy part, moving away from energy-based  tariffs. The  aspect  of energy-based  tariff structures limiting efficiency  for  incentivising  inter-provincial  transactions  had  been  previously covered by the IEA.
+
+Alongside market reforms, China introduced several policy documents likely to have a direct impact on electricity demand, particularly in sectors such as industry, heating and transport. Mandatory Renewable Energy Quotas for Industry were expanded to include additional industrial sectors in July 2025. These quotas now require energy-intensive industries such as steel, cement, polysilicon, and certain data centres to source a defined share of their electricity from renewables. These requirements  had  been  previously  introduced  for  aluminium,  provinces  and electricity distribution companies, but have now been strengthened as part of the new rules. In March 2025, China released its first-ever National Action Plan on Heat Pump Development, signalling its strong commitment to their deployment across sectors, as well as a three-year action plan for doubling electric vehicles charging capacity by 2027.
+
+Chinese authorities released Management Measures for Distributed Photovoltaic in January 2025. This new policy, analysed in more detail in the IEA's Integrating Distributed Energy Resources in China report launched in late 2025, shifted the focus  of  distributed  solar  PV  policy  support  towards  small-scale  solar  PV installations  connected  to  lower-voltage  networks,  terminating  the  eligibility  of commercial and industrial consumers to this type of support.
+
+## Year-on-year change in electricity generation in China, 2019-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP), and ocean energy. Data for 2026-2030 are forecast values.
+
+## India
+
+## Demand growth slowed amid weather effects, but is set to remain strong through 2030
+
+In  2025,  electricity  demand  in  India  grew  by  1.4%  y-o-y,  marking  the  weakest growth rate since at least 1972, excluding the decline seen in 2020 during the pandemic. The muted growth was largely driven by milder weather conditions, with fewer heatwaves in the summer and an early onset of the monsoon season, which eased cooling needs and reduced peak loads during the hottest months. Slower industrial activity also contributed to the moderation in demand growth.
+
+In  our  five-year  outlook,  which  assumes  normal  weather  patterns,  electricity demand is expected to rebound by a sharp 6.9% in 2026, in line with economic activity, and continue rising steadily through 2030 at an average annual rate of 6.4%. Growth will be supported by expanding cooling needs due to rising income levels among the population, increasing industrial output, and escalating power consumption in agriculture and transport, among other sectors.
+
+## Electricity generation by source in India, 2019-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable energy sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP) and ocean energy. Data for 2026-2030 are forecast values.
+
+## Renewables break new records amid strong policy support and ever-cheaper solar PV
+
+Renewable  electricity  generation  grew  by  20%  in  2025,  the  strongest  annual increase in the last decade. Solar PV generation led the growth, up by 24% in 2025,  a  sharp  rise  from  15%  in  2024,  which  was  boosted  by  substantial  cost declines. Solar PV is projected to maintain strong momentum over the forecast period, with annual growth forecast to average 24%, adding more than 300 TWh. Wind also saw robust gains of close to 28% in 2025 and is forecast to grow at a steady average annual rate of over 8% through 2030. Hydropower rose by 14% y-o-y in 2025, up from 2.5% in 2024, due to improved hydrological conditions.
+
+India  has  already  achieved  50%  of  its  installed  capacity  from  non-fossil  fuel sources ahead of its 2030 target under the Paris Agreement. Between 2026 and 2030, the country is expected to add almost 300 GW of renewable power capacity. Domestic solar PV module manufacturing capacity reached 100 GW under the Approved List of Models and Manufacturers (ALMM), reflecting the country's goal of a self-reliant clean energy supply chain. National schemes continue to support solar PV deployment, with programmes such as PM-KUSUM, which incentivises the  shift  to  solar  in  meeting  agricultural  electricity  demand,  and  the  PM-Surya Ghar:  Muft  Bijli  Yojana  initiative  aimed  at  promoting  rooftop  solar  installations using subsidies.
+
+In  2025,  India's  Ministry  of  New  and  Renewable  Energy  announced  its  first National Policy on Geothermal Energy to promote exploration and development of geothermal resources.
+
+Following years of rapid renewable capacity growth, India's power sector is now shifting its focus to system integration and long-term reliability. In October 2025, the Ministry of New and Renewable Energy announced its new priorities, signalling the need to align renewable expansion with grid strength, financial discipline, and advancing long-term market design to support the country's 500 GW non-fossil capacity  target  in  a  resilient  and  cost-effective  manner.  The  Central  Electricity Authority issued guidelines in July 2025 requiring Automatic Weather Stations at large solar and wind projects to ensure real-time weather tracking. This is a step towards ensuring reliable and accurate renewable generation forecasting and grid reliability.
+
+The Ministry of Power is also prioritising  digitalisation  as  a  key  part  of  system reliability. In September 2025, it established the taskforce India Energy Stack (IES) to develop a digital public infrastructure (DPI) for the power sector. The task force aims  to  create  a  connected  and  interoperable  energy  ecosystem  through  the development of a Utility Intelligence Platform in collaboration with selected power distribution  companies.  Built  on  standardised  open  APIs  and  protocols,  this platform  will  integrate  data  from  across  IT  systems,  enhancing  innovation, operational efficiency, and informed decision-making.
+
+Other  power  sector  reforms  involve  the  continued  roll-out  of  the  Revamped Distribution  Sector  Scheme  to  improve  financial  sustainability  and  service reliability, including sanctioning of 203 million smart meters. The government also introduced financial incentives in the form of extra borrowing space linked to statelevel power sector reforms to enhance efficiency and performance.
+
+## India targets nuclear expansion while coal remains central to power supply
+
+India  is  looking  to  nuclear  power  as  a  key  part  of  its  energy  security  and decarbonisation  strategy  with  the  newly  announced  Nuclear  Energy  Mission, which includes a target of 100 GW of nuclear capacity by 2047. This plan aims to enhance domestic nuclear capabilities through increased private sector participation as well as accelerate the development and deployment of advanced nuclear technologies such as small modular reactors (SMRs). This was reinforced through the approval of a landmark piece of legislation in December 2025, the SHANTI bill, which modernises governance and enables private participation in the  nuclear  industry,  a  restriction  which  had  previously  limited  investment, industrial participation and project momentum.
+
+India's largest power generator, National Thermal Power Corporation (NTPC), is entering the nuclear sector through its new subsidiary NTPC Parmanu Urja Nigam Limited (NPUNL). India has also approved the creation of a joint venture between the government-owned Nuclear Power Corporation of India Limited (NPCIL), the country's sole operator of nuclear power plants, and NTPC to construct, own and operate nuclear power plants in the country. Nuclear generation is expected to grow steadily over the 2026-2030 period, at an average annual rate of 12%.
+
+## Year-on-year change in electricity generation in India, 2019-2030
+
+<!-- image -->
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP) and ocean energy. Data for 2026-2030 are forecast values.
+
+In 2025, coal-fired generation fell by 3.2%, following a 5% rise in 2024. However, this  weather-related  decline  is  expected  to  be  temporary,  with  demand  growth forecast to increase rapidly through 2030, facilitating higher coal burn in the power sector, with a large pipeline of projects already under construction. Between 2026
+
+and 2030, coal-fired generation is forecast to grow at an average annual rate of 2.3%, maintaining its role as the main source of electricity, with a share of around 60% in 2030. State-level distributors continue to sign long-term contracts with coal power generators, supporting this trend. Gas-fired generation declined by 9% in 2025 but is expected to pick up over the forecast period, with an average growth rate of close to 10% during 2026-2030, supported by lower LNG price assumptions as  global  LNG  supply  rapidly  expands.  Total  CO2  emissions  from  electricity generation fell by more than 3% y-oy in 2025, the first decline since 2020.
+
+## Japan
+
+## Electricity demand growth posts a resurgence in 2025, marking a sharp reversal of the declining trend over the past decade
+
+Electricity  demand  in  Japan  is  estimated  to  have  risen  by  around  1.6% year -on -year in 2025, based on data for the first 11 months 2 . This increase was driven by temperature -related increases in consumption, expanding data centres and ongoing electrification.
+
+From  2026-2030,  Japan's  electricity  demand  growth  is  expected  to  increase steadily,  from  around  1%  in  2026  and to reach  1.5%  by  2030,  for  an average annual rate of around 1.2%. This is a significant step change in the demand trend, reversing the downward trajectory of the past decade. While residential electricity demand is expected to decline by 0.6% per year due to ongoing energy efficiency improvements, commercial and industrial use is projected to grow by 1.8% due to continued  expansion  of  data  centres,  new  builds  of  semiconductor  factories coming online and expanding electrification.
+
+## Increasing nuclear energy supply to meet electricity mix goals
+
+The 7th Strategic Energy Plan, approved by the Japanese Cabinet in February 2025,  outlines  the  basic  direction  for  Japan's  energy  policies.  In  tandem,  the Outlook for Energy Supply and Demand in FY2040 was published, detailing the country's plan to increase the share of renewable energy to approximately 40-50% in 2040, which is around two times the 2023 level, and to raise the share of nuclear power to  approximately 20%  by  2040,  which  is  two-and-a-half  times  the  2023 share.
+
+Nuclear  power  generation  rose  by  about  11%  in  2025  and,  assuming  restarts proceed as planned, with growth forecast at an average annual rate of 14% over the 2026-2030 period. Potential delays in restarts could affect this rate. Following the Fukushima Daiichi accident in 2011, the country's fleet of nuclear plants were suspended from operations and among the 33 operable reactors, 14 have now resumed operations after meeting new safety standards.
+
+2 Data is from the Organization for Cross-regional Coordination of Transmission Operators (OCCTO).
+
+Tokyo Electric Power Company (TEPCO) is working towards the restart of two units at Kashiwazaki-Kariwa, the country's largest nuclear power plant with seven units capable of producing about 8 000 MW. In the wake of the  Fukushima Daiichi accident, Unit 6 (1 356 MW) and Unit 7 (1 356 MW) were closed in August 2011 and  March 2012,  respectively.  Operator  TEPCO  has  already  completed  the technical preparations for the restart of Unit 6. Unit 7 has cleared regulatory safety screening, however regulations also require the construction of an anti-terrorism back-up facility within a certain period of time. Unit 7 exceeded that deadline in October 2025 so its restart is being postponed. As such, only Unit 6 is expected to be available for restart in the near term, subject to final approvals. In November, the governor of the Niigata Prefecture, where the plant is located, agreed to the restart  and  this  decision  was  subsequently  backed  by  the  Niigata  Prefectural Assembly in December. The Nuclear Regulation Authority approved the start-up of  Unit  6  on  21 January 2026,  with  commercial  operation  targeted  for  late February.
+
+Further nuclear restarts are also in progress. Hokkaido Electric Power Company's Tomari Unit 3 (866 MW) has cleared regulatory screening and received approval for  safety-related  design  changes,  including  enhanced  tsunami  protection  and strengthened seismic performance. Construction of coastal fortification structures is  underway,  targeting  operation  in  2027.  Safety  reinforcement  measures  are being implemented at Japan Atomic Power Company's Tokai Unit 2 (1 060 MW) to  meet  strengthened  criteria,  with  completion  expected  by  2026  and  restart expected soon thereafter, subject to regulatory approval.
+
+## Renewables on track for steady growth as Japan invests in grid flexibility and innovation
+
+Japan's renewable power generation is estimated to have increased by around 5% y-o-y in 2025, based on data for the first 11 months, as output from solar PV and wind power generation both rose about 13%. Meanwhile fossil-fired thermal generation declined by 1.7%, also supported by improved performance of the coal power fleet.
+
+Renewable energy is expected to grow at an average annual rate of around 6% in 2026-2030. However, challenges remain in scaling up renewables, particularly due to the intermittency of VRE power output. In response, Japan is investing in the development of its power grid to integrate higher shares of renewables.
+
+Japan  has  implemented  a  Long-Term  Decarbonised  Power  Source  Auction  to promote  investment  in  low-carbon  power  and  flexibility  resources,  including renewables, hydrogen, ammonia co-firing, and nuclear power.
+
+Efforts  are  also  underway  to  accelerate  the  deployment  of  next-generation technologies such as perovskite solar cells, offshore wind power generation and advanced geothermal  power  generation.  The  Ministry  of  Economy,  Trade  and Industry (METI) has been supporting these initiatives mainly through the Green Innovation  Fund,  which  will  allocate  a  total  of  approximately  JPY 2.8 trillion (Japanese yen), or around USD 18 billion, to continuously support  R&amp;D, demonstration  and  implementation  of  innovative  decarbonisation  technologies, including renewable energy.
+
+One notable event occurred in August 2025, when Mitsubishi Corporation, the selected developer for an offshore wind power project, announced its withdrawal after determining that a viable business plan was no longer feasible due to rising construction  costs  and  worsening  profitability.  In  response,  the  government announced reforms to the offshore wind bidding process, including measures to better reflect rising construction costs and strengthen assessments of project. The government continued to implement reforms to advance offshore wind policy by passing the "EEZ Law" on 3 June 2025, which amended the Marine Renewable Energy Law to allow offshore wind farms in its the exclusive economic zone. In addition, the country approved a strategy to build a pipeline of at least 15 GW of floating offshore wind capacity by 2040.
+
+## Year-on-year change in electricity generation in Japan, Korea, and Australia, 2021-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP) and ocean energy. Data for 2026-2030 are forecast values.
+
+## Korea
+
+## Electricity demand is set to rise steadily, while low-emissions generation's share reaches 50% in 2030
+
+Korea's electricity demand remained relatively flat in 2025, based on year-to-date data through November. However, demand is projected to grow from 2026 onward, at an average annual rate of 1.3% through 2030. The three major drivers of growth include the expansion of major semiconductor manufacturing clusters, the rapid development of AI data centres, and the increasing electrification across sectors.
+
+Meanwhile,  peak  demand  rose  sharply  in  2025,  primarily  due  to  the  recordbreaking heat waves. Marked as the hottest July on record, average peak demand for the month posted a 5.6% y-o-y rise. In August, the country reached its highest ever daily load at 104 GW. This new peak highlighted the importance of system adequacy  amid  increasingly  frequent  extreme  weather  events,  as  the  reserve margin stood at 9.4% at that moment.
+
+Low-emissions generation, including solar, wind and nuclear, is expected to reach 50%  of  the  total  generation  mix  by  2030.  In  2025,  nuclear  power  generation decreased slightly by around 1.5%, while solar PV and wind power output grew by  17%  and  11%,  respectively.  The  biggest  privately-developed  wind  farm  in Korea, the Jeonnam Offshore Wind Farm 1 with a total capacity of 96 MW, started commercial operation in May 2025. Coal-fired generation remained relatively flat in 2025 and is forecast to decline by an average of just over 8.5% each year to 2030.  Last  year  marked  the  first  year  of  major  retirements  of  coal  fleets,  with 7.5 GW of closures expected by 2030. Gas-fired generation declined by around 1.5% y-o-y in 2025 but is expected to reverse trend and grow at an average annual rate of 3.2% over 2026-2030.
+
+## Battery-led grid flexibility and renewable-driven policy gain momentum
+
+The Korea Power Exchange (KPX) launched the country's first nationwide auction for battery energy storage systems in 2025. Recognising its potential to support grid integration of VRE, the first-round auction tendered 540 MW (3 240 MWh) of six-hour duration storage and awarded 565 MW (3 390 MWh) of projects, mostly located in the southwestern regions with the highest VRE share in the country.
+
+The Ministry of Climate, Energy and Environment (MCEE) was established to align Korea's  policies  under  a  cross-sectoral  governance.  In  2025,  the  government finalised the nation's 15-year energy outlook, the 11th Basic Electricity Supply and Demand  Plan,  which  includes  two  new  nuclear  power  plants,  Shin-Hanul Units 3 and 4 at around 1.4 GW each, with a total 2.8 GW capacity, and one SMR
+
+of  0.7 GW, while adding an annual average of 8 GW of renewable capacity by 2030. The plan also sets a 2030 target of 4.2 GW of flexibility resources, primarily battery storage. Separately, the new ministry has signalled its intention to double down  on  power  sector  decarbonisation  by  setting  a  target  of  100 GW  for renewable capacity by 2030.
+
+## Australia
+
+## Electricity generation from renewables is expected to surpass coal over 2026-2030
+
+Electricity demand in Australia rose by just over 1% in 2025 and is forecast to continue increasing by an average 1.2% y-o-y from 2026 to 2030. In the meantime, coal  generation  will  remain  on  its  declining  trend,  decreasing  from  46%  of  the electricity mix in 2024 to 44% in 2025, and to 27% in 2030. Gas-fired generation fell by 8% y-o-y in 2025 but is expected to return to growth over 2026-2030, rising at an average of 3.1% annually.
+
+Renewable energy sources supplied over 40% of electricity across Australia's two major grids, the National Electricity Market (NEM)  and  the South  West Interconnected System (SWIS). Over the whole country, renewable generation is forecast to increase by an average of over 8.5% y-o-y to 2030. In 2025, renewable generation reached about 38% of total supply, consisting mainly of solar (19%), wind (13%), and hydropower (5%). These gains led to several peak renewable penetration records in 2025.
+
+The Australian government has a target to reach 82% renewable electricity in the share of electricity consumption by 2030. Progress towards this goal has been supported  by  the  Capacity  Investment  Scheme  (CIS),  a  government  revenue underwriting programme which was boosted in 2025 to provide support for 40 GW of  additional  capacity  by  2030,  specifically  targeting  renewable  generation  and clean dispatchable capacity.
+
+Battery energy storage systems (BESS) are playing an increasing role in meeting power system flexibility needs. In Australia's NEM, there is over 4.3 GW of gridscale batteries in operation, with another 12.6 GW in the development pipeline, equivalent  to  the  NEM's  existing  gas  capacity.  The  NEM's  market  design arrangements,  including  its  five-minute  settlement  and  ten  frequency  control ancillary  services  (FCAS)  markets  provide  strong  incentives  for  fast-response technologies such as BESS to deliver flexibility, support frequency management and earn revenues across multiple services.
+
+Distributed  BESS  are  also  playing  an  emerging  role  in  balancing  Australia's significant rooftop solar capacity. More than one-third of households now have rooftop  PV,  contributing  to  steep  intraday  swings  in  net  demand  and  new operational challenges. In South Australia, rooftop solar generation has at times exceeded  underlying  state  demand,  highlighting  the  importance  of  flexible resources and inter-region transmission capacity. To support these  new resources,  the  government  introduced  the  Cheaper  Home  Batteries  Program, which provides a discount of around 30% on the upfront cost of installing smallscale battery systems where it is connected to a new or existing solar PV system. In the first six months since its launch in June 2025, the programme has delivered batteries to more than 155 000 households and small businesses, providing a total storage volume of 3.5 GWh. Additionally, the new EnergyConnect interconnector between South Australia and New South Wales will give operators flexibility to export surplus VRE generation. Construction of phase 1 was finished in 2025, and full operation is expected for late 2026.
+
+Another  initiative  by  the  Australian  government,  effective  in  2026,  is  the  Solar Sharer, which will require retailers to offer free electricity to households for at least three hours in the middle of the day when solar generation is at its peak. These programmes  are  expected  to  help  reduce  consumer  bills  and  provide  power system flexibility benefits.
+
+## Southeast Asia
+
+## Demand growth was tempered by milder weather, but set to regain momentum and resume its robust pace out to 2030
+
+Electricity  demand  in  Southeast  Asia  grew  by  an  estimated  near  3%  in  2025, easing from the sharp 8.6% surge in 2024, as milder weather and slower economic growth weighed on electricity consumption. Demand is expected to grow at an average annual rate of 5.3% over 2026-2030. Indonesia accounts for about onethird  of  total  electricity  consumption  in  Southeast  Asia  and  is  projected  to contribute 38% of the additional demand over the forecast period. Viet Nam is expected to account for 26% of demand growth, followed by Thailand at 11%, with both Malaysia and the Philippines at 8% each.
+
+Coal remains the primary source of power generation in Southeast Asia. Coalfired output rose by 3.1% y-o-y in 2025 and continued to provide almost 50% of the region's electricity. Coal-fired generation is forecast to grow by an average of 4% annually over 2026-2030 while its share in the electricity mix is expected to ease down modestly over the outlook period. Gas-fired generation is projected to rise by just over 7% on average through 2030, increasing its share of the electricity mix from 24% to 27%.
+
+Renewable  generation  is  projected  to  expand  at  a  robust  pace  as  countries accelerate the deployment of wind and solar PV across Southeast Asia. Wind is forecast to grow by 26% annually and solar PV by 19% over the forecast period. Together, wind and solar PV are expected to increase their combined share of the electricity  mix  from  around  4.5%  in  2025  to  about  9%  by  2030.  Hydropower remains the largest source of renewable generation, accounting for over 60% of renewable electricity in 2025. Its share is forecast to decline to below 50% by 2030 as  wind  and  solar  PV  generation  expand  and  capture  a  growing  share  of  the region's renewable electricity growth.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP) and ocean energy. Data for 2026-2030 are forecast values.
+
+## Indonesia
+
+## Coal will remain the primary electricity generation source, even as gas-fired output and renewables expand rapidly
+
+In 2025, Indonesia's electricity demand rose by an estimated 6.7%, moderating amid milder weather compared with the previous year. Growth was supported by industrial expansion as well as increased commercial and household consumption. All major energy sources posted growth, with electricity generation from coal and gas  rising  by  an  estimated  7%  and  5%,  respectively.  Renewable  energy  also expanded by 7.3%, led by surges in wind and solar PV, which grew by about 50% and 40%, respectively. Despite these gains, coal remains the primary source of electricity,  accounting  for  70%  of  power  generation.  Over  the  forecast  period, coal's  share  is  projected  to  decline  modestly,  representing  approximately  twothirds of power generation by the end of the outlook period.
+
+Electricity demand growth is forecast to resume rising at a robust rate, at near 6% on average annually, from 2026 to 2030. Coal-fired generation is expected to slow to an average 4.8% per year over the outlook period, while gas-fired generation and renewable generation are projected to maintain a stronger pace of just below 9% and 8%, respectively. Within renewables, solar PV and wind are forecast to grow the fastest, at average annual rates of 59% and 52%, respectively. Biomass and hydropower are set to remain the primary renewable sources, accounting for a combined 63% of renewable generation by 2030. Overall, coal's share of the electricity mix falls from 70% in 2025 to 67% by 2030, while renewables will see an increase from 15% to 17% over the period. This change in electricity mix will result in an average annual reduction in emission intensity of 0.7% over the 20262030 period.
+
+Indonesia's 2025 policy updates mark a shift towards a more co-ordinated and system-wide energy transition, with clearer alignment across planning, investment and market instruments. The National Energy Policy (Kebijakan Energi Nasional, KEN), revised under Government Regulation No. 40/2025, sets new targets to raise the renewable share to 19-23% by 2030 and to achieve net-zero emissions by 2060, with renewables expected to supply 70-72% of the total national energy mix. Complementing this, the National Electricity Plan (RUKN) 2024-2060 set a goal to reach 105 GW of renewable capacity by 2040, alongside new targets for gas,  nuclear  and  carbon  capture  and  storage  (CCS).  The  RUKN  estimates renewables will account for around 50% of the generation mix by 2060. The Power Development  Plan  (RUPTL),  from  2025-2034,  operationalises  these  targets, outlining capacity additions of 16.9 GW in renewables, 3.6 GW in energy storage, 10 GW in gas-fired power plants, and 4 GW in coal-fired plants by 2030. Captive power plants  have  already  started  to  be  formally  incorporated  into  institutional financial  frameworks.  The  JETP  captive  power  study,  published  in  late  2025, projects  an  average  annual  growth  rate  of  around  4.6%  in  captive  generation through 2030.
+
+At the project level, the government recently announced a new initiative to build 100 GW of solar PV. This includes 80 GW of village-based distributed solar with 320 GWh of battery storage and 20 GW of utility-scale solar PV. This programme aims  to  enhance  rural  electrification  and  reduce  reliance  on  transmission infrastructure,  however,  implementation  faces  technical,  financial,  and  supplychain  challenges.  In  parallel,  Indonesia  has  strengthened  its  carbon-market framework  through  Presidential  Regulation  No. 110/2025,  which  introduces carbon-allocation rules, provisions for international trading, measurement, reporting,  and  verification  (MRV)  standards.  In  October  2025,  the  government formally  reopened  international  carbon  trading  after  a  four-year  suspension, enabling cross-border transactions under the new regulatory framework.
+
+## Year-on-year change in electricity generation in Indonesia, Viet Nam, and Thailand, 2021-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP) and ocean energy. Data for 2026-2030 are forecast values.
+
+## Viet Nam
+
+## Over 50% of the demand growth through 2030 is set to be met by rising solar and wind, and 29% by gas-fired power
+
+Electricity demand in Viet Nam increased by just under 3% y-o-y in 2025, based on year-to-date data through October, a sharp slowdown amid milder weather from the strong 12.6% growth rate recorded in 2024. Over the 2026-2030 period, demand is expected to rise at an average annual rate of 6.3%. Wind and solar PV are forecast to meet around 42% of the growth in 2026-2030, with the rest met by coal and gas in similar shares.
+
+Among renewables, wind power generation increased by 15% y-o-y in 2025, which is expected to accelerate to average annual growth of 24% over 2026-2030. Solar PV fell by 5% in 2025 but is forecast to rebound and grow at an average of around 15% per year over the outlook period. Hydropower accounted for about 73% of renewable power generation in 2025, but its share is expected to decline to 50% as  wind  and  solar  PV  expand.  Despite  the  growing  role  of  renewables,  coal remains a major contributor to the electricity mix, representing over 45% of total generation in 2025 and expected to still account for a similar share through 2030.
+
+In  early  2025,  Viet Nam  revised  its  National  Power  Development  Plan  for  the 2021-2030  period,  with  a  vision  to  2050  (PDP8).  The  updated  plan  outlines  a substantial increase in the installed capacity of renewable energy by 2030, with notable expansions in solar PV, wind, and hydropower, as well as higher electricity imports. The revised PDP8 also includes an enhanced commitment to developing pumped-storage hydropower plants with a capacity of approximately 2 400 MW, alongside  storage  batteries  totalling  around  300 MW  by  2030,  with  the  aim  to support the integration of large-scale renewable energy sources into the grid. The PDP8 also reintroduces nuclear power into the planning framework, with the goal of commissioning plants totalling 4.0-6.4 GW between 2030 and 2035.
+
+Viet Nam is also strengthening its regional power interconnections through new agreements.  By  2030,  Viet Nam  plans  to  have  electricity  import  capacity  of 9 360-12 000 MW from the Lao People's Democratic Republic, supported by a bilateral agreement between the two countries. On the export side, Viet Nam is aiming to enhance regional co-operation with Cambodia by increasing electricity export capacity to around 400 MW by 2030.
+
+A key infrastructure milestone was reached 19 December 2025 with completion of the  expansion  of  the  Hoa Binh  hydropower  plant,  following  the  successful installation of the rotors for Units 1 and 2. With both units now operational, capacity has been raised by 480 MW to the power grid. The new capacity is expected to improve  frequency  regulation  and  overall  system  stability,  as  well  as  reduce system-wide costs.
+
+## Thailand
+
+## Electricity demand dips in 2025 but is set to rebound while solar deployment accelerates
+
+Electricity demand in Thailand is estimated to have contracted by just over 4% in 2025, based on year-to-date data through September, driven by lower consumption  across  industry,  residential  and  commercial  sectors.  The  decline follows a high base year in 2024 and is influenced by a number of factors, including cooler  weather  conditions  and  La  Niña,  as  well  as  an  economic  slowdown.  In 2026-2030, demand is expected to grow at an average annual rate of around 4%, led by a rebound in economic growth, electrification in the industry and transport sectors, and the expansion of digital infrastructure, including data centres.
+
+Natural gas remained the largest source of electricity generation, with a share of 62% in 2025, which is expected to rise to around 67% through 2030. By contrast, coal's share in the electricity mix is forecast to gradually decline from 17% in 2025 to 14% in 2030. VRE accounted for 6% of electricity generation in 2025, but its share is expected to rise steadily, reaching 9% by 2030. Solar PV will continue to propel Thailand's renewable energy expansion at an average annual growth of 14% between 2026 and 2030. The Electricity Generating Authority of Thailand (EGAT) is targeting the development of 16 hydro-floating solar projects totalling 2 725 MW of capacity by 2030.
+
+Thailand introduced several policy mechanisms to incentivise renewables in 2025. The Utility Green Tariff (UGT), which is the first green energy procurement option in the country, enables eligible customers to purchase electricity and renewable energy certificates (RECs) from utility-scale renewable projects. The government also  introduced  a  pilot  programme  for  Direct  Power  Purchase  Agreements (DPPAs), with 2 GW of capacity targeted at data centres, which allows producers to  sell  electricity  to  buyers.  To  maintain  affordability,  the  government  has introduced measures to cap the residential tariff at 3.94 baht/kWh (Thai Bhat) at the end of 2025, providing cost-of-living relief. In the transport sector, Thailand is targeting zero-emission vehicles to account for at least 30% of total automotive production by 2030. This is expected to boost EV adoption and contribute to higher peak electricity demand in the coming decade.
+
+The draft Power Development Plan (PDP) 2024, which is set to be replaced by a new plan currently in the drafting process, set a target to source 51% of its energy from  renewables  by  2037.  The  government  has  also  advanced  the  net-zero emissions target from 2065 to 2050, reflecting stronger national climate ambitions.
+
+## Malaysia
+
+## The natural gas share in electricity generation is forecast to rise to 40% by 2030 amid rising demand, while solar PV also grows
+
+Electricity demand in Malaysia grew by 1.3% in 2025, led by stronger residential consumption and continued industrial expansion, particularly in manufacturing and petrochemicals, and the rapid growth of data centres. These sectors will remain the key sources of demand, with electricity consumption projected to grow at an average of 3.2% annually from 2026 to 2030, broadly in line with the historical compound annual growth rate of around 3% recorded between 2018 and 2025.
+
+Coal-fired power generation remained the largest source in the electricity mix in 2025, accounting for 46% of total output. However, coal's share is expected to decrease over the outlook period. On the other hand, natural gas is projected to increase its share from 33% in 2025 to 41% in 2030. After falling by around 4.5% in 2025, gas-fired generation is expected to average annual growth of 8% during 2026-2030. This trend reflects Malaysia's positioning of natural gas as not only a transitional fuel  but  also  a  primary contributor  in  the  country's  National Energy Transition Roadmap (NETR).
+
+Renewable electricity generation in Malaysia increased by around 3.5% in 2025 and is forecast to rise by just under 4.5% per year on average over 2026-2030. This expansion is supported by strong policy initiatives, including the Large-Scale Solar programme and the Corporate Renewable Energy Supply Scheme launched in July 2024, which enables companies to source or supply green power via the national grid. The Solar Accelerated Transition Action Programme (Solar ATAP) was introduced on 1 January 2026 to further expand the use of rooftop space for generating renewable energy from solar PV. It follows the Net Energy Metering (NEM) Programme, which concluded 30 June 2025.
+
+Within the renewables sector, hydropower had the biggest share of generation at 86% in 2025, and this share is expected to gradually decrease over the forecast period.  Solar  PV  generation  showed  strong  momentum  in  2025,  rising  by  an estimated 11%, and is forecast to post even higher growth of 25% per year on average between 2026 and 2030, increasing its share in total generation from 2% in 2025 to 5% in 2030.
+
+The  government  is  also  investing  in  grid  and  infrastructure  modernisation, reflected by state utility Tenaga Nasional Berhad's (TNB) announcement of a large grid upgrade investment of USD 10 billion to support the growth of data centres, for which Malaysia is fast becoming a major hub. During its ASEAN chairmanship, it also advanced regional co-operation on grid interconnectivity, with the signing of the Enhanced Memorandum of Understanding for the ASEAN Power Grid.
+
+## Year-on-year change in electricity generation in Malaysia, Philippines, and Singapore, 2021-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP) and ocean energy. Data for 2026-2030 are forecast values.
+
+## Philippines
+
+The share of renewables in generation is set to reach 30% due to rapid solar PV growth, while coal also continues to rise
+
+Electricity demand in the Philippines rose by an estimated 2.1% y-o-y in 2025, down from the 8.8% surge in 2024. From 2026 to 2030, demand is forecast to increase at an average annual rate of 5.4%, underpinned by sustained economic growth, industrial development, and wider electrification.
+
+In  2025,  renewable electricity generation was up by a record 9.5% y-o-y, from 7.2% in 2024. This was driven by substantial increases in generation from solar PV  (+25%),  wind  (+17%)  and  hydropower  (+12%).  The  additional  renewable output helped to displace more expensive generation sources like diesel and LNG in the Wholesale Electricity Spot Market (WESM), where renewables benefit from preferential dispatch.
+
+Coal-fired generation fell by 4.5% y-o-y in 2025, a sharp reversal from the 7.7% increase posted in 2024. This reduction coincided with outages affecting eight coal plants  with  a  combined  capacity  of  1.4 GW  for  more  than  30  days  in  the  first quarter of 2025. Coal currently accounts for 59% of electricity generation, with its share projected to decline to approximately 54% by 2030. Natural gas continues to play an important role in electricity generation. Although its annual growth is expected to moderate to an average 3.5% through 2030, down from 15% in 2025, it is set to expand at a sustained pace in contrast to the largely flat trend over the previous decade (2014-2023).
+
+The Philippines has implemented several renewable energy policy mechanisms, including portfolio standards and the Green Energy Auction Program (GEAP). The third  and  fourth  round  of  the  Green  Energy  Auction  (GEA-3  and  GEA-4)  was conducted in 2025, targeting around 4.65 GW and 10.5 GW, respectively, of new capacity from hydropower, pumped storage hydro, geothermal, solar (ground- and roof-mounted),  floating  solar  and  onshore  wind.  GEA-4  also  marked  the  first auction  to  integrate  1.1 GW  of  solar  paired  with  BESS.  In  GEA-4,  the  auction secured  about  10.2 GW  of  capacity  after  the  preliminary  results  awarded 9 423 MW of new renewable capacity, to be delivered between 2026 and 2029. The  fifth  auction  round  (GEA-5)  was  also  launched  in  June  2025,  focusing exclusively on offshore wind, with an installation target of 3.3 GW during 2028 to 2030.  The  Department  of  Energy  also  launched  a  dedicated  auction  round (GEA-6) for waste-to-energy facilities, targeting project delivery in 2028.
+
+In October 2025, the Department of Energy (DOE) issued Circular No. 2025-10-0019,  establishing  the  policy  foundations  for  the  country's  first commercially developed and operated nuclear power plant as part of a framework for integrating nuclear energy into the national generation mix. In terms of demand, Phase 1 (2025-2027) of the Demand-Side Management (DSM) Implementation Plan  was  launched  to  encourage  active  load  management  and  efficiency measures. Since 2014, the Interruptible Load Program (ILP) has remained a key demand  response  tool,  with over 100 companies  currently  enrolled,  each providing a combined de-loading capacity of over 500 MW to help stabilise the grid during periods of peak demand or supply disruption. The DOE also initiated stakeholder consultations in July 2025 on a draft policy framework for establishing a capacity market.
+
+## Singapore
+
+## Gas remains the backbone of power supply, while flexibility, imports, and hydrogen-ready capacities gain importance
+
+Electricity demand in Singapore increased by an estimated 1.4% in 2025, based on year-to-date data through October, following a similar rise of 1.6% in 2024. Growth is expected to average around 1.5% per year in 2026-2030, supported by the continued expansion of data centre capacity and AI, increased adoption of EVs,  and  rising  industrial/advanced  manufacturing.  Natural  gas  remains  the dominant  fuel  for  power  generation,  accounting  for  around  92%  of  electricity supply in 2025, down slightly from 94% in 2024. The share of renewables remains low at only 6% but is growing steadily and expected to reach 8% by 2030.
+
+Progress on low-carbon electricity imports continued last year. In May 2025, the Energy Market Authority granted Singa Renewables a conditional licence for up to 1 GW of low-carbon electricity import capacity from Indonesia, increasing the total number of projects with conditional licenses to six. These will help Singapore achieve its goal of 6 GW of low-carbon electricity import capacity by 2035, with the  Indonesia  link  expected  to  start  operating  around  2029.  Singapore  met  its 1.5 GW solar capacity target at the end of 2024, one year earlier than the initial deadline. By 2030, the country aims to increase this to 2 GW. In 2025, Singapore committed to reduce CO2 emissions to 45-50 Mt by 2035, down from around 60 Mt by 2030.
+
+The Future Grid Capabilities Roadmap was launched in 2024 to support higher penetration  of  distributed  and  flexible  resources  such  as  distributed  energy resources, BESS, EV charging and demand response. In 2025, Singapore also updated wholesale market rules so that energy storage systems can submit both charging  and  discharging  quantities  to  reflect  their  capabilities  where  state  of charge is introduced as one of the dispatch constraints.
+
+Investment in hydrogen-ready and fast-start generation is progressing. In January 2025,  PacificLight  Power  was  granted  permission  to  build,  own  and  operate  a hydrogen-ready combined-cycle gas turbine (CCGT) unit with a capacity of at least 600 MW. Scheduled to begin operation in 2029, the plant will be the first CCGT in Singapore  integrated  with  BESS.  In  May  2025,  PacificLight  completed  the construction of the country's first at 100 MW hydrogen-ready fast-start gas turbine facility providing ancillary services, which will provide additional resilience in the event of system disturbances or outages.
+
+Further  enhancing  reliability,  Meranti  Power's  682  MW  open-cycle  gas  turbine (OCGT) power plant became operational in June 2025 to enhance system security during peak periods and generation disruptions. This plant also has the capability to draw on up to 30% hydrogen.
+
+## Americas
+
+## Solar PV and natural gas-fired generation see strong growth through 2030
+
+In the Americas, electricity demand grew by 2.1% in 2025, compared with 2.8% a year ago, when  intense heatwaves  in a number  of countries increased consumption. By contrast, milder weather contributed to moderation in demand growth in 2025, especially in Brazil and Mexico. Extreme weather events, such as heatwaves and colder or warmer winters, will continue to affect peak loads and demand significantly in the region, injecting higher levels of volatility into forecasts.
+
+Over the 2026-2030 forecast period, we expect demand growth to average around 2% annually, roughly double the pace of the past decade. The United States, the world's second largest electricity consumer after China, will account for more than 60%  of  the  growth  in  the  Americas  during  the  outlook  period.  The  massive expansion of data centres from burgeoning growth in AI and cloud services propel demand higher in the region, especially in the United States, where they make up more than half of the total increase through 2030, while Brazil, Canada, Chile and Mexico, are also emerging as significant players.
+
+## Year-on-year percent change in electricity demand, Americas, 2019-2030
+
+<!-- image -->
+
+Notes: Data for 2026-2030 are forecast values. The plots start from 2019, whereas the x-axis labels are shown only for the even years due space constraints.
+
+The  Americas  accounts  for  30%  of  global  hydropower  generation  and  posted stable year-on-year output in 2025. Nevertheless, there were variations across the region, with North America seeing higher hydropower generation year-on-year, while it was lower in Central and South America. We expect coal-fired generation in the region to decline through 2030, with sustained growth in solar PV and gasfired output, together with wind, meeting the additional demand through the end of the decade. Electricity generation from wind and solar PV are each projected to surpass coal use over the outlook period.
+
+Technical  curtailment  of  renewables  is  emerging  as  a  challenge  in  numerous countries with rapid VRE growth, such as Brazil and Chile, highlighting the need for greater system flexibility and improved grid management. At the same time, investments in BESS and transmission projects across the region are accelerating to reinforce system flexibility.
+
+## Electricity generation by source in Americas, 2019-2030
+
+<!-- image -->
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP) and ocean energy. Data for 2026-2030 are forecast values.
+
+## United States
+
+## Electricity demand growth underpinned by the rapid expansion of data centres and industry
+
+Electricity demand in the United States rose by 2.1% in 2025, after 2.8% in 2024, when hot summer temperatures bolstered consumption. In both 2024 and 2025, the buildings sector (residential and commercial combined) accounted for more than 70% of US electricity demand growth. Alongside robust economic growth and expanding data centres, demand growth in 2025 was supported by higher space heating needs due to colder winter temperatures, with about 10% higher heating degree days (HDDs).
+
+For the 2026-2030 period, US electricity demand is forecast to rise on average by around 2%, more than twice the rate observed over the past decade (2016-2025).
+
+Data centres' electricity consumption is expected to account for almost half of the projected growth. Demand growth in the buildings sector, excluding data centres, will also remain significant. The industrial sector - including new industries with large loads such as semiconductor production and battery manufacturing - will be another major contributor to growth.
+
+The impact of the expanding electricity load is highlighted by the North American Electric Reliability Corporation  (NERC)  in  its 2025-2026  Winter  Reliability Assessment. The report noted that, while resources are adequate for a normal peak winter demand season, wide-area cold snaps could pose challenges for the system  relative  to  capacity  growth.  Winter  electricity  demand  (DecemberFebruary) is reportedly increasing at the fastest rate in recent years, especially in regions with new build data centres.
+
+As  of  2025,  more  than  150 GW  of  solar  PV  and  wind  projects  in  late-stage development  were  in  grid  connection  queues  in  the  United  States.  Similarly, substantial  capacities  of  battery  storage  and  other  industrial  large  loads  are waiting for connection. In October 2025, the US Secretary of Energy directed the Federal Energy Regulatory Commission (FERC) to initiate rulemaking procedures to accelerate the grid connection of large loads, including data centres. Among other measures, the proposed rule would allow the joint filing of co-located load and generation interconnection requests. This would reduce the review period, grid  upgrade  costs,  and  the  time  needed  for  the  commissioning  of  additional generation. These issues are covered in more detail in a dedicated chapter on 'Grids' and unlocking capacity.
+
+## Gas-fired generation is set to grow strongly, along with sustained increases in solar PV generation
+
+Coal-fired  generation  increased  by  a  sharp  13%  y-o-y  in  2025  amid  robust electricity demand growth, rebounding from a contraction of almost 3% in 2024. This was supported by higher natural gas prices in 2025 versus year-ago levels. Correspondingly, gas-fired generation declined by 3.6%. Renewable output rose by more than 8%, with higher solar PV generation alone (+70 TWh) accounting for 80% of the increase. Solar PV output was 26% higher year-on-year, similar to its 2024 growth rate. By contrast, wind generation slowed to 2.9%, versus 7.6% in 2024.
+
+Over the five-year outlook period, aggregate electricity generation is forecast to rise by 430 TWh, with natural gas and solar PV set to meet most of the additional demand. Gas-fired generation is set to grow on average by 3% over the forecast period, faster than the average 2.1% in the previous five years. By contrast, coalfired  generation  is  expected  to  fall  by  an  annual  average  6%  in  2026-2030, however  the  decline  rate  is  highly  dependent  on  the  progression  of  coal retirements  and  could  be  revised  given  the  support  for  coal  by  the  current US Administration.  The government  took measures to  delay retirement of  coal power plants amid strong growth in electricity demand last year, in part due to rapid  growth  in  data  centres.  The  policy  reversal  led  to  planned  retirements slowing  significantly  in  2025.  While  earlier  projections  showed  15  GW  of  coal power plant retirements in 2025, the latest forecast for capacity closures is just 6.2 GW. However, as of November 2025, less than 1 GW had been retired.
+
+Renewable generation in the United States is forecast to increase at an average annual rate of 5.7% per year. This is largely supported by solar PV generation, which  is  projected  to  rise  at  an  average  10%  per  year,  approaching  coal-fired output  levels  by  the  end  of  the  decade,  albeit  with  the  caveats  regarding  coal retirements. Wind generation is set to grow at a more moderate annual average of 4% to 2030.
+
+## Electricity generation by source in the United States, 2019-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP) and ocean energy. Data for 2026-2030 are forecast values.
+
+According  to  the  IEA's  latest Renewables  2025 report,  almost  250 GW  of renewable energy is forecast to be deployed in 2026-2030, 70% of which is utilityscale  solar  PV,  13%  distributed  solar  PV,  and  17%  wind.  This  is  a  downward revision  of  almost  50% from the  previous  forecast to  account for  recent  policy changes,  including  various  executive  orders  announced  between  January  and July 2025 and the phase-out of tax credits and other provisions in the 'One Big, Beautiful Bill Act' (OBBBA).
+
+## Increasing nuclear generation is a major focus, with new policies in place to further expand capacity
+
+Nuclear generation was essentially flat in 2025, after increasing near 1% in 2024. Growth is forecast to average 0.3% per year out to 2030. The passage of the OBBBA in July 2025 placed significant focus on domestic energy sources, with nuclear energy poised for renewed growth, supported by continued tax credits, increased financing, and removal or reduction of regulatory barriers.
+
+Near term,  project  restarts  are  moving  apace.  Following  the  commissioning  of Vogtle 4 (1 250 MW) in 2024, Three Mile Island 1 (880 MW) is expected to be restarted  in  2027,  one  year  earlier  than  planned.  The  reactor,  which  was  shut down in 2019 for economic reasons, is to be renamed the 'Crane Clean Energy Center.' Similarly, the Duane Arnold nuclear power plant (624 MW), which was closed  in  2020  after  severe  storm  damage  made  repairs  uneconomical,  is scheduled  to  be  restarted  by  early  2029,  following  an  agreement  between US utility NextEra and technology company Google. The restarted plant will help meet  Google's  low-emissions  electricity  needs  to  power  its  cloud  and  AI infrastructure.
+
+The United States is a forerunner in the field of SMR technologies, with the federal government  supporting  the  development  of  multiple  designs.  The  Advanced Reactor Demonstration Program provides funding for SMRs and other advanced reactor designs.
+
+Tech  companies  are  also  major  supporters  of  new  SMR  projects,  with  initial deployments slated for early to mid-2030s. TerraPower, founded by Microsoft's Bill  Gates,  is  constructing  a  345  MW  sodium-cooled  reactor  in  Kemmerer, Wyoming,  with  commercial  operation  targeted  by  2030.  Kairos  Power,  in collaboration with Google and the Tennessee Valley Authority (TVA), is currently building the Hermes SMR fuel plant in Oak Ridge, Tennessee, which will be the first  of  its  kind  in  the  country.  The  main  power-producing  facility,  Hermes 2,  is slated to supply up to 50 MW of electricity to the TVA grid by 2030, as part of a larger deal with Google to bring 500 MW of advanced nuclear capacity online by 2035.
+
+In yet another tech-led project, working with Amazon and Dow Inc., X-energy plans to deploy Xe-100 units of 80 MW for a combined capacity of 320 MW at Dow's Seadrift  site  in  Texas  in  the  2030s.  Meanwhile,  Oklo  is  building  Aurora,  an advanced, small liquid metal-cooled fast reactor (LMFR), designed for 50-75 MW. Developed  at  the  Idaho  National  Laboratory  to  power  local  data  centres,  the reactor will utilise recycled nuclear fuel (HALEU). Under the DOE's Reactor Pilot Program, Oklo Aurora is targeting late 2027 or early 2028 for operation.
+
+There  is  also  strong  momentum  behind  enhanced  geothermal  energy,  with multiple  large-scale  projects  now  under  construction  and  expected  to  become operational  over  our  forecast  period.  Geothermal  electricity  generation  in  the United States is forecast to grow by nearly 5% per year on average through 2030.
+
+## Year-on-year change in electricity generation in the United States, 2019-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP) and ocean energy. Data for 2026-2030 are forecast values.
+
+## Canada
+
+## Electricity demand reverses course, rising every year out to 2030, with gas and renewables set to meet additional growth
+
+Electricity demand in Canada is estimated to have risen by just over 3% y-o-y in 2025, based on data through October, after an increase of just 0.4% in 2024. Colder winter temperatures, with almost 10%  more heating-degree-days compared to previous year, contributed to growth. Nuclear generation grew by 3% while  total  renewable  generation  was  up  by  2.5%,  mainly  driven  by  higher hydropower  and  wind  output.  Hydropower  generation  rebounded  to  growth  of more than 1%, after two consecutive years of decline in 2023 (-9.3%) and 2024 (4.9%).  In  line  with  this  recovery,  the  Site  C  hydropower  plant  (1 100 MW)  in British Columbia was completed, with all units fully operational by August 2025. Wind generation increased by 9% and solar PV by 13%. Despite higher output from  low-emissions  sources,  fossil-fired  generation  was  stronger  amid  robust demand.  Gas-fired  output  was  up  by  around  4.5%  and  coal-fired  generation increased by 8% in 2025.
+
+Electricity  demand  in  Canada,  which  had  effectively  been  flat  over  the  past decade, is now reversing trend and set to increase by 1.3% on average every year out to 2030. This will be supported by data centres, alongside electrification of heating  and  transport  sectors.  Solar  PV  and  wind  generation  are  forecast  to continue expanding, at annual average rates of 13% and 7%, respectively. Their combined share in total electricity generation is expected to reach 13% in 2030, up  from  9%  in  2025.  Similarly,  renewable  energy  sources  (RES)  in  total  are projected  to  account  for  70%  in  2030,  up  from  66%.  As  the  share  of  RES  in electricity  supply increases, we expect coal-fired generation to drop at a faster pace, falling on average by 21% per year over the forecast period. By contrast, growth in natural gas-fired generation is forecast to average 1% per year through 2030.
+
+Nuclear generation in Canada is expected to remain close to 2025 levels in 2030, after a decline as Pickering 5-8 (4 x 540 MW) reactors enter refurbishment at the end of 2026, before bouncing back as the Bruce 3-5 (3 x 870 MW) and Darlington 4  (930 MW)  refurbishments  are  completed.  The  refurbishments  are  major  lifeextension projects for Ontario's nuclear fleet of 30 years or more. Canada's first SMR  is  planned  at  the  Darlington  New  Nuclear  Project  site,  with  the  final investment  decision  given  in  May 2025.  Ontario  Power  Generation  is  set  to construct the first of the four planned BWRX-300 SMR units, which is slated to become operational by the end of 2030.
+
+According  to  the  Canada  Energy  Regulator,  battery  energy  storage  systems (BESS) are the fastest-growing and the dominant source of storage in the country. Government  support  for  storage  projects  is  gaining  pace,  with  the  Smart Renewables  Electrification  Pathways  programme  announcing  in  October 2024 additional  funding  of  CAD 500 million  (Canadian  dollar)  for  its  Utility  Support Stream.
+
+Installed capacity of battery energy storage systems larger than 1 MW reached 552 MW at the end of 2024, with an additional 597 MW under construction that could  increase  capacity  to  1 149  MW  in  2030  and  a  further  2 768  MW  with regulatory  approval.  Installed  BESS  projects  to  date  have  an  average  power capacity of around 10 MW and an average storage duration of 2 hours. However, the market is shifting toward larger systems with greater energy volumes. Projects under construction average about 45 MW with a 4-hour duration. Looking ahead to  2030, proposed projects are even bigger, with average capacities of around 100 MW while maintaining a 4-hour storage duration.
+
+## Distribution of total capacity and duration of battery storage projects in Canada that are installed (left) and under construction (right), July 2025
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Each band on the x-axis represents the range of values covered by that interval. For example, 0-1 includes all values greater than or equal to 0 and less than 1, 1-2 includes values from 1 up to but not including 2, and so on. The final band (4+) includes all values greater than or equal to 4. Battery storage projects with unreported duration are excluded. The dashed lines indicate the capacity-weighted average duration across projects.
+
+Source: IEA analysis based on data from CER (2025).
+
+## Mexico
+
+## Rising renewables are set to displace coal and oil power generation, but logistics remain a key risk for regional reliability
+
+Mexico's electricity demand is estimated to have grown by around 2% in 2025, following an increase of near 4.5% in 2024, driven by intense heatwaves. Similarly, in  2025,  peak  demand  reached  record  levels  in  May  as  extreme  heat  pushed cooling loads sharply higher, placing sustained stress on the system. Over the medium term, electricity demand is expected to grow by around 1.9% annually between 2026 and 2030, slower than the 3.4% average recorded from 2018 to 2025. The outlook is subject to uncertainty related to the 2026 renegotiation of the United States-Mexico-Canada Agreement  (USMCA), which may  influence industrial investments and trade flows.
+
+On the supply side, we forecast the share of renewables in generation will increase to 32% in 2030, up from 22% in 2025. This is driven in particular by strong growth in  solar  PV  generation,  which  is  set  to  surpass  the  combined  output  from hydropower and wind over the forecast period. Rising renewables are expected to reduce  coal-fired  power  generation  by  an  average  of  around  8.5%  per  year between 2026 and 2030, and oil-fired output by an average of 13% per year. By contrast, natural gas-fired generation is forecast to remain stable, close to its 2024 levels in 2030.
+
+The country's power system continued to rely heavily on natural gas in 2025, while hydro  output  improved  compared  with  previous  years  due  to  more  favourable rainfall levels. However, the year also revealed persistent structural vulnerabilities. A major outage in the Yucatán Peninsula that affected more than two million users highlighted  the  region's  longstanding  gas  infrastructure  constraints  and  the frequent need to rely on diesel generation. Despite adequate installed capacity, fuel logistics and network configuration remain key risks for regional reliability.
+
+Regulatory developments played a defining role for the electricity sector in 2025. A broad reform package introduced a new Electricity Sector Law, reorganised the governance of the state-owned utility Federal Electricity Commission (CFE), and consolidated  regulatory  oversight  under  a  new  National  Energy  Commission within the Ministry of Energy. The reforms increased the permitted size of private self-supply projects from 0.7 MW to 20 MW as well as established new secondary regulations  covering  planning,  permitting  and  system  development.  These measures significantly expand the state's role in the sector while setting clearer boundaries for private participation.
+
+At the same time, the government announced the 'Strengthening and Expansion Plan for the National Electric System (2025-2030)', targeting around 29 000 MW of new capacity and more than MXN 600 billion (Mexican pesos) in investment. Clean energy remains a stated priority, with ambitions to reach 45% of capacity by 2030, although investor confidence may depend on the implementation of the new framework. The capacity market was also reformed to introduce subregional zones, improve locational investment signals and better align resource adequacy with regional needs. Significant private sector activities also took place in 2025 in Mexico's power market, including the acquisition of Iberdrola's 2.6 GW portfolio and its sizeable renewables pipeline by Spain's Cox.
+
+## Year-on-year change in electricity generation in Canada, Mexico, and Brazil, 2021-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Other non-renewables include oil, waste and other non-renewable sources. Data for 2025 are preliminary. Data for 2026-2030 are forecast values.
+
+## Brazil
+
+## The share of solar PV and wind in electricity generation is set to surpass the one-third mark over the forecast period
+
+Electricity demand in Brazil is estimated to have grown by around 2% in 2025, based on data through November, following an exceptional 5.6% increase in 2024, which was buttressed by above-average temperatures. Demand is projected to expand at an average annual 2.7% in 2026-2030, compared to GDP growth of around 2.3% per year over the period.
+
+Renewables will meet all of the additional electricity demand over our forecast period. Solar PV generation remains by far the fastest-growing source, increasing by  25%  in  2025  and  by  an  average  13%  from  2026-2030.  By  the  end  of  the decade,  solar  PV  is  expected  to  surpass  wind  to  become  the  second  largest renewable  source  of  electricity  supply  in  the  country,  after  hydropower.  Wind generation rose by 10% in 2025 and is forecast to grow at a more moderate pace of 5% per year on average to 2030. In total, the share of VRE in total generation is set to rise from 27% in 2025 to 36% by 2030.
+
+Hydropower output declined by 6% y-o-y in 2025. While hydropower will continue to  remain  the  largest  source  of  electricity  supply  in  Brazil,  its  share  in  total electricity  generation  is  expected  to  decline  gradually  as  solar  PV  and  wind generation rise, falling to 46% by 2030 from 52% in 2025, and 63% in 2020.
+
+Gas-fired generation is projected to account for approximately 6% of the electricity mix over the forecast period, while coal and oil-fired generation remain marginal at  below  2%  of  total  output  through  2030.  The  emission  intensity  of  power generation increased by around 8% in 2025 to over 70 g CO2 / kWh, but it is still around 30% lower than in 2020, and it is projected to drop to 50 g CO2/kWh by the end of the decade. This trend consolidates Brazil's power generation emission intensity as one of the lowest in the world.
+
+Between 2020 and 2025, Brazil added over 62 GW of solar PV capacity, of which almost two-thirds were in distributed, non-curtailable installations. Distributed solar PV additions have been supported by a net-metering scheme, and despite a policy change in 2023, low upfront costs and high retail prices have encouraged massive adoption. Following the creation of ReData, which incentivises the installation of data  centres,  grid  connection  requests  from  these  projects  increased  by  32%, reaching  26.2 GW  from  19.8 GW,  between  September  and  November  2025, according  to  the  government's  energy  research  office,  EPE.  If  all  proposed projects were built, this load would represent more than one-quarter of Brazil's total electricity demand.
+
+The rapid growth of solar PV, wind and distributed generation, combined with the emergence of large new electricity loads such as data centres, is already affecting grid  operations  and  may  require  more  complex  grid  management  practices. Curtailment of solar and wind generation has been increasing in Brazil in recent years, reflecting ongoing grid constraints and limited system flexibility. In 2025, curtailment of wind and solar power reportedly surpassed 20%, up from less than 10% in 2024 and under 4% in 2023. In 2025, Brazil curtailed around 37 TWh of renewable energy from wind and solar power.
+
+A  notable  event  occurred  on  Sunday,  10 August 2025,  which  was  managed successfully without any impact to reliability. The incident occurred on the Father's Day holiday, when very low demand coincided with exceptionally high solar output. Around  midday,  distributed  solar  PV  supplied  almost  40%  of  total  electricity, pushing  the  system  toward  its  minimum-load  limits  and  requiring  substantial curtailment to maintain stability. In response, the national system operator (NSO) reduced  hydro  and  thermal  power,  and  also  curtailed  around  98%  of  the programmed utility-scale wind and solar power output. While no outage occurred, the  episode  illustrated  how  overgeneration  during  sunny  weekends  with  low demand is becoming a recurring challenge in a system with rapidly expanding shares of VRE.
+
+The government advanced several measures to reinforce system security and modernise  market  rules.  The  Provisional  Measure  No.1 300,  21 May 2025, launched a broad reform of the electricity sector, expanding the opening of retail markets  for  commercial  and  industrial  consumers,  adjusting  tariff  design  by reallocating charges to reduce costs for low-income consumers, and creating a 'Supplier of Last Resort' framework in the event a provider defaults. At the same time,  the  planned  LRCAP  2026  Capacity  Reserve  Auction,  now  under  public consultation, is expected to introduce strengthened requirements for firm capacity and operational flexibility.  Forthcoming  auctions  are  also  likely  to  allow  battery storage  and  other  flexible  technologies  to  compete  alongside  conventional generators, a shift aligned with the system's evolving needs.
+
+While sustaining rapid renewable expansion, it is also essential to strengthen grid infrastructure,  expand access to flexibility resources and improve co-ordination across institutions. Against this backdrop, the Brazil Energy Policy Review 2025 provides  various  recommendations,  emphasising  review  of  institutional  and market  frameworks,  promoting  flexibility,  advancing  retail  market  reform  and updating the distributed PV net-metering scheme, among others.
+
+## Chile
+
+## Strong rise in renewables is constraining fossil-fired generation, rapidly reducing the CO2 intensity of the power system
+
+Renewables continue to expand their dominance in Chile's electricity mix amid moderate demand growth. In 2025, electricity demand remained flat compared to 2024. A roughly 21% decline in hydropower output from 2024 levels - the highest hydro output since 2006 - was partially offset by a 12% increase in combined wind and solar generation. As a result, renewables generated about 68% of Chile's electricity in 2025. Based on current projects and market trends, the renewable share  is  expected  to  surpass  the  90%  mark  by  2030,  with  wind  and  solar  PV together accounting for over 60% of total generation. Over 2026-2030, we forecast renewable  output  to  expand  by  around  9%  per  year  on  average,  outpacing demand growth of just over 3% annually. This shift would reduce the CO2 intensity of electricity generation in Chile to about one-quarter of its 2025 level by 2030. CO2 intensity has already halved since 2020 amid surging renewables share.
+
+In addition to expanding renewable generation, Chile is advancing key projects in grid transmission and battery storage. In November 2025, Chile's environmental evaluation service approved the environmental impact assessment of the 3 GW Kimal-Lo  Aguirre  HVDC  transmission  line  project.  This  involves  approximately USD 1.5 billion investment for over 1 300 km of line, and is scheduled to enter operation around 2029, linking solar-rich areas in the north of the country with demand-heavy areas near the capital city. In parallel, several utility-scale storage or hybrid projects have been inaugurated or announced, aiming to smooth highVRE output and reinforce system flexibility.  In  April  2025,  Latin  America's  first large-scale stand-alone battery storage facility (200 MW/800 MWh), the 'BESS del Desierto' project, was inaugurated. In the same month, Chile also launched Latin America's largest solar and battery project, the Quillagua facility (220 MW of solar PV/1.2 GWh BESS capacity). In addition, the country has multiple  large-scale hybrid solar-storage projects under development, such as the Oasis de Atacama complex  targeting  2 GW  of  solar  PV  and  11 GWh  of  battery  storage  capacity. Overall, as of December 2025, Chile has an installed capacity of 1.6 GW of battery systems,  with  an  additional  0.7 GW  in  the  testing  phase  and  6.8 GW  under construction.
+
+In  2025,  Chile  also  advanced  its  strategic  policy  and  regulatory  framework  to support power system modernisation and decarbonisation. In June, the Ministry of  Energy  published  a  regulatory  roadmap  for  H2  2025,  setting  out  secondary regulations  to  be  issued  on  system  operations  and  distributed  generation, transmission planning, which are needed to implement the Energy Transition Law enacted in December 2024. In October, the Power Sector Decarbonisation Plan was  published,  establishing  28  measures  to  achieve  a  coal-free,  resilient  and efficient power system, focusing on four key areas: project development, strategic system planning, transmission grids, and secure and flexible systems under high renewable penetration.
+
+## Colombia
+
+## Security of supply is receiving increasing attention amid delays in the construction of generation and transmission assets
+
+In 2025, electricity demand in Colombia is estimated to have increased by close to 1% y-o-y. Following a year of severe droughts which led to water restrictions, low hydropower generation and outages in 2024, Colombia's electricity system recovered in 2025, mainly thanks to an increase of around 20% in hydro output. As reservoirs reached more than 80% of capacity in July, the Ministry of Mines and Energy enabled exports again of electricity from sources other than thermal, which had been restricted for about a year. Gas-fired generation decreased by close to 50% and coal-fired generation fell at a similar rate. Solar PV continued its expansion,  with  more  than  30%  increase  in  generation,  as  installed  capacity surpassed 3 GW under the 6 GW Plus plan.
+
+Colombia  faced  energy  security  issues  in  2025,  as  natural  gas  imports  were constrained during Q4 by planned maintenance at its LNG regasification terminal in Cartagena. This led to gas prioritisation in the Caribe region to ensure sufficient supply to power plants and residential consumers, while industries could only use remaining volumes.
+
+Given high price levels and volatility episodes in recent months, the government issued  a  decree  with  the  objective  of  reducing  exposure  of  end  users  to  spot market  trends by prioritising long-term contracts. Specifically, the  decree mandates a minimum of 95% of hydropower hourly output must be sold via longterm  contracts  instead  of  the  spot  market.  Generation  companies  in  Colombia oppose this measure, concerned that it threatens market rules and cannot be put in  practice  in  periods  of  low  hydro  resources.  Long-term  contracts  currently account for 85-90% of output in Colombia.
+
+Ensuring sufficient electricity supply to cover growing demand amid domestic gas and hydro constraints  has  become  one  of  the  main  challenges  for  Colombia's long-term energy security. Since 2020, the country has struggled with significant delays in development of new generation assets and transmission infrastructure. Overall, during the last six years, only 4.2 GW were commissioned out of 23.6 GW of  planned  capacity  additions,  while  88%  of  major  transmission  grid  projects registered by Colombia's mining and energy planning unit UPME are delayed by an average of 2.5 years. One of the main causes of project hold-ups is the time required for prior consultation and environmental licensing procedures, which in turn become a bottleneck for generation assets to have access to grids.
+
+In  terms  of  interconnections  with  neighbouring  countries,  the  government  is carrying out studies for the construction of a 400 MW high-voltage direct current (HVDC) line between Panama and Colombia (ICP), with a 130 km underwater section, in addition to the development of new high-voltage lines in both countries. If successful, the interconnection is expected to start operations in 2028 and would reinforce  regional  integration  while  enabling  exports  of  Colombia's  VRE  to  the Siepac grid, covering Central America.
+
+## Costa Rica
+
+## Higher hydropower output in 2025 resulted in reduced oil burn in the power sector
+
+Electricity  demand  increased  moderately,  by  about  1%  y-o-y  in  Costa  Rica  in 2025. Hydropower output, which typically accounts for 70% of total generation in the country, rose by 20% y-o-y as reservoir levels recovered from severe droughts in  previous  years.  Favourable conditions drove a 25% rise in wind generation, while solar PV remained under 1% of the mix, despite a 42% y-o-y rise in supply. Geothermal output decreased by around 5% y-o-y. These trends resulted in an 87% drop in oil-fired generation, which had peaked at 1.3 TWh in 2024.
+
+Costa Rica's generation expansion plan for 2024-2040, published in May 2025, expects yearly electricity demand growth of 14% and peak load of 11% between 2025 and 2030 in its base case. This will require significant capacity additions in the  coming  five  years  for  all  sources,  including  backup  thermal  capacity.  In addition, the national utility ICE announced that some of the main hydro plants in the  country  are  expected  to  undergo  major  maintenance  by  2028,  covering structural works, equipment upgrades and technical improvements, with the goal of  extending  their  lifetime  without  impacting  supply.  A  proposed  law  aimed  at opening the generation market to greater competition (Ley de armonización del sistema eléctrico nacional) continued its course through the legislative process in Costa Rica. If approved, this law would cancel the 15% cap imposed on privatelyowned renewable capacity, enabling further private investment in VRE assets.
+
+Costa  Rica's  transmission  infrastructure  will  benefit  from  plans  by  the  Central American Bank for Economic Integration (CABEI) to finance a second circuit for SIEPAC,  the  1 800 km  regional  electricity  transmission  system  connecting  six Central  American  countries.  The  project  will  increase  operational  capacity  by 300 MW  in  the  interconnection  section  between  Nicaragua  and  Costa  Rica, among other developments.
+
+EV penetration rates continue to increase, making it one of the leaders in the region. At the end of 2024, Costa Rica had the highest EV market share in Latin America (15%), and its EV fleet reached close to 23 000 vehicles, only behind far more populous countries like Brazil and Mexico. As a result, EVs are emerging as a major catalyst of electricity demand growth in the country.
+
+## Europe
+
+## Power demand is increasingly met by renewables while coal use falls rapidly
+
+Electricity demand in Europe continued its moderate recovery in 2025, up by about 1%  versus  a  1.5%  increase  in  2024,  following  two  years  of  consecutive contractions  in  2022-2023.  Europe's  demand  largely  tracks  EU  trends,  which accounts for over 70% of regional electricity use. Rising demand from heating and transport end-use sectors amid electrification has contributed to growth, together with  expanding  data  centres.  However,  industrial  electricity  use  has  remained relatively  stable,  following  declines  in  2022  and  2023,  and  a  slight  increase  in 2024. Assuming industrial demand recovers alongside other sectors, we expect faster European electricity growth of 2.3% on average in our five-year 2026-2030 outlook.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Data for 2026-2030 are forecast values. The plots start from 2019, whereas the x-axis labels are shown only for the even years due to limited space.
+
+<!-- image -->
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP), and ocean energy. Data for 2026-2030 are forecast values.
+
+## European Union
+
+## Electricity demand is expected to grow faster over the forecast period, following a timid recovery in 2024-2025
+
+The European Union's electricity demand rose by 0.9% 1  y-o-y in 2025, following an increase of 1.6% in 2024. Industrial electricity demand stayed relatively flat, following a slight increase in 2024, after two consecutive years of declines. The increases were largely driven by the buildings sector, with demand boosted by space heating spikes from severe cold weather early in the year followed by a rise in summer cooling needs amid extreme heatwaves. Growth in the power sector was also supported by the continued deployment of heat pumps, the expansion of data centres, and by the transport sector as the number of EVs continued to rise.
+
+Total electricity demand growth in the European Union is forecast to average 2.3% annually over 2026-2030. While this may appear high, it comes after consecutive substantial declines in 2022 and 2023, which were only followed by a lacklustre recovery in 2024 and 2025. Hence, in our forecast, EU electricity demand is not expected  to  go  back  to  2021  levels  before  2028.  Demand  will  be  driven  by continued  uptake  of  electric  vehicles  and  heat  pumps,  the  expansion  of  data centres,  and  the  assumption  of  a  gradual  recovery  and  electrification  in  the industrial sector.
+
+1 These electricity demand growth estimates account for the increasing self -consumption from distributed generation.
+
+## Estimated drivers of change in electricity demand in the European Union, 2021-2025
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: On the left chart, other includes the combined effect of changes in electricity demand in households, services and other sectors, including increases from EVs, cooling, heat pumps (HP) and data centres in 2022, 2023, 2024 and 2025. On the right chart, these are shown separately. Values for 2025 are estimated.
+
+Weather impact on electricity demand in the European Union in 2025 was notable. We estimate that, if weather conditions had been the same as in 2024, demand growth in 2025 would have been about 0.6%. Demand in the buildings sector was due primarily  by  higher space -heating requirements, as winter temperatures in 2025  were  colder  than  in  the  previous  year.  Additional  support  came  from increased cooling demand due to hotter weather in countries such as Spain and France  -  more  than  offsetting  reduced  cooling  needs  in  other  parts  of  the European  Union.  Similarly,  lower  year -on -year  heating  demand  in  Northern Europe was more than compensated for by increases elsewhere in the region.
+
+## Estimated year-on-year weather-related change in electricity consumption for heating and cooling in the European Union, 2025
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Southern Europe includes: Bulgaria, Croatia, Cyprus, Greece, Italy, Malta, Portugal and Romania. Central Europe includes: Austria, Belgium, Czechia, Germany, Hungary, Luxembourg, Netherlands, Poland, Slovak Republic and Slovenia. Northern Europe includes: Denmark, Estonia, Finland, Ireland, Latvia, Lithuania and Sweden. The joint effect for France and Spain is shown as a standalone group, as both countries exhibited comparable 2025 weather trends with respect to heating and cooling degree days.
+
+Industrial electricity demand in the European Union is estimated to have remained relatively flat in 2025, after increasing slightly by close to 2% in 2024, after two consecutive 6% declines in 2022 and 2023 amid the energy crisis. The euro area manufacturing Purchasing Managers' Index (PMI) was, overall, around 5% y-o-y higher in the January-November period. Nevertheless, except in August, when it reached 50.7, the PMI remained below the expansion threshold for more than 40 months  in  a  row.  While  production  of  primary  metals  (i.e.  iron,  steel,  and aluminium) remained stable in 2025, output of chemicals was lower year-on-year. By contrast, the pharmaceutical sector has seen robust growth.
+
+The chemical sector, in particular, remains under competitive pressure since the start of the energy crisis, amid weak demand and higher energy prices. According to CEFIC, the EU chemical sector has been operating at 9.5% below the 20142019 pre-crisis capacity. Likewise, the EU automotive sector is facing significant competitive pressure, with production of motor vehicles in 2025 down by around 10%  compared  to  2019.  The  EU  commission  put  forward  an  action  plan  in March 2025  on  the  future  of  the  automotive  sector  that  proposes  practical measures to secure a resilient and sustainable automotive industry while fostering greater innovation.
+
+<!-- image -->
+
+Notes: The data is seasonally and calendar adjusted, with data presented as an index with 2021=100. Data for 2025 includes data from January to November.
+
+Source: IEA analysis based on data from Eurostat.
+
+EV  uptake  in  the  European  Union  strengthened  in  2025.  In  2025,  new  car registrations  rose  by  1.8%  y-o-y.  Over  the  same  period,  BEV  registrations increased by about 30% and plug-in hybrid electric vehicle (PHEV) registrations by around 33%. The market share of BEVs in new car registrations rose from less than  14%  in  2024  to  just  over  17%  in  2025.  This  trend  coincided  with  the application of tighter European Union CO2 emission standards for new cars and vans in 2025, marking the start of a new compliance phase for manufacturers. The European Union also introduced additional flexibility measures in how compliance with  the  2025-2027  targets  is  assessed,  allowing  manufacturers  to  meet requirements on a multi-year average basis rather than strictly year by year.
+
+In 2025, heat pump sales in the European Union showed signs of recovery. After declining in the first half of 2024, sales increased in the first half of 2025, rising by an average of 9% y-o-y across 13 European countries. Despite this improvement, sales remained below the record levels reached in 2022, when heat pump sales peaked in Europe. This recovery took place against a changing European Union policy  backdrop,  including  the  phase-out  of  public  financial  incentives  for  new stand-alone fossil fuel boilers from 1 January 2025, as required under the Revised Energy Performance of Buildings Directive.
+
+## Renewables share in total electricity generation is set to surpass the 50% mark in 2026
+
+The European Union marked a milestone in 2025 as combined solar PV and wind generation  surpassed  fossil -fired  generation.  Notably,  this  occurred  despite weather-driven declines in hydropower and wind generation resulting in robust fossil-fired output. Wind generation fell by around 2.5% y-o-y amid reduced wind speeds, while hydropower was down by about 13% due to lower rainfall. These declines contributed to higher gas burn in the power sector, which increased by just under 8.5%, and tempered the decline rate in coal-fired generation. EU coalfired output was down by 6% compared with a strong 15% contraction in 2024.
+
+Nuclear  generation  remained  stable  in  2025  amid  stronger  output  in  France, among many other  countries,  while  Belgium  retired  the  Tihange 1  and  Doel 2 reactors  in  October  and  November,  respectively.  Slovakia's  Mochovce nuclear plant's Unit 4 reactor (470 MW), which is currently under construction, is expected to become operational in 2026.
+
+Solar PV generation grew strongly in 2025, up 22%, and overtook hydropower to become the second-largest source of renewable electricity in the European Union, behind only wind energy. As a result, total renewable electricity generation rose around 1% y-o-y.
+
+Over  our  five-year  forecast  period,  renewable  electricity  generation  in  the European Union is set to rise by an annual average growth rate of about 8%. In 2026, it will surpass all non-renewable generation combined. From end-2025 until end-2030, more than 400 GW of net renewable energy capacity is expected to be added, with 70% coming from solar PV, among which utility-scale and distributed assets will  account  for  roughly  equal  shares.  The  share  of  renewables  in  total electricity  generation  is  forecast  to  reach  63%  in  2030,  up  from  48%  in  2025. Similarly, the share of VRE (solar PV and wind) is expected to total 46% in 2030, up from 30% in 2025.
+
+## Electricity generation by source in the European Union, 2019-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP), and ocean energy. Data for 2026-2030 are forecast values.
+
+Given strong growth in renewables, we expect fossil fuel-fired generation in the European  Union  to  contract  through  2030,  resulting  in  a  near  45%  drop  in emissions from electricity generation at the end of the decade compared to 2025. Coal-fired  generation  is  forecast  to  fall  by  an  average  16%  annually  over  the forecast period and natural gas by a more moderate 5.9%. Although electricity generation from gas is declining, gas-fired power plants will remain essential in providing supply-side flexibility to the system, particularly in response to seasonal fluctuations  affecting  weather-dependent  renewables,  such  as  during  episodic wind droughts (e.g. Dunkelflaute events).
+
+During the summer of 2025, Europe was markedly affected by heatwaves, which significantly intensified pressure on the European power grid. Overheated cables and  thermal  power  plants,  combined  with  increased  electricity  demand  from mounting  air  conditioning  use,  tested  power  system  resilience.  The  French distribution system operator, Enedis, attributed the cause of a power outage that hit Paris to extreme heat on 23 June 2025. France's nuclear power generation, which  depends  on  river  or  seawater  for  cooling,  was  also  impacted  by  the scorching heatwave, with 17 of its 18 plants undergoing either forced or planned reductions in output.
+
+## The 'Clean Industrial Deal' was launched in 2025 to bolster industrial competitiveness
+
+The European Commission launched the Clean Industrial Deal in February 2025, which builds upon the previous European Green deal, to bolster the EU's industrial competitiveness while maintaining decarbonisation goals. Within this framework, funds  of  over  EUR 100 billion  will  be  mobilised  to  support  EU-made  clean manufacturing. At the same time, the Affordable Energy Action Plan was adopted to  address  cost  pressures  on  energy-intensive  sectors.  Also,  the  Industrial Decarbonisation Accelerator Act was proposed at end-2025 aimed at speeding up technology deployment, with the name later changed to Industrial Accelerator Act, with  'Decarbonisation'  removed  to  cover  a  broader  scope  of  sectors  and technologies.
+
+On 30 September 2025, the transition from hourly to 15-minute trading intervals on the day-ahead electricity markets was achieved. The change is expected to enhance market flexibility, better integrate variable renewable energies and more accurately reflect expected electricity generation and demand in the system.
+
+In October 2025, the amended Regulation for the Simplifications for the Carbon Border Adjustment Mechanism (CBAM) was published. The main aspect of the package is the new exemption threshold of 50 tonnes for CBAM goods, where companies importing less than this volume annually are to be exempt from CBAM obligations.
+
+The EU commission presented a new Nationally Determined Contribution (NDC) in November 2025 at COP30, with a commitment to reduce GHG emissions by 66.25% to 72.5% by 2035. Member States also agreed on a legally-binding 90% GHG emissions reduction by 2040.
+
+The European Grids Package was launched in December 2025. It builds on the 2023 Grid Action Plan and forms part of the Competitiveness Compass and the Clean Industrial Deal. The purpose of this package is to help upgrade and expand electricity grids to enable rapid electrification and streamline permitting processes, which are critical for integrating renewables.
+
+## Year-on-year change in electricity generation in the European Union, 2019-2030
+
+IEA. CC BY 4.0.
+
+<!-- image -->
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP), and ocean energy. Data for 2026-2030 are forecast values.
+
+## Germany
+
+## Demand is forecast to grow faster through 2030 after a modest rise in 2025, while renewables maintain strong momentum
+
+Germany's electricity demand grew at a moderate rate of around 0.5% in 2025 but is  forecast  to  increase  at  a  faster  pace  over  the  outlook  period,  with  average annual growth of over 2.5% during 2026-2030. The stronger growth rates reflect higher demand from expanding electrification in the building and transport sectors, as well as an assumed gradual recovery in energy-intensive industries. On the supply side, renewables accounted for 57% of power generation, supported by a surge  in  solar  PV  output,  which  rose  by  21%  y-o-y.  By  contrast,  wind  power generation declined by 3.2% y-o-y due to weak wind conditions, while coal-fired output registered a decrease of more than 2%. Gas-fired generation grew by 4.5%.
+
+Renewable generation is expected to maintain strong momentum in 2026-2030, averaging 10% growth per year, with solar PV and wind projected to increase by 13% and 11%, respectively. Coal- and gas-fired power generation are forecast to decline by an annual average of 21% and just under 8%, respectively. Germany is expected to remain a net importer of electricity throughout the outlook period.
+
+Following the February 2025 federal election, Germany's new coalition government  set  ambitious  energy  policy  targets  in  an  agreement  prioritising internationally competitive energy costs, aiming for a significant reduction in prices through a planned relief package. The plan also aims to align grid expansion with renewable  deployment  and  promote  system  flexibility  by  removing  regulatory barriers.  To  support  these  goals,  the  government  commissioned  a  monitoring report (MR) to assess the status of the energy transition. The report highlights the government's targets and the cost of implementation, arguing that future planning must focus more strongly on system-wide cost-efficiency. The report states that, although solar PV deployment is on track to meet its 215 GW mark for 2030, wind targets are likely to be missed, and the 30 GW offshore wind goal is now projected to be met only in 2032 due to grid connection delays.
+
+Rising  grid  congestion  management  reflects  the  gap  between  fast  renewable deployment and slower grid expansion. As a result, controllable renewable plants located upstream  of the congestion point are increasingly curtailed,  and controllable generators downstream of this point are instructed to compensate for the reduced output upstream. Difficulties are also apparent in distributed solar PV integration,  as  over  40%  of  installed  systems  at  41 GW  in  2024  cannot  be controlled by grid or market operators, increasing system volatility and congestion management costs.
+
+Costs  have  emerged  as  a  central  challenge  to  Germany's  massive  grid development plan for electricity. Transmission investment needs were increased from  EUR 320 billion  to  EUR 440 billion  by  2045,  according  to  the  latest  grid development  plan,  as  bottlenecks  shift  from  planning  to  supply  chains  and construction. The MR also noted that investment needs for the distribution grid are likely underestimated, as the current projections (over EUR 235 billion by 2045) do not take into account the entire distribution network. Current planning practices continue to favour costly traditional reinforcement over digital, flexible solutions to manage load.
+
+Based  on  partial  2025  data,  Germany  is  on  track  to  meet  the  2025  target  of connecting 20% of metering points with controllable devices like heat pumps and electric vehicles through the deployment of smart meters, a key enabler of digital and flexible solutions. Accelerating the roll-out further and adapting the regulatory frameworks to leverage these devices for grid management can reduce the need for physical grid expansion.
+
+Security of supply is also a key focus in Germany. As part of its new power plant strategy,  the  government  plans  to  hold  tenders  in  2026  for  up  to  12 GW  of dispatchable capacity, of which 10 GW must be able to produce electricity over longer  periods  to  ensure  supply  security,  with  plans  for  an  introduction  of  a capacity market in later years. The targeted policy support recognises that market signals  alone  may  not  be  enough  to  deliver  the  necessary  investment  in  new power plants, while expanding secure capacity and enhancing flexibility remain essential to maintaining reliability standards.
+
+Utility-scale batteries saw strong growth in Germany, with over 0.5 GW of largescale storage (defined as ≥ 1 MW or ≥ 1 MWh) capacity installed in 2025. Largescale systems now provide around 2.6 GW (4 GWh) of capacity, making them the second-biggest  segment  after  residential  storage.  However,  grid  connection constraints  are  emerging  as  a  key  bottleneck  to  converting  a  long  pipeline  of projects  into  operational  capacity.  A  recent  survey  by  the  industry  association BDEW finds that grid operators are currently facing connection applications for more than 720 GW of large-scale batteries, of which at least 78 GW have already confirmed  connection  agreements.  Transmission  system  operators  (TSOs) caution that under the current first-come, first-served procedures, many projects could  face  multi-year  delays  unless  grid  planning  and  connection  rules  are reformed.
+
+## Year-on-year change in electricity generation in Germany, France, and Italy, 2021-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Other non-renewables include oil, waste and other non-renewable sources. Data for 2026-2030 are forecast values.
+
+## France
+
+## Electricity demand growth is met by robust output from the nuclear fleet and renewables through 2030
+
+French  power  market  fundamentals  stabilised  in  2025,  as  nuclear  generation sustained its strong recovery since 2023. Electricity demand in France grew by about 1.2% y-o-y in 2025, up from growth of just under 1% in 2024, and marking a break with the 2018-2023 mostly bearish trend, when it declined by an average annual rate of 1.6%.
+
+Electricity demand is now on track to post much stronger growth of an average annual rate of 2.0% from 2026 to 2030, with the pace accelerating towards the end of the outlook. The French TSO RTE updated its range of electricity demand projections in their Power System Outlook to 2035, published in December 2025, indicating an average annual growth rate of 0.9% to 2.5% through 2030.
+
+We forecast that the additional demand over 2026-2030 will be met almost entirely by growth in wind and solar PV generation. Combined wind and solar PV output is  expected  to  grow  by  almost  55%  out  to  2030,  while  nuclear  generation  is assumed to rise back to 2025 levels after a slight decline in 2026.
+
+In 2025, hydroelectric output declined by 18%, compared with exceptionally robust growth of almost 27% the previous year. Record solar PV installations in 2024 helped drive growth in generation of 38% y-o-y in 2025. By contrast, wind power rose by a more moderate 6% y-o-y. Overall, total renewable production saw a slight decline of 0.3% y-o-y.
+
+Nuclear generation grew by about 3% y-o-y, to its highest level since 2019, helped by the grid connection of France's newest reactor (Flamanville EPR) in late 2024. In addition, the impact of long-term improvements in outage management (both planned and unplanned) across the nuclear fleet supported further growth. At the same time, nuclear generation exhibited new levels of hourly variation in 2025 as it adapted to swings in the residual load in summer months. In July and August, hourly  nuclear  generation  dipped  by  up  to  13%  from  daily  average  levels, coinciding with periods of weaker demand and strong priority-dispatch renewables production  -  notably  solar  PV,  which  accounted  for  a  record  of  up  to  30%  of afternoon-hour load in these months.
+
+<!-- image -->
+
+Source: IEA analysis based on quarter-hourly electricity generation data from RTE (2025).
+
+Despite an expected acceleration in renewables growth, reaching the country's 2030 targets remains uncertain. In the ongoing iteration of the Pluriannual Energy Programme (PPE3), initially expected in 2023 and still unpublished by the start of 2026, draft versions proposed technology-specific installed capacity targets for renewable energy. Meanwhile, alternative legislative proposals have included a technology-agnostic  200 TWh  renewable  electricity  production  target  for  2030 (compared to about 150 TWh in 2025). Despite garnering Senate support, the bills had not yet passed both houses of parliament by the start of 2026.
+
+Progress continued on the integration of renewables in the power system, notably through three regulatory evolutions in 2025. The first was the update of the hours corresponding to retail peak and off-peak pricing, intended to better orient priceinformed consumption incentives to high-renewable production hours, particularly with the rise in solar PV generation. The roll-out of the updated pricing structure from  November  2025  is  expected  to  last  through  2027.  Second,  following recommendations from the regulator, French lawmakers proposed and implemented adjustments to remuneration rules for renewable installations under contracts-for-difference or feed-in tariffs (under specific conditions), limiting their incentive to produce during negative price hours while also allowing flexibility in responding  to  such  market  conditions.  Instead  of  forcing  an  immediate  cut  in generation  as  soon  as  prices  turn  negative,  the  new  rules  would  allow  for continued  generation  under  specific  situations  of  marginally  negative  prices, avoiding sharp drops in generation when only small balancing adjustments are needed.    Third  was  the  decision  requiring  all  power  generating  assets  above 10 MW, including renewables, to participate in the national balancing mechanism starting  when  in  2026,  which  aims  to  address  a  lack  of  sufficient  downward balancing  offers  under  a  mechanism  where  only  dispatchable  resources  were included.
+
+## Italy
+
+Finally,  France's  Regulated  Access  to  Incumbent  Nuclear  Electricity  (ARENH) was phased out as expected on 1 January 2026, replaced by a new mechanism (le  Versement Nucléaire Universel or VNU) to share revenues over an agreed level with the government for subsequent redistribution to consumers.
+
+## Dedicated auctions increase utility-scale battery storage as focus on flexibility intensifies
+
+Electricity demand in Italy remained relatively flat in 2025, but there was a wide range of trends among the various power sources. Gas-fired generation posted the strongest gains at around 5.5%, while renewable generation fell by 2% due to a sharp decline in hydro output of about 21% and a reduction of wind generation of just under 3.5% amid weather effects. At the same time, solar PV generation posted strong growth by around 25%. Coal-fired output fell by almost 14%.
+
+Electricity demand growth is expected to revert to an upward trend over 20262030, with annual average growth of about 2%, compared to an average decline of 0.4% in the 2018-2024 period. Renewable generation is forecast to increase much faster than the previous past five years, at an average annual rate of around 6.5% over the period, led by strong growth in solar PV capacity especially. By contrast, gas-fired generation is set to decline by 5% annually in the forecast, with its share dropping from 47% in 2025 to 34% in 2030. Despite the contraction, it will remain essential for balancing intermittent variable renewable energy sources.
+
+Numerous developments took place in 2025 in relation to Italy's national TSO, Terna, on the wholesale markets. Terna's first Mechanism for the Procurement of Electrical  Storage  Capacity  (MACSE)  auction  secured  10 GWh  of  lithium-ion storage  capacity  for  Southern  Italy  and  islands  in  September  2025.  Capacity market auctions run by Terna awarded contracts for available capacity (CDP 2 ) to ensure grid reliability and resource adequacy during stress periods. For the 2026 delivery year (auction held on 18 December 2024), 38.4 GW of national capacity was  awarded,  plus  4.4  GW  from  abroad.  For  2027  (auction  held  on  26-27 February 2025), national capacity awarded rose slightly to 38.6 GW. For the 2027 derated capacity, 95% were BESS assets.
+
+In addition, the Italian Regulatory Authority for Energy, Networks and Environment (ARERA) approved the Integrated Text of Electricity Dispatching Rules (TIDE), a comprehensive  reform  of  Italy's  dispatching  framework  which  took  effect  on 1 January  2025.  It consolidates national dispatching rules,  introduces  EU regulatory terminology, and aligns the country's market and grid procedures with the recent EU electricity market design reforms to facilitate cross-border market integration.  TIDE  supports  the  transformation  of  Italy's  power  system  towards replacing PUN 3 with zonal pricing, 15 -minute imbalance settlements, wider access for aggregations and small players, and new ancillary services and fees.
+
+2 CDP - Capacità Disponibile in Probabilità
+
+Terna's  long-term  infrastructure  roadmap  sets  out  grid  modernisation  priorities through  2034,  emphasising  capacity,  efficiency,  and  decarbonisation.  Terna presented a EUR 23 billion Grid Development Plan (2025-2034) in March 2025 that aims to resolve local congestion, improve grid capacity, streamline connection requests,  and  reinforce  grid  stability.  Key  projects  include  major  infrastructure developments  such  as  the  Tyrrhenian  Link,  connecting  Sicily,  Sardinia,  and mainland Italy; the Adriatic Link, designed to strengthen North-South energy flows; the  Sardinia-Corsica-Tuscany  (Sa.Co.I.3)  connection,  which  will  replace  the Sa.Co.I.2 link; and a 600 MW capacity cross-border Italy-Tunisia undersea cable. With these projects, transport capacity would more than double from 16 GW to 39 GW, while cross-border flows would be increased by approximately 40%.
+
+In 2025, there were also significant developments on renewables integration and end-use consumers. Italy transitioned new installations from net-metering to netbilling.  Although  this  shift  is  expected  to  result  in  slower  growth,  the  impact  is considered positive overall as the objective is to promote self-consumption while preserving support mechanisms through net billing.
+
+Italy made progress in transposing the EU Electricity Market Design Reform into national  law,  outlined  in  Directive  (EU)  2024/1711,  alongside  other  relevant measures bolstering flexibility. A draft legislative decree dated 10 October 2025 introduced integrated definitions for active customers, renewable energy communities (REC), and self-consumption.
+
+Italy is formally committed to phasing out coal on the mainland by 2025, and on the  island  of  Sardinia  by  2028.  Environmental  permits  for  the  last  two  coal generators on the mainland (at Civitavecchia and Brindisi Sud) expired at the end of 2025. The generators have not been run recently due to a lack of economic viability. However, decisions on whether to decommission the plants or maintain them in reserve remain under consideration.
+
+3 PUN (Prezzo Unico Nazionale) single national price
+
+## Spain
+
+## Strengthening system resilience amid rapid renewable deployment
+
+Electricity demand grew by just over 3% in 2025, following growth of 2.3% in 2024, led by new industrial activity, electrification of industrial and residential heating, transport  sectors,  and  rising  tourism  activity.  Over  the  forecast  period,  green hydrogen production will also add to demand growth, albeit to a lesser extent, alongside  other  emerging  technologies.  Reflecting  these  trends,  the  Updated National Energy and Climate Plan (NECP) also foresees a structural shift towards electricity as the backbone of decarbonisation.
+
+Gas -fired output rose by 20%, while renewable generation grew by around 1%, led by a sharp 12% rise in solar PV. By contrast, both wind and hydropower output declined by more than 5%. This follows a year in which power -sector emissions fell sharply and renewable generation reached record levels.
+
+In the medium term, electricity demand is projected to grow at an average annual rate of just under 2% between 2026 and 2030, much higher than the 0.4% average recorded in the past decade. Demand will be supported by the continuation of the major  demand  trends  in  2025.  Renewable  generation  is  forecast  to  maintain strong momentum, with average annual growth of over 8.5% during the outlook period. Solar PV and wind generation are projected to expand by around 13.5% and 8.5% per year, respectively, between 2026 and 2030. Spain remains a robust and diversified market for renewables, with record project pipelines.
+
+After conversion of the Aboño Power Plant in northern Spain into a gas unit, coal has virtually disappeared from the electricity mix, accounting for around only 1% of generation in 2025. A small number of units remain available, including Alcúdia in  Mallorca  Island,  mainly  as  a  back-up  to  guarantee  supply  in  the  event  of disruptions.  Spain's  coal  phase -out  is  accompanied  by  support  measures  for affected regions under a dedicated Just Transition Strategy.
+
+Renewable expansion continues, especially solar  PV,  which  added  6.9 GW  in 2025  to  reach  39.4  GW  (excluding  self-consumption  capacity),  whereas  wind capacity rose 1 GW to reach 33.2 GW in the same period. In addition, growth in self-consumption  from  distributed  solar  PV  assets  moved  apace,  and  total installed capacity is estimated at 8.7 GW as of December 2025.
+
+According to the current schedule of nuclear phase-out, Almaraz I will close by 2027, followed by Almaraz II in 2028 and Cofrentes and Ascó I in 2030. This will leave Spain's nuclear fleet at 3 GW by the end of our outlook period. However, a final decision has not been taken yet.
+
+The Spanish electricity system received global attention after the blackout of the Spanish-Portuguese Peninsular system on 28 April 2025. The events have been described in the many reports published since then. A detailed overview can be found in a dedicated section in the Reliability chapter of our report. This blackout drew  attention  to  issues  that  increasingly  affect  many  power  systems  in  the evolving Age of Electricity and reinforces key messages highlighted by the IEA, including the importance of investment in grids, electricity supply security and the challenges of renewable integration.
+
+While progress on cross-border interconnections with France remains a strategic priority, the expansion of storage capacity to support the integration of variable renewables  is  gaining strong  policy  momentum.  Spain  has  reinforced  its framework for storage and system flexibility through a major call for new storage projects and a Royal Decree that streamlines hybridisation and permitting while strengthening system-operation rules, with a view to contribute to Spain's national target of reaching 22.5 GW of storage by 2030. The government has also initiated the public consultation of its 2030 transmission network development plan, which foresees around  EUR  13.6  billion in  investment  to  accommodate  higher renewables  and  storage  capacities,  new  interconnections  and  rising  electricity demand.
+
+## Year-on-year change in electricity generation in Spain, Poland, United Kingdom, and Türkiye, 2021-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Other non-renewables include oil, waste and other non-renewable sources. Data for 2026-2030 are forecast values.
+
+## Poland
+
+## The share of renewables in generation reached 30% in 2025 and is set to surpass 50% by 2030
+
+Electricity demand in Poland increased by more than 3% in 2025, supported by electrification and the continued recovery in economic growth. In June 2025, the country generated more electricity from renewables than from coal for the first time, with solar PV contributing the largest share. Coal-fired generation declined by around 6.5%, accounting for 52% of the power mix, while gas-fired generation grew by a significant 25% y-o-y. Renewables output rose by a more moderate 4.1%, tempered by reduced wind generation amid lower wind speeds.
+
+Forecast electricity consumption is expected to grow at an average annual rate of 2.1% during the 2026-2030 period, triple the growth observed during 2018-2025. Renewable generation is projected to expand rapidly, averaging 13% on average per year through 2030, displacing coal as the primary source of energy on an annual basis in 2028, and accounting for the 53% of the electricity generation mix by the end of the decade. Gas-fired generation is anticipated to rise by an average annual rate of around 5% during 2026-2030, while coal-fired power is expected to fall by 11% annually over the same period. Poland is also on course to develop its first-ever  nuclear  power plant,  with  preparatory  construction  work  in  Choczewo started in October 2025. Using Westinghouse's AP1000 reactors, the three units will have a total capacity of around 3.7-3.75 GW, with a 2033 target for commercial operations.  The  European  Commission  granted  Poland  a  derogation  allowing power plants that exceed emissions standards, which are primarily coal-fired, to remain in the capacity market until the end of 2028.
+
+Poland's Energy Regulatory Office (URE) held its first offshore wind auction in December 2025, awarding contracts to three projects with a combined capacity of 3.4 GW. The 25-year two-way CfDs are for Baltic East, Baltica 9 and Bałtyk 1. The successful  completion  of  the  awards  advances  the  projects  toward  a  final investment decision (FID) and eventual commissioning, joining the existing pool of 5.9 GW in the project pipeline. At the same time, the rapid growth of renewables has  contributed  to  increasing  curtailment  levels,  exceeding  1 TWh.  At  endOctober 2025, the cumulative amount of curtailment increased by 82%, compared to the same period in 2024. Solar PV accounted for almost 70% of the curtailed output.  Wind  made  up  the  remainder,  reaching  the  highest  monthly  power curtailment on record.
+
+Against this background, Poland is strengthening its grid flexibility. PGE, the stateowned and country's largest utility, announced plans to invest about USD 4.7 billion in 85 battery energy storage projects with a capacity of more than 17 GWh. Construction began in September 2025, which is one of the largest utility- scale  battery  projects  in  Europe,  with  a  capacity  of  263 MW  (981 MWh).  It  is located adjacent to PGE's Żarnowiec Pumped Storage Power Plant. It is expected to be operational by Q2 2027 and enter the capacity market from 2029 under a 17-year  contract.  Poland  also  played  a  significant  role  in  grid  connectivity  by providing a direct land bridge that facilitated the physical synchronisation between the Continental European electricity system and the Baltic states' grid systems, which  has  been  in  operation  since  February  2025.  The  new  link  via  Poland enables Lithuania, Latvia,  Estonia  to  strengthen  their  energy  system  resilience and  integration  with  Continental  Europe,  allowing  them  to  disconnect  from Russia's electricity system.
+
+## Denmark
+
+## Renewables share in annual generation surpassed the 90% mark in 2025
+
+In  2025,  electricity  demand  in  Denmark increased by about 4%, versus strong gains of around 6% seen in 2024. Coal-fired generation fell by 25%, including a three-month period without any coal-fired power for the first time. The share of renewables in the electricity mix reached 90%, despite almost 6% y-o-y lower wind generation due to poor wind conditions. By contrast, generation from solar PV rose by 17%. The share of VRE in annual generation stood at 66%, and in recent years Denmark  has  increasingly  recorded  hourly  VRE  shares  exceeding  90%.  The country's highly interconnected power system, with significant imports and exports, plays a key role in integrating large shares of VRE sources.
+
+For  the  2026-2030  period,  electricity  consumption  is  forecast  to  grow  by  an average of 3.6% per year, supported by the expansion of data centres as well as ongoing electrification of the heating and transport sectors. Coal-fired generation is expected to be phased out over the forecast period, in line with Denmark's 2028 target. Both wind and solar PV are expected to continue to post robust growth, averaging 5.6% and 16%, respectively, over the outlook period. The share of VRE in the electricity mix is forecast to reach around 78% by 2030.
+
+Denmark plans to expand offshore wind capacity, with tenders opened for three new  projects  totalling  at  least  2.8 GW  on  20  November  2025.  The  revamped tenders  follow  a  political  agreement  from  May  2025,  market  dialogue,  and adjustments to the tender terms after the first 3 GW tranche of a 6 GW offshore wind  tendering  procedure  launched  in  2024  failed  to  attract  any  bidders.  The government has offered subsidies to developers of up to DDK 55.2 billion (kroner) [USD 8.57 billion] over 20 years, with the bids determining the level of subsidy. The  government  updated  the  framework  shortly  before  the  tender  opened  to attract more bidders. While the total subsidy amount remains, adjustments were made to project timelines, capacity limits and subsidy distribution caps.
+
+Denmark is considering lifting its 40-year old ban on nuclear power in order to improve  its  energy  security,  with  the  government  investigating  the  potential benefits of new nuclear technologies, such as small modular reactors. Meanwhile, progress continues on the Bornholm Energy Island interconnector with Germany, supported  by a grant of EUR  645.2 million from the  European  Climate, Infrastructure and Environment Executive Agency to help fund Denmark's side of the Hybrid Offshore Interconnector.
+
+In March 2025, the Nordic transmission system operators (including Energinet) replaced the previous 60-minute manually activated mFRR balancing process with a 15-minute automatically activated mFRR market.
+
+## Percentage of hours per year in Denmark with a share of variable renewable energy in electricity generation greater than 90%, 2019-2025
+
+<!-- image -->
+
+Source: IEA analysis based on data from IEA Real-Time Electricity Tracker (2025).
+
+## Ireland
+
+## Wind and solar PV continue rising steadily to meet increasing demand, while gas-fired output remains robust
+
+Electricity demand in Ireland continued its strong upward trajectory, increasing by more than 3% y-o-y in 2025. Growth was supported by ongoing electrification and the  expansion  of  data  centres,  which  accounted  for  around  22%  of  metered electricity consumption in 2024. Coal-fired generation officially ended in June 2025, following the conversion of the last remaining coal plant to oil. This converted unit will continue to operate as a reserve source during periods of tight system margins from 2025 to 2029. Natural gas-fired generation, the main source of dispatchable capacity, accounting for almost half of Ireland's electricity output over the past decade, decreased in 2025 by around 1.3% y-o-y. Its share in total generation fell from 49% in 2024 to 47% in 2025.
+
+Total electricity generation remained broadly flat in 2025, while imports increased, maintaining their position as the third-largest source of electricity in Ireland's total electricity supply. Renewable electricity generation expanded by around 5% y-o-y, with wind posting growth of close to 4% while solar PV rose by about 50%. This increase  in  solar  PV  generation  was  supported  by  the  expansion  of  installed capacity,  which  surpassed  2 GW  for  the  first  time  in  November  2025.  Wind remains the leading source of renewable electricity, accounting for nearly 80% of VRE output in 2025.
+
+From 2026-2030, electricity consumption  is forecast  to  grow  by  an  average  of 3.6%  per  year.  Gas-fired  generation  is  projected  to  decline  by  around  7.5% annually, while renewable electricity output is expected to see strong yearly growth of 14% over the outlook period. Solar PV and wind are expected to drive growth, with average annual rates of about 44% and 11%, respectively. The combined share of wind and solar PV in generation is forecast to rise to 68% in 2030, up from 41% in 2025. Total renewables share is similarly expected to reach 73%, rising from 47%, over the same period.
+
+In 2025, an increased focus was put on resilience and grid infrastructure following storm  Éowyn  in  January,  which  caused  widespread  outages.  The  Greenlink interconnector between the United Kingdom and Ireland became operational in April, enhancing cross-border flexibility. Meanwhile, in July 2025, the government approved EUR 3.5 billion of investment in grid infrastructure and also reformed rules on electricity infrastructure by adopting a Private Wires Policy to allow private investors  to  build  and  own  electricity  lines  in  specific  circumstances.  The Commission for Regulation of Utilities also introduced the Electricity Connection Policy  for  Generation  and  System  Services  (ECP-GSS)  in  September  2024, shifting the grid-connection process from an annual basis to a twice yearly cycle. The first ECP-GSS batch, ECP GSS 1 for September 2025, required applicants to submit a pre-application notification and application fee to the relevant System Operator  by  30 June  2025.  Applicants  completing  this  step  were  then  able  to submit a formal grid application up to the batch deadline of 30 September 2025.
+
+## United Kingdom
+
+## Share of wind and solar PV in generation is set to surpass 50% by 2030, rising from 37% in 2025
+
+Following  the  definitive  closure  of  the  final  remaining  coal  units  in  2024, renewables  supplied  53%  of  generation  in  2025.  Electricity  consumption  is estimated  to  have  increased  by  around  0.5%  in  2025.  However,  demand  is forecast to rise steadily in our outlook, with growth at an average annual 1.8%, and reaching 3.6% by the end of the decade.
+
+Over the forecast period, natural gas-fired generation is displaced by renewables, declining by 7% per year on average ,while renewables grow by just over 9% per year. Solar PV reaches 10% of the electricity generation mix in 2030, up from 7% in 2025, and wind's share increases to 45% from 30%. Nuclear generation drops off in 2028, reflecting current expected lifetimes.
+
+The  United  Kingdom  will  preserve  a  single  national  bidding  zone,  pursuing 'reformed national pricing' over a zonal or nodal market design. Enhancements such as stronger locational signals are pending publication in winter 2025/26. The Strategic Spatial Energy Plan, commissioned in 2024, increases locational signals for new capacity, defining generation capacity requirements for 17 zones across Great  Britain.  To  meet  deployment  targets,  such  as  70 GW  combined  wind capacity by 2030, the CfD auction design was updated to allow the Department for Energy Security and Net Zero to view anonymised auction bids and decide how much capacity to award, with the option to increase the budget after reviewing the bids if a higher budget would provide value for money. To further de-risk while seeking to elicit broad participation, the CfD contract length was extended from 15 years  to 20 years,  and  requirements  were  eased  on  planning  consents  for projects to be eligible. The first CfD auction under the CP2030 regime took place in late 2025. This capacity will be complemented by nuclear lifetime extensions as EDF  announced  that  Heysham  and  Hartlepool  power  stations  will  remain operational for at least an additional year, until March 2028, following extensions in 2024.
+
+Capacity market prices eased slightly but remained well above pre-2022 levels at GBP 60/kW in the 2025 long-term auction. Battery storage was the third-largest capacity category winning contracts in the 2025 long-term capacity auction, with over  6.2 GW  and  17 GWh  of  nameplate  capacity  awarded,  behind  only  gas (29.9 GW)  and  interconnectors  (10.7 GW).  The  United  Kingdom  also  remains hopeful  of  reaching  an  agreement  with  the  EU  to  secure  exemption  from  the CBAM that entered into force in 2026, before the UK equivalent in 2027.
+
+The UK government set an ambition in 2024 to have up to 24 GW of installed nuclear capacity by 2050, including SMRs. In line with this target, in 2025 RollsRoyce  SMR  Ltd  was  selected  as  the  preferred  bidder  following  a  two-year competitive  process.  This  is  subject  to  final  approvals  by  the  government  and contract signature. Following the selection, public consultation on the Rolls-Royce SMR design began in 2025, with a final investment decision expected in 2029 and first grid connection anticipated in the mid-2030s.
+
+## Türkiye
+
+## More than 33% of electricity generation is set to come from solar PV and wind by 2030 while demand grows robustly
+
+Türkiye's  electricity  demand  grew  by  almost  3%  y-o-y  in  2025,  supported  by cooling needs during an unprecedented heatwave. July 2025 marked the hottest for the month on record, with temperatures reaching 50.5 Celsius in the southeast of  the  country,  breaking  the  previous  year's  record.  Demand  is  expected  to increase at a solid pace, rising by an average of 2.6% per year between 2026 and 2030.
+
+Coal-fired generation recorded a slight decline of around 0.5% in 2025, accounting for a 33% share of the electricity mix. By contrast, natural gas-fired generation increased by a sharp 24% y-o-y, with its share rising from 19% in 2024 to 23% in 2025. Both coal and gas are expected to decline from 2026 onwards, with average annual contractions of around 9% and 11%, respectively, through 2030.
+
+Hydropower recorded the biggest decline among generation sources, falling by 23% y-o-y  in  2025  due  to  severe  droughts  from  the  lowest  rainfall  in  the  last 52 years. Conversely, solar PV posted the strongest growth, increasing by around 44% y-o-y. The combined share of wind and solar PV in the electricity generation mix surpassed 20% in 2025 and is forecast to reach about 35% in 2030, five years ahead of the target set by the National Energy Plan (NEP) in 2022. Following the previous year's completion of the initial phase development, Türkiye's first nuclear power  plant  in  Akkuyu,  with  4.8  GW  capacity,  is  nearing  commissioning  of  its reactor scheduled in 2026. The NEP aims to increase the share of nuclear energy in power generation with new plants and SMRs.
+
+To  support  the  rapid  growth  in  low-emissions  generation,  Türkiye  passed  the 'Super Permit Law' (Law No. 7554) in July 2025. The regulation aims to shorten permitting,  the  approval  process,  and  licensing  procedures  for  wind  and  solar projects from the current average of around 48 months to 18-24 months. Türkiye is also focusing efforts on grid modernisation. In August 2025, the Transforming Power Transmission System Project (TPTS) was approved, aiming to modernise the  national  grid  system  for  VRE  integration.  Supported  by  the  World  Bank, International  Bank  for  Reconstruction  and  Development  (IBRD)  and  Clean Technology Fund (CTF), the project will provide a total of USD 747.9 million in financing  for  Türkiye's  national  grid  expansion  and  upgrades,  particularly  for integrating increased capacities of wind and solar.
+
+## Ukraine
+
+## Ukraine's electricity system continues to evolve amid the most challenging winter since the Russian full-scale invasion
+
+Ukraine's available generation capacity has fallen critically short of winter demand amid intensified Russian attacks in January 2026 and record-low temperatures, though uncertainty remains high . This winter, peak demand has reached 18 GW (against 16.5 GW during the 2024/25 heating season), while domestic generation capacity has been reduced to only 11.1 GW following systematic attacks on critical infrastructure.  This  projection  reflects  restoration  efforts  until  the  start  of  the heating season, including approximately 3 GW refurbished ahead of last winter, despite  continued  Russian  strikes.  Although  winter  demand  levels  remain uncertain due to population displacement and difficulties in predicting industrial activity levels, record-low temperatures ranging from -10 to -20 degrees Celsius at night have driven demand to critical levels. The country depends heavily on its three remaining operational nuclear power plants, which provide approximately half  of  the  generation  capacity.  This  creates  vulnerability,  as  damage  to transmission links or nearby substations can prevent these facilities from feeding the  grid  -  a  risk  that  has  materialised  with  recent  attacks  on  substations connecting  nuclear  power  plants.  The  severity  of  the  situation  has  prompted authorities  to  declare  a  state  of  emergency  in  the  energy  sector.  Major  cities, including capital Kyiv, have experienced both emergency and rolling blackouts, with millions of residents lacking access to heating and water for several days following massive attacks. In January alone, between 8-10 million people across Ukraine  were  without  electricity  and  heating  for  several  days  after  attacks,  as combined heat and power plants around the country sustained damage.
+
+Ukraine's electricity security continues to benefit from interconnection with Europe following synchronisation with the continent's grid in March 2022. This integration has proven vital, enabling imports during peak demand periods whilst allowing exports that help stabilise Ukraine's grid and produce revenues when domestic generation  is  sufficient.  In  2024,  Ukraine  imported  a  record  4 436 GWh  of electricity  -  the  highest  level  over  the  last  decade  -  reflecting  the  extensive damage to its domestic generation capacity. In 2025, import levels declined as generation capacity gradually recovered and nuclear units returned from scheduled maintenance. Ukraine became a net electricity exporter between June and  September,  sending  635 GWh  abroad  in  September  alone  -  the  highest monthly level since the war began. However, following intensified Russian attacks, this trend reversed sharply in autumn 2025, with Ukraine relying more heavily on imports since October to meet basic electricity needs amid the severe generation shortfall.
+
+Ukraine's  power  sector  has  shifted  toward  decentralisation  since  the  full-scale invasion began, with continued deployment of distributed energy and a significant expansion in grid-scale storage. Another major development came in September 2025 when DTEK and Fluence commissioned Ukraine's largest battery energy storage project:  a  200 MW system with 400 MWh storage capacity distributed across  six  locations,  capable  of  powering  600 000  homes  for  two  hours  and providing  system  services  to  Ukrenergo's  grid.  This  project  demonstrates  how wartime necessity is accelerating the adoption of technologies that enhance grid resilience while also making the system harder to disable through targeted strikes. Wind energy is also advancing, with more than 700 MW of new capacity under development,  including  DTEK's  approximately  400 MW  Tyligulska  Wind  Farm expansion scheduled for late 2026.
+
+Over the past 18 months, progress has advanced to expand cross-border capacity. Since December 2024, firm import capacity for Moldova and Ukraine combined has been set at 2.1 GW during the winter months and 1.7 GW in summer, whilst export capacity remains limited to 650 MW. Since June 2025, the available trade capacities  are  recalculated  weekly,  providing  greater  flexibility  to  respond  to changing system conditions.
+
+Ukraine  advanced several  key  regulatory  measures  in  2025  to  prepare  for  full integration with European electricity markets, despite wartime constraints. In July 2025, the Parliament passed Draft Law No.12087-d to implement EU legislation on energy market integration, which lays the groundwork for coupling Ukraine's day-ahead, intraday, and balancing markets with those of the European Union. The  European  Commission  has  indicated  that  full  market  coupling  could  be achieved  by  early  2027,  provided  Ukraine  continues  accelerating  necessary reforms. Energy  regulator NEURC  approved  rules  for  long-term  capacity allocation at Ukraine's borders with Slovakia, Hungary and Romania, while also amending market rules to  allow  ancillary  service  providers  greater  operational flexibility.
+
+## Eurasia
+
+## Russian electricity demand contracted, while overall regional growth was stable in 2025
+
+Eurasia's electricity demand growth remained relatively flat in 2025, versus 3.5% growth in 2024, primarily due to Russia's weaker macroeconomic fundamentals and  milder  winter  temperatures  in  the  first  quarter  of  the  year.  The  region's demand growth is expected to rise to an average annual rate of just under 2% in the 2026-2030 outlook. Fossil-fired power generation will continue to dominate Eurasia's electricity mix, with a share of around 65% over the forecast period.
+
+## Year-on-year percent change in electricity demand (left) and year-on-year change in electricity generation (right), Eurasia, 2019-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Data for 2026-2030 are forecast values. Other non-renewable energy sources (RES) include oil, waste and other nonrenewable sources.
+
+## Russia
+
+## Electricity demand is estimated to have declined by around 1% in 2025, but forecast to rise through 2030 at average 1.5% rate
+
+The availability of energy-related data has deteriorated since Russia's full-scale invasion  of  Ukraine,  making  it  challenging  to  assess  the  country's  electricity consumption. Based on year-to-date data through November, Russia's electricity demand is estimated to have declined by around 1% in 2025, compared with the strong 3% growth the previous year. This reflects Russia's much weaker GDP
+
+growth of 0.6% in 2025 compared with 4.3% in 2024. In addition, unseasonably mild winter temperatures in Q1 2025 weighed on electricity consumption for space heating.
+
+Russia's  fossil  fuel-fired  thermal  generation  declined  by  1%  y-o-y  in  the  first 11 months  of  2025,  while  nuclear  power  output  increased  by  2.5%  during  the same period. By contrast, hydropower fell by 6% y-o-y, with the decline largely concentrated in Russia's Federal Siberian District (-9% y-o-y). Solar PV and wind power  generation  fell  by  2.5%  and  by  over  15%  y-o-y,  respectively.  Russia's electricity imports increased by 7.2% y-o-y in Q1-Q3 2025, primarily supported by Kazakhstan. In October 2025, the Energy Minister said that Russia was facing 25 GW  of  supply  capacity  shortages  across  its  regions  because  of  outdated equipment, depleted resources and lack of imported components due to sanctions. The first unit of the Kursk -2 power plant (1 188 MW) was connected to the grid on 31 December 2025  at  an  initial  output  of  240 MW,  with  its  capacity  set  to  be gradually raised to full power as safety tests and commissioning procedures are completed.
+
+Electricity demand growth is forecast to rise at an average annual rate of about 1.5%  in  2026-2030.  Nevertheless,  there  is  significant  uncertainty  surrounding Russia's economic development, which can impact domestic electricity demand trends. The share of fossil-based thermal generation in the country's power mix is set to remain at around 64% on average over the forecast period. The build-up in wind and solar capacity remains slow.
+
+## Kazakhstan
+
+## Healthy macroeconomics drive stronger electricity demand growth in Kazakhstan
+
+Kazakhstan's electricity consumption grew by a steep 4% in 2024 and is estimated to have increased by around 4% y-o-y in 2025, based on year-to-date data through October. A strong post-pandemic economic recovery, supported by sharply higher oil production, was the major catalyst behind robust growth in both years, with the country's GDP expanding by around 5% and 6.2%, respectively.
+
+Kazakhstan's electricity demand is forecast to rise at an average of around 3% per  year  in  2026-2030,  albeit  at  a  slightly  reduced  rate  as  economic  growth moderates, partly due to lower investment in the oil sector as well as expectations of a weaker oil price environment. The country's electricity mix remains largely unchanged over the outlook period, with coal accounting for nearly 60%, followed by gas-fired output at around 25% and renewables 15%.
+
+Coal-based  generation  increased  by  an  estimated  2.5%  y-o-y  in  the  first  ten months of 2025, while gas-fired power expanded by around 15% y-o-y over the same  period.  Hydropower  generation  declined  by  3.5%  y-o-y  in  the  first  ten months of 2025. Domestic power generation was also supported by stronger wind output, which increased by nearly 19%in the first 10 months of 2025.
+
+## Other Eurasia
+
+Combined electricity demand growth in other Eurasian markets was up by 3% in 2024 and first estimates indicate that it continued to expand at a similar pace in 2025. Electricity demand in Eurasia, excluding Kazakhstan and Russia, is forecast to increase at an average annual rate of 3.8% per year in the 2026-2030 period. This  will  be  largely  supported  by  the  region's  rising  population  and  economic expansion.
+
+In Uzbekistan , electricity generation rose by almost 5% in 2024, and is estimated to have grown by nearly 4% y-o-y in 2025. The country's electricity mix is largely dominated by gas-based generation, although the government is taking steps to diversify  by  developing  renewable  power  generation  capacities.  Uzbekistan  is planning to raise combined wind and solar power generation capacity to 20 GW by 2030.
+
+In Azerbaijan , electricity demand rose by 3.8% in 2024 and is estimated to have increased by around 2% y-o-y in 2025. Fossil-fired thermal generation (largely gas-based) accounted for just over 85% of total electricity output during this period. Renewables power generation increased by 2% y-o-y.
+
+In Turkmenistan , electricity generation continued to expand, primarily supported by the country's large gas-fired power plant fleet. Turkmenistan is a significant exporter  of  electricity  to  neighbouring  markets,  including  Afghanistan,  Iran, Kyrgyzstan and Uzbekistan. The country started exporting electricity to Kyrgyzstan  in  August  2021  and  deliveries  for  2025  were  expected  to  reach 1.7 TWh. In April 2025, the two countries agreed to extend the agreement for 2026. In January 2024, Turkmenistan agreed to supply 1.8 TWh to Afghanistan. The two countries are also considering the feasibility of the TAP-500 transmission project, with a planned capacity of 1 GW, but the proposal faces considerable political, security, and  logistical  challenges.  An  October  2022  agreement  between Turkmenistan  and  Uzbekistan  for  electricity  exports  of  a  targeted  4 TWh/yr reportedly remains in effect, although actual yearly trade volumes have not been disclosed.
+
+## Middle East
+
+## Gas-fired generation rises rapidly while renewables post sharp gains
+
+Following an increase of 3.7% in 2024, electricity demand in the Middle East rose slightly higher at 3.8% in 2025, underpinned by continued robust economic growth and rising cooling needs. We forecast growth to ease slightly from these higher level at an annual average rate of 2.8% through 2030. Saudi Arabia makes up around 31% of electricity consumption in the Middle East and is correspondingly set to account for almost one-third of the additional demand in the region. The United Arab Emirates (UAE) accounts for 12% of growth, Kuwait 9%, Qatar 5%, Israel 4% 1 , and Oman with 3%.
+
+<!-- image -->
+
+Notes: Data for 2026-2030 are forecast values.
+
+Natural gas remains the dominant generation source in the region, with almost 70% share of the electricity mix. At the same time, strong momentum towards renewables, particularly solar PV, is supported by ambitious government targets and large-scale project pipelines. At the same time the switch from burning oil to natural gas in the power sector is set to accelerate, led by Saudi Arabia. As a result, gas-fired generation increases at an average annual rate of 5% through 2030, while oil-fired output is forecast to fall by about 15% per year over the same
+
+1 The statistical data for Israel are supplied by and under the responsibility of the relevant Israeli authorities. The use of such data by the OECD is without prejudice to the status of the Golan Heights, East Jerusalem and Israeli settlements in the West Bank under the terms of international law.
+
+IEA. CC BY 4.0.
+
+period. Solar PV generation in the Middle East is expected to surpass oil-fired power  by  2030.  In  parallel  with  strong  growth  in  solar  PV,  utility-scale  battery deployment  in  the  region  is  also  gaining  traction.  With  its  abundant  solar resources, multiple  large-scale  projects  are  underway  in  Saudi  Arabia  and  the UAE. At the same time, in both countries, major investments in interconnections and grid expansion are ongoing.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP), and ocean energy. Data for 2026-2030 are forecast values.
+
+## Saudi Arabia
+
+## Surging electricity demand met by rising natural gas and renewables, while oil burn plummets by 2030
+
+Electricity demand in Saudi Arabia increased by an estimated 3.8% y-o-y in 2025. Growth is forecast to average 3.1% annually in 2026-2030, higher than the 2.8% average  recorded  over  the  2018-2025  period.  Managing  demand  growth  is  a priority  for  the  government,  with  the  Saudi  Energy  Efficiency  Center  (SEEC) leading efforts to implement Minimum Energy Performance Standards (MEPS) as part of broader efforts on the demand-side.
+
+Gas-fired output will continue as the country's mainstay source of generation, but renewables will post the fastest growth by far, at a stellar annual average rate of 45%  in  2026-2030.  Power  generation  from  solar  PV  doubled  in  2025  and  is expected  to  increase  sixfold  by  2030.  The  share  of  renewables  in  power generation is forecast to reach around 15% of total generation in 2030, up from only 3% in 2025. Solar PV is set to make up more than 85% of total renewable generation in 2030, with the rest almost exclusively wind power.
+
+The Kingdom aims to reach a 130 GW of installed renewables capacity by the end of the decade. In February 2025, the Al Shuaibah 2 solar PV plant, with a total capacity  of  over  2 GW,  started  commercial  operation.  In  August  2025,  a consortium  led  by  Saudi  giant  ACWA  Power  announced  it  plans  to  invest USD 8.3 billion  to  build  15 GW  of  solar  and  wind  farms  in  the  country.  In September 2025, Saudi Arabia's Public Procurement Company (SPPC) opened Round  7  of  solar  and  wind  projects  under  the  National  Renewable  Energy Program, with a request for quotation (RFQ) for 5.3 GW of new capacity. This tender includes four solar PV plants: Mawqaq (600 MW), Tathleeth (600 MW), South  Al-Ula  (500  MW)  and  Tabrjal  2  (1 400  MW).  It  also  includes  two  wind projects, Bilghah (1 300 MW) and Shagran (900 MW). The RFQ invites developers to prequalify, adding 3.1 GW solar and 2.2 GW wind to project pipelines. At the same  time,  the  country  has  also  been  exploring  the  development  of  nuclear energy.
+
+Natural gas dominates the rapid expansion of Saudi Arabia's power system over the  outlook  period,  with  growth  forecast  to  rise  by  an  annual  average  of  9% between 2026 and 2030, more than double the rate of just over 4% recorded in 2018-2025. By 2030, natural gas will account for 80% of power generation in the country. Saudi Aramco's multi-decade Master Gas System (MGS) plan provides the  foundation  for  phasing  out  oil  of  power  generation  and  is  pivotal  to  the company's plans to expand gas production by 60% by 2030. A major milestone was reached in early December 2025  with the start-up of the massive USD 100 billion  Jafurah  unconventional  gas  project,  with  current  production  of 450 million cubic feet per day (MMcf/d) ramping up to 2 billion cubic feet per day (Bcf/d)  by  2030.  Jafurah  will  primarily  feed  the  country's  domestic  power  grid, displacing crude oil currently burned in power plants. In March 2025, Siemens Energy was awarded a USD 1.6 billion project to provide technology for two gasfired power plants in Saudi Arabia, which will add 3.6 GW to the grid. Together, with efficiency efforts and the deployment of non-oil power capacity, the share of oil in power generation is set to decline from 37% in 2025 to just 6% by 2030.
+
+Separately, the Kingdom continues to advance work on regional interconnections. The Egypt-Saudi 3 GW high-voltage direct current (HVDC) power interconnection is currently undergoing inspection and trial runs, with the first phase of 1.5 GW expected  to  be  fully  operational  in  April  2026,  followed  by  the  second  phase several months later. The long-planned project creates a power bridge that will enable a flexible electricity exchange during the differing peak load times - Egypt's summer  and  Saudi  Arabia's  winter  -  to  optimise  generation,  reduce  fuel consumption and strengthen grid reliability.
+
+The GCC power grid expansion is also moving apace. The Abu Dhabi Fund for Development (ADFD) signed a financing agreement with the Gulf Cooperation Council Interconnection Authority (GCCIA) in June 2025 for the expansion of the power grid interconnection between the UAE and Saudi Arabia. The UAE-Saudi 400 kilovolt (kV) Al Silaa-Salwa project is expected to be completed by Q4 2027.
+
+The  expansion  of  the  Gulf  Electricity  Interconnection  System  Project,  which increases electricity export capacity from Saudi Arabia to Kuwait and Iraq, was nearing completion at end-2025, and expected to be operational in H1 2026. The project  will  lift  transfer  capacity  to  3 GW  between  Saudi  Arabia's  Al-Fadhili converter station and Kuwait's Al Wafrah hub, and add a further connection to the Al-Faw station in  southern  Iraq  with  transmission  capacity  of  500 MW. At  end2025, Iraq's Ministry of Electricity and the GCCIA were still working to complete operational details and power purchase agreements (PPAs).
+
+The Jordan-Saudi electricity interconnection project is moving forward with plans for an initial 500 MW, scalable to 1 GW. In April 2025, officials met to focus on accelerating  key  agreements  on  implementation,  operations  and  commercial arrangements  needed  to  begin  project  implementation.  A  Memorandum  of Understanding (MoU) was inked in 2020 and plans call for commercial operations to start by end-2029.
+
+Saudi Arabia's storage capacity deployment plans are also accelerating. In August 2025,  the  Saudi  Electricity  Company  (SEC)  awarded  Hithium  (with  Alfanar)  a 1 GW/4 GWh  utility-scale  BESS  across  Tabuk  and  Hail.  This  follows  SEC's massive 2.5 GW/12.5 GWh storage system projects with China's BYD signed in February 2025, integrating solar and wind power across five sites into the national power system, helping to stabilise grids and meet peak energy demand periods. Installation of the five separate 500 MW/2 500 MWh energy storage systems is expected to be completed by Q1 2026. It is the world's largest grid-scale battery storage project, underscoring the country's commitment to scaling up its energy mix to reach 50% of renewables by 2030.
+
+## Year-on-year change in electricity generation, Middle East, 2021-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Other non-renewable energy sources (RES) include oil, waste and other non-renewable sources. Data for 2026-2030 are forecast values.
+
+## United Arab Emirates
+
+## Demand growth increasingly met by renewables through 2030, led by surging solar PV
+
+Electricity demand in the UAE is estimated to have increased by about 4% y-o-y in  2025,  in  line  with  the  average  annual  growth  observed  over  the  2018-2024 period. In 2025, nuclear output was up by just over 4%, while both oil-fired and gas-fired  power  rose  by  about  3.5%  each.  Over  2026-2030,  overall  demand growth is projected to moderate to an average of about 3% annually. Oil and gas are set to remain largely unchanged, but renewables are expected to grow at a much faster pace of an average 18% per year over the forecast period, meeting all the additional demand.
+
+Natural gas remains the backbone of the country's power generation, accounting for 65% of total power generation in 2025, though this share is expected to edge down to 58% by 2030. Nuclear is the second-largest source of power generation at around 24%, with its share projected to remain broadly stable through 2030. In September  2025,  the  Barakah  nuclear  power  plant,  with  5.6 GW  of  capacity, marked its first full-year of operation, with all four reactors online, and now supplies around one-quarter of the UAE's total electricity needs. Besides Iran, the UAE is the only Middle East country currently with an operational nuclear fleet.
+
+Renewables are expected to be the fastest growing source of power generation, averaging annual increases of 18% over the 2026-2030 period. The shift towards sustainable energy is anchored in the country's national agendas, including the We the UAE 2031 vision, the UAE Energy Strategy 2050, and the UAE Net Zero 2050 Strategy, which all aim to accelerate renewables deployment. Renewables currently make up 11% of the UAE's power output and are estimated to reach 21% by the end of the decade, with solar PV providing the majority of generation.
+
+Much of the UAE's renewables expansion is concentrated in the emirates of Abu Dhabi  and  Dubai.  In  Abu  Dhabi,  the  Emirates  Water  and  Electricity  Company (EWEC) targets 60% of electricity demand to be met by low-carbon sources by 2035. The pipeline includes the 1.5 GW Al Ajban Solar PV park, slated to start commercial operations in Q3 2026. In October, Abu Dhabi broke ground on its USD 6 billion 24/7 solar and battery storage project, which will integrate 5.2 GW of solar PV capacity with a 19 GWh BESS to generate 1 GW of 24/7 uninterrupted clean power, with operations scheduled for 2027.
+
+In  Dubai, the Mohammed bin Rashid Solar Park is the emirate's flagship solar project with Phase 6 nearing completion. As of September 2025, more than 68% of  the  project  was  completed.  The  complex  currently  has  3.9  GW  online,  with about 0.8 GW under construction, and the Dubai Electricity and Water Authority
+
+(DEWA) roadmap now targets 7.3 GW by 2030, up from the original 5 GW. In August, DEWA began trial operations at the 250 MW Hatta pumped storage plant, adding flexible, evening-peak capacity. With Hatta's local peak at about 39 MW, most electricity is exported to Dubai's grid.
+
+The UAE is also strengthening regional interconnections. In September 2025, a new  400 kV  Oman-UAE  interconnection  was  announced,  with  an  expected completion target of 2027. Separately, the GCCIA-UAE upgrade adds a 400 kV double-circuit line from Al Sila in the UAE to Salwa in Saudi Arabia, with substation works at Al Sila, Salwa and Gonan. This raises the UAE-Saudi transfer capacity from 2.4 GW to 3.5 GW, with completion due in Q4 2027.
+
+## Other Middle East
+
+## Kuwait
+
+Kuwait's electricity demand has steadily increased in recent years, largely due to a combination of rapid population growth and rising cooling needs. In 2025, power demand is estimated to have risen by more than 1.5%. However, this demand growth has coincided with an ageing power generation fleet that has struggled to keep pace, resulting in periodic blackouts in 2024-2025, especially during the peak summer months.
+
+Between 2025 and 2030, Kuwait's electricity demand is projected to increase by around 22%, led by a 46% rise in natural gas use for power generation. Over the same period, the use of oil and oil products in the generation mix is expected to decline by 24%.
+
+This  rapid  expansion  of  gas-fired  capacity  is  underpinned  by  recent  and anticipated contract awards, including the Al-Zour North (Phases 2 and 3) independent water and power project (IWPP) for a total 2.7 GW signed with Saudi Arabia's ACWA Power and the Gulf Investment Corporation (GIC) in August 2025. Kuwait's Ministry of Electricity, Water and Renewable Energy is awaiting budget approval for Phase 4 of the Sabiya CCGT units, which will allow the tender to advance  to  Central  Agency  for  Public  Tenders  (CAPT)  for  procurement.  The contract  award  for  the  900  MW  power  and  water  distillation  plant  was  initially tipped for Q4 2025, but is now expected in early 2026. In addition, bidding for the 1.8 GW Khairan gas-fired power plant is underway, with an anticipated contract award in March 2026, with the project's planned completion in 2029. Meanwhile, tendering is underway for the first phase of the 3.6 GW Nuwaiseeb CCGT project, with  construction  expected  to  begin  in  2027  and  commercial  operations  for Phase 1 planned for 2028. These projects form part of the government's plans announced  in  October  2025  to  add  14.05 GW  of  new  power  generation  and 228 million gallons per day of freshwater desalination capacity by 2031.
+
+While the government set an earlier target of achieving a 15% renewable share in the generation mix by 2030, progress has so far been limited and, as of 2025, Kuwait's renewable capacity stands at less than 0.1 GW. The Al Dibdibah and Al Shagaya solar projects - with a combined capacity of 1.6 GW - have made tentative  progress toward  approval  in  recent  months.  However,  given  the  slow pace to date, substantial renewable capacity additions are expected to materialise only after 2030. As a result, renewables are projected to contribute just around 1% to Kuwait's electricity supply by the end of the forecast period.
+
+Kuwait  is  in  the  early  stages  of  developing  power  system  flexibility,  with 400-500 MW  large-scale  battery  storage  proposals  under  evaluation  by  the government. Current efforts continue to rely mainly on thermal capacity additions and emergency imports.
+
+## Oman
+
+Oman's electricity demand increased by an estimated 2.7% in 2025 and is forecast to grow at a slightly lower average annual rate of just under 2.5% through the end of the decade. Natural gas will remain the dominant source of power generation, but its share is projected to decline from 94% in 2025 to around 75% by 2030. Over the same period, gas-fired electricity output is expected to fall by about 10%. Despite this anticipated decline, Oman plans to add 2.4 GW of CCGT capacity by 2029, potentially replacing older units.
+
+Renewable generation is expected to expand more than fivefold, reaching 23% of total power supply by 2030. This represents remarkable growth, though still short of the government's 30% target for 2030. Solar PV is forecast to account for more than  60%  of  the  increase  in  renewable  generation,  supported  by  the  recent completion of the Manah I and II projects (adding a combined 1 GW) in early 2025 and an additional 1 GW of solar capacity planned across three sites (Ibri III, Sinaw, and Al Kamil). Wind power is expected to provide the remainder of renewable growth, with planned capacity additions of up to 1 GW by 2028. However, Oman's wind sector remains far less developed than solar, with only 50 MW (the Dhofar wind farm) operational as of 2025.
+
+Oman is also developing its first utility-scale battery storage project, which will pair the 500 MW Ibri III solar PV plant with a 100 MWh storage system. In parallel, the Oman  Electricity  Transmission  Company  (OETC)  plans  to  implement  up  to 51 network  expansion  and  modernisation  projects  between  2025  and  2029, including continued work on the North-South Interconnect Project (Rabt) and two 400 kV transmission lines linking Oman with the UAE.
+
+## Qatar
+
+Qatar's electricity consumption is estimated to have risen by 3.5% in 2025, fuelled by  population  growth,  rising  cooling  demand,  and  increased  industrial  activity. Electricity demand growth is projected to expand by a similar average annual rate of 3.5% during the 2026-2030 period. Natural gas will remain the dominant source of power generation, with its share declining only slightly from around 97% in 2025 to 94% by 2030. In absolute terms, however, gas-fired generation is expected to increase by nearly 13% over the same period.
+
+Gas-rich Qatar is also actively working to diversify its energy mix. In 2025, the country added 875 MW of solar capacity with the commissioning of the Ras Laffan and Mesaieed solar PV plants, bringing total renewable capacity to nearly 1.7 GW. Under the Qatar National Renewable Energy Strategy (QNRES), the government aims to expand renewable capacity to 4 GW by 2030, focusing primarily on solar PV. Nonetheless, the country's gas-fired generation fleet is also set for substantial expansion, with a 500 MW peaker plant at Ras Abu Fontas expected to begin operation in 2027 and a larger 2.4 GW CCGT plant in the same area scheduled to come online in 2028.
+
+In  2025,  Qatar's  electricity  and  water  utility  (KAHRAMAA)  accelerated  the nationwide installation of smart meters, reaching full deployment. This initiative is creating the metering and communications backbone needed to enable commercial demand-response programmes and time-of-use pricing, both of which can enhance the economics of battery storage systems.
+
+## Israel
+
+Israel's electricity demand is estimated to have risen by just over 3% y-o-y in 2025, marginally  above  the  2.9%  observed  over  the  past  five  years.  Growth  was bolstered by continued economic expansion and increased activity in the hightech and service sectors.
+
+Demand is projected to rise by around 2% per year on average through to 2030, supported  by  various  factors,  including  the  shift  to  electric  vehicles,  increased electrification  of  industrial  processes,  as  well  as  the  rise  of  power-intensive technologies such as AI and expansion of data centres.
+
+In February 2025, the Israel Electricity Authority awarded contracts for 1.5 GW of high-voltage battery storage capacity across projects in three regions, marking a major step in grid flexibility and renewables integration. The tender results showed capacity tariffs ranging from USD 49.41 to USD 74.20 per kWh, underscoring the growing  cost  competitiveness  and  commercial  maturity  of  utility-scale  battery storage in the country. The same month, Enlight Renewable Energy Ltd. secured grid-connection rights for 300 MW of battery storage, supporting systems with an energy capacity ranging from 1 300 to 1 900 MWh. The project will operate under a  regulated  tariff  for  five  years  before  transitioning  to  the  merchant  market, marking a key step toward market-based flexibility mechanisms.
+
+In  2025,  natural  gas  continued  to  dominate  Israel's  electricity  generation  mix, accounting for around 72% of total production, while coal contributed roughly 12% and renewable energy about 16%.  The  government's  coal  phase-out  strategy advanced further in 2025, with measures targeting the closure or conversion of remaining coal-fired units, including the Orot Rabin Power Station, Israel's largest power plant, where several units are currently being converted to run on natural gas.
+
+In  early  2025,  the  Israeli  Ministry  of  Energy  launched  a  national  campaign encouraging households to install rooftop solar panels and sell surplus electricity to  the  grid.  The  programme  aims  to  expand  distributed  generation,  increase consumer participation,  and  support  Israel's  clean  energy  and  energy  security goals,  reinforcing  the  shift  towards  a  more  flexible  and  decentralised  power system.
+
+## Africa
+
+## Growth supported by targeted efforts to expand electricity access
+
+Electricity demand in Africa in 2025 rose 5.2%, versus 4% the previous year. The stronger pace was supported by markedly improved supply availabilities in South Africa, which makes up 25% of the region's consumption. Demand is forecast to rise on average around 3.9% annually in 2026-2030, with overall growth on the continent  boosted  by  an  expanding  population,  urbanisation,  industrial  activity, and targeted efforts to improve electricity access. Notably, countries like Kenya and Senegal are making significant progress towards universal electricity access, with the former aiming for full coverage by 2030 and the latter by 2029. Nigeria continues  to  expand  access,  particularly  through  off-grid  and  distributed  solar solutions.  However, challenges remain in matching demand growth with timely capacity  additions  and  infrastructure  upgrades,  as  evidenced  by  continued periodic supply constraints and grid bottlenecks in countries such as Nigeria and Kenya.
+
+<!-- image -->
+
+Notes: Data for 2025 are preliminary. Data for 2026-2030 are forecast values. The plot starts from 2019, whereas the x-axis labels are shown only for the even years due to limited space.
+
+Natural gas remains the dominant fuel in Africa, up by 2.3% y-o-y, with a share of over 40% in the generation mix in 2025. Gas-fired power is projected to grow at a similar pace of 2.6% on average in our 2026-2030 forecast period. By contrast, coal-fired output is expected to remain stable through 2030, assuming availability levels in South Africa remain close to those observed in 2025. Hydropower, wind and solar PV generation are all expected to see strong growth. By contrast, oilfired output is forecast to fall by almost 5.5% on average per year to 2030 and eventually  will  be  surpassed  by  both  solar  PV  and  wind  generation  over  the forecast  period.  Multiple  solar  PV  projects  with  co-located  utility-scale  battery storage projects are taking shape across the continent. At the same time, nuclear energy is also forecast to rise through 2030. Towards the end of the decade, Egypt is expected become the second country in Africa with nuclear power generation, after South Africa, with the first unit of the El Dabaa nuclear power plant scheduled to enter operation.
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: RES = renewable energy sources. 'Other non-RES' includes oil, waste and other non-renewable sources. 'Other RES' includes geothermal, bioenergy, concentrated solar power (CSP), and ocean energy. Data for 2026-2030 are forecast values.
+
+## South Africa
+
+## Load shedding sharply declined in 2025, with a significant improvement in system reliability
+
+Electricity consumption in South Africa is estimated to have increased by just over 2% y-o-y in 2025, based on data through November. Despite high demand growth, South Africa's power system remained stable and reliable through the year. From April  to  October,  electricity  supply  was  maintained  over  98%  of  the  time.  The country experienced only 749 GWh of load shedding from January to June 2025, compared  to  4 126  GWh  in  2024  -  an  82%  reduction.  Between  1 April  and 24 October 2025, South Africa went 161 consecutive days without load shedding.
+
+Eskom's  Summer  Outlook  Briefing  2025/26  (September  2025-March  2026) forecasts continued stability, citing sustained gains in generation performance and operational  discipline  under  the  ongoing  implementation  of  the  Generation Recovery Plan (GRP). Launched in April 2023, the GRP has a broad remit to produce  power  more  reliably  via  the  Energy  Availability  Factor  (EAF),  which measures the percentage of Eskom's fleet that was available to produce electricity. The GRP focuses on a range of technical improvements, including implementing extensive maintenance work to enhance grid stability, reducing load shedding, increasing operational efficiencies, and repairing and refurbishing coal-fired power stations. These improvements also reflect broader system dynamics, notably the rapid  expansion  of  behind-the-meter  solar  PV  and  utility-scale  renewables, alongside lower peak demand, which reduced system stress.
+
+Performance improvements across Eskom's coal fleet have also supported the recovery in stable electricity supply. As of late 2025, 57% of Eskom's fourteen coal-fired  power  stations  are  operating  at  an  EAF  above  70%,  including  three exceeding 90%, while another four are above 60%, reflecting the growing stability of the fleet under the Generation Recovery Plan. Eskom's coal fleet recorded an average EAF of around 62% in 2025, based on calendar year-to-date performance through early December, up from 59.8%, indicating an improvement in overall fleet reliability. This progress was further reinforced by the commercial commissioning of the Kusile Unit 6 in September 2025, which marked the completion of Eskom's long-running New-Build Programme. Together with Medupi, the two supercritical plants now provide up to 9.6 GW of baseload capacity. The addition of Kusile's new unit also contributes to Eskom's EAF metrics, helping sustain the upward trend in overall fleet performance.
+
+South Africa's generation recovery gained further momentum in late 2025 after the full return of the Koeberg nuclear power plant, providing a stable source of low-emissions generation alongside improving coal fleet performance. With both units  now  operational,  Koeberg  is  set  to  deliver  over  1.86  GW,  equivalent  to around  5%  of  Eskom's  total  generation  capacity,  helping  to  sustain  system reliability.
+
+The restoration of Koeberg's full capacity, alongside improved availability across the thermal fleet, strengthens the implementation of  Eskom's  Generation Recovery Plan and aligns with the Integrated Resource Plan 2025, which identifies nuclear power as a clean, reliable and cost-effective component of South Africa's long-term  energy  mix.  Eskom  is  also  advancing  demand-side  and  distribution reforms  to  eliminate  'load  reduction'  measures  by  2027,  including  installing 577 000 smart meters by 2026, expanding access to free basic electricity, and deploying distributed energy resources in high-risk or underserved areas.
+
+On  11 March 2025,  the  National  Energy  Regulator  of  South  Africa  (NERSA) approved  Eskom's  tariff  increases  of  12.7%  for  direct  customers  (effective 1 April 2025) and 11.3% for municipalities (effective 1 July 2025). The reforms eliminated  'Inclining  Block  Tariffs'  for  residential  customers,  and  introduced  a single flat rate per kWh, as well as consolidated ten municipal tariffs into three simplified categories.
+
+Eskom achieved a major financial turnaround in 2025, returning to profitability for the  first  time  in  eight  years.  The  company  reported  an  after-tax  profit  of ZAR 16 billion (South Africa rand), [USD 927.24 million], reversing the previous year's significant loss. This improvement was supported by a stronger operational performance, a higher average electricity tariff, lower primary energy costs, and government debt relief that reduced debt servicing costs. Reliability gains across the  coal  fleet  limited  the  need  for  costly  diesel-fired  generation,  leading  to substantial fuel savings and a healthier earnings margin. The resulting surplus is planned towards investment in critical infrastructure upgrades.
+
+In March 2025, the government approved the South African Renewable Energy Masterplan  (SAREM),  which  targets  up  to  5 GW  per  year  of  new  renewable generation and expanded battery storage to meet demand growth expected to nearly double by 2050. The plan's strategic priorities include system readiness, domestic  clean-tech  value  chains,  inclusive  industry  transformation,  and  skills development, as well as green hydrogen integration (aiming for a 5% blended-fuel share in aviation and maritime by 2030).
+
+## Year-on-year change in electricity generation in South Africa, Egypt, and Algeria, 2021-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Other non-renewable energy sources (RES) include oil, waste and other non-renewable sources. Data for 2026-2030 are forecast values.
+
+## Egypt
+
+## The dominant role of natural gas in power generation is set to continue through 2030
+
+Egypt's electricity demand grew by an estimated 1.5% y-o-y in 2025, similar to the average growth rate observed over the past five years. Over the medium term, demand is expected to increase at a higher pace, averaging around 2.3% annually through to 2030, reflecting rising industrial activity, population growth, and higher cooling needs.
+
+Natural gas accounted for about 75% of Egypt's electricity generation in 2025, while solar PV and wind together supplied around 7%. By 2030, the share of gas is projected to decline modestly to about 71%, while renewables are anticipated to rise to roughly 17%, assuming timely completion of planned solar PV and wind capacity additions.
+
+Construction of the Egypt's first nuclear power plant at El Dabaa is progressing on schedule. The facility will comprise four Generation III+ VVER-1200 reactors with a total capacity of 4.8 GW. Work on Unit 1 began in July 2022, and in late 2025 a major milestone was reached when its reactor pressure vessel was installed. Grid connection is planned to begin in 2029, with all four units expected to be online by 2032.  Once  fully  operational,  El  Dabaa  could  supply  up  to  10%  of  Egypt's electricity,  reducing  reliance  on  gas  and  supporting  the  government's  target  of 42% low-carbon energy by 2030.
+
+New cross-border interconnections with Saudi Arabia, Sudan, Libya, and Jordan are advancing and expected to increase regional trade potential and enhance grid stability. At the same time, demand-side measures remain at an early stage, with the government continuing operational conservation measures such as curbing public lighting and limiting air conditioning to manage summer peaks.
+
+Egypt aims to expand storage deployment and advance its smart meter roll-out, supported  by  regulatory  updates.  These  measures  are  expected  to  enhance system flexibility and facilitate higher renewable penetration by 2030. In 2025, the country achieved a significant goal with the commissioning of its first utility-scale battery energy storage system, a 150 MW/300 MWh installation at a 500 MW solar PV plant in Aswan. In addition, a 1 GW solar PV plant and 100 MW/200 MWh of battery storage was launched in Nagaa Hammadi. These projects represent the first  large-scale  integration  of  battery  storage  into  renewable  power  purchase agreements in Egypt and provide new intra-day flexibility that will enable solar generation to be shifted towards evening demand peaks.
+
+## Algeria
+
+## Electricity demand is set to sharply increase to 2030, met by growing natural gas-fired generation
+
+Algeria's electricity demand is estimated to have risen by a sharp 5.4% in 2025, as extreme heatwaves sparked surging air conditioner use for cooling. Sonelgaz reported  a  new  peak  in  electricity  demand  of  20 628 MW  on  23 July  amid  a scorching  hot  summer.  Demand  is  expected  to  increase  at  an  average  4.5% annually through to 2030, supported by economic growth, rising cooling demand and continued population expansion.
+
+Algeria's power generation is almost entirely gas-fired, accounting for 99% of the electricity  mix,  with  solar  contributing  very  modestly.  We  forecast  gas-fired generation  to  increase  at  an  average  annual  rate  of  over  3.6%  in  2026-2030. Algeria is accelerating the deployment of natural gas-fired capacity to meet rising demand while also weighing the impact on its gas export commitments. Algeria invested USD 1.2 billion to strengthen the grid ahead of the summer peak demand period. The country also continued exporting electricity to neighbouring Tunisia, which amounted to 3.1 TWh in 2025, almost 14% of the country's annual power supply.
+
+During our forecast period, solar PV output increases only modestly, with its share in generation rising from less than 1% in 2025 to just over 2% in 2030. While the country aims to increase the use of renewables, and set a goal of 15 GW installed capacity by 2035, tender delays have slowed progress on deployment and the coming years will be crucial to assess the country's capacity to meet its targets.
+
+## Morocco
+
+## Expanding renewables are set to meet all additional electricity demand out to 2030
+
+Electricity demand in Morocco is estimated to have grown by nearly 6% in 2025, well  above  the  annual  average  of  3.1%  recorded  between  2018  and  2024. Demand growth through 2030 is forecast at 2.8% per year.
+
+The share of renewables in electricity generation was 26% in 2025. However, coalfired power generation remains the dominant source, with a share of 58%, though this  is  projected  to  decline  to  52%  by  2030,  while  renewables  rise  to  34%. Renewables posted growth of almost 6.5% in 2025, and coal-fired generation rose by  5%.  Oil-fired  generation  fell  by  more  than  2%  while  gas-fired  generation increased by a sharp 12%. Growth in renewables is projected to average just over 8.5% per year and coal is expected to maintain a flat trajectory through the end of the  decade.  Solar  PV  had  a  noticeable  uptick  in  2025,  with  output  doubling, although this expansion was from a relatively low base. Solar PV generation is expected to average annual growth of about 31% in the 2026-2030 outlook period.
+
+Morocco's  2021  NDC  set  a  target  of  52%  for  installed  renewables  electricity capacity by 2030. The 2025 update raises these ambitions, with plans to triple its renewable  capacity  to  more  than  15 GW  by  2030,  with  a  stronger  focus  on storage,  grid  reinforcement  and  regional  interconnections.  It  also  sets  a  coal phase-out date of 2040 that is conditional on international support.
+
+The government advanced its renewables pipeline, with the Moroccan Agency for Sustainable Energy awarding the Noor Midelt II and III contract to Saudi Arabia's ACWA Power in August 2025. The project will have a combined 800 MW of solar capacity and about 1 200 MWh of battery storage. Morocco is also planning to develop a 1 600 MWh battery storage project in the northwest of the country to support power supply to the port city of Kenitra. Pumped storage remains a priority for Morocco, with the planned 300-400 MW El Menzel pumped-storage hydropower (PSH) project progressing through procurement to add long-duration flexibility.  The  project  is  slated  to  start  commercial  operation  by  2028.  On  the thermal  side,  the  National  Office  of  Electricity  and  Drinking  Water  (ONEE)  is preparing tenders for three new gas-fired power stations with a total capacity of between 300 MW and 450 MW in Ain Beni Mathar, Kenitra, and Mohammedia. All the plants are expected to be commissioned by mid-2026. There are also plans to  scale  up  seawater  desalination  to  bolster  water  security,  a  move  that  will contribute to rising electricity demand. The country currently operates 17 plants, has four more under construction and plans nine additional facilities, with almost all  new  plants  powered  by  renewable  energy.  The  country  is  aiming  for  total production of about 1.7 billion cubic metres per year (bcm/yr) by 2030.
+
+In line with the three new electricity decrees announced in 2024, Morocco moved from rulemaking to implementation in 2025. The ministry issued the first Energy Service Company (ESCO) authorisation and published the official register in order to improve energy audits. ONEE advanced the smart bidirectional-metering rollout under the World Bank programme, Clean and Efficient Energy Project, while a new smart meter production line opened in Fez in February to support local supply.
+
+Morocco is also heavily involved in developing its interconnections. During the Iberian blackout on 28   April 2025, the Moroccan utility ONEE provided support during the restoration process by ensuring the supply of electricity to Spain's grid through the Morocco-Spain interconnection via Fardioua to Tarifa.
+
+## Nigeria
+
+## Solar PV on a sharp upward trajectory as demand returns to growth
+
+Electricity access in Nigeria has expanded steadily over the past decade, up from 56% in 2014 to 71% in 2024. Yet, access remains uneven, with grid connection reaching nearly 96% of residents in urban areas, compared to only 41% in rural regions. These figures however exclude Nigeria's substantial and rapidly growing off-grid sector. According to the Energy Compact released in January 2025, the country aims to accelerate its annual pace of electricity access growth from 4% to 9% between 2024 and 2030. Electricity demand rebounded by a sharp 10.8% in 2025,  following  a  contraction  of  about  9%  the  previous  year,  and  we  forecast continued strong growth of around 6.5% annually between 2026 and 2030.
+
+Despite  installed  generation  capacity  of  13.6  GW,  Nigeria's  average  dispatch availability  remains  significantly  lower,  reaching  just  5.4  GW  in  the  first  half  of 2025, up marginally from 4.8 GW in 2024. A major constraint is the low availability factor of Nigeria's 28 grid-connected power plants, which averaged below 40% in the first half of 2025. This underperformance is due to several factors, including ageing  generation  units  and  poor  maintenance,  liquidity  challenges  in  the upstream segment of  the  Nigerian  Electricity  Supply  Industry  (NESI),  and  gas supply  challenges.  Natural  gas-fired  generation  remained  flat  in  2025  but  we expect an average annual growth rate of 3% during the 2026-2030 period. In June, the 180 MW Afam II gas-to-power plant was commissioned in Rivers State.
+
+Solar PV continues to gain momentum across Nigeria, particularly through off-grid and distributed solutions. By 2030, solar generation is expected to play a major role in raising the renewable energy share of electricity to 40%. We forecast that solar PV growth will increase by an unprecedented 75% on average per year in the 2026-2030 period and grow its share of power generation from only 2% in 2025 to almost 20% in 2030.
+
+The country's Energy Transition Plan (ETP) and the improved cost-efficiency of solar PV solutions underpin this acceleration in growth. The Distributed Access through Renewable Energy Scale-up (DARES) programme, officially launched in 2024 and funded by the World Bank, will also help drive the country's off-grid solar use  in  the  coming  years  through  market  access  support.  In  April,  the  Rural Electrification  Agency  (REA)  signed  grant  agreements  with  eight  companies, marking an important step in rolling-out the subsidy programme. The REA also signed a MoU with the pan-African company WeLight to electrify up to 2 million people with 400 minigrids and 50 town-scale microgrids. Nigerian utility Kaduna Electric unveiled plans to develop a 100 MW solar project with battery storage to strengthen electricity supply across the North West states under its franchise area
+
+-  Kaduna,  Sojoto,  Zamfara  and  Kebbi.  In  the  education  sector,  the  federal government approved a USD 47.5 million mini-grid solar power project across 18 public  tertiary  institutions  under  the  2025  Tertiary  Education  Trust  Fund's intervention cycle, aimed to address irregular power supply on campuses.
+
+Grid reliability showed signs of improvement in 2025, with only one nationwide outage by September, down from nine in total in 2024. However, in July, Lagos faced  25 days  of  intermittent  supply  and  load  shedding  due  to  scheduled maintenance for the installation of Optical Ground Wire (OPGW) fibre cable along the Omotosho-Ikeja West transmission line. Transmission capacity now exceeds 8.5 GW,  according  to  the  Transmission  Company  of  Nigeria  (TCN),  but  the distribution  segment  remains  a  bottleneck.  Distribution  companies  (DisCos) deliver only around 4 GWh of electricity, constrained by operational inefficiencies and heavy debt burdens. In a bid to strengthen their financial health and liquidity, the government has announced plans to introduce a minimum capital adequacy requirement as part of the license renewal process for DisCos.
+
+Efforts  to  strengthen  the  grid  are  accelerating,  supported  by  government-led partnerships.  Discussions  are  notably  underway  with  EximBank  of  China  for  a USD 2 billion loan to connect Nigeria's eastern and western regions. Moreover, under Phase I of the Presidential Power Initiative (PPI), the Federal Government of Nigeria Power Company (FGNPC) signed in April 2025 a USD 328.8 million contract  with  China  Machinery  Engineering  Corporation  (CMEC)  to  boost  grid capacity by 7.1 GW. The government announced that the pilot phase of the PPI already successfully added 700 MW to the grid. Additional infrastructure projects include the 132/33 kV mobile substation with a capacity of 63 megavolt-amperes (MVA) in Oyo State, commissioned in July, and the new Abeokuta Transmission Substation whose planning started in April.
+
+International  and  domestic  support  continues  to  be  mobilised.  The  European Union committed EUR 10.4 million to the Nigeria Solar for Health Project (NISHP), which will supply solar electricity to up to 100 primary healthcare centres by 2027. In parallel, Nigeria launched the USD 500 million Distributed Renewable Energy (DRE) Nigeria Fund, marking the first national fund under the DRE Africa Platform. Co-managed by the Nigeria Sovereign Investment Authority (NSIA) and Africa50, and aligned with the Mission 300 initiative, the fund aims to catalyse investments in mini-grids, solar home systems, commercial and industrial power solutions, and energy storage technologies.
+
+Nigeria  continues  to  advance  the  decentralisation  of  power  generation  and distribution  under  the  Electricity  Act  2023,  which  empowers  authorities  in  the country's 36 states to regulate electricity within their jurisdictions. By mid-2025, ten  states  had  successfully  established  their  own  regulatory  frameworks.  The Nigerian Independent System Operator (NISO) was officially inaugurated in April
+
+2025 to take over the transmission system operations, following the unbundling of the  transmission  company.  The  federal  government  also  approved  in  May  the National Integrated Electricity Policy (NIEP), which establishes a roadmap for the NESI to align the sector with the Electricity Act 2023.
+
+## Year-on-year change in electricity generation in Morocco, Nigeria, Kenya, and Senegal, 2021-2030
+
+<!-- image -->
+
+IEA. CC BY 4.0.
+
+Notes: Other non-renewable energy sources (RES) include oil, waste and other non-renewable sources. Data for 2026-2030 are forecast values. The plots start from 2021, whereas the x-axis labels are shown only for the even years due to limited space.
+
+## Kenya
+
+## Peak demand reached 2.4 GW in 2025, with electricity consumption forecast to grow at a brisk pace through 2030
+
+Kenya's electricity grid hit a new all-time high in July 2025, with a system peak demand  of  2 362  MW.  This  surge  was  fuelled  by  a  combination  of  industrial expansion,  increased  urbanisation  and  rising  residential  use  owing  to  new connections through the Last Mile Connectivity Project. The milestone demand came  with  no  reported  load  shedding.  However,  some  transmission  lines exceeded  120%  capacity,  which  highlights  the  critical  need  for  infrastructure reinforcement  to  keep  pace  with  surging  demand.  Electricity  consumption  is estimated to have risen by 5% in 2025, based on data through November, slightly higher  than  the  average  annual  growth  of  3.7%  in  the  2018-2024  period.  We forecast a stronger growth pace of about 4.2% in 2026-2030, due to accelerating electrification and demand stimulation efforts.
+
+In early 2025, Kenya launched its updated National Energy Policy 2025-2034 as well as the National Energy Compact, outlining new targets for 2030. We expect renewables  to  reach  a  94%  share  of  electricity  generation  by  the  end  of  the decade. To strengthen its electricity sector, Kenya aims to expand its transmission network by 8 000 km, completing pending transmission infrastructure (such as the Kenya-Uganda  400  kV  interconnection)  and  leveraging  existing  and  planned regional interconnectors by scaling up imported and exported power to 1 000 MW by 2030.
+
+Kenya's  goal  of  achieving  universal  access  to  electricity  by  2030  includes expanding its distribution system by more than 200 000 km and connecting an additional 5.1 million households. To meet rising demand, Kenya aims to raise renewable power generation to around 6.3 GW, up from 3.3 GW in 2023. While the biggest installed  capacity  increases  are  planned  for  hydropower  and geothermal, we anticipate the largest relative growth in power generation from solar  PV  and  wind,  with  average  annual  increases  of  around  25%  and  7.5%, respectively, between 2026 and 2030.
+
+Kenya is targeting 10 000 new EV charging stations by 2030. In the last couple of years, the country's number of registered EVs has jumped from 475 vehicles in 2022 to almost 10 000 by October 2025, with electric two-wheelers representing around 90%. The EV adoption has been boosted by government policies such as the e-mobility tariff, reduced excise duties from 20% to 10%, and VAT exemptions for  fully  electric  cars.  The  government  estimates  that  electric two-wheelers  will reach 60 000 by 2030, which will lead to an additional 415 GW electricity demand in the next five years.
+
+With  variable  renewable  energy  sources,  such  as  solar  PV  and  wind  power, estimated to represent 25% of electricity supply in 2030, Kenya would benefit from energy storage systems for grid reliability. Currently there is no installed utilityscale energy storage systems in the country, but a 2023 technical assessment identified BESS and pumped hydro storage as the most feasible options for the Kenyan power system. KenGen has been designated to implement a 200 MWh BESS pilot project, with targets to roll-out 400 MWh of energy storage capacity by 2030.  In  July  2025,  KenGen  commissioned  a  1.16 MWh  BESS  to  serve  the company's 52 kW Modular Data Centre and guarantee stable electricity in lowgrid  demand periods, underscoring the role of energy storage in strengthening energy resilience. The National Energy Policy is set to support energy storage projects by establishing regulatory and institutional frameworks and guidelines, as well as developing funding models for financing energy storage capital costs.
+
+## Senegal
+
+## Progress continues towards achieving universal electricity access, now set for 2029
+
+Senegal is on track to achieve universal electricity access by its new target year of 2029. Under its energy compact, the country plans to increase access by 2.9%
+
+annually, aiming to reach full coverage one year ahead of the global SDG7 goal of universal access by 2030. As of 2024, an estimated 84% of the population had access to electricity. While urban areas have reached full coverage, rural areas still have further to go from a current access rate of 66%.
+
+Electricity demand rose by an estimated 22% y-o-y in 2025 and is projected to increase by around 8% annually over the 2026-2030 period. The share of gas in electricity generation is forecast to rise from less than 1% in 2025 to around 30% by 2030, a sharp increase reflecting the introduction of natural gas into an energy mix  historically  dominated  by  oil-fired  generation.  The  share  of  electricity  from renewables is expected to reach 22% by 2030, up around 10 percentage points from 2025.
+
+A 16 MW solar PV plant with 10 MW/20 MWh BESS was commissioned in 2025. Construction began on a 60 MW solar PV plant paired with a 20 MW/72 MWh battery energy storage system under the NEO Kolda project. In parallel, Energy Resources  Senegal  (ERS),  through  its  subsidiary  Teranga  Niakhar  Storage, secured financing for a 30 MW solar plant paired with a 15/45 MWh BESS in the Fatick region. The Senegalese Rural Electrification Agency (ASER), in partnership with IRENA and financed by the Abu Dhabi Fund for Development and Senegal, launched  an  off-grid  project  to  provide  access  to  30 000  people  across  five underserved regions (Matam, Saint-Louis, Louga, Kaffrine, and Tambacounda). The project entails building and refurbishing solar PV minigrids of up to 2 MW. Under the Programme d'Appui au Développement des Energies Renouvelables pour  l'Accès  Universel (PADERAU),  Senelec  brought  online  four  30 kW  solar plants in the Kolda and Matam regions.
+
+On the transmission front, the construction of a 16 km-long 225 kV submarine cable was completed between the Cap des Biches thermal power plant and the Bel  Air  substation,  under  the  MCASenegal  II  Power  Compact.  The  225/30 kV Diass substation was commissioned in July and is poised to play an important role in enhancing grid reliability as it services over 60% of the country's demand.
+
+The  government  updated  its  energy  strategy  for  2025-2029,  titled Lettre  de Politique  de  Développement  du  Secteur  de  l'Énergie (LPDSE),  replacing  the 2019-2023 plan. The new strategy aims to ensure the sustainable and optimal use of  Senegal's  energy  and  mineral  resources  for  economic  development.  Key objectives include enhancing the supply of competitive and reliable energy, with the gas-to-power strategy key to displacing heavy fuel oil in the power sector. In 2025, Senelec began converting the 335 MW Bel Air power plant from heavy fuel oil to natural gas, with plans to eventually source the gas from domestic fields, including Greater Tortue Ahmeyim (GTA) and Sangomar.
+
+## Annexes
+
+## Summary tables
+
+## Regional breakdown of electricity demand, 2023-2030
+
+| TWh                     | 2023   | 2024   | 2025   | 2030   | Growth rate 2023- 2024   | Growth rate 2024- 2025   | CAAGR 2026-2030   |
+|-------------------------|--------|--------|--------|--------|--------------------------|--------------------------|-------------------|
+| Africa                  | 732    | 761    | 801    | 968    | 4.0%                     | 5.2%                     | 3.9%              |
+| Americas                | 6 090  | 6 260  | 6 393  | 7 063  | 2.8%                     | 2.1%                     | 2.0%              |
+| of which United States  | 4 029  | 4 142  | 4 231  | 4 657  | 2.8%                     | 2.1%                     | 1.9%              |
+| Asia Pacific            | 13 552 | 14 366 | 14 927 | 18 742 | 6.0%                     | 3.9%                     | 4.7%              |
+| of which China          | 8 573  | 9 170  | 9 639  | 12 250 | 7.0%                     | 5.1%                     | 4.9%              |
+| Eurasia                 | 1 228  | 1 270  | 1 268  | 1 392  | 3.5%                     | -0.2%                    | 1.9%              |
+| Europe                  | 3 395  | 3 446  | 3 475  | 3 894  | 1.5%                     | 0.9%                     | 2.3%              |
+| of which European Union | 2 430  | 2 469  | 2 492  | 2 787  | 1.6%                     | 0.9%                     | 2.3%              |
+| Middle East             | 1 241  | 1 287  | 1 335  | 1 536  | 3.7%                     | 3.8%                     | 2.8%              |
+| World                   | 26 239 | 27 391 | 28 199 | 33 594 | 4.4%                     | 3.0%                     | 3.6%              |
+
+Notes: Data for 2025 are preliminary; 2026-2030 are forecast values. Differences in totals are due to rounding. Summary tables include values for net electricity demand, excluding own use in the power sector. Any differences with previous editions in  historical  data  and  forecasts  are  due  to  this  change  in  definition,  in  addition  to  normal  updated  revisions.  CAAGR  = Compounded average annual growth rate. For the CAAGR 2026-2030 reported, end of 2025 data is taken as base year for the calculation. For the entire period European Union data is for the 27 member states.
+
+## Breakdown of global electricity supply and emissions, 2023-2030
+
+| TWh                   | 2023   | 2024   | 2025   | 2030   | Growth rate 2023- 2024   | Growth rate 2024- 2025   | CAAGR 2026-2030   |
+|-----------------------|--------|--------|--------|--------|--------------------------|--------------------------|-------------------|
+| Nuclear               | 2 734  | 2 817  | 2 850  | 3 279  | 3.0%                     | 1.2%                     | 2.8%              |
+| Coal                  | 10 637 | 10 788 | 10 760 | 10 284 | 1.4%                     | -0.3%                    | -0.9%             |
+| Gas                   | 6 631  | 6 777  | 6 805  | 7 731  | 2.2%                     | 0.4%                     | 2.6%              |
+| Other non- renewables | 899    | 866    | 852    | 521    | -3.7%                    | -1.6%                    | -9.4%             |
+| Total renewables      | 8 993  | 9 858  | 10 734 | 16 059 | 9.6%                     | 8.9%                     | 8.4%              |
+| Total Generation      | 29 895 | 31 106 | 32 001 | 37 875 | 4.1%                     | 2.9%                     | 3.4%              |
+
+| Mt CO 2         | 2023   | 2024   | 2025   | 2030   | Growth rate 2023- 2024   | Growth rate 2024- 2025   | CAAGR 2026-2030   |
+|-----------------|--------|--------|--------|--------|--------------------------|--------------------------|-------------------|
+| Total emissions | 13 725 | 13 914 | 13 886 | 13 644 | 1.4%                     | -0.2%                    | -0.4%             |
+
+## Breakdown of Asia Pacific electricity supply and emissions, 2023-2030
+
+| TWh                   | 2023   | 2024   | 2025   | 2030   | Growth rate 2023- 2024   | Growth rate 2024- 2025   | CAAGR 2026-2030   |
+|-----------------------|--------|--------|--------|--------|--------------------------|--------------------------|-------------------|
+| Nuclear               | 785    | 818    | 849    | 1 214  | 4.2%                     | 3.8%                     | 7.4%              |
+| Coal                  | 8 722  | 8 929  | 8 828  | 8 842  | 2.4%                     | -1.1%                    | 0.0%              |
+| Gas                   | 1 477  | 1 536  | 1 523  | 1 867  | 4.0%                     | -0.8%                    | 4.1%              |
+| Other non- renewables | 183    | 162    | 165    | 120    | -11.5%                   | 1.9%                     | -6.2%             |
+| Total renewables      | 4 177  | 4 754  | 5 447  | 8 964  | 13.8%                    | 14.6%                    | 10.5%             |
+| Total Generation      | 15 344 | 16 199 | 16 812 | 21 006 | 5.6%                     | 3.8%                     | 4.6%              |
+
+| Mt CO 2         | 2023   | 2024   | 2025   | 2030   | Growth rate 2023- 2024   | Growth rate 2024- 2025   | CAAGR 2026-2030   |
+|-----------------|--------|--------|--------|--------|--------------------------|--------------------------|-------------------|
+| Total emissions | 9 095  | 9 311  | 9 213  | 9 362  | 2.4%                     | -1.1%                    | 0.3%              |
+
+## Breakdown of Americas electricity supply and emissions, 2023-2030
+
+| TWh                   | 2023   | 2024   | 2025   | 2030   | Growth rate 2023- 2024   | Growth rate 2024- 2025   | CAAGR 2026-2030   |
+|-----------------------|--------|--------|--------|--------|--------------------------|--------------------------|-------------------|
+| Nuclear               | 934    | 941    | 941    | 952    | 0.8%                     | 0.1%                     | 0.2%              |
+| Coal                  | 849    | 820    | 915    | 650    | -3.3%                    | 11.5%                    | -6.6%             |
+| Gas                   | 2 400  | 2 490  | 2 416  | 2 738  | 3.7%                     | -3.0%                    | 2.5%              |
+| Other non- renewables | 175    | 165    | 162    | 118    | -5.7%                    | -1.8%                    | -6.1%             |
+| Total renewables      | 2 502  | 2 618  | 2 750  | 3 437  | 4.6%                     | 5.1%                     | 4.6%              |
+| Total Generation      | 6 860  | 7 034  | 7 184  | 7 895  | 2.5%                     | 2.1%                     | 1.9%              |
+
+| Mt CO 2         | 2023   | 2024   | 2025   | 2030   | Growth rate 2023- 2024   | Growth rate 2024- 2025   | CAAGR 2026-2030   |
+|-----------------|--------|--------|--------|--------|--------------------------|--------------------------|-------------------|
+| Total emissions | 1 921  | 1 920  | 1 979  | 1 825  | -0.1%                    | 3.1%                     | -1.6%             |
+
+## Breakdown of Europe electricity supply and emissions, 2023-2030
+
+| TWh                   | 2023   | 2024   | 2025   | 2030   | Growth rate 2023- 2024   | Growth rate 2024- 2025   | CAAGR 2026-2030   |
+|-----------------------|--------|--------|--------|--------|--------------------------|--------------------------|-------------------|
+| Nuclear               | 748    | 785    | 777    | 812    | 4.9%                     | -0.9%                    | 0.9%              |
+| Coal                  | 537    | 481    | 458    | 238    | -10.3%                   | -4.9%                    | -12.3%            |
+| Gas                   | 679    | 638    | 696    | 509    | -6.0%                    | 9.1%                     | -6.1%             |
+| Other non- renewables | 90     | 87     | 79     | 61     | -3.3%                    | -9.2%                    | -5.0%             |
+| Total renewables      | 1 766  | 1 890  | 1 905  | 2 713  | 7.1%                     | 0.8%                     | 7.3%              |
+| Total Generation      | 3 820  | 3 882  | 3 915  | 4 333  | 1.6%                     | 0.9%                     | 2.0%              |
+
+| Mt CO 2         |   2023 |   2024 |   2025 |   2030 | Growth rate 2023- 2024   | Growth rate 2024- 2025   | CAAGR 2026-2030   |
+|-----------------|--------|--------|--------|--------|--------------------------|--------------------------|-------------------|
+| Total emissions |    842 |    770 |    758 |    470 | -8.5%                    | -1.6%                    | -9.1%             |
+
+## Breakdown of Eurasia electricity supply and emissions, 2023-2030
+
+| TWh                   | 2023   | 2024   | 2025   | 2030   | Growth rate 2023- 2024   | Growth rate 2024- 2025   | CAAGR 2026-2030   |
+|-----------------------|--------|--------|--------|--------|--------------------------|--------------------------|-------------------|
+| Nuclear               | 220    | 218    | 223    | 222    | -0.7%                    | 2.5%                     | -0.1%             |
+| Coal                  | 288    | 306    | 316    | 311    | 6.5%                     | 3.1%                     | -0.3%             |
+| Gas                   | 667    | 675    | 669    | 756    | 1.2%                     | -0.9%                    | 2.5%              |
+| Other non- renewables | 16     | 16     | 15     | 12     | 3.6%                     | -8.2%                    | -4.1%             |
+| Total renewables      | 278    | 295    | 286    | 337    | 6.1%                     | -2.8%                    | 3.3%              |
+| Total Generation      | 1 468  | 1 511  | 1 510  | 1 639  | 2.9%                     | -0.1%                    | 1.7%              |
+
+| Mt CO 2         |   2023 |   2024 |   2025 |   2030 | Growth rate 2023- 2024   | Growth rate 2024- 2025   | CAAGR 2026-2030   |
+|-----------------|--------|--------|--------|--------|--------------------------|--------------------------|-------------------|
+| Total emissions |    575 |    596 |    599 |    632 | 3.7%                     | 0.5%                     | 1.1%              |
+
+## Breakdown of Middle East electricity supply and emissions, 2023-2030
+
+| TWh                   | 2023   | 2024   | 2025   | 2030   | Growth rate 2023- 2024   | Growth rate 2024- 2025   | CAAGR 2026-2030   |
+|-----------------------|--------|--------|--------|--------|--------------------------|--------------------------|-------------------|
+| Nuclear               | 39     | 48     | 50     | 52     | 22.5%                    | 3.5%                     | 1.1%              |
+| Coal                  | 17     | 15     | 13     | 12     | -10.3%                   | -11.4%                   | -2.1%             |
+| Gas                   | 1 026  | 1 052  | 1 106  | 1 413  | 2.5%                     | 5.1%                     | 5.0%              |
+| Other non- renewables | 362    | 367    | 359    | 156    | 1.4%                     | -2.2%                    | -15.4%            |
+| Total renewables      | 58     | 73     | 80     | 208    | 25.2%                    | 10.4%                    | 20.9%             |
+| Total Generation      | 1 502  | 1 555  | 1 608  | 1 841  | 3.5%                     | 3.4%                     | 2.7%              |
+
+| Mt CO 2         |   2023 |   2024 |   2025 |   2030 | Growth rate 2023- 2024   | Growth rate 2024- 2025   | CAAGR 2026-2030   |
+|-----------------|--------|--------|--------|--------|--------------------------|--------------------------|-------------------|
+| Total emissions |    819 |    834 |    854 |    856 | 1.8%                     | 2.4%                     | 0.1%              |
+
+## Breakdown of Africa electricity supply and emissions, 2023-2030
+
+| TWh                   |   2023 |   2024 |   2025 | 2030   | Growth rate 2023- 2024   | Growth rate 2024- 2025   | CAAGR 2026-2030   |
+|-----------------------|--------|--------|--------|--------|--------------------------|--------------------------|-------------------|
+| Nuclear               |      9 |      8 |     10 | 26     | -8.7%                    | 23.0%                    | 22.3%             |
+| Coal                  |    225 |    237 |    230 | 232    | 5.0%                     | -2.6%                    | 0.1%              |
+| Gas                   |    382 |    385 |    394 | 448    | 1.0%                     | 2.3%                     | 2.6%              |
+| Other non- renewables |     73 |     69 |     71 | 54     | -6.3%                    | 3.6%                     | -5.3%             |
+| Total renewables      |    213 |    228 |    265 | 400    | 7.2%                     | 16.4%                    | 8.6%              |
+| Total Generation      |    901 |    926 |    971 | 1 160  | 2.8%                     | 4.8%                     | 3.6%              |
+
+| Mt CO 2         |   2023 |   2024 |   2025 |   2030 | Growth rate 2023- 2024   | Growth rate 2024- 2025   | CAAGR 2026-2030   |
+|-----------------|--------|--------|--------|--------|--------------------------|--------------------------|-------------------|
+| Total emissions |    474 |    483 |    482 |    499 | 1.8%                     | -0.1%                    | 0.7%              |
+
+## Regional and country groupings
+
+Africa -  Algeria,  Angola,  Benin,  Botswana,  Cameroon,  Congo,  Democratic Republic of the Congo, Côte d'Ivoire, Egypt, Equatorial Guinea, Eritrea, Ethiopia, Gabon, Ghana, Kenya, Libya, Mauritius, Morocco, Mozambique, Namibia, Niger, Nigeria,  Senegal,  South  Africa,  South  Sudan,  Sudan,  United  Republic  of Tanzania,  Togo,  Tunisia,  Zambia,  Zimbabwe  and  other  African  countries  and territories. 1
+
+Asia -  Bangladesh,  Brunei  Darussalam,  Cambodia,  Chinese  Taipei,  India, Indonesia, Japan, Korea, Democratic People's Republic of Korea, Lao People's Democratic Republic, Malaysia, Mongolia, Myanmar, Nepal, Pakistan, People's Republic of China, 2 Philippines,  Singapore,  Sri  Lanka,  Thailand,  Viet  Nam and other Asian countries, territories and economies. 3
+
+Asia Pacific -  Australia,  Bangladesh, Brunei Darussalam, Cambodia, Chinese Taipei, India, Indonesia, Japan, Korea, Democratic People's Republic of Korea, Lao People's Democratic Republic, Malaysia, Mongolia, Myanmar, Nepal, New Zealand,  Pakistan,  People's  Republic  of  China, 2 Philippines,  Singapore,  Sri Lanka, Thailand, Viet Nam and other Asian countries, territories and economies. 4
+
+Central and South America - Argentina, Bolivia, Brazil, Chile, Colombia, Costa Rica,  Cuba,  Curaçao,  Dominican  Republic,  Ecuador,  El  Salvador,  Guatemala, Haiti,  Honduras,  Jamaica,  Nicaragua,  Panama,  Paraguay,  Peru,  Suriname, Trinidad and Tobago, Uruguay, Venezuela and other Latin American countries and territories. 5
+
+Eurasia -  Armenia,  Azerbaijan,  Georgia,  Kazakhstan,  Kyrgyzstan,  Russian Federation, Tajikistan, Turkmenistan and Uzbekistan.
+
+Europe - Albania, Austria, Belgium, Belarus, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, 6,7  Czech Republic, Denmark, Estonia, Finland, France, Germany, Gibraltar,  Greece,  Hungary,  Iceland,  Ireland,  Italy,  Kosovo 8 Latvia,  Lithuania, Luxembourg,  Malta, Montenegro, Netherlands, North Macedonia, Norway, Poland,  Portugal,  Republic  of  Moldova,  Romania,  Serbia,  Slovak  Republic, Slovenia, Spain, Sweden, Switzerland, Republic of Türkiye, Ukraine and United Kingdom.
+
+European  Union -Austria, Belgium, Bulgaria, Croatia, Cyprus, 6,7 Czech Republic,  Denmark,  Estonia,  Finland,  France,  Germany,  Greece,  Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg,  Malta, Netherlands, Poland, Portugal, Romania, Slovak Republic, Slovenia, Spain and Sweden.
+
+Latin America and the Caribbean (LAC): Central and South America regional grouping and Mexico.
+
+Middle  East -  Bahrain,  Islamic  Republic  of  Iran,  Iraq,  Israel 9 , Jordan,  Kuwait, Lebanon,  Oman,  Qatar,  Saudi  Arabia,  Syrian  Arab  Republic,  the  United  Arab Emirates and Yemen.
+
+Nordics - Denmark, Finland, Norway and Sweden.
+
+North Africa - Algeria, Egypt, Libya, Morocco and Tunisia.
+
+North America - Canada, Mexico and the United States.
+
+Southeast  Asia -  Brunei  Darussalam,  Cambodia,  Indonesia,  Lao,  People's Democratic Republic, Malaysia, Myanmar, Philippines, Singapore, Thailand and Viet Nam. These countries are all members of the Association of Southeast Asian Nations (ASEAN).
+
+Sub-Saharan  Africa: Angola,  Benin,  Botswana,  Cameroon,  Côte  d'Ivoire, Democratic Republic of the Congo (DRC), Equatorial Guinea, Eritrea, Ethiopia, Gabon, Ghana, Kenya, Kingdom of Eswatini, Madagascar, Mauritius, Mozambique, Namibia, Niger, Nigeria, Republic of the Congo (Congo), Rwanda, Senegal,  South  Africa,  South  Sudan,  Sudan,  United  Republic  of  Tanzania (Tanzania), Togo, Uganda, Zambia, Zimbabwe and other African countries and territories. 10
+
+Advanced economies - OECD member nations, plus Bulgaria, Croatia, Cyprus, Malta and Romania.
+
+Emerging  markets  and  developing  economies -  All  other  countries  not included in the advanced economies regional grouping.
+
+1 Individual data are not available and are estimated in aggregate for: Burkina Faso, Burundi, Cape Verde, Central African Republic,  Chad,  Comoros,  Djibouti,  Gambia,  Guinea,  Guinea-Bissau,  Lesotho,  Liberia,  Madagascar,  Malawi,  Mali, Mauritania, Reunion, Rwanda, Sao Tome and Principe, Seychelles, Sierra Leone, Somalia, Eswatini and Uganda.
+
+2 Including Hong Kong.
+
+3 Individual data are not available and are estimated in aggregate for: Afghanistan, Bhutan, Macau (China), Maldives and Timor-Leste.
+
+4 Individual  data  are  not  available  and  are  estimated  in  aggregate  for:  Afghanistan,  Bhutan,  Cook  Islands,  Fiji,  French Polynesia, Kiribati, Macau (China), Maldives, New Caledonia, Palau, Papua New Guinea, Samoa, Solomon Islands, TimorLeste, Tonga and Vanuatu.
+
+5 Individual  data are not available and are estimated in aggregate for: Anguilla, Antigua and Barbuda, Aruba, Bahamas, Barbados,  Belize,  Bermuda,  British  Virgin  Islands,  Cayman  Islands,  Dominica,  Falkland  Islands  (Malvinas),  Grenada, Guyana, Montserrat, Saba, Saint Eustatius, Saint Kitts and Nevis, Saint Lucia, Saint Pierre and Miquelon, Saint Vincent and the Grenadines, Sint Maarten, and the Turks and Caicos Islands.
+
+6
+
+Note by Türkiye: The information in this document with reference to 'Cyprus' relates to the southern part of the Island.
+
+There is no single authority representing both Turkish and Greek Cypriot people on the Island. Türkiye recognises the Turkish
+
+Republic of Northern Cyprus (TRNC). Until a lasting and equitable solution is found within the context of United Nations,
+
+Türkiye shall preserve its position concerning the 'Cyprus issue'.
+
+7 Note by all the European Union Member States of the OECD and the European Union: The Republic of Cyprus is recognised by all members of the United Nations with the exception of Türkiye. The information in this document relates to the area under the effective control of the Government of the Republic of Cyprus.
+
+8 The designation is without prejudice to positions on status and is in line with the United Nations Security Council Resolution 1244/99 and the Advisory Opinion of the International Court of Justice on Kosovo's declaration of Independence.
+
+9 The statistical data for Israel are supplied by and under the responsibility of the relevant Israeli authorities. The use of such data  by  the  OECD  and/or  the  IEA  is  without  prejudice  to  the  status  of  the  Golan  Heights,  East  Jerusalem  and  Israeli settlements in the West Bank under the terms of international law.
+
+10 Individual data are not available and are estimated in aggregate for: Burkina Faso, Burundi, Cabo Verde, Central African Republic, Chad, Comoros, Djibouti, Gambia, Guinea, Guinea-Bissau, Lesotho, Liberia, Malawi, Mali, Mauritania, Sao Tome and Principe, Seychelles, Sierra Leone and Somalia.
+
+## Abbreviations and acronyms
+
+AEMO
+
+Australian Energy Market Operator
+
+AI
+
+artificial intelligence
+
+BNetzA
+
+Bundesnetzagentur - German Federal Network Agency
+
+BESS
+
+battery energy storage systems
+
+BEVs
+
+battery electric vehicles
+
+CAGR
+
+compound annual growth rates
+
+EAF
+
+electric arc furnace
+
+ERCOT
+
+Electric Reliability Council of Texas
+
+EV
+
+electric vehicle
+
+FiT
+
+feed-in-tariff
+
+GDP
+
+gross domestic product
+
+GPUs
+
+graphics processing units
+
+IMF
+
+International Monetary Fund
+
+MoU
+
+Memorandum of Understanding
+
+NEVs
+
+new energy vehicles
+
+OCGT
+
+open cycle gas turbine
+
+PHWRs
+
+pressurised heavy water reactors
+
+PPA
+
+power purchase agreements
+
+PPP
+
+Purchasing power parity
+
+PUE
+
+Power Usage Effectiveness
+
+PV
+
+photovoltaic
+
+RES
+
+renewable energy sources
+
+STCs
+
+Small-scale Technology Certificates
+
+SMR
+
+small modular reactors
+
+VRE
+
+variable renewable energy
+
+## Units of measure
+
+g CO2
+
+gramme of carbon dioxide
+
+g CO2/kWh
+
+gramme of carbon dioxide per kilowatt hour
+
+GW
+
+gigawatt
+
+GWh
+
+gigawatt hour
+
+kW
+
+kilowatt
+
+MW
+
+megawatt
+
+MWh
+
+megawatt-hour
+
+Mt/yr
+
+million tonnes per year
+
+Mt CO2
+
+million tonnes of carbon dioxide
+
+Mt CO2/yr
+
+million tonnes of carbon dioxide per year
+
+TWh
+
+terawatt-hour
+
+See the IEA glossary for a further explanation of many of the terms used in this report.
+
+## International Energy Agency (IEA)
+
+This work reflects the views of the IEA Secretariat but does not necessarily reflect those of the IEA's individual M ember countries or of any particular funder or collaborator. The work does not constitute professional advice on any specific issue or situation. The IEA makes no representation or warranty, express or implied, in respect of the work's contents (including its completeness or accuracy) and shall not be responsible for any use of, or reliance on, the work.
+
+<!-- image -->
+
+[Subject to the IEA's Notice for CC-licenced Content, this work is licenced under a Creative Commons Attribution 4.0 International Licence.](https://creativecommons.org/licenses/by/4.0/deed.en)
+
+Unless otherwise indicated, all material presented in figures and tables is derived from IEA data and analysis.
+
+IEA Publications International Energy Agency
+
+Website: www.iea.org
+
+Contact information: www.iea.org/contact
+
+Typeset in France by IEA February 202 6
+
+Cover design: IEA
+
+Photo credits: ©
+
+Shutterstock
+
+<!-- image -->

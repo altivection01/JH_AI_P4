@@ -1,0 +1,5 @@
+technique,n_trials,answer_relevancy_mean,answer_relevancy_std,faithfulness_mean,faithfulness_std,context_precision_mean,context_precision_std
+base_llm,3,0.7058,0.0,,,,
+prompt_engineered,3,0.1673,0.0,,,,
+base_rag,3,0.5157,0.0015,0.9168,0.0204,0.987,0.0225
+tuned_rag,3,0.5253,0.0,0.9148,0.0116,1.0,0.0
