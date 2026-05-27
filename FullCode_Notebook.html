@@ -12147,6 +12147,7 @@ grounded in the sweep results documented in <code>chunk_sweep_token_vs_char.csv<
 </tbody>
 </table>
 <h2 id="Key-Empirical-Findings-(TL;DR-for-the-reader)">Key Empirical Findings (TL;DR for the reader)<a class="anchor-link" href="#Key-Empirical-Findings-(TL;DR-for-the-reader)">¶</a></h2><p>Six techniques compared on RAGAS, <strong>gpt-4.1 judge, n=5 trials per technique</strong>:</p>
+<p>Six techniques on the original PyMuPDF corpus (<strong>n=5 trials each</strong>):</p>
 <table>
 <thead>
 <tr>
@@ -12195,15 +12196,68 @@ grounded in the sweep results documented in <code>chunk_sweep_token_vs_char.csv<
 </tr>
 </tbody>
 </table>
-<p><strong>Production recommendation (updated post-Section 6.11): Tuned RAG with
-Docling ingestion.</strong> Tuned RAG + Docling reaches composite 0.886 on the
-same metric suite — within noise of the original GraphRAG recommendation
-(0.894), without the Neo4j infrastructure overhead. Critically, when we
-tested GraphRAG on the Docling corpus it regressed to 0.787 composite
-(AR collapsed 0.852 → 0.524) — the Docling tables produce entity
-fragmentation that hurts graph expansion. The simpler architecture is
-now strictly better given a modern PDF extractor. See Section 6.11 for
-the full comparison.</p>
+<p>Three additional configurations on the Section 6.11 <strong>Docling-ingested
+corpus</strong> (n=3 trials each — Docling ingestion replaces PyMuPDF for these
+runs, holding chunking, embedder, retrieval, and generator constant):</p>
+<table>
+<thead>
+<tr>
+<th>Technique (Docling ingest)</th>
+<th>Answer Relevancy</th>
+<th>Faithfulness</th>
+<th>Context Precision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tuned RAG + Docling</strong></td>
+<td><strong>0.945 ± 0.002</strong></td>
+<td>0.849 ± 0.006</td>
+<td>0.865 ± 0.004</td>
+</tr>
+<tr>
+<td>Tuned RAG + Docling + VLM charts</td>
+<td>0.937 ± 0.002</td>
+<td>0.802 ± 0.046</td>
+<td>0.905 ± 0.019</td>
+</tr>
+<tr>
+<td>GraphRAG + Docling</td>
+<td>0.524 ± 0.003</td>
+<td>0.862 ± 0.006</td>
+<td><strong>0.976 ± 0.021</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Two big findings the Docling rows surface:</strong></p>
+<ol>
+<li><strong>Tuned RAG + Docling lifts Answer Relevancy +21 pp</strong> (0.732 → 0.945)
+over the same Tuned RAG on PyMuPDF — the single largest metric movement
+in the notebook after the chunking decision. This is what motivates the
+production-default recommendation.</li>
+<li><strong>GraphRAG regresses on Docling</strong> (AR 0.852 → 0.524). The richer table
+extraction Docling produces fragments the entity graph at extraction
+time; graph-expansion ends up dragging in topically-adjacent but
+query-irrelevant chunks. Context Precision rises (0.976) because the
+graph still finds <em>cited</em> content, but the answers no longer address the
+question — the AR collapse is the dominant signal.</li>
+</ol>
+<p>The VLM-charts variant adds chart-extracted text to the Docling text
+chunks. It nudges Context Precision up (0.905 vs 0.865) — chart numerics
+are more likely to be exactly what a quantitative query is asking for —
+but Faithfulness wobbles (0.802 ± 0.046, the highest variance in the
+sweep) because the VLM occasionally hallucinates the bottom-axis units on
+small or rotated charts. Not adopted as default but earns its keep on
+chart-dense queries.</p>
+<p><strong>Production recommendation (post-Section 6.11):</strong> <strong>Tuned RAG with
+Docling ingestion</strong> is the default route (composite 0.886, citation
+accuracy 0.962 ± 0.007 post-fix). <strong>GraphRAG + Chain-of-Verification</strong>
+runs on the original PyMuPDF graph and is the causal-correctness leader
+(0.942 ± 0.011 vs ≤ 0.90 for any Tuned RAG variant) — route multi-hop
+policy queries here. The simpler vector architecture wins on broad
+analyst Q&amp;A given a modern PDF extractor; the graph architecture wins on
+the narrower set of cross-sector causal-reasoning queries. See Section
+6.11 for the Docling comparison and Section 6.9 for the CoV results.</p>
 <p>Base RAG is the alternative for audit-critical use cases where the highest
 possible grounding (Faithfulness 0.941) matters more than synthesis breadth.</p>
 <h2 id="Methodological-Notes">Methodological Notes<a class="anchor-link" href="#Methodological-Notes">¶</a></h2><ul>
