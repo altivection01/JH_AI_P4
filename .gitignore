@@ -220,3 +220,6 @@ __marimo__/
 chroma_stores/
 # keys 
 config.json
+
+# Notebook backups (ad-hoc safety copies)
+*.bak*
