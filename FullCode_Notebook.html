@@ -7539,11 +7539,11 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Lumina Energy Partners is a premier global investment firm managing a portfolio across traditional fossil fuels, renewable power generation, and advanced energy infrastructure. The global energy landscape is currently undergoing an unprecedented and highly complex transition. As the “Age of Electricity” takes hold, power demand is surging due to the electrification of transport and heating and the rapid expansion of AI-driven data centres. At the same time, the market is experiencing major structural shifts, including a coming wave of liquefied natural gas production, plateauing global oil demand, slower coal plant retirements due to policy support, and persistent bottlenecks in power grid infrastructure that constrain renewable integration.</p>
-<p>To maximise portfolio returns and mitigate risk, Lumina’s investment committee requires rapid cross-sector intelligence. Evaluating an investment in a US natural gas facility, for example, requires analysts to synthesise insights spanning multiple energy markets. They must understand how AI data centres could account for almost half of projected US electricity demand growth and potentially add nearly 20 bcm of annual natural gas demand by 2030. At the same time, they must consider countervailing developments such as the slowdown in coal plant retirements due to federal policy support and the growing constraints on renewable deployment caused by grid congestion. These interdependencies require analysts to combine signals from multiple technical sources to produce a coherent macro outlook.</p>
-<p>Currently, Lumina’s analysts rely on manual review of dense and highly technical International Energy Agency reports covering Coal, Oil, Gas, Electricity, and Renewables. Preparing a cross-sector investment briefing typically requires two to three days of work, during which analysts review five to ten separate reports and spend roughly 65% of their time locating relevant passages rather than performing financial modelling or scenario analysis. The process relies heavily on manual search across thousands of pages of PDFs and cross-referencing fragments of information between reports.</p>
-<p>This workflow creates measurable operational inefficiencies and analytical risk. Citation traceability is inconsistent, subtle correlations between reports may be overlooked, and valuable analyst time is diverted away from high-value modelling and strategic evaluation. In fast-moving market conditions or competitive bidding windows, the delay inherent in manual synthesis can mean that investment opportunities are missed before a complete briefing is produced.</p>
-<p>To remain competitive, Lumina requires an AI-assisted system capable of reducing briefing preparation time by at least 90%, retrieving relevant report passages with at least 90% accuracy, and generating fully grounded responses with complete source attribution and minimal hallucination risk. By transitioning from manual document review to a Retrieval Augmented Generation system grounded exclusively in authoritative IEA reports, Lumina can enable analysts to ask complex natural language questions and receive instant, synthesised, and fully cited strategic briefings. This approach would eliminate days of manual document review, reduce the risk of human oversight, and allow analysts to focus on financial modelling and strategic decision-making rather than time-consuming information retrieval.</p>
+<p>Lumina Energy Partners is a premier global investment firm managing a portfolio across traditional fossil fuels, renewable power generation, and advanced energy infrastructure. The global energy landscape is currently undergoing an unprecedented and highly complex transition. As the “Age of Electricity” takes hold, power demand is surging due to the electrification of transport and heating and the rapid expansion of AI-driven data centers. At the same time, the market is experiencing major structural shifts, including a coming wave of liquefied natural gas production, plateauing global oil demand, slower coal plant retirements due to policy support, and persistent bottlenecks in power grid infrastructure that constrain renewable integration.</p>
+<p>To maximize portfolio returns and mitigate risk, Lumina’s investment committee requires rapid cross-sector intelligence. Evaluating an investment in a US natural gas facility, for example, requires analysts to synthesize insights spanning multiple energy markets. They must understand how AI data centers could account for almost half of projected US electricity demand growth and potentially add nearly 20 bcm of annual natural gas demand by 2030. At the same time, they must consider countervailing developments such as the slowdown in coal plant retirements due to federal policy support and the growing constraints on renewable deployment caused by grid congestion. These interdependencies require analysts to combine signals from multiple technical sources to produce a coherent macro outlook.</p>
+<p>Currently, Lumina’s analysts rely on manual review of dense and highly technical International Energy Agency reports covering Coal, Oil, Gas, Electricity, and Renewables. Preparing a cross-sector investment briefing typically requires two to three days of work, during which analysts review five to ten separate reports and spend roughly 65% of their time locating relevant passages rather than performing financial modeling or scenario analysis. The process relies heavily on manual search across thousands of pages of PDFs and cross-referencing fragments of information between reports.</p>
+<p>This workflow creates measurable operational inefficiencies and analytical risk. Citation traceability is inconsistent, subtle correlations between reports may be overlooked, and valuable analyst time is diverted away from high-value modeling and strategic evaluation. In fast-moving market conditions or competitive bidding windows, the delay inherent in manual synthesis can mean that investment opportunities are missed before a complete briefing is produced.</p>
+<p>To remain competitive, Lumina requires an AI-assisted system capable of reducing briefing preparation time by at least 90%, retrieving relevant report passages with at least 90% accuracy, and generating fully grounded responses with complete source attribution and minimal hallucination risk. By transitioning from manual document review to a Retrieval Augmented Generation system grounded exclusively in authoritative IEA reports, Lumina can enable analysts to ask complex natural language questions and receive instant, synthesized, and fully cited strategic briefings. This approach would eliminate days of manual document review, reduce the risk of human oversight, and allow analysts to focus on financial modeling and strategic decision-making rather than time-consuming information retrieval.</p>
 </div>
 </div>
 </div>
@@ -7565,13 +7565,13 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Your objective as a Data Scientist is to design, build, and evaluate a prototype Retrieval Augmented Generation (RAG) pipeline that enables Lumina’s analysts to rapidly obtain accurate and fully traceable energy market insights from a corpus of dense, technical International Energy Agency market reports. The system must synthesise information across multiple reports while producing high-fidelity, hallucination-free responses suitable for high-stakes investment decision-making.</p>
+<p>Your objective as a Data Scientist is to design, build, and evaluate a prototype Retrieval Augmented Generation (RAG) pipeline that enables Lumina’s analysts to rapidly obtain accurate and fully traceable energy market insights from a corpus of dense, technical International Energy Agency market reports. The system must synthesize information across multiple reports while producing high-fidelity, hallucination-free responses suitable for high-stakes investment decision-making.</p>
 <p>Key tasks include:</p>
 <ul>
 <li><strong>Data Ingestion and Preprocessing</strong>: Extract text, quantitative data points, and complex policy details from the provided IEA PDF reports. Implement an intelligent chunking strategy that preserves the context of dense market analyses, outlook sections, and policy frameworks so that cross-sector insights can be retrieved accurately.</li>
 <li><strong>Vector Embedding and Storage</strong>: Select an embedding model capable of capturing the semantic meaning of highly technical energy terminology and relationships across the reports. Generate semantic representations of the text and store these embeddings in a vector database to enable efficient similarity search across the entire corpus.</li>
-<li><strong>Advanced Retrieval</strong>: Develop a robust retrieval mechanism capable of surfacing the most relevant passages across multiple reports in response to complex, multi-part analyst queries. The retrieval layer should support cross-sector questions that connect developments such as electricity demand growth, LNG supply expansion, and coal plant utilisation.</li>
-<li><strong>LLM Synthesis and Citation</strong>: Integrate a Large Language Model to synthesise retrieved evidence into coherent, executive-level investment briefings. The generated responses must explicitly cite the source reports and relevant sections or pages for each key claim in order to ensure auditability and minimise hallucination risk.</li>
+<li><strong>Advanced Retrieval</strong>: Develop a robust retrieval mechanism capable of surfacing the most relevant passages across multiple reports in response to complex, multi-part analyst queries. The retrieval layer should support cross-sector questions that connect developments such as electricity demand growth, LNG supply expansion, and coal plant utilization.</li>
+<li><strong>LLM Synthesis and Citation</strong>: Integrate a Large Language Model to synthesize retrieved evidence into coherent, executive-level investment briefings. The generated responses must explicitly cite the source reports and relevant sections or pages for each key claim in order to ensure auditability and minimize hallucination risk.</li>
 <li><strong>Evaluation</strong>: Establish evaluation metrics to assess system performance against benchmark questions generated by Lumina’s senior energy analysts. Evaluation should measure retrieval relevance and factual accuracy, to achieve approximately 90% retrieval accuracy and significantly reduce the time required to prepare cross-sector investment briefings.</li>
 </ul>
 </div>
@@ -7640,16 +7640,16 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="1.-Does-the-ingested-IEA-report-corpus-cover-all-critical-energy-sectors-such-as-oil,-natural-gas,-coal,-electricity,-renewables,-and-grid-infrastructure?">1. <strong>Does the ingested IEA report corpus cover all critical energy sectors such as oil, natural gas, coal, electricity, renewables, and grid infrastructure?</strong><a class="anchor-link" href="#1.-Does-the-ingested-IEA-report-corpus-cover-all-critical-energy-sectors-such-as-oil,-natural-gas,-coal,-electricity,-renewables,-and-grid-infrastructure?">¶</a></h3><ul>
-<li>Yes. The corpus comprises five 2025 IEA flagship reports — <em>Coal 2025</em>, <em>Electricity 2026</em>, <em>Gas 2025</em>, <em>Oil 2025</em>, and <em>Renewables 2025</em> — totalling ~868 pages across the five primary energy sectors. Grid infrastructure, AI/data-centre load growth, LNG export capacity, and policy interventions (e.g., the US OBBBA tax credits) are all covered, which is what enables the five cross-sector benchmark queries.</li>
+<li>Yes. The corpus comprises five 2025 IEA flagship reports — <em>Coal 2025</em>, <em>Electricity 2026</em>, <em>Gas 2025</em>, <em>Oil 2025</em>, and <em>Renewables 2025</em> — totaling ~868 pages across the five primary energy sectors. Grid infrastructure, AI/data-center load growth, LNG export capacity, and policy interventions (e.g., the US OBBBA tax credits) are all covered, which is what enables the five cross-sector benchmark queries.</li>
 </ul>
 <h3 id="2.-How-accurate-and-well-grounded-are-RAG-generated-answers-compared-to-base-LLM-responses?">2. <strong>How accurate and well-grounded are RAG-generated answers compared to base LLM responses?</strong><a class="anchor-link" href="#2.-How-accurate-and-well-grounded-are-RAG-generated-answers-compared-to-base-LLM-responses?">¶</a></h3><ul>
 <li>Substantially more accurate and grounded. Across the five benchmark queries, the Base LLM produces fluent but uncited prose with verifiable internal contradictions (see the Q2↔Q3 LNG-price inconsistency in Section 2). Tuned RAG anchors every quantitative claim to a <code>[Source p.N]</code> citation drawn from retrieved IEA passages, and the citation-verification metric (Section 6.10) confirms the vast majority of these citations resolve to the cited document — a property the Base LLM, by construction, cannot offer.</li>
 </ul>
 <h3 id="3.-How-can-RAG-performance-be-systematically-evaluated-using-automated-metrics-like-RAGAS?">3. <strong>How can RAG performance be systematically evaluated using automated metrics like RAGAS?</strong><a class="anchor-link" href="#3.-How-can-RAG-performance-be-systematically-evaluated-using-automated-metrics-like-RAGAS?">¶</a></h3><ul>
-<li>We evaluate every technique under a fixed protocol: 5 benchmark queries × 3 trials × the same gpt-4.1 judge, scoring three RAGAS metrics — <strong>Answer Relevancy</strong>, <strong>Faithfulness</strong>, and <strong>LLM Context Precision (without reference)</strong>. Results are persisted to <code>ragas_gpt41_raw.csv</code> and aggregated to mean ± std in <code>ragas_gpt41_summary.csv</code>. We supplement RAGAS with two custom metrics (<code>causal_correctness</code> for multi-hop policy reasoning and <code>citation_accuracy</code> for source-grounding integrity) to cover failure modes the standard RAGAS triad under-weights.</li>
+<li>Every technique is evaluated under a fixed protocol: 5 benchmark queries × 3 trials × the same gpt-4.1 judge, scoring three RAGAS metrics — <strong>Answer Relevancy</strong>, <strong>Faithfulness</strong>, and <strong>LLM Context Precision (without reference)</strong>. Results are persisted to <code>ragas_gpt41_raw.csv</code> and aggregated to mean ± std in <code>ragas_gpt41_summary.csv</code>. RAGAS is supplemented with two custom metrics (<code>causal_correctness</code> for multi-hop policy reasoning and <code>citation_accuracy</code> for source-grounding integrity) to cover failure modes the standard RAGAS triad under-weights.</li>
 </ul>
 <h3 id="4.-Which-retrieval-and-prompting-configurations-yield-the-most-reliable-insights-that-are-grounded-in-the-IEA-reports?">4. <strong>Which retrieval and prompting configurations yield the most reliable insights that are grounded in the IEA reports?</strong><a class="anchor-link" href="#4.-Which-retrieval-and-prompting-configurations-yield-the-most-reliable-insights-that-are-grounded-in-the-IEA-reports?">¶</a></h3><ul>
-<li>The <strong>production-default</strong> configuration is <strong>Tuned RAG on the Docling-ingested corpus with cross-encoder reranking</strong>: BAAI/bge-base-en-v1.5 embeddings, token-based chunking at 380/60, retrieve a 30-candidate pool then rerank to 6 with bge-reranker-v2-m3, llama-3.3-70b generator under the cited-analyst system prompt. This reached the strongest composite RAGAS score in our evaluation (0.932). Three findings shaped the choice: (a) token-based chunking beat char-based at matched sizes by preserving semantic density; (b) Docling ingestion lifted Answer Relevancy +21 pp over PyMuPDF; and (c) adding the reranker lifted Faithfulness +5.7 pp and Context Precision +8.9 pp — the audit-critical grounding metrics — at trivial query-time cost. GraphRAG, while strong on the PyMuPDF corpus, regressed on Docling (entity-graph fragmentation), so it is reserved for the multi-hop causal-query route (GraphRAG + Chain-of-Verification) rather than the default.</li>
+<li>The <strong>production-default</strong> configuration is <strong>Tuned RAG on the Docling-ingested corpus with cross-encoder reranking</strong>: BAAI/bge-base-en-v1.5 embeddings, token-based chunking at 380/60, retrieve a 30-candidate pool then rerank to 6 with bge-reranker-v2-m3, llama-3.3-70b generator under the cited-analyst system prompt. This reached the strongest composite RAGAS score in the evaluation (0.932). Three findings shaped the choice: (a) token-based chunking beat char-based at matched sizes by preserving semantic density; (b) Docling ingestion lifted Answer Relevancy +21 pp over PyMuPDF; and (c) adding the reranker lifted Faithfulness +5.7 pp and Context Precision +8.9 pp — the audit-critical grounding metrics — at trivial query-time cost. GraphRAG, while strong on the PyMuPDF corpus, regressed on Docling (entity-graph fragmentation), so it is reserved for the multi-hop causal-query route (GraphRAG + Chain-of-Verification) rather than the default.</li>
 <li><strong>For multi-hop causal queries</strong> (the narrower set of questions that ask <em>how policy A propagates into outcome B through mechanism C</em>), <strong>GraphRAG + Chain-of-Verification is the causal-correctness leader</strong>: 0.942 ± 0.011 vs. 0.918 ± 0.008 for vanilla GraphRAG and ≤ 0.90 for every Tuned RAG variant under the custom <code>causal_correctness</code> metric (Section 6.9). The entity-graph traversal surfaces cross-sector linkages that pure vector retrieval misses, and the CoV pass verifies each cause→effect claim against the retrieved contexts before the answer is finalised. Lumina's analyst stack should route the small subset of multi-hop policy questions to this pipeline; the rest of the workload remains on the Tuned RAG + Docling default.</li>
 </ul>
 </div>
@@ -7674,8 +7674,8 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>With the requirements clearly defined, the next step is to prepare the IEA report dataset for effective model development and analysis.</p>
-<p>This process involves extracting textual content from the raw PDF reports and organising it into a structured format suitable for language model processing. The processed dataset can then be systematically analysed by the model to interpret information across reports covering electricity markets, natural gas supply, renewable energy deployment, and coal utilisation. This preparation stage ensures the content is organised in a way that supports efficient analysis and reliable insight generation.</p>
-<p>By structuring and standardising the report corpus, we create a solid foundation for accurate energy market interpretation and cross sector insight generation in the subsequent stages of the project.</p>
+<p>This process involves extracting textual content from the raw PDF reports and organizing it into a structured format suitable for language model processing. The processed dataset can then be systematically analyzed by the model to interpret information across reports covering electricity markets, natural gas supply, renewable energy deployment, and coal utilization. This preparation stage ensures the content is organized in a way that supports efficient analysis and reliable insight generation.</p>
+<p>By structuring and standardizing the report corpus, a solid foundation is created for accurate energy market interpretation and cross sector insight generation in the subsequent stages of the project.</p>
 </div>
 </div>
 </div>
@@ -7806,6 +7806,7 @@ a.anchor-link {
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pymupdf</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+
 <span class="c1"># Access Cerebras SDK for GPU-accelerated embedding generation and LLM inference on Cerebras hardware.</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">cerebras.cloud.sdk</span><span class="w"> </span><span class="kn">import</span> <span class="n">Cerebras</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dataset</span>
@@ -10923,7 +10924,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="diagnostic_analyses"><code>diagnostic_analyses</code><a class="anchor-link" href="#diagnostic_analyses">¶</a></h2><p>Section 6.6 diagnostics — per-query retrieval inspections, embedder behaviour on table-heavy chunks, and the deeper analyses that motivated the Tuned RAG configuration.</p>
+<h2 id="diagnostic_analyses"><code>diagnostic_analyses</code><a class="anchor-link" href="#diagnostic_analyses">¶</a></h2><p>Section 6.6 diagnostics — per-query retrieval inspections, embedder behavior on table-heavy chunks, and the deeper analyses that motivated the Tuned RAG configuration.</p>
 </div>
 </div>
 </div>
@@ -12420,7 +12421,7 @@ function. The vector stores are cached on disk — re-running this cell is fast.
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="%F0%9F%93%96-Reader's-Guide">📖 Reader's Guide<a class="anchor-link" href="#%F0%9F%93%96-Reader's-Guide">¶</a></h1><p>This notebook is organized around the <strong>9 sections of the Project Evaluation
-Rubric</strong> (60 points total). Each rubric section maps to a clearly-labelled
+Rubric</strong> (60 points total). Each rubric section maps to a clearly-labeled
 notebook section, listed below in submission order. Beyond the required
 sections, four additional sections (6.5–6.8) document exploratory work that
 informs the final business recommendation. Empirical decisions throughout
@@ -12709,7 +12710,7 @@ default) and Claude <code>claude-opus-4-5</code> (Section 6.8). The Opus advanta
 observed with gpt-4o-mini did not survive the gpt-4.1 judge upgrade —
 generator quality is not the dominant lever at this corpus size.</li>
 <li><strong>Judge LLM (final)</strong>: OpenAI <code>gpt-4.1</code> at n=5 trials. Re-evaluation
-followed an initial gpt-4o-mini run that we determined was producing
+followed an initial gpt-4o-mini run determined to be producing
 noisy claim-extraction and over-generous context-precision scores.
 Documented in <em>Methodological Postscript II: Judge Model Upgrade</em>.</li>
 <li><strong>Chunking unit</strong>: tokens (not characters), via the embedder's own BERT
@@ -12885,7 +12886,7 @@ across 5 independent RAGAS trials with gpt-4.1 as judge.</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centres-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">Query 1: How is the rapid global expansion of artificial intelligence data centres impacting overall electricity demand and straining existing power grid infrastructure?<a class="anchor-link" href="#Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centres-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">¶</a></h3>
+<h3 id="Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centers-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">Query 1: How is the rapid global expansion of artificial intelligence data centers impacting overall electricity demand and straining existing power grid infrastructure?<a class="anchor-link" href="#Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centers-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">¶</a></h3>
 </div>
 </div>
 </div>
@@ -12948,7 +12949,7 @@ Ultimately, the rapid expansion of AI data centers will require a coordinated ef
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><strong>Query 1 Observations:</strong>
-The Base LLM's response is structurally what we should expect: a fluent, plausibly-correct generic summary with no concrete metrics and no source attribution. Specifically, the model omits the IEA's reported data-center demand trajectory — roughly 36 TWh in 2020, 113 TWh in 2025, and a projected 203 TWh by 2030 — which is exactly the kind of figure Lumina's analysts need for capacity-planning models. While isolating AI-specific data-center demand from broader data center demand is analytically challenging, the question doesn't actually require that level of decomposition; the demand-curve magnitude alongside the density and grid-strain issues is sufficient to highlight the problem landscape.</p>
+The Base LLM's response is structurally what should be expected: a fluent, plausibly-correct generic summary with no concrete metrics and no source attribution. Specifically, the model omits the IEA's reported data-center demand trajectory — roughly 36 TWh in 2020, 113 TWh in 2025, and a projected 203 TWh by 2030 — which is exactly the kind of figure Lumina's analysts need for capacity-planning models. While isolating AI-specific data-center demand from broader data center demand is analytically challenging, the question doesn't actually require that level of decomposition; the demand-curve magnitude alongside the density and grid-strain issues is sufficient to highlight the problem landscape.</p>
 <p>The response also drifts into a water-consumption tangent (cooling/recycling) that is not in scope for the question or the project's investment-committee use case. For the Lumina analyst workflow, this is the failure mode that motivates the entire RAG investment: a fluent response that cannot be audited, cannot be cited, and contains both omissions and irrelevancies that the analyst would have to manually correct.</p>
 </div>
 </div>
@@ -13076,7 +13077,7 @@ In summary, the surge in US electricity demand and the 2025 federal emergency po
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Query 3 observations:</strong> This response is the most consequential failure case in this evaluation. The Base LLM does not merely produce generic or unsourced content — it directionally inverts the central policy claim. The 2025 federal emergency interventions were designed to preserve coal-fired generation: the Department of Energy invoked emergency powers to keep scheduled-retirement units online, executive orders and Department of the Interior leasing initiatives extended coal availability, and the One Big Beautiful Bill Act phased out renewable tax credits. The IEA Coal 2025 report states explicitly that "the policy environment has shifted in favour of coal in the near term."</p>
+<p><strong>Query 3 observations:</strong> This response is the most consequential failure case in this evaluation. The Base LLM does not merely produce generic or unsourced content — it directionally inverts the central policy claim. The 2025 federal emergency interventions were designed to preserve coal-fired generation: the Department of Energy invoked emergency powers to keep scheduled-retirement units online, executive orders and Department of the Interior leasing initiatives extended coal availability, and the One Big Beautiful Bill Act phased out renewable tax credits. The IEA Coal 2025 report states explicitly that "the policy environment has shifted in favor of coal in the near term."</p>
 <p>The Base LLM, by contrast, characterizes the 2025 interventions as "aim[ing] to reduce greenhouse gas emissions and promote renewable energy" and as "further incentivizing the retirement of coal-fired plants." This is the precise opposite of what occurred. The hallucination is consistent with the model generalizing from 2020-2024 federal climate-policy patterns (Inflation Reduction Act, EPA tightening) without awareness of the 2025 reversal.</p>
 <p>For Lumina, this is a prima facie unsound briefing. Every downstream inference — accelerated retirements, regional renewable transitions, capacity-planning implications — derives from a premise the model invented. An analyst presenting this to the investment committee without verification would be presenting investment recommendations grounded in the opposite of the actual policy trajectory.</p>
 <p>A more subtle but equally important risk that the response misses entirely is that because the 2025 policy support relies on executive action rather than legislation, the apparent coal-favorable environment is itself a planning uncertainty. The interventions are administratively reversible at the next change of administration, which creates more risk for coal-asset valuations than a stable regulatory regime would — not less. The base LLM offers no signal on this dimension, because it does not appear to know the policies exist in their actual form.</p>
@@ -13163,7 +13164,7 @@ By adopting these strategies, solar PV developers can navigate the challenges po
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalisation-of-traditional-US-West-Coast-refineries?">Query 5: How do the tax credit modifications under the US "One Big Beautiful Bill Act" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalisation of traditional US West Coast refineries?<a class="anchor-link" href="#Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalisation-of-traditional-US-West-Coast-refineries?">¶</a></h3>
+<h3 id="Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalization-of-traditional-US-West-Coast-refineries?">Query 5: How do the tax credit modifications under the US "One Big Beautiful Bill Act" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalization of traditional US West Coast refineries?<a class="anchor-link" href="#Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalization-of-traditional-US-West-Coast-refineries?">¶</a></h3>
 </div>
 </div>
 </div>
@@ -13407,7 +13408,7 @@ In conclusion, the impact of tax credit modifications on the investment economic
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centres-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">Query 1: How is the rapid global expansion of artificial intelligence data centres impacting overall electricity demand and straining existing power grid infrastructure?<a class="anchor-link" href="#Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centres-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">¶</a></h3>
+<h3 id="Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centers-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">Query 1: How is the rapid global expansion of artificial intelligence data centers impacting overall electricity demand and straining existing power grid infrastructure?<a class="anchor-link" href="#Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centers-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">¶</a></h3>
 </div>
 </div>
 </div>
@@ -13454,7 +13455,7 @@ In conclusion, the impact of tax credit modifications on the investment economic
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><strong>Prompt Engineered Query 1 Observations:</strong> Query 1 Observations: Prompt engineering was successful at forcing the LLM to anchor on concrete metrics and to structure the response in the requested investment-briefing format (headline → quantitative data → cross-sector linkages → countervailing forces). The off-scope water-consumption tangent that appeared in the Base LLM response was eliminated — the format constraint worked.</p>
-<p>However, the structural improvement masks a more dangerous possible failure mode than the Base LLM had. The specific metrics cited (1,100 TWh of global data-centre energy by 2025, 10% US demand share by 2030, India's 15% gas target) are not in the IEA Electricity 2026 corpus. They resemble figures from industry analyses such as Shell, Wood Mackenzie, and SemiAnalysis, but the LLM cannot demonstrate that provenance — and the analyst-style formatting makes them look sourced when they aren't. For Lumina's audit-driven workflow this is arguably worse than the Base LLM's vague handwaving, because a reviewer is more likely to take the structured response at face value without secondary verification.</p>
+<p>However, the structural improvement masks a more dangerous possible failure mode than the Base LLM had. The specific metrics cited (1,100 TWh of global data-center energy by 2025, 10% US demand share by 2030, India's 15% gas target) are not in the IEA Electricity 2026 corpus. They resemble figures from industry analyses such as Shell, Wood Mackenzie, and SemiAnalysis, but the LLM cannot demonstrate that provenance — and the analyst-style formatting makes them look sourced when they aren't. For Lumina's audit-driven workflow this is arguably worse than the Base LLM's vague handwaving, because a reviewer is more likely to take the structured response at face value without secondary verification.</p>
 </div>
 </div>
 </div>
@@ -13644,7 +13645,7 @@ The surge in electricity demand is also driving increased gas-fired power genera
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalisation-of-traditional-US-West-Coast-refineries?">Query 5: How do the tax credit modifications under the US "One Big Beautiful Bill Act" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalisation of traditional US West Coast refineries?<a class="anchor-link" href="#Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalisation-of-traditional-US-West-Coast-refineries?">¶</a></h3>
+<h3 id="Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalization-of-traditional-US-West-Coast-refineries?">Query 5: How do the tax credit modifications under the US "One Big Beautiful Bill Act" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalization of traditional US West Coast refineries?<a class="anchor-link" href="#Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalization-of-traditional-US-West-Coast-refineries?">¶</a></h3>
 </div>
 </div>
 </div>
@@ -14091,7 +14092,7 @@ Total: 868 page-level documents loaded
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><strong>Why 900 characters with 150 overlap?</strong></p>
-<p>We swept three candidate configurations against the five benchmark queries,
+<p>Three candidate configurations were swept against the five benchmark queries,
 holding the embedder (bge-base) and retrieval strategy (MMR k=6) fixed.
 RAGAS scores (gpt-4o-mini judge, n=5 queries):</p>
 <table>
@@ -14128,12 +14129,12 @@ RAGAS scores (gpt-4o-mini judge, n=5 queries):</p>
 </tr>
 </tbody>
 </table>
-<p><strong>What we learned:</strong></p>
+<p><strong>What this showed:</strong></p>
 <ul>
-<li><strong>Tighter chunks (600)</strong> maximised the chunk count but <strong>collapsed answer
+<li><strong>Tighter chunks (600)</strong> maximized the chunk count but <strong>collapsed answer
 relevancy to 0.52</strong>. Tables and policy paragraphs get severed mid-thought,
 so the LLM receives fragments without enough surrounding context to
-synthesise a coherent answer.</li>
+synthesize a coherent answer.</li>
 <li><strong>Looser chunks (1200)</strong> <em>hurt</em> faithfulness — counter-intuitive but real.
 Bigger chunks span more topic boundaries, so the model has more room to
 drift away from any single supported claim, and context precision dips
@@ -14226,7 +14227,7 @@ Output:   768 dimensions
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><strong>Why <code>BAAI/bge-base-en-v1.5</code>?</strong></p>
-<p>We benchmarked five embedding models against the five test queries with the
+<p>Five embedding models were benchmarked against the five test queries with the
 chunking and retrieval configurations held fixed. RAGAS scores
 (gpt-4o-mini judge, MMR k=6, 900/150 chunks):</p>
 <table>
@@ -14302,7 +14303,7 @@ confidential analyst queries never leave the firm.</li>
 </ol>
 <p><strong>Notable: bigger is not better here.</strong> The 7B <code>e5-mistral</code> model
 underperformed the 110M <code>bge-base</code> by ~17 percentage points on faithfulness.
-We tested both the original and official MTEB instruction templates — both
+Both the original and official MTEB instruction templates were tested — both
 gave equivalent (poor) scores, ruling out prompt-template error. The 7B
 model's web-search training distribution does not transfer well to
 analyst-question retrieval over policy excerpts at this corpus size.</p>
@@ -14381,12 +14382,12 @@ Vector store: 2786 embeddings indexed
 <li><strong>Persistent and embedded</strong> — no separate server to run; the index lives in
 a single directory alongside the project. Suits a single-analyst workflow.</li>
 <li><strong>HNSW index under the hood</strong> — millisecond similarity search even at corpus
-sizes 100x what we have here. Search is CPU-bound regardless of GPU
+sizes 100x the present corpus. Search is CPU-bound regardless of GPU
 availability, which is fine: at ~2,800 chunks, retrieval latency is
 dominated by the embedder running on the query, not the index lookup.</li>
 <li><strong>First-class LangChain integration</strong> — drop-in <code>.as_retriever()</code> and
 built-in support for both <code>similarity_search</code> and <code>max_marginal_relevance_search</code>,
-which we use in the tuned-RAG configuration.</li>
+used in the tuned-RAG configuration.</li>
 </ul>
 <p>Alternatives considered:</p>
 <table>
@@ -14426,7 +14427,7 @@ which we use in the tuned-RAG configuration.</li>
 </tbody>
 </table>
 <p>For a corpus that fits in memory, Chroma is the lowest-overhead choice that
-covers everything we need.</p>
+covers everything required.</p>
 </div>
 </div>
 </div>
@@ -14519,7 +14520,7 @@ Retrieved 6 chunks:
 <p>The retrieved chunks should:</p>
 <ol>
 <li><strong>Span multiple source reports</strong> when the query is cross-sector (e.g., a
-question about AI data centres and gas demand should pull from both
+question about AI data centers and gas demand should pull from both
 <code>Electricity2026</code> and <code>Gas2025</code>).</li>
 <li><strong>Be topically coherent</strong> — every chunk should plausibly contribute to
 answering the question, not just contain a keyword match.</li>
@@ -14536,7 +14537,7 @@ diversity), or reduce <code>k</code>.</li>
 <li><strong>Missing metadata</strong>: check the PDF-loader step — PyMuPDF page numbers are
 0-indexed; add 1 when displaying to humans if desired.</li>
 </ul>
-<p>We use these chunks as context for the LLM in the next section.</p>
+<p>These chunks are used as context for the LLM in the next section.</p>
 </div>
 </div>
 </div>
@@ -14615,7 +14616,7 @@ Vector store: 2522 chunks (MiniLM-L6-v2)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centres-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">Query 1: How is the rapid global expansion of artificial intelligence data centres impacting overall electricity demand and straining existing power grid infrastructure?<a class="anchor-link" href="#Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centres-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">¶</a></h3>
+<h3 id="Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centers-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">Query 1: How is the rapid global expansion of artificial intelligence data centers impacting overall electricity demand and straining existing power grid infrastructure?<a class="anchor-link" href="#Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centers-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">¶</a></h3>
 </div>
 </div>
 </div>
@@ -14661,7 +14662,7 @@ Overall, the rapid expansion of AI data centres is driving up electricity demand
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Base RAG Query 1 Observations:</strong> A meaningful step up from both the Base LLM and Prompt-Engineered responses. The model now anchors on context-grounded facts — 100-500 MW per data centre, the UK AI Growth Zones regulatory package, behind-the-meter on-site generation as a bottleneck workaround — and the off-scope tangents (cooling/water) are gone. The response is, however, <strong>uncited at the claim level</strong>: every number and quoted policy is real, but the analyst has no <code>[Source p.N]</code> anchor to click through to verify. The response also misses the headline demand trajectory that Lumina's capacity-planning models actually need (the IEA forecast of ~36 TWh in 2020 → ~203 TWh by 2030), suggesting retrieval is landing on topically-relevant but not quantitatively-dense passages. The default-config chunking (1000-char, MiniLM embedding) is doing its job in spirit but not in precision — this is the failure mode that motivates the Tuned RAG configuration.</p>
+<p><strong>Base RAG Query 1 Observations:</strong> A meaningful step up from both the Base LLM and Prompt-Engineered responses. The model now anchors on context-grounded facts — 100-500 MW per data center, the UK AI Growth Zones regulatory package, behind-the-meter on-site generation as a bottleneck workaround — and the off-scope tangents (cooling/water) are gone. The response is, however, <strong>uncited at the claim level</strong>: every number and quoted policy is real, but the analyst has no <code>[Source p.N]</code> anchor to click through to verify. The response also misses the headline demand trajectory that Lumina's capacity-planning models actually need (the IEA forecast of ~36 TWh in 2020 → ~203 TWh by 2030), suggesting retrieval is landing on topically-relevant but not quantitatively-dense passages. The default-config chunking (1000-char, MiniLM embedding) is doing its job in spirit but not in precision — this is the failure mode that motivates the Tuned RAG configuration.</p>
 </div>
 </div>
 </div>
@@ -14718,7 +14719,7 @@ Overall, the base case expects global natural gas demand to grow by around 9% by
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Base RAG Query 2 Observations:</strong> A solid quantitative response — 300 bcm/yr of new LNG export capacity by 2030, 250 bcm net global supply increase, ~9% global gas demand growth, plus proper coverage of countervailing forces (macro environment, slow Southeast Asian infrastructure build-out, contractual rigidity). But still no inline <code>[Source p.N]</code> citations, so each metric requires manual cross-referencing against the source PDFs. One specific claim — that the 250 bcm LNG supply increase is "equivalent to around 7% of Asia's thermal coal demand" — is exactly the kind of cross-domain conversion an analyst needs to verify before propagating, and the lack of citation makes that prohibitively expensive. Base RAG demonstrates that retrieval grounding fixes the <em>content</em> problem (we no longer see fabricated metrics), but the <em>audit</em> problem persists until inline citation is enforced.</p>
+<p><strong>Base RAG Query 2 Observations:</strong> A solid quantitative response — 300 bcm/yr of new LNG export capacity by 2030, 250 bcm net global supply increase, ~9% global gas demand growth, plus proper coverage of countervailing forces (macro environment, slow Southeast Asian infrastructure build-out, contractual rigidity). But still no inline <code>[Source p.N]</code> citations, so each metric requires manual cross-referencing against the source PDFs. One specific claim — that the 250 bcm LNG supply increase is "equivalent to around 7% of Asia's thermal coal demand" — is exactly the kind of cross-domain conversion an analyst needs to verify before propagating, and the lack of citation makes that prohibitively expensive. Base RAG demonstrates that retrieval grounding fixes the <em>content</em> problem (fabricated metrics no longer appear), but the <em>audit</em> problem persists until inline citation is enforced.</p>
 </div>
 </div>
 </div>
@@ -14834,7 +14835,7 @@ Overall, while the context provides some information on two-sided CfDs and negat
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Base RAG Query 4 Observations:</strong> The response opens with an honest "the context doesn't explicitly answer" — exactly the behaviour we want in a production analyst pipeline (better to flag a gap than to fabricate). It then provides partial-but-correct information on two-sided CfD mechanics and the correlation between renewable share and negative-price hours. The dominant weakness is the same one the Prompt-Engineered Q4 had: <strong>co-located battery storage is never surfaced as the developer hedge against negative-price exposure under CfD regimes.</strong> Retrieval brought back the question's framing concepts (CfDs, negative prices) but did not surface the IEA Renewables 2025 deployment-and-revenue-stacking content on storage. This is a chunking-and-embedding-coverage issue, not a prompting one — and one the Tuned RAG configuration should be expected to close, but doesn't fully (see Tuned RAG Q4 observation below).</p>
+<p><strong>Base RAG Query 4 Observations:</strong> The response opens with an honest "the context doesn't explicitly answer" — exactly the behavior wanted in a production analyst pipeline (better to flag a gap than to fabricate). It then provides partial-but-correct information on two-sided CfD mechanics and the correlation between renewable share and negative-price hours. The dominant weakness is the same one the Prompt-Engineered Q4 had: <strong>co-located battery storage is never surfaced as the developer hedge against negative-price exposure under CfD regimes.</strong> Retrieval brought back the question's framing concepts (CfDs, negative prices) but did not surface the IEA Renewables 2025 deployment-and-revenue-stacking content on storage. This is a chunking-and-embedding-coverage issue, not a prompting one — and one the Tuned RAG configuration should be expected to close, but doesn't fully (see Tuned RAG Q4 observation below).</p>
 </div>
 </div>
 </div>
@@ -14845,7 +14846,7 @@ Overall, while the context provides some information on two-sided CfDs and negat
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalisation-of-traditional-US-West-Coast-refineries?">Query 5: How do the tax credit modifications under the US "One Big Beautiful Bill Act" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalisation of traditional US West Coast refineries?<a class="anchor-link" href="#Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalisation-of-traditional-US-West-Coast-refineries?">¶</a></h3>
+<h3 id="Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalization-of-traditional-US-West-Coast-refineries?">Query 5: How do the tax credit modifications under the US "One Big Beautiful Bill Act" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalization of traditional US West Coast refineries?<a class="anchor-link" href="#Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalization-of-traditional-US-West-Coast-refineries?">¶</a></h3>
 </div>
 </div>
 </div>
@@ -14885,7 +14886,7 @@ Overall, while the context provides some information on two-sided CfDs and negat
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Base RAG Query 5 Observations:</strong> The most striking failure mode in the Base RAG sweep. The response truncates after one paragraph and concedes "the context doesn't contain the answer to the question about the cascading impact on the capacity rationalisation of traditional US West Coast refineries." Only the OBBBA tax-credit deltas surface; the substantive feedstock-economics analysis the question asks for is entirely absent. Two distinct retrieval failures compound: (a) the West Coast refinery rationalization material — which exists in the corpus — is not pulled at the default <code>k=4</code> similarity setting, and (b) the multi-buyer feedstock-supply complexity (used cooking oil, tallow, soy/corn oils, agricultural residues competing with animal feed, biodiesel, and renewable diesel) is treated as out-of-scope rather than as a cross-sector linkage worth tracing. The combined effect is that an analyst reading this response would conclude — incorrectly — that the IEA corpus is silent on the question, when in fact it carries most of the relevant inputs.</p>
+<p><strong>Base RAG Query 5 Observations:</strong> The most striking failure mode in the Base RAG sweep. The response truncates after one paragraph and concedes "the context doesn't contain the answer to the question about the cascading impact on the capacity rationalization of traditional US West Coast refineries." Only the OBBBA tax-credit deltas surface; the substantive feedstock-economics analysis the question asks for is entirely absent. Two distinct retrieval failures compound: (a) the West Coast refinery rationalization material — which exists in the corpus — is not pulled at the default <code>k=4</code> similarity setting, and (b) the multi-buyer feedstock-supply complexity (used cooking oil, tallow, soy/corn oils, agricultural residues competing with animal feed, biodiesel, and renewable diesel) is treated as out-of-scope rather than as a cross-sector linkage worth tracing. The combined effect is that an analyst reading this response would conclude — incorrectly — that the IEA corpus is silent on the question, when in fact it carries most of the relevant inputs.</p>
 </div>
 </div>
 </div>
@@ -15033,7 +15034,7 @@ Overall, while the context provides some information on two-sided CfDs and negat
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centres-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">Query 1: How is the rapid global expansion of artificial intelligence data centres impacting overall electricity demand and straining existing power grid infrastructure?<a class="anchor-link" href="#Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centres-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">¶</a></h3>
+<h3 id="Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centers-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">Query 1: How is the rapid global expansion of artificial intelligence data centers impacting overall electricity demand and straining existing power grid infrastructure?<a class="anchor-link" href="#Query-1:-How-is-the-rapid-global-expansion-of-artificial-intelligence-data-centers-impacting-overall-electricity-demand-and-straining-existing-power-grid-infrastructure?">¶</a></h3>
 </div>
 </div>
 </div>
@@ -15087,7 +15088,7 @@ Overall, while the context provides some information on two-sided CfDs and negat
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Tuned RAG Query 1 Observations:</strong> A substantial step-change from Base RAG. <strong>Every quantitative claim now carries a <code>[Source p.N]</code> citation</strong> — data centres at ~half of projected electricity-demand growth [Electricity2026 p.155], 2,500 GW stalled in grid connection queues [p.10], the ~$400B annual grid-investment baseline requiring a roughly 50% uplift by 2030 [p.10], the UK AI Growth Zones framework [p.62], and the SCED / locational marginal pricing levers [p.62, p.66]. Citation accuracy on this technique post-fix is <strong>0.962 ± 0.007</strong> (Section 6.10), so an analyst can click through directly to the cited page in the printed PDF and verify the claim. The substantive content is also stronger: the response surfaces the data-centre share-of-growth that Base RAG missed, and the cross-sector linkages (EV, heat pumps, semiconductor &amp; battery manufacturing) are anchored to the same source. This is the configuration that earns Tuned RAG its production-default status.</p>
+<p><strong>Tuned RAG Query 1 Observations:</strong> A substantial step-change from Base RAG. <strong>Every quantitative claim now carries a <code>[Source p.N]</code> citation</strong> — data centers at ~half of projected electricity-demand growth [Electricity2026 p.155], 2,500 GW stalled in grid connection queues [p.10], the ~$400B annual grid-investment baseline requiring a roughly 50% uplift by 2030 [p.10], the UK AI Growth Zones framework [p.62], and the SCED / locational marginal pricing levers [p.62, p.66]. Citation accuracy on this technique post-fix is <strong>0.962 ± 0.007</strong> (Section 6.10), so an analyst can click through directly to the cited page in the printed PDF and verify the claim. The substantive content is also stronger: the response surfaces the data-center share-of-growth that Base RAG missed, and the cross-sector linkages (EV, heat pumps, semiconductor &amp; battery manufacturing) are anchored to the same source. This is the configuration that earns Tuned RAG its production-default status.</p>
 </div>
 </div>
 </div>
@@ -15209,7 +15210,7 @@ Overall, while the context provides some information on two-sided CfDs and negat
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Tuned RAG Query 3 Observations:</strong> The strongest causal-reasoning response in the entire technique comparison. The chain — surge in electricity demand → DOE emergency powers + federal interventions → retirement slowdown (15 GW → 6.2 GW) and a 13% YoY increase in coal-fired generation → ~410 Mt coal demand, ~800 TWh, 17% of the mix — is fully cited [Coal2025 p.30, Electricity2026 p.155, p.156] <strong>and cross-references between the two reports</strong>, which is the multi-hop synthesis behaviour the rubric was designed to test. The countervailing-forces section correctly preserves the longer-term trajectory (solar PV at ~10%/yr, total renewables at ~5.7%/yr, both in the United States) and frames the policy interventions as a <em>near-term</em> reprieve rather than a structural reversal. The causal_correctness score on this query is the technique's strongest. This is the response that validates the chunking + MMR + cited-analyst prompt design choices.</p>
+<p><strong>Tuned RAG Query 3 Observations:</strong> The strongest causal-reasoning response in the entire technique comparison. The chain — surge in electricity demand → DOE emergency powers + federal interventions → retirement slowdown (15 GW → 6.2 GW) and a 13% YoY increase in coal-fired generation → ~410 Mt coal demand, ~800 TWh, 17% of the mix — is fully cited [Coal2025 p.30, Electricity2026 p.155, p.156] <strong>and cross-references between the two reports</strong>, which is the multi-hop synthesis behavior the rubric was designed to test. The countervailing-forces section correctly preserves the longer-term trajectory (solar PV at ~10%/yr, total renewables at ~5.7%/yr, both in the United States) and frames the policy interventions as a <em>near-term</em> reprieve rather than a structural reversal. The causal_correctness score on this query is the technique's strongest. This is the response that validates the chunking + MMR + cited-analyst prompt design choices.</p>
 </div>
 </div>
 </div>
@@ -15277,7 +15278,7 @@ Overall, while the context provides some information on two-sided CfDs and negat
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalisation-of-traditional-US-West-Coast-refineries?">Query 5: How do the tax credit modifications under the US "One Big Beautiful Bill Act" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalisation of traditional US West Coast refineries?<a class="anchor-link" href="#Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalisation-of-traditional-US-West-Coast-refineries?">¶</a></h3>
+<h3 id="Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalization-of-traditional-US-West-Coast-refineries?">Query 5: How do the tax credit modifications under the US "One Big Beautiful Bill Act" (OBBBA) affect the investment economics of using domestic versus imported feedstocks for Sustainable Aviation Fuel (SAF), and what cascading impact will this biofuel transition have on the capacity rationalization of traditional US West Coast refineries?<a class="anchor-link" href="#Query-5:-How-do-the-tax-credit-modifications-under-the-US-%22One-Big-Beautiful-Bill-Act%22-(OBBBA)-affect-the-investment-economics-of-using-domestic-versus-imported-feedstocks-for-Sustainable-Aviation-Fuel-(SAF),-and-what-cascading-impact-will-this-biofuel-transition-have-on-the-capacity-rationalization-of-traditional-US-West-Coast-refineries?">¶</a></h3>
 </div>
 </div>
 </div>
@@ -15323,7 +15324,7 @@ Overall, while the context provides some information on two-sided CfDs and negat
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Tuned RAG Query 5 Observations:</strong> The surface improvement over Base RAG is dramatic — cited metrics for the $0.46→$0.26/litre SAF credit cap [Renewables2025 p.159], elimination of credits for imported feedstocks except Canada and Mexico [p.186], the 10% RFS volume uplift through 2027 [p.179], and the domestic-soy ILUC offset [p.161]. The response also no longer truncates the way Base RAG did. <strong>But the deeper feedstock-market argument breaks down in the same way it did for the Prompt-Engineered Q5:</strong> the phrase "shift towards domestic feedstocks may lead to increased demand for domestic vegetable oils" treats the feedstock supply curve as monolithic, when in reality SAF, biodiesel, renewable-diesel, and animal-feed markets all compete for the same upstream inventory (used cooking oil, tallow, soy and corn oils, agricultural residues). The cascading-impact-on-West-Coast-refineries side is gestured at — "may need to adapt to changing demand patterns and feedstock requirements" — rather than analysed with the precision the OBBBA policy deltas received. This is the structural limit of single-pass vector retrieval on multi-hop policy questions: the response is <em>citable</em> but not <em>complete</em>. <strong>It is the strongest argument in the notebook for routing this query class through the GraphRAG + Chain-of-Verification pipeline</strong> — graph traversal across SAF↔biodiesel↔refinery↔feedstock entity nodes can surface the competitive-supply linkages this single-vector retrieval cannot.</p>
+<p><strong>Tuned RAG Query 5 Observations:</strong> The surface improvement over Base RAG is dramatic — cited metrics for the $0.46→$0.26/litre SAF credit cap [Renewables2025 p.159], elimination of credits for imported feedstocks except Canada and Mexico [p.186], the 10% RFS volume uplift through 2027 [p.179], and the domestic-soy ILUC offset [p.161]. The response also no longer truncates the way Base RAG did. <strong>But the deeper feedstock-market argument breaks down in the same way it did for the Prompt-Engineered Q5:</strong> the phrase "shift towards domestic feedstocks may lead to increased demand for domestic vegetable oils" treats the feedstock supply curve as monolithic, when in reality SAF, biodiesel, renewable-diesel, and animal-feed markets all compete for the same upstream inventory (used cooking oil, tallow, soy and corn oils, agricultural residues). The cascading-impact-on-West-Coast-refineries side is gestured at — "may need to adapt to changing demand patterns and feedstock requirements" — rather than analyzed with the precision the OBBBA policy deltas received. This is the structural limit of single-pass vector retrieval on multi-hop policy questions: the response is <em>citable</em> but not <em>complete</em>. <strong>It is the strongest argument in the notebook for routing this query class through the GraphRAG + Chain-of-Verification pipeline</strong> — graph traversal across SAF↔biodiesel↔refinery↔feedstock entity nodes can surface the competitive-supply linkages this single-vector retrieval cannot.</p>
 </div>
 </div>
 </div>
@@ -15444,7 +15445,7 @@ the question to the answer.</p>
 same source chunks, then augmenting vector retrieval with graph traversal.
 A query first retrieves seed chunks by semantic similarity (as in Tuned RAG),
 then expands to neighboring chunks via <em>shared-entity</em> edges.</p>
-<p>We tested whether this entity-aware retrieval provides measurable lift over
+<p>Whether this entity-aware retrieval provides measurable lift was tested over
 the Tuned RAG baseline on the same 5 benchmark queries.</p>
 </div>
 </div>
@@ -15577,20 +15578,20 @@ Top relationship types:
 <p><strong>Build cost &amp; methodology notes</strong></p>
 <ul>
 <li><strong>Extraction model</strong>: <code>gpt-4.1-mini-2025-04-14</code> at temperature 0.
-We initially tried full <code>gpt-4.1</code> but hit OpenAI tier-1 rate limits
+An initial attempt used full <code>gpt-4.1</code> but hit OpenAI tier-1 rate limits
 (30K TPM) — only 8% of chunks completed. <code>gpt-4.1-mini</code> has 200K TPM at the
-same tier, so we could run at concurrency=15 and complete all 1,643 chunks
+same tier, so extraction ran at concurrency=15, completing all 1,643 chunks
 in ~33 minutes for ~$8.</li>
-<li><strong>Schema constraint</strong>: we passed an explicit <code>allowed_nodes</code> list of 8 types
+<li><strong>Schema constraint</strong>: an explicit <code>allowed_nodes</code> list of 8 types was passed,
 and <code>allowed_relationships</code> list of 11 types. Without this constraint the LLM
 produces an unbounded set of bespoke labels that fragment the graph.</li>
 <li><strong>APOC bypass</strong>: standard <code>langchain-neo4j.add_graph_documents()</code> requires the
-APOC plugin for dynamic label creation. Our Neo4j instance doesn't have APOC,
-so we wrote a custom ingest using parameterized Cypher MERGE statements over a
+APOC plugin for dynamic label creation. The Neo4j instance lacks APOC,
+so a custom ingest was written using parameterized Cypher MERGE statements over a
 whitelist of safe labels (<code>graph_rag._write_graph_documents_no_apoc</code>).</li>
 <li><strong>Embeddings</strong>: same <code>bge-base-en-v1.5</code> model used in Tuned RAG, indexed via
 Neo4j's native vector index. This isolates GraphRAG's contribution to <em>the
-graph component</em> — we are not also confounding it with a better embedder.</li>
+graph component</em> — without also confounding it with a better embedder.</li>
 </ul>
 </div>
 </div>
@@ -15764,7 +15765,7 @@ briefing.</li>
 the benchmark (Base RAG 0.941 first, with its much smaller k=4 retrieval).
 GraphRAG's expanded context does NOT cost grounding precision once a
 capable judge can actually assess the entailment of multi-part claims;
-the earlier "Faithfulness collapse" we reported was an artifact of
+the earlier reported "Faithfulness collapse" was an artifact of
 gpt-4o-mini's claim-extraction noise compounding across more retrieved
 chunks.</li>
 <li><strong>Context Precision did decrease modestly</strong> (-5 pp). With 8 retrieved
@@ -15785,7 +15786,7 @@ It produces the best synthesis quality (AR 0.852), strong grounding
 open-weight generator. The remaining trade-offs vs. alternatives:</p>
 <ol>
 <li><strong>Vs. Base RAG</strong>: trading 1.2 pp of Faithfulness (0.929 vs 0.941) for 32
-pp of Answer Relevancy (0.852 vs 0.537) — a clearly favourable trade for
+pp of Answer Relevancy (0.852 vs 0.537) — a clearly favorable trade for
 a briefing system.</li>
 <li><strong>Vs. Tuned RAG</strong>: strictly dominant on the composite (0.894 vs 0.853);
 wins both AR and Faithfulness.</li>
@@ -15819,7 +15820,7 @@ the fusion help?</p>
 diagnostic analyses:</p>
 <ol>
 <li><strong>Entity / relation distribution analysis</strong> of the knowledge graph — looking for
-long-tail structure that would tell us whether the graph has enough signal density
+long-tail structure indicating whether the graph has enough signal density
 to be useful for retrieval expansion.</li>
 <li><strong>BM25 vs dense retrieval overlap</strong> on a 30-query benchmark (the 5 original queries<ul>
 <li>25 synthetic queries generated to cover a broader range of analyst-style
@@ -15829,7 +15830,7 @@ material, which determines whether hybrid fusion could ever help.</li>
 </li>
 </ol>
 <p>The findings explain the previous sections' results and point to two specific
-remediations we will test next.</p>
+remediations tested next.</p>
 </div>
 </div>
 </div>
@@ -15840,7 +15841,7 @@ remediations we will test next.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Analysis-1-%E2%80%94-Entity-&amp;-relation-distribution">Analysis 1 — Entity &amp; relation distribution<a class="anchor-link" href="#Analysis-1-%E2%80%94-Entity-&amp;-relation-distribution">¶</a></h2><p>How concentrated is the meaningful signal in our 12,202-entity graph? If a small
+<h2 id="Analysis-1-%E2%80%94-Entity-&amp;-relation-distribution">Analysis 1 — Entity &amp; relation distribution<a class="anchor-link" href="#Analysis-1-%E2%80%94-Entity-&amp;-relation-distribution">¶</a></h2><p>How concentrated is the meaningful signal in the 12,202-entity graph? If a small
 core of entities dominates while the long tail is one-shot, then the <em>effective</em>
 graph for retrieval purposes is much smaller than the raw node count suggests.</p>
 </div>
@@ -15992,9 +15993,9 @@ timeframes and regions", which yields chunks topically adjacent rather than
 semantically informative. Expanding via the rare relations (REPLACES, COMPETES_WITH)
 would be richer but those relations occur too sparsely to matter at retrieval time.</li>
 <li><strong>Practical fix</strong>: entity normalization. Many singletons are likely surface variants
-of the same concept ("data centres" / "data center" / "AI data centres" /
-"data-centre operators"). Collapsing these via embedding similarity would shift mass
-from the singleton tail into the useful Common/Frequent buckets. We test this below.</li>
+of the same concept ("data centers" / "data center" / "AI data centers" /
+"data-center operators"). Collapsing these via embedding similarity would shift mass
+from the singleton tail into the useful Common/Frequent buckets. This is tested below.</li>
 </ul>
 </div>
 </div>
@@ -16009,7 +16010,7 @@ from the singleton tail into the useful Common/Frequent buckets. We test this be
 <h2 id="Analysis-2-%E2%80%94-BM25-vs-dense-retrieval-overlap">Analysis 2 — BM25 vs dense retrieval overlap<a class="anchor-link" href="#Analysis-2-%E2%80%94-BM25-vs-dense-retrieval-overlap">¶</a></h2><p>If BM25 and dense vector retrieval both return roughly the same top-K chunks, hybrid
 fusion can only marginally help — the two methods agree on what's relevant. If they
 return mostly <em>different</em> chunks, hybrid fusion has substantial latent benefit.</p>
-<p>We measure overlap at K=5 and K=10 across <strong>30 queries</strong>: the original 5 benchmark
+<p>Overlap is measured at K=5 and K=10 across <strong>30 queries</strong>: the original 5 benchmark
 queries plus 25 synthetic analyst-style queries generated to broaden the
 distribution.</p>
 </div>
@@ -16108,17 +16109,17 @@ retrievers' top-10 lists. Jaccard similarity is 0.174 and rank-biased overlap is
 <li><strong>This pattern justifies hybrid retrieval in principle.</strong> Per the diagnostic rubric:
 low overlap means the methods are surfacing fundamentally different material, which
 is exactly the case where weighted fusion (RRF) should add candidates the dense-only
-retriever misses. Our earlier hybrid+rerank experiment did <em>not</em> show this benefit —
+retriever misses. The earlier hybrid+rerank experiment did <em>not</em> show this benefit —
 the discrepancy suggests the <strong>reranker is filtering out the BM25 contribution</strong>
 rather than the BM25 candidates being uninformative.</li>
 <li><strong>The benchmark queries are unrepresentative of the synthetic-query distribution.</strong>
 The 5 original queries scored overlap@10 = 0.540 (high), while the 25 synthetic
 queries scored 0.224 (much lower) — the benchmark is ~2.4× easier than the synthetic
 population. The benchmark queries are loaded with named entities (LNG, OBBBA, CfDs,
-AI data centres) that both retrievers can lock onto via literal lexical match. More
+AI data centers) that both retrievers can lock onto via literal lexical match. More
 generic synthetic queries ("What is the projected coal production level in China for
 2025?") have much wider divergence between methods.</li>
-<li><strong>Implication for the existing evaluation</strong>: our 5-query benchmark <strong>over-represents
+<li><strong>Implication for the existing evaluation</strong>: the 5-query benchmark <strong>over-represents
 the easy retrieval case</strong>. Real analyst query distributions likely sit closer to the
 synthetic distribution. The 5-query Tuned RAG composite of 0.91 likely overstates
 real-world performance.</li>
@@ -16161,7 +16162,7 @@ real-world performance.</li>
 </tbody>
 </table>
 <h3 id="Two-concrete-remediations-to-test-next">Two concrete remediations to test next<a class="anchor-link" href="#Two-concrete-remediations-to-test-next">¶</a></h3><ol>
-<li><strong>Try a different reranker.</strong> Our current cross-encoder (<code>bge-reranker-v2-m3</code>)
+<li><strong>Try a different reranker.</strong> The current cross-encoder (<code>bge-reranker-v2-m3</code>)
 appears to filter out BM25 candidates in favor of dense ones. Alternatives:<ul>
 <li><strong><code>jina-reranker-v2-base-multilingual</code></strong> — different architecture, fully local,
 no API needed. Quick swap.</li>
@@ -16171,11 +16172,11 @@ that's eating the BM25 contribution.</li>
 </li>
 <li><strong>Entity normalization on the knowledge graph.</strong> A sentence-transformer
 similarity pass over the 9,795 singletons could merge surface variants
-(<code>"data centres"</code> / <code>"data center"</code> / <code>"AI data centres"</code>) into canonical
+(<code>"data centers"</code> / <code>"data center"</code> / <code>"AI data centers"</code>) into canonical
 entities. Estimated 20-30% reduction in singleton count, shifting mass into the
 useful Common/Frequent buckets and making graph expansion more productive.</li>
 </ol>
-<p>We implement and test both below.</p>
+<p>Both are implemented and tested below.</p>
 </div>
 </div>
 </div>
@@ -16193,10 +16194,10 @@ reranker with a less dense-favored bias gave hybrid retrieval room to surface
 BM25-only candidates, hybrid+rerank could beat Tuned RAG.</li>
 <li><strong>The 80% singleton tail might be inflated by surface variants.</strong> A
 sentence-transformer-based merging pass over near-duplicate entities
-("data centres" / "data center" / "AI data centre") could shift mass into
+("data centers" / "data center" / "AI data center") could shift mass into
 the useful Common/Frequent buckets and make graph expansion more productive.</li>
 </ol>
-<p>We test both. Spoiler: the results invert the hypotheses in both cases.</p>
+<p>Both are tested. Spoiler: the results invert the hypotheses in both cases.</p>
 </div>
 </div>
 </div>
@@ -16210,11 +16211,11 @@ the useful Common/Frequent buckets and make graph expansion more productive.</li
 <h2 id="Experiment-1-%E2%80%94-Alternative-rerankers">Experiment 1 — Alternative rerankers<a class="anchor-link" href="#Experiment-1-%E2%80%94-Alternative-rerankers">¶</a></h2><p>Held hybrid retrieval, embedder, chunking, and generator fixed. Varied only the
 reranker step. <strong>n=3 trials per config, gpt-4o-mini judge.</strong></p>
 <ul>
-<li><code>BAAI/bge-reranker-v2-m3</code> — our existing default (568M params)</li>
+<li><code>BAAI/bge-reranker-v2-m3</code> — the existing default (568M params)</li>
 <li><code>cross-encoder/ms-marco-MiniLM-L-12-v2</code> — classic MS-MARCO cross-encoder (~33M params)</li>
 <li>No reranker — hybrid + RRF only, then take top-6 directly</li>
 </ul>
-<p>We initially also tested <code>jinaai/jina-reranker-v2-base-multilingual</code> but hit a
+<p>An initial test also covered <code>jinaai/jina-reranker-v2-base-multilingual</code>, but hit a
 transformers-version compatibility issue; downgrading transformers would have
 broken other pipeline components.</p>
 </div>
@@ -16269,7 +16270,7 @@ hybrid_msmarco_rerank      0.9700     0.0120   0.6720  0.0107   1.0000  0.0000  
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><strong>Findings — rerankers</strong></p>
-<p>The headline reverses my earlier "the BGE reranker is dense-biased" hypothesis:</p>
+<p>The headline reverses the earlier "the BGE reranker is dense-biased" hypothesis:</p>
 <ul>
 <li><strong>Hybrid + no reranker scored AR 0.649</strong>, by far the <em>worst</em> of the three. If
 the BGE reranker were filtering out useful BM25 contributions, removing it
@@ -16304,7 +16305,7 @@ contribution is dominantly off-topic on this corpus, not complementary.</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Experiment-2-%E2%80%94-Entity-normalization-on-the-knowledge-graph">Experiment 2 — Entity normalization on the knowledge graph<a class="anchor-link" href="#Experiment-2-%E2%80%94-Entity-normalization-on-the-knowledge-graph">¶</a></h2><p>The 9,795-entity singleton tail in the knowledge graph is partly composed of
 surface variants. A sentence-transformer similarity pass should be able to
-merge <code>"data centres"</code> / <code>"data center"</code> / <code>"AI data centre"</code> into canonical
+merge <code>"data centers"</code> / <code>"data center"</code> / <code>"AI data center"</code> into canonical
 entities, shifting mass into the useful Common/Frequent buckets.</p>
 <p><strong>Procedure</strong>:</p>
 <ol>
@@ -16485,16 +16486,16 @@ cosine similarity</li>
 </ul>
 </li>
 </ol>
-<p>We did not pursue these remediations in this iteration. Rebuilding the graph
+<p>These remediations were not pursued in this iteration. Rebuilding the graph
 costs ~$8 + 33 minutes, and the n=3 RAGAS evaluation showed the underlying
 embedding-similarity-without-direction-awareness problem is real — it would
 recur in any variant of this approach unless the direction-awareness issue is
 addressed first.</p>
 <h3 id="Bottom-line-for-production">Bottom-line for production<a class="anchor-link" href="#Bottom-line-for-production">¶</a></h3><p><strong>Keep Tuned RAG (MMR) as the production choice</strong>. Neither the alternative
 rerankers nor entity normalization beat it on this corpus. The two experiments
-collectively show that the apparent retrieval gaps we identified in Section 6.6
+collectively show that the apparent retrieval gaps identified in Section 6.6
 (low BM25/dense overlap, long singleton tail) are <em>structural features</em> of the
-corpus, not retrieval-architecture failures we can patch around with
+corpus, not retrieval-architecture failures that can be patched around with
 graph-level interventions.</p>
 </div>
 </div>
@@ -16508,7 +16509,7 @@ graph-level interventions.</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Section-6.8:-Frontier-LLM-Baseline-%E2%80%94-Claude-Opus-4.5-as-Generator"><strong>Section 6.8: Frontier-LLM Baseline — Claude Opus 4.5 as Generator</strong><a class="anchor-link" href="#Section-6.8:-Frontier-LLM-Baseline-%E2%80%94-Claude-Opus-4.5-as-Generator">¶</a></h1><p>The five techniques benchmarked so far have all shared the same generator
 (Groq's <code>llama-3.3-70b-versatile</code>). The remaining question for Lumina's
-business case is: <strong>what happens if we swap a frontier-class generator
+business case is: <strong>what happens when a frontier-class generator
 (Claude Opus 4.5) into the existing Tuned RAG pipeline?</strong> This isolates
 generator quality as a single variable, holding chunking, embedding, and
 retrieval identical to Tuned RAG.</p>
@@ -16521,13 +16522,13 @@ the stronger judge, the two configurations score essentially identical
 Faithfulness (0.878 vs 0.877). The numbers below are the corrected, final
 values. See <em>Methodological Postscript II</em> for the full discussion.</p>
 </blockquote>
-<p>We also wanted to test a <strong>"frontier-with-no-engineering" baseline</strong> — feed
+<p>A <strong>"frontier-with-no-engineering" baseline</strong> was also tested — feed
 the entire IEA corpus directly into a frontier model with no retrieval at
 all, and ask the benchmark questions. The original untrimmed corpus is
 ~488K tokens, which exceeds the account's API tier on both providers
 (Anthropic standard tier 200K cap; OpenAI tier-1 200K cap on
 <code>gpt-4.1-long-context</code>). To make the experiment runnable on tier 1 without
-abandoning it entirely, we apply two stages of trimming in
+abandoning it entirely, two stages of trimming are applied in
 <code>build_corpus_text</code> / <code>_truncate_corpus_to_char_budget</code>:</p>
 <ol>
 <li><strong>Density filter</strong> — drop blank pages, front matter, and very sparse
@@ -16669,7 +16670,7 @@ observed difference vs. Tuned RAG is attributable to generator quality alone.</p
 <p><strong>Three findings — substantially revised from the initial gpt-4o-mini results:</strong></p>
 <ol>
 <li><p><strong>The Faithfulness advantage of Opus 4.5 is not supported by the data.</strong>
-Under the gpt-4o-mini judge we reported 0.958 vs 0.915 (+0.043). Under the
+Under the gpt-4o-mini judge, 0.958 vs 0.915 (+0.043) was reported. Under the
 gpt-4.1 judge, the two configurations are statistically identical
 (0.878 vs 0.877). The earlier delta was claim-extraction noise in the
 weaker judge. The frontier generator does not produce more grounded
@@ -16686,7 +16687,7 @@ to the retrieved text and score higher on chunk-relevance.</p>
 <li><p><strong>The Opus per-query premium (~$0.10/query) is no longer justified.</strong>
 For a hallucination-prevention-critical use case, the candidate generator
 change does not change the failure mode this system is designed to
-prevent. The improvement we originally reported was a judge-quality
+prevent. The improvement originally reported was a judge-quality
 artifact, not a real improvement in the deliverable to Lumina's analysts.</p>
 </li>
 </ol>
@@ -16696,7 +16697,7 @@ headline finding in the original draft — "frontier generator buys you 4.3 pp
 of Faithfulness on the same retrieval." With the stronger judge, that
 finding evaporated. Documenting both the original conclusion and the
 revision strengthens the methodology section rather than weakening it: it
-shows we identified and corrected a measurement issue rather than burying
+shows that a measurement issue was identified and corrected rather than buried
 it.</p>
 <p><strong>Business implication for Lumina (revised)</strong>: the open-weight
 <code>llama-3.3-70b</code> generator is sufficient for the Tuned RAG (and GraphRAG)
@@ -16720,7 +16721,7 @@ might surface a measurable difference.</p>
 <h1 id="Section-6.9:-Chain-of-Verification-%E2%80%94-Agentic-Reasoning-on-Top-of-GraphRAG"><strong>Section 6.9: Chain-of-Verification — Agentic Reasoning on Top of GraphRAG</strong><a class="anchor-link" href="#Section-6.9:-Chain-of-Verification-%E2%80%94-Agentic-Reasoning-on-Top-of-GraphRAG">¶</a></h1><p>GraphRAG produces a single-shot answer: retrieve 8 chunks, hand to the
 generator, get one briefing. For multi-hop <em>cause-and-effect</em> questions
 (Q3 on US coal under 2025 federal policy; Q5 on OBBBA → SAF → West Coast
-refinery rationalisation) the generator must simultaneously identify the
+refinery rationalization) the generator must simultaneously identify the
 right entities, locate evidence across multiple reports, trace cause-effect
 across them, and write a coherent briefing — all in one pass. The known
 failure mode is <em>plausible-sounding causal inferences</em> that string together
@@ -16760,7 +16761,7 @@ partial credit as long as OBBBA, tax credits, West Coast, and refinery
 closures each appear <em>somewhere</em> in context — even if no chunk actually
 states the causal relationship between them.</p>
 <p>For multi-hop analyst questions, this is the exact failure mode CoV is
-designed to catch. We introduced a custom metric, <strong>causal_correctness</strong>,
+designed to catch. A custom metric, <strong>causal_correctness</strong>, was introduced,
 that scores the relationship grounding, not just the entity grounding:</p>
 <ul>
 <li>For each <em>causal</em> claim in the answer (statements asserting that X drives,
@@ -16915,7 +16916,7 @@ producing well-grounded answers there, and CoV simply re-confirmed them.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Results-%E2%80%94-standard-RAGAS">Results — standard RAGAS<a class="anchor-link" href="#Results-%E2%80%94-standard-RAGAS">¶</a></h2><p>We evaluated <code>graph_rag_cov</code> with the same 5-trial / gpt-4.1-judge
+<h2 id="Results-%E2%80%94-standard-RAGAS">Results — standard RAGAS<a class="anchor-link" href="#Results-%E2%80%94-standard-RAGAS">¶</a></h2><p><code>graph_rag_cov</code> was evaluated with the same 5-trial / gpt-4.1-judge
 methodology as the other techniques.</p>
 </div>
 </div>
@@ -17047,7 +17048,7 @@ causal_correctness metric measures.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Results-%E2%80%94-custom-causal_correctness-metric">Results — custom causal_correctness metric<a class="anchor-link" href="#Results-%E2%80%94-custom-causal_correctness-metric">¶</a></h2><p>We ran <code>causal_correctness</code> with n=5 trials per technique (gpt-4.1 judge,
+<h2 id="Results-%E2%80%94-custom-causal_correctness-metric">Results — custom causal_correctness metric<a class="anchor-link" href="#Results-%E2%80%94-custom-causal_correctness-metric">¶</a></h2><p><code>causal_correctness</code> was run with n=5 trials per technique (gpt-4.1 judge,
 6s sleeps between claim checks + 60s pauses between trials to stay under
 the tier-1 30K TPM cap; ~24 minutes total).</p>
 </div>
@@ -17154,7 +17155,7 @@ lift comes from one query:</p>
 </thead>
 <tbody>
 <tr>
-<td>Q1 (AI data centres)</td>
+<td>Q1 (AI data centers)</td>
 <td>0.945</td>
 <td>0.951</td>
 <td>+0.006 (noise)</td>
@@ -17227,7 +17228,7 @@ pass; Q1/Q2-style queries get vanilla GraphRAG. This preserves the lift
 where it matters without paying the latency/cost penalty on every query.</p>
 <p><strong>Methodological note</strong>: this section also demonstrates a broader lesson
 — <strong>standard RAGAS metrics don't always measure what a new technique is
-optimising</strong>. CoV regresses on AR/Faithfulness/CP while improving on a
+optimizing</strong>. CoV regresses on AR/Faithfulness/CP while improving on a
 purpose-built causal_correctness metric. Adding custom metrics designed
 for the failure modes you actually care about is essential when extending
 beyond out-of-the-box RAG evaluation.</p>
@@ -17242,12 +17243,12 @@ beyond out-of-the-box RAG evaluation.</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Section-6.10:-Citation-Verification-%E2%80%94-Are-the-%5BSource-p.N%5D-References-Actually-Correct?"><strong>Section 6.10: Citation Verification — Are the [Source p.N] References Actually Correct?</strong><a class="anchor-link" href="#Section-6.10:-Citation-Verification-%E2%80%94-Are-the-%5BSource-p.N%5D-References-Actually-Correct?">¶</a></h1><p>Every RAG technique in this notebook produces inline citations of the form
-<code>[Source p.N]</code> because the system prompt asks for them. What we have never
+<code>[Source p.N]</code> because the system prompt asks for them. What has never been
 <em>measured</em> is whether those citations actually point to a page that supports
 the cited claim. For Lumina's audit-driven workflow, an inaccurate citation
 is worse than no citation — it lends false credibility to a claim the
 analyst will then propagate.</p>
-<p>We introduce a <strong>citation_accuracy</strong> metric:</p>
+<p>A <strong>citation_accuracy</strong> metric is introduced:</p>
 <ol>
 <li>Parse every <code>[Source p.N]</code> reference from each answer (regex)</li>
 <li>Identify the sentence containing each citation as the <em>cited claim</em></li>
@@ -17281,10 +17282,10 @@ covers:</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Pre-finding-turned-production-fix:-the-off-by-one-citation-bug">Pre-finding turned production fix: the off-by-one citation bug<a class="anchor-link" href="#Pre-finding-turned-production-fix:-the-off-by-one-citation-bug">¶</a></h2><p>During smoke testing we discovered that the context formatter was passing
+<h2 id="Pre-finding-turned-production-fix:-the-off-by-one-citation-bug">Pre-finding turned production fix: the off-by-one citation bug<a class="anchor-link" href="#Pre-finding-turned-production-fix:-the-off-by-one-citation-bug">¶</a></h2><p>During smoke testing it was discovered that the context formatter was passing
 the chunk's 0-indexed <code>metadata.page</code> to the LLM verbatim. PyMuPDFLoader
 (and Docling) emit <code>metadata.page = 59</code> for a chunk whose content sits on
-the printed page labelled "60", so the LLM dutifully wrote
+the printed page labeled "60", so the LLM dutifully wrote
 <code>[Electricity2026 p.59]</code> — exactly one short of what an analyst opening
 the PDF would expect.</p>
 <p><strong>Status: patched.</strong> <code>rag_harness._format_context</code> and
@@ -17294,7 +17295,7 @@ printed PDF page. <code>citation_verifier.get_page_text</code> now defaults to
 <code>page_offset=-1</code> (analyst-view) to match the new convention; pass
 <code>page_offset=0</code> to verify any legacy answers that were captured before
 the fix.</p>
-<p>After the patch we regenerated <code>tuned_rag</code> and <code>opus_tuned_rag</code> and
+<p>After the patch, <code>tuned_rag</code> and <code>opus_tuned_rag</code> were regenerated and
 re-ran citation verification under the analyst-view convention. The
 results in the next cell are the post-fix numbers; the legacy two-column
 table is preserved at the bottom of the section as evidence of what the
@@ -17435,7 +17436,7 @@ spot-checking.</p>
 </li>
 <li><p><strong>Variance is essentially zero</strong> (0.000 for Opus, 0.007 for tuned_rag).
 The metric is deterministic — given the same answer and same source PDF,
-gpt-4.1 produces consistent verdicts. We did 3 trials for methodological
+gpt-4.1 produces consistent verdicts. Three trials were run for methodological
 consistency with the other metrics; n=1 would have sufficed.</p>
 </li>
 </ol>
@@ -17443,7 +17444,7 @@ consistency with the other metrics; n=1 would have sufficed.</p>
 their legacy chunk-meta scores (~0.84) are the closest comparable
 estimate. The relative gap to Tuned RAG (~0.12) is GraphRAG's structural
 citation tax: graph-expansion chunks come from entity-overlap traversal
-rather than query relevance, so synthesised answers sometimes cite the
+rather than query relevance, so synthesized answers sometimes cite the
 page where an entity is <em>mentioned</em> rather than the page where the
 <em>specific claim</em> is supported. This is the cost side of GraphRAG's
 synthesis lift documented in Section 6.5.</p>
@@ -17489,7 +17490,7 @@ versus what the LLM "thought" it was citing:</p>
 the wrong page ~4 out of 5 times for vector-RAG citations and ~2 out of
 3 times for graph-RAG citations. GraphRAG held up <em>relatively</em> better
 only because its extra graph-expansion citations sometimes pointed to
-pages whose neighbours happened to contain related content — an
+pages whose neighbors happened to contain related content — an
 accidental hedge, not a virtue. The post-fix Tuned RAG scores (0.962 and
 0.988) confirm the bug, not the model, was the problem.</p>
 <h3 id="The-fix-(applied)">The fix (applied)<a class="anchor-link" href="#The-fix-(applied)">¶</a></h3><div class="highlight"><pre><span></span><span class="c1"># rag_harness._format_context  — patched</span>
@@ -17503,9 +17504,9 @@ accidental hedge, not a virtue. The post-fix Tuned RAG scores (0.962 and
 and <code>citation_verifier</code>'s defaults were flipped so the post-fix
 analyst-view convention is the new baseline. Re-running with
 <code>page_offset=0</code> still works for verifying any pre-patch artifacts that
-remain in <code>all_answers.json</code> (we preserved them under
+remain in <code>all_answers.json</code> (preserved under
 <code>*__prefix_legacy</code> keys).</p>
-<h3 id="Methodological-note">Methodological note<a class="anchor-link" href="#Methodological-note">¶</a></h3><p>We are now using <strong>three custom metrics</strong> beyond standard RAGAS:</p>
+<h3 id="Methodological-note">Methodological note<a class="anchor-link" href="#Methodological-note">¶</a></h3><p><strong>Three custom metrics</strong> are now used beyond standard RAGAS:</p>
 <table>
 <thead>
 <tr>
@@ -17557,11 +17558,11 @@ struggles to interpret as structured data</li>
 <li><strong>Charts produce nothing</strong> — vector graphics aren't text, so the
 numerical content in line/bar/pie charts is invisible to the pipeline</li>
 </ol>
-<p>We test two improvements:</p>
+<p>Two improvements are tested:</p>
 <ul>
 <li><strong>Stage 1 (Docling text)</strong>: replace PyMuPDF with <a href="https://github.com/docling-project/docling">Docling</a> for ingestion. Docling does
 layout analysis, preserves markdown table structure via TableFormer,
-and emits image placeholders we can route through a separate
+and emits image placeholders that can be routed through a separate
 extractor.</li>
 <li><strong>Stage 2 (VLM chart extraction)</strong>: for every page Docling flags as
 containing a figure, render the page as a PNG and pass it to GPT-4o
@@ -17572,8 +17573,8 @@ extracted tables become synthetic chunks tagged
 text chunks.</li>
 </ul>
 <p>This is the most expensive section in the notebook (~$5 + ~70 minutes
-of VLM compute), but it directly addresses the chart-extraction gap we
-identified in the Section 2 Query 1 observations (data centre electricity
+of VLM compute), but it directly addresses the chart-extraction gap
+identified in the Section 2 Query 1 observations (data center electricity
 demand 36 → 113 → 203 TWh time series, which lives in a chart not text).</p>
 </div>
 </div>
@@ -17633,7 +17634,7 @@ demand 36 → 113 → 203 TWh time series, which lives in a chart not text).</p>
 </tr>
 </tbody>
 </table>
-<p>We compare three Tuned RAG variants holding everything else identical:</p>
+<p>Three Tuned RAG variants are compared, holding everything else identical:</p>
 <ul>
 <li><code>tuned_rag</code> — original PyMuPDF baseline</li>
 <li><code>tuned_rag_docling</code> — Docling text only</li>
@@ -17958,10 +17959,9 @@ drop-in replacement for PyMuPDF that costs nothing per query. Reserve
 GraphRAG for cases where the marginal +0.008 composite (or the multi-hop
 synthesis advantage demonstrated on Q3) justifies the ~$8 rebuild cost
 on every corpus update.</p>
-<h3 id="Important-finding-%E2%80%94-GraphRAG-does-NOT-benefit-from-Docling">Important finding — GraphRAG does NOT benefit from Docling<a class="anchor-link" href="#Important-finding-%E2%80%94-GraphRAG-does-NOT-benefit-from-Docling">¶</a></h3><p>We <strong>did</strong> re-run GraphRAG on the Docling corpus (1,779 documents,
+<h3 id="Important-finding-%E2%80%94-GraphRAG-does-NOT-benefit-from-Docling">Important finding — GraphRAG does NOT benefit from Docling<a class="anchor-link" href="#Important-finding-%E2%80%94-GraphRAG-does-NOT-benefit-from-Docling">¶</a></h3><p>GraphRAG <strong>was</strong> re-run on the Docling corpus (1,779 documents,
 13,223 entities, 51,035 edges — graph extraction took ~18 min and cost
-~$8 in gpt-4.1-mini calls). The result was the <strong>opposite of what
-we expected</strong>:</p>
+~$8 in gpt-4.1-mini calls). The result was the <strong>opposite of what was expected</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -18050,14 +18050,14 @@ generation, so the generator sees the original IEA text and cites the real
 page — the blurb's only job is to improve the embedding match.</p>
 <blockquote>
 <p><strong>Acceleration note.</strong> The context-generation step is 1,782 short LLM calls
-— an ideal workload for <strong>Cerebras inference</strong>. We used <code>gpt-oss-120b</code> on
+— an ideal workload for <strong>Cerebras inference</strong>. <code>gpt-oss-120b</code> was used on
 Cerebras at concurrency 12 and generated all 1,782 blurbs in <strong>2.8 minutes</strong>
 (~10-15 blurbs/sec). (Cerebras also serves <code>zai-glm-4.7</code>, the 358B model;
 for this short situating task the smaller <code>gpt-oss-120b</code> was both faster and
 sufficient.)</p>
 <p><strong>Fidelity note.</strong> Anthropic's original method caches the <em>entire</em> document
 per chunk. Cerebras has no equivalent caching and the IEA reports run
-100-470 pages, so we used a bounded context (document title + a heading
+100-470 pages, so a bounded context was used (document title + a heading
 outline for global structure + a ±2-chunk neighbor window for local flow).
 Anthropic's own ablations show section-level context captures most of the
 retrieval benefit, so this is a faithful adaptation rather than a verbatim
@@ -18246,7 +18246,7 @@ improving it. Many blurbs share near-identical phrasing, pulling the chunk
 embeddings toward a common centroid; MMR then surfaces chunks whose blurbs
 match the query's broad topic but whose actual content is less specifically
 on-point. Inspecting Q1: the baseline retrieves the precise "US demand +2.1%,
-data centres ≈ half of growth" passage, while the contextual store retrieves
+data centers ≈ half of growth" passage, while the contextual store retrieves
 the generic "electricity demand growth in advanced economies is accelerating"
 passage — topically adjacent but less relevant, which is exactly what tanks
 Answer Relevancy.</p>
@@ -18285,7 +18285,7 @@ added representational machinery.</strong></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Evaluation-Setup-%E2%80%94-Judge-LLM-and-Metrics">Evaluation Setup — Judge LLM and Metrics<a class="anchor-link" href="#Evaluation-Setup-%E2%80%94-Judge-LLM-and-Metrics">¶</a></h2><h3 id="Choosing-the-Evaluator-LLM">Choosing the Evaluator LLM<a class="anchor-link" href="#Choosing-the-Evaluator-LLM">¶</a></h3><p>We use <strong>OpenAI <code>gpt-4o-mini</code></strong> as the RAGAS judge. The selection criteria:</p>
+<h2 id="Evaluation-Setup-%E2%80%94-Judge-LLM-and-Metrics">Evaluation Setup — Judge LLM and Metrics<a class="anchor-link" href="#Evaluation-Setup-%E2%80%94-Judge-LLM-and-Metrics">¶</a></h2><h3 id="Choosing-the-Evaluator-LLM">Choosing the Evaluator LLM<a class="anchor-link" href="#Choosing-the-Evaluator-LLM">¶</a></h3><p><strong>OpenAI <code>gpt-4o-mini</code></strong> is used as the RAGAS judge. The selection criteria:</p>
 <table>
 <thead>
 <tr>
@@ -18342,8 +18342,8 @@ added representational machinery.</strong></p>
 </tr>
 </tbody>
 </table>
-<p><strong>Important applicability caveat</strong>: Faithfulness and Context Precision both require retrieved context to compute. The two non-RAG techniques (Base LLM and Prompt-Engineered) produce answers without retrieval — so these metrics are not applicable to them, and we report only Answer Relevancy.</p>
-<p><strong>Reporting methodology</strong>: each technique is evaluated <strong>3 independent times</strong> so we can report mean ± stdev. Single-run RAGAS scores have meaningful run-to-run variance on small benchmark sets, so trial averaging is essential to avoid drawing conclusions from noise.</p>
+<p><strong>Important applicability caveat</strong>: Faithfulness and Context Precision both require retrieved context to compute. The two non-RAG techniques (Base LLM and Prompt-Engineered) produce answers without retrieval — so these metrics are not applicable to them, and only Answer Relevancy is reported.</p>
+<p><strong>Reporting methodology</strong>: each technique is evaluated <strong>3 independent times</strong> so that mean ± stdev can be reported. Single-run RAGAS scores have meaningful run-to-run variance on small benchmark sets, so trial averaging is essential to avoid drawing conclusions from noise.</p>
 </div>
 </div>
 </div>
@@ -18596,7 +18596,7 @@ Cached evaluation: 12 rows across 4 techniques x 3 trials each
 <li>Faithfulness and Context Precision are not measurable for the Base LLM technique because the model produced its answers without retrieving any IEA passages. There is no source material to verify factual claims against.</li>
 <li>Answer Relevancy of <strong>0.706</strong> is high in absolute terms. The base LLM's responses are long (avg ~3,700 characters), topically focused, and stay close to the surface of each query.</li>
 <li>This high Answer Relevancy is <strong>misleading on its own</strong> — it tells us the answer is <em>on topic</em>, not that it is <em>factually grounded</em>. Without Faithfulness scoring, the Base LLM could be confidently asserting fabricated quantitative claims (e.g., specific TWh, bcm, or GW figures) that look credible but are not supported by any IEA report.</li>
-<li>For Lumina's investment-committee use case, this is exactly the failure mode the brief asks us to eliminate. The Base LLM may produce plausible briefings; it cannot produce <em>auditable</em> briefings.</li>
+<li>For Lumina's investment-committee use case, this is exactly the failure mode the brief requires eliminating. The Base LLM may produce plausible briefings; it cannot produce <em>auditable</em> briefings.</li>
 </ul>
 </div>
 </div>
@@ -19187,8 +19187,8 @@ evaluable once the API account is upgraded beyond the current tier.</li>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Methodological-postscript-%E2%80%94-RAGAS-judge-variance-and-the-n=5-problem">Methodological postscript — RAGAS judge variance and the n=5 problem<a class="anchor-link" href="#Methodological-postscript-%E2%80%94-RAGAS-judge-variance-and-the-n=5-problem">¶</a></h3><p>The variance study reported here used n=5 trials per configuration. After
 initially concluding that hybrid+rerank was unstable (1 of 5 trials showed
-AR=0.51 vs a typical 0.84), we ran an additional 10 trials of the same
-configuration to verify. <strong>The catastrophic outlier did not recur in any of
+AR=0.51 vs a typical 0.84), an additional 10 trials of the same
+configuration were run to verify. <strong>The catastrophic outlier did not recur in any of
 the 10 verification trials.</strong> The combined n=15 mean Answer Relevancy was
 0.79 ± 0.10, with the original trial-4 outlier representing the only
 sub-0.6 result.</p>
@@ -19199,8 +19199,8 @@ question regeneration → similarity scoring) compounds small variations into
 occasional dramatic score swings.</p>
 <p><strong>Takeaway for future RAG A/B testing</strong>: at small benchmark sizes (n=5 queries),
 report at least n≥10 evaluation trials per configuration, and treat single-trial
-outliers with suspicion until verified. Earlier in this notebook we recommended
-n≥3 trials; the corrected guidance is n≥10.</p>
+outliers with suspicion until verified. Earlier in this notebook, n≥3 trials were recommended;
+the corrected guidance is n≥10.</p>
 </div>
 </div>
 </div>
@@ -19214,7 +19214,7 @@ n≥3 trials; the corrected guidance is n≥10.</p>
 <h3 id="Methodological-Postscript-II-%E2%80%94-Judge-Model-Upgrade">Methodological Postscript II — Judge Model Upgrade<a class="anchor-link" href="#Methodological-Postscript-II-%E2%80%94-Judge-Model-Upgrade">¶</a></h3><p>The first evaluation of all six techniques used <strong><code>gpt-4o-mini</code> as the RAGAS
 judge</strong> (the default recommended by RAGAS's own documentation, at ~$0.15
 total cost across the 6-technique × 3-trial sweep). After completing the
-initial evaluation we observed several patterns that raised concerns about
+initial evaluation, several patterns were observed that raised concerns about
 the judge's measurement quality:</p>
 <ol>
 <li><strong>Prompt-Engineered LLM scored Answer Relevancy 0.167</strong> — implausibly
@@ -19229,9 +19229,9 @@ retrieved contexts in published benchmarks.</li>
 (0.958 vs 0.915) over the same retrieval with llama-3.3-70b — close
 to the per-trial stdev (0.011) and worth re-validating.</li>
 </ol>
-<p>We re-ran the <strong>full benchmark with <code>gpt-4.1</code> as judge, at n=5 trials per
+<p>The <strong>full benchmark was re-run with <code>gpt-4.1</code> as judge, at n=5 trials per
 technique</strong> (~$5, ~30 minutes). The results materially changed three of
-our prior conclusions:</p>
+the prior conclusions:</p>
 <table>
 <thead>
 <tr>
@@ -19293,7 +19293,7 @@ stochastically.</li>
 pass. The Opus 4.5 finding survived gpt-4o-mini's noise as a small,
 plausibly-real delta — but it did not survive the stronger judge.</li>
 <li><strong>Document both the original and revised findings.</strong> A writeup that
-shows "we identified a measurement issue and corrected it" is materially
+shows that "a measurement issue was identified and corrected" is materially
 stronger than one that buries the original numbers.</li>
 </ol>
 <p><strong>Cost framing for production deployment</strong>: judge-quality at evaluation
@@ -19505,23 +19505,23 @@ literal terms.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3.-Microsoft-GraphRAG:-community-summaries-for-global-queries">3. Microsoft GraphRAG: community summaries for global queries<a class="anchor-link" href="#3.-Microsoft-GraphRAG:-community-summaries-for-global-queries">¶</a></h2><p>A natural extension of the entity graph we already built in Section 6.5.</p>
+<h2 id="3.-Microsoft-GraphRAG:-community-summaries-for-global-queries">3. Microsoft GraphRAG: community summaries for global queries<a class="anchor-link" href="#3.-Microsoft-GraphRAG:-community-summaries-for-global-queries">¶</a></h2><p>A natural extension of the entity graph already built in Section 6.5.</p>
 <p><strong>The technique</strong>: run a community-detection algorithm (Leiden, the standard
 choice) over the entity graph to identify topical clusters. For each
 community, generate an LLM summary describing what holds it together. At
 query time, <em>global</em> questions ("what are the dominant themes across all 5
 reports?") are answered by aggregating community summaries; <em>local</em>
 questions remain handled by vector + graph retrieval.</p>
-<p><strong>Why we didn't include it in this notebook</strong>: the 5 benchmark queries are
+<p><strong>Why it was not included in this notebook</strong>: the 5 benchmark queries are
 all <em>local</em> questions about specific cross-sector dynamics. Community
 summaries don't help those — vector retrieval already finds the right
-chunks. We would need a different benchmark — synthesis-style queries like
+chunks. A different benchmark would be needed — synthesis-style queries like
 "summarize the relationship between US policy and global LNG supply" — to
 demonstrate the lift.</p>
 <p><strong>When to revisit</strong>: when Lumina's analysts begin asking explicitly <em>global</em>
 questions of the corpus, especially after corpus expansion (item 1 above)
 makes those questions tractable. Microsoft's reference implementation is
-available; expected cost ~$15-30 in LLM calls per corpus rebuild at our
+available; expected cost ~$15-30 in LLM calls per corpus rebuild at the
 current scale.</p>
 </div>
 </div>
@@ -19533,11 +19533,11 @@ current scale.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4.-Supervised-graph-methods-(HippoRAG,-G-Retriever)-%E2%80%94-when-query-logs-exist">4. Supervised graph methods (HippoRAG, G-Retriever) — when query logs exist<a class="anchor-link" href="#4.-Supervised-graph-methods-(HippoRAG,-G-Retriever)-%E2%80%94-when-query-logs-exist">¶</a></h2><p>We deferred supervised graph-based retrieval (true GNN architectures, neural
-path ranking) because they require labeled <code>(query, relevant_chunk)</code> training
-pairs that we currently lack.</p>
+<h2 id="4.-Supervised-graph-methods-(HippoRAG,-G-Retriever)-%E2%80%94-when-query-logs-exist">4. Supervised graph methods (HippoRAG, G-Retriever) — when query logs exist<a class="anchor-link" href="#4.-Supervised-graph-methods-(HippoRAG,-G-Retriever)-%E2%80%94-when-query-logs-exist">¶</a></h2><p>Supervised graph-based retrieval (true GNN architectures, neural
+path ranking) was deferred because it requires labeled <code>(query, relevant_chunk)</code> training
+pairs that are currently lacking.</p>
 <p><strong>The unlock</strong>: query logging in production. After 3-6 months of analyst
-usage, we will have hundreds of natural queries paired with implicit-feedback
+usage, hundreds of natural queries will be available, paired with implicit-feedback
 signals — which retrieved chunks were cited in the final memo, which were
 explicitly rejected, which queries were re-asked with rephrasing. This
 implicit feedback becomes high-quality training data.</p>
@@ -19569,18 +19569,18 @@ cost. Worth bundling into the next release cycle:</p>
 <ul>
 <li><strong>LlamaParse for PDF ingest</strong>: PyMuPDF is fast but mangles complex tables.
 IEA reports include detailed forecast tables that contain quantitative
-claims our analysts most want to cite. LlamaParse preserves table
-structure cleanly. Cost: ~$1-3 per corpus rebuild at our scale; effort:
+claims analysts most want to cite. LlamaParse preserves table
+structure cleanly. Cost: ~$1-3 per corpus rebuild at this scale; effort:
 ~half a day to wire in. Likely improvement: more answer-relevancy for
 table-anchored queries.</li>
 <li><strong>Entity normalization in the knowledge graph</strong>: the gpt-4.1-mini
-extraction produced some fragmentation — "data centres", "data center",
-"AI data centre" likely live as separate nodes despite being the same
+extraction produced some fragmentation — "data centers", "data center",
+"AI data center" likely live as separate nodes despite being the same
 entity. A post-processing pass using bge-base similarity over entity
 names (&gt;0.85 cosine) collapses near-duplicates into canonical entities.
 Effort: ~2-3 hours. Likely improvement: marginal but real, mainly on
 graph-traversal-dependent answers.</li>
-<li><strong>Reranker on hard queries only</strong>: our 5-trial variance study originally
+<li><strong>Reranker on hard queries only</strong>: the 5-trial variance study originally
 suggested the cross-encoder reranker degraded performance, but a follow-up
 15-trial verification showed the catastrophic AR outlier on trial 4 of the
 original study did not recur in 10 additional trials. The true read is
@@ -19588,7 +19588,7 @@ that hybrid+rerank performs comparably to MMR on this benchmark
 (AR 0.79 ± 0.10 vs 0.85 ± 0.004), with no measurable advantage but no real
 destabilization either. Two implications: (a) once corpus expansion
 introduces queries where dense retrieval recall actually drops (which
-hasn't happened at our current CP ≈ 1.0 ceiling), the reranker becomes
+hasn't happened at the current CP ≈ 1.0 ceiling), the reranker becomes
 worth revisiting; (b) future RAG A/B tests should default to n≥15 trials
 per configuration to distinguish judge non-determinism from genuine
 pipeline behavior. Wire it in behind a feature flag so it can be enabled
