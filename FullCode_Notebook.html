@@ -7662,6 +7662,408 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="%F0%9F%93%96-Reader's-Guide">📖 Reader's Guide<a class="anchor-link" href="#%F0%9F%93%96-Reader's-Guide">¶</a></h1><p>This notebook is organized around the <strong>9 sections of the Project Evaluation
+Rubric</strong> (60 points total). Each rubric section maps to a clearly-labeled
+notebook section, listed below in submission order. Beyond the required
+sections, four additional sections (6.5–6.8) document exploratory work that
+informs the final business recommendation. Empirical decisions throughout
+(chunking, embedder, retrieval strategy, judge model, generator choice) are
+grounded in the sweep results documented in <code>chunk_sweep_token_vs_char.csv</code>,
+<code>model_comparison_full.csv</code>, <code>hybrid_rerank_sweep.csv</code>,
+<code>hybrid_rerank_variance_extended.csv</code>, and <code>ragas_gpt41_summary.csv</code>.</p>
+<h2 id="Rubric-%E2%86%92-Notebook-Section-Map">Rubric → Notebook Section Map<a class="anchor-link" href="#Rubric-%E2%86%92-Notebook-Section-Map">¶</a></h2><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Rubric Section</th>
+<th>Pts</th>
+<th>Notebook Section</th>
+<th>What's Covered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Requirements Gathering</strong></td>
+<td>4</td>
+<td><em>Problem Statement → Requirements</em></td>
+<td>Business problem definition, four analysis requirements broken into measurable steps</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Answering Questions using the Base LLM</strong></td>
+<td>5</td>
+<td><em>Question Answering using LLM</em></td>
+<td>Plain Groq Llama-3.3-70B with minimal system prompt. 5 benchmark queries, observations after each</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Base LLM with Prompt Engineering</strong></td>
+<td>7</td>
+<td><em>Question Answering using LLM with Prompt Engineering</em></td>
+<td>Same LLM + analyst-persona system prompt; 5 answers; comparison vs base</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Vector Database Setup for RAG</strong></td>
+<td>6</td>
+<td><em>Data Preparation for RAG</em></td>
+<td>Corpus overview, <strong>token-based chunking</strong> (380/60, decision documented), <strong>bge-base-en-v1.5</strong> embedder (5-model benchmark documented), <strong>Chroma</strong> vector store rationale</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Base RAG System</strong></td>
+<td>7</td>
+<td><em>Question Answering using RAG</em></td>
+<td>MiniLM-L6 embedder + similarity k=4 + simple context prompt — "out-of-the-box" RAG baseline</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Tuned RAG System</strong></td>
+<td>8</td>
+<td><em>Fine-tuning the RAG</em></td>
+<td>bge-base + token 380/60 + <strong>MMR k=6 λ=0.5</strong> + cited-analyst prompt</td>
+</tr>
+<tr>
+<td>—</td>
+<td><em>GraphRAG (exploratory)</em></td>
+<td>—</td>
+<td><em>Section 6.5</em></td>
+<td>Neo4j knowledge graph (12,202 entities, 51,227 edges via GPT-4.1-mini extraction) + shared-entity expansion. <strong>Now the recommended production configuration after judge-model re-evaluation</strong></td>
+</tr>
+<tr>
+<td>—</td>
+<td><em>Diagnostic Analyses (exploratory)</em></td>
+<td>—</td>
+<td><em>Section 6.6</em></td>
+<td>Long-tail entity distribution (80% singletons) + BM25/dense overlap study (22% mean overlap@10)</td>
+</tr>
+<tr>
+<td>—</td>
+<td><em>Targeted Remediations (exploratory)</em></td>
+<td>—</td>
+<td><em>Section 6.7</em></td>
+<td>Alternative rerankers + entity normalization. Both rejected with documented rationale</td>
+</tr>
+<tr>
+<td>—</td>
+<td><em>Frontier-LLM Baseline (exploratory)</em></td>
+<td>—</td>
+<td><em>Section 6.8</em></td>
+<td>Claude Opus 4.5 as generator. Apparent Faithfulness advantage under gpt-4o-mini judge did not survive the gpt-4.1 re-evaluation</td>
+</tr>
+<tr>
+<td>—</td>
+<td><em>Chain-of-Verification (exploratory)</em></td>
+<td>—</td>
+<td><em>Section 6.9</em></td>
+<td>Agentic post-processing: decompose draft → verify each causal claim → rewrite. Plus a custom <strong>causal_correctness</strong> metric. +12.5 pp lift on Q3 (the multi-hop coal/policy query); flat elsewhere</td>
+</tr>
+<tr>
+<td>—</td>
+<td><em>Citation Verification (exploratory)</em></td>
+<td>—</td>
+<td><em>Section 6.10</em></td>
+<td>Parse every [Source p.N] reference, fetch the page, judge whether it supports the claim. <strong>Opus + Tuned RAG citations 98% accurate, vanilla Tuned RAG 97%, GraphRAG ~84%.</strong> Also exposes a 0→1 indexing bug worth fixing in production.</td>
+</tr>
+<tr>
+<td>—</td>
+<td><em>Improved PDF Extraction (exploratory)</em></td>
+<td>—</td>
+<td><em>Section 6.11</em></td>
+<td>Docling replaces PyMuPDF for ingest. <strong>Tuned RAG AR lifts +21 pp</strong> (0.732 → 0.945). Critically, <strong>GraphRAG regressed on Docling</strong> (0.894 → 0.787 composite) — Docling tables fragment the entity graph. <strong>Production recommendation flips</strong>: Tuned RAG + Docling beats GraphRAG.</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Output Evaluation</strong></td>
+<td>11</td>
+<td><em>Output Evaluation</em></td>
+<td><strong>Judge LLM upgraded from gpt-4o-mini to gpt-4.1</strong>; n=5 trials per technique. <strong>Methodological postscript II</strong> documents the upgrade and its impact on prior conclusions</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Business Insights &amp; Recommendations</strong></td>
+<td>4</td>
+<td><em>Business Insights and Recommendations</em></td>
+<td>Key takeaways for Lumina's analyst workflow; logical next steps</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Presentation / Notebook — Overall Quality</strong></td>
+<td>8</td>
+<td><em>(entire notebook)</em></td>
+<td>Clear section flow, commented executable code, business-grounded conclusions</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Key-Empirical-Findings-(TL;DR-for-the-reader)">Key Empirical Findings (TL;DR for the reader)<a class="anchor-link" href="#Key-Empirical-Findings-(TL;DR-for-the-reader)">¶</a></h2><p>Six techniques compared on RAGAS, <strong>gpt-4.1 judge, n=5 trials per technique</strong>:</p>
+<p>Six techniques on the original PyMuPDF corpus (<strong>n=5 trials each</strong>):</p>
+<table>
+<thead>
+<tr>
+<th>Technique</th>
+<th>Answer Relevancy</th>
+<th>Faithfulness</th>
+<th>Context Precision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base LLM</td>
+<td>0.737 ± 0.002</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Prompt-engineered LLM</td>
+<td>0.884 ± 0.002</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Base RAG (llama-3.3-70b)</td>
+<td>0.537 ± 0.000</td>
+<td><strong>0.941 ± 0.031</strong></td>
+<td><strong>0.987 ± 0.007</strong></td>
+</tr>
+<tr>
+<td>Tuned RAG (llama-3.3-70b)</td>
+<td>0.732 ± 0.001</td>
+<td>0.877 ± 0.035</td>
+<td>0.950 ± 0.019</td>
+</tr>
+<tr>
+<td><strong>GraphRAG (llama-3.3-70b)</strong></td>
+<td><strong>0.852 ± 0.082</strong></td>
+<td>0.929 ± 0.009</td>
+<td>0.900 ± 0.014</td>
+</tr>
+<tr>
+<td>Tuned RAG + Opus 4.5</td>
+<td>0.658 ± 0.014</td>
+<td>0.878 ± 0.025</td>
+<td>0.860 ± 0.017</td>
+</tr>
+</tbody>
+</table>
+<p>Additional configurations on the Section 6.11/6.12 <strong>Docling-ingested
+corpus</strong> (n=3 trials each — Docling ingestion replaces PyMuPDF for these
+runs, holding chunking, embedder, and generator constant; the retrieval
+step is the variable):</p>
+<table>
+<thead>
+<tr>
+<th>Technique (Docling ingest)</th>
+<th>Answer Relevancy</th>
+<th>Faithfulness</th>
+<th>Context Precision</th>
+<th>Composite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tuned RAG + Docling</td>
+<td>0.945 ± 0.002</td>
+<td>0.849 ± 0.006</td>
+<td>0.865 ± 0.004</td>
+<td>0.886</td>
+</tr>
+<tr>
+<td><strong>Tuned RAG + Docling + reranking</strong></td>
+<td>0.936 ± 0.003</td>
+<td><strong>0.906 ± 0.007</strong></td>
+<td><strong>0.954 ± 0.041</strong></td>
+<td><strong>0.932</strong></td>
+</tr>
+<tr>
+<td>Tuned RAG + Docling + VLM charts</td>
+<td>0.937 ± 0.002</td>
+<td>0.802 ± 0.046</td>
+<td>0.905 ± 0.019</td>
+<td>0.881</td>
+</tr>
+<tr>
+<td>Tuned RAG + Docling + contextual retrieval</td>
+<td>0.574 ± 0.001</td>
+<td>0.846 ± 0.026</td>
+<td>0.904 ± 0.006</td>
+<td>0.775</td>
+</tr>
+<tr>
+<td>GraphRAG + Docling</td>
+<td>0.524 ± 0.003</td>
+<td>0.862 ± 0.006</td>
+<td>0.976 ± 0.021</td>
+<td>0.787</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Three big findings the Docling rows surface:</strong></p>
+<ol>
+<li><p><strong>Tuned RAG + Docling lifts Answer Relevancy +21 pp</strong> (0.732 → 0.945)
+over the same Tuned RAG on PyMuPDF — the single largest metric movement
+in the notebook after the chunking decision.</p>
+</li>
+<li><p><strong>Adding a cross-encoder reranker is the new production winner</strong>
+(composite 0.932). AnsRel holds flat while Faithfulness (+5.7 pp) and
+Context Precision (+8.9 pp) — the audit-critical grounding metrics — both
+jump. See Section 6.12. <strong>Production default is now Tuned RAG + Docling +
+reranking.</strong></p>
+</li>
+<li><p><strong>GraphRAG regresses on Docling</strong> (AR 0.852 → 0.524). The richer table
+extraction Docling produces fragments the entity graph at extraction
+time; graph-expansion ends up dragging in topically-adjacent but
+query-irrelevant chunks. Context Precision rises (0.976) because the
+graph still finds <em>cited</em> content, but the answers no longer address the
+question — the AR collapse is the dominant signal.</p>
+<p><em>Contextual retrieval (Anthropic, 2024) was also tested and <strong>hurt</strong>
+AnsRel by 37 pp (0.945 → 0.574): on a small, single-domain corpus the
+generated context blurbs reduce embedding discrimination rather than
+improving it. A "sophistication backfires" result in the same family as
+GraphRAG-on-Docling. Full analysis in Section 6.12.</em></p>
+</li>
+</ol>
+<p>The VLM-charts variant adds chart-extracted text to the Docling text
+chunks. It nudges Context Precision up (0.905 vs 0.865) — chart numerics
+are more likely to be exactly what a quantitative query is asking for —
+but Faithfulness wobbles (0.802 ± 0.046, the highest variance in the
+sweep) because the VLM occasionally hallucinates the bottom-axis units on
+small or rotated charts. Not adopted as default but earns its keep on
+chart-dense queries.</p>
+<p><strong>Production recommendation (post-Section 6.12):</strong> <strong>Tuned RAG with
+Docling ingestion + cross-encoder reranking</strong> is the default route
+(composite 0.932, citation accuracy 0.962 ± 0.007 post-fix). The reranker
+adds +5.7 pp Faithfulness and +8.9 pp Context Precision over plain Tuned
+RAG + Docling at trivial query-time cost (Section 6.12). <strong>GraphRAG +
+Chain-of-Verification</strong> runs on the original PyMuPDF graph and is the
+causal-correctness leader (0.942 ± 0.011 vs ≤ 0.90 for any Tuned RAG
+variant) — route multi-hop policy queries here. The simpler vector
+architecture (with reranking) wins on broad analyst Q&amp;A given a modern PDF
+extractor; the graph architecture wins on the narrower set of cross-sector
+causal-reasoning queries. Two retrieval enhancements were rejected with
+documented rationale: contextual retrieval (hurt AnsRel on this homogeneous
+corpus, Section 6.12) and hybrid BM25 fusion (Section 6.6/6.7). See Section
+6.12 for the reranking/contextual comparison and Section 6.9 for CoV.</p>
+<p>Base RAG is the alternative for audit-critical use cases where the highest
+possible grounding (Faithfulness 0.941) matters more than synthesis breadth.</p>
+<h2 id="Methodological-Notes">Methodological Notes<a class="anchor-link" href="#Methodological-Notes">¶</a></h2><ul>
+<li><strong>Generators tested</strong>: Groq <code>llama-3.3-70b-versatile</code> (project-template
+default) and Claude <code>claude-opus-4-5</code> (Section 6.8). The Opus advantage
+observed with gpt-4o-mini did not survive the gpt-4.1 judge upgrade —
+generator quality is not the dominant lever at this corpus size.</li>
+<li><strong>Judge LLM (final)</strong>: OpenAI <code>gpt-4.1</code> at n=5 trials. Re-evaluation
+followed an initial gpt-4o-mini run determined to be producing
+noisy claim-extraction and over-generous context-precision scores.
+Documented in <em>Methodological Postscript II: Judge Model Upgrade</em>.</li>
+<li><strong>Chunking unit</strong>: tokens (not characters), via the embedder's own BERT
+tokenizer. Decision documented in the Data Preparation section.</li>
+<li><strong>Retrieval</strong>: MMR (k=6) for Tuned RAG. <strong>Cross-encoder reranking is
+adopted in the production default</strong> (Section 6.12, +0.046 composite on the
+Docling corpus). Hybrid (BM25 + vector) fusion and contextual retrieval
+were tested and <strong>not adopted</strong> (Sections 6.6–6.7, 6.12).</li>
+<li><strong>Evaluation rigour</strong>: per-technique metrics reported as mean ± stdev
+across 5 independent RAGAS trials with gpt-4.1 as judge.</li>
+</ul>
+<h2 id="Supporting-Artifacts">Supporting Artifacts<a class="anchor-link" href="#Supporting-Artifacts">¶</a></h2><table>
+<thead>
+<tr>
+<th>File</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>rag_harness.py</code></td>
+<td>Core pipeline: ingest, chunk, embed, retrieve, evaluate</td>
+</tr>
+<tr>
+<td><code>answer_runners.py</code></td>
+<td>Four answer-generation strategies (base / prompt-eng / base-RAG / tuned-RAG)</td>
+</tr>
+<tr>
+<td><code>graph_rag.py</code></td>
+<td>GraphRAG implementation (Section 6.5) — Neo4j graph + vector hybrid retrieval</td>
+</tr>
+<tr>
+<td><code>frontier_full_corpus.py</code></td>
+<td>Frontier-LLM corpus runner (Section 6.8)</td>
+</tr>
+<tr>
+<td><code>all_answers.json</code></td>
+<td>6 × 5 = 30 generated answers cached for the notebook</td>
+</tr>
+<tr>
+<td><code>chunk_sweep_token_vs_char.csv</code></td>
+<td>Char vs. token chunking decision data</td>
+</tr>
+<tr>
+<td><code>model_comparison_full.csv</code></td>
+<td>5-model embedder benchmark</td>
+</tr>
+<tr>
+<td><code>hybrid_rerank_sweep.csv</code></td>
+<td>Initial hybrid + rerank configuration sweep</td>
+</tr>
+<tr>
+<td><code>hybrid_rerank_variance_extended.csv</code></td>
+<td>15-trial verification of hybrid+rerank stability</td>
+</tr>
+<tr>
+<td><code>variance_summary.csv</code></td>
+<td>5-trial variance study (older, gpt-4o-mini judge)</td>
+</tr>
+<tr>
+<td><code>ragas_gpt41_summary.csv</code></td>
+<td><strong>Current canonical</strong> — 6 techniques × 5 trials, gpt-4.1 judge</td>
+</tr>
+<tr>
+<td><code>ragas_gpt41_raw.csv</code></td>
+<td>Per-trial raw scores from the gpt-4.1 re-evaluation</td>
+</tr>
+<tr>
+<td><code>diagnostic_analysis1_entity_stats.csv</code></td>
+<td>Section 6.6 entity distribution analysis</td>
+</tr>
+<tr>
+<td><code>diagnostic_analysis2_overlap_raw.csv</code></td>
+<td>Section 6.6 BM25-vs-dense overlap study</td>
+</tr>
+<tr>
+<td><code>entity_normalization_clusters.csv</code></td>
+<td>Section 6.7 entity merge clusters</td>
+</tr>
+<tr>
+<td><code>chain_of_verification.py</code></td>
+<td>Section 6.9 CoV pipeline (extract → verify → rewrite)</td>
+</tr>
+<tr>
+<td><code>causal_correctness.py</code></td>
+<td>Section 6.9 custom causal_correctness metric</td>
+</tr>
+<tr>
+<td><code>cov_verification_artifacts.json</code></td>
+<td>Section 6.9 per-claim verification details</td>
+</tr>
+<tr>
+<td><code>causal_correctness_raw.csv</code></td>
+<td>Section 6.9 5-trial causal_correctness scores</td>
+</tr>
+<tr>
+<td><code>causal_correctness_per_query.csv</code></td>
+<td>Section 6.9 per-query causal scores</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Operationalize"><strong>Operationalize</strong><a class="anchor-link" href="#Operationalize">¶</a></h1>
 </div>
 </div>
@@ -12410,408 +12812,6 @@ function. The vector stores are cached on disk — re-running this cell is fast.
 [strategies] tuned RAG store: 2786 vectors (bge-base)
 </pre>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="%F0%9F%93%96-Reader's-Guide">📖 Reader's Guide<a class="anchor-link" href="#%F0%9F%93%96-Reader's-Guide">¶</a></h1><p>This notebook is organized around the <strong>9 sections of the Project Evaluation
-Rubric</strong> (60 points total). Each rubric section maps to a clearly-labeled
-notebook section, listed below in submission order. Beyond the required
-sections, four additional sections (6.5–6.8) document exploratory work that
-informs the final business recommendation. Empirical decisions throughout
-(chunking, embedder, retrieval strategy, judge model, generator choice) are
-grounded in the sweep results documented in <code>chunk_sweep_token_vs_char.csv</code>,
-<code>model_comparison_full.csv</code>, <code>hybrid_rerank_sweep.csv</code>,
-<code>hybrid_rerank_variance_extended.csv</code>, and <code>ragas_gpt41_summary.csv</code>.</p>
-<h2 id="Rubric-%E2%86%92-Notebook-Section-Map">Rubric → Notebook Section Map<a class="anchor-link" href="#Rubric-%E2%86%92-Notebook-Section-Map">¶</a></h2><table>
-<thead>
-<tr>
-<th>#</th>
-<th>Rubric Section</th>
-<th>Pts</th>
-<th>Notebook Section</th>
-<th>What's Covered</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td><strong>Requirements Gathering</strong></td>
-<td>4</td>
-<td><em>Problem Statement → Requirements</em></td>
-<td>Business problem definition, four analysis requirements broken into measurable steps</td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong>Answering Questions using the Base LLM</strong></td>
-<td>5</td>
-<td><em>Question Answering using LLM</em></td>
-<td>Plain Groq Llama-3.3-70B with minimal system prompt. 5 benchmark queries, observations after each</td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong>Base LLM with Prompt Engineering</strong></td>
-<td>7</td>
-<td><em>Question Answering using LLM with Prompt Engineering</em></td>
-<td>Same LLM + analyst-persona system prompt; 5 answers; comparison vs base</td>
-</tr>
-<tr>
-<td>4</td>
-<td><strong>Vector Database Setup for RAG</strong></td>
-<td>6</td>
-<td><em>Data Preparation for RAG</em></td>
-<td>Corpus overview, <strong>token-based chunking</strong> (380/60, decision documented), <strong>bge-base-en-v1.5</strong> embedder (5-model benchmark documented), <strong>Chroma</strong> vector store rationale</td>
-</tr>
-<tr>
-<td>5</td>
-<td><strong>Base RAG System</strong></td>
-<td>7</td>
-<td><em>Question Answering using RAG</em></td>
-<td>MiniLM-L6 embedder + similarity k=4 + simple context prompt — "out-of-the-box" RAG baseline</td>
-</tr>
-<tr>
-<td>6</td>
-<td><strong>Tuned RAG System</strong></td>
-<td>8</td>
-<td><em>Fine-tuning the RAG</em></td>
-<td>bge-base + token 380/60 + <strong>MMR k=6 λ=0.5</strong> + cited-analyst prompt</td>
-</tr>
-<tr>
-<td>—</td>
-<td><em>GraphRAG (exploratory)</em></td>
-<td>—</td>
-<td><em>Section 6.5</em></td>
-<td>Neo4j knowledge graph (12,202 entities, 51,227 edges via GPT-4.1-mini extraction) + shared-entity expansion. <strong>Now the recommended production configuration after judge-model re-evaluation</strong></td>
-</tr>
-<tr>
-<td>—</td>
-<td><em>Diagnostic Analyses (exploratory)</em></td>
-<td>—</td>
-<td><em>Section 6.6</em></td>
-<td>Long-tail entity distribution (80% singletons) + BM25/dense overlap study (22% mean overlap@10)</td>
-</tr>
-<tr>
-<td>—</td>
-<td><em>Targeted Remediations (exploratory)</em></td>
-<td>—</td>
-<td><em>Section 6.7</em></td>
-<td>Alternative rerankers + entity normalization. Both rejected with documented rationale</td>
-</tr>
-<tr>
-<td>—</td>
-<td><em>Frontier-LLM Baseline (exploratory)</em></td>
-<td>—</td>
-<td><em>Section 6.8</em></td>
-<td>Claude Opus 4.5 as generator. Apparent Faithfulness advantage under gpt-4o-mini judge did not survive the gpt-4.1 re-evaluation</td>
-</tr>
-<tr>
-<td>—</td>
-<td><em>Chain-of-Verification (exploratory)</em></td>
-<td>—</td>
-<td><em>Section 6.9</em></td>
-<td>Agentic post-processing: decompose draft → verify each causal claim → rewrite. Plus a custom <strong>causal_correctness</strong> metric. +12.5 pp lift on Q3 (the multi-hop coal/policy query); flat elsewhere</td>
-</tr>
-<tr>
-<td>—</td>
-<td><em>Citation Verification (exploratory)</em></td>
-<td>—</td>
-<td><em>Section 6.10</em></td>
-<td>Parse every [Source p.N] reference, fetch the page, judge whether it supports the claim. <strong>Opus + Tuned RAG citations 98% accurate, vanilla Tuned RAG 97%, GraphRAG ~84%.</strong> Also exposes a 0→1 indexing bug worth fixing in production.</td>
-</tr>
-<tr>
-<td>—</td>
-<td><em>Improved PDF Extraction (exploratory)</em></td>
-<td>—</td>
-<td><em>Section 6.11</em></td>
-<td>Docling replaces PyMuPDF for ingest. <strong>Tuned RAG AR lifts +21 pp</strong> (0.732 → 0.945). Critically, <strong>GraphRAG regressed on Docling</strong> (0.894 → 0.787 composite) — Docling tables fragment the entity graph. <strong>Production recommendation flips</strong>: Tuned RAG + Docling beats GraphRAG.</td>
-</tr>
-<tr>
-<td>7</td>
-<td><strong>Output Evaluation</strong></td>
-<td>11</td>
-<td><em>Output Evaluation</em></td>
-<td><strong>Judge LLM upgraded from gpt-4o-mini to gpt-4.1</strong>; n=5 trials per technique. <strong>Methodological postscript II</strong> documents the upgrade and its impact on prior conclusions</td>
-</tr>
-<tr>
-<td>8</td>
-<td><strong>Business Insights &amp; Recommendations</strong></td>
-<td>4</td>
-<td><em>Business Insights and Recommendations</em></td>
-<td>Key takeaways for Lumina's analyst workflow; logical next steps</td>
-</tr>
-<tr>
-<td>9</td>
-<td><strong>Presentation / Notebook — Overall Quality</strong></td>
-<td>8</td>
-<td><em>(entire notebook)</em></td>
-<td>Clear section flow, commented executable code, business-grounded conclusions</td>
-</tr>
-</tbody>
-</table>
-<h2 id="Key-Empirical-Findings-(TL;DR-for-the-reader)">Key Empirical Findings (TL;DR for the reader)<a class="anchor-link" href="#Key-Empirical-Findings-(TL;DR-for-the-reader)">¶</a></h2><p>Six techniques compared on RAGAS, <strong>gpt-4.1 judge, n=5 trials per technique</strong>:</p>
-<p>Six techniques on the original PyMuPDF corpus (<strong>n=5 trials each</strong>):</p>
-<table>
-<thead>
-<tr>
-<th>Technique</th>
-<th>Answer Relevancy</th>
-<th>Faithfulness</th>
-<th>Context Precision</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Base LLM</td>
-<td>0.737 ± 0.002</td>
-<td>N/A</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>Prompt-engineered LLM</td>
-<td>0.884 ± 0.002</td>
-<td>N/A</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>Base RAG (llama-3.3-70b)</td>
-<td>0.537 ± 0.000</td>
-<td><strong>0.941 ± 0.031</strong></td>
-<td><strong>0.987 ± 0.007</strong></td>
-</tr>
-<tr>
-<td>Tuned RAG (llama-3.3-70b)</td>
-<td>0.732 ± 0.001</td>
-<td>0.877 ± 0.035</td>
-<td>0.950 ± 0.019</td>
-</tr>
-<tr>
-<td><strong>GraphRAG (llama-3.3-70b)</strong></td>
-<td><strong>0.852 ± 0.082</strong></td>
-<td>0.929 ± 0.009</td>
-<td>0.900 ± 0.014</td>
-</tr>
-<tr>
-<td>Tuned RAG + Opus 4.5</td>
-<td>0.658 ± 0.014</td>
-<td>0.878 ± 0.025</td>
-<td>0.860 ± 0.017</td>
-</tr>
-</tbody>
-</table>
-<p>Additional configurations on the Section 6.11/6.12 <strong>Docling-ingested
-corpus</strong> (n=3 trials each — Docling ingestion replaces PyMuPDF for these
-runs, holding chunking, embedder, and generator constant; the retrieval
-step is the variable):</p>
-<table>
-<thead>
-<tr>
-<th>Technique (Docling ingest)</th>
-<th>Answer Relevancy</th>
-<th>Faithfulness</th>
-<th>Context Precision</th>
-<th>Composite</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Tuned RAG + Docling</td>
-<td>0.945 ± 0.002</td>
-<td>0.849 ± 0.006</td>
-<td>0.865 ± 0.004</td>
-<td>0.886</td>
-</tr>
-<tr>
-<td><strong>Tuned RAG + Docling + reranking</strong></td>
-<td>0.936 ± 0.003</td>
-<td><strong>0.906 ± 0.007</strong></td>
-<td><strong>0.954 ± 0.041</strong></td>
-<td><strong>0.932</strong></td>
-</tr>
-<tr>
-<td>Tuned RAG + Docling + VLM charts</td>
-<td>0.937 ± 0.002</td>
-<td>0.802 ± 0.046</td>
-<td>0.905 ± 0.019</td>
-<td>0.881</td>
-</tr>
-<tr>
-<td>Tuned RAG + Docling + contextual retrieval</td>
-<td>0.574 ± 0.001</td>
-<td>0.846 ± 0.026</td>
-<td>0.904 ± 0.006</td>
-<td>0.775</td>
-</tr>
-<tr>
-<td>GraphRAG + Docling</td>
-<td>0.524 ± 0.003</td>
-<td>0.862 ± 0.006</td>
-<td>0.976 ± 0.021</td>
-<td>0.787</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Three big findings the Docling rows surface:</strong></p>
-<ol>
-<li><p><strong>Tuned RAG + Docling lifts Answer Relevancy +21 pp</strong> (0.732 → 0.945)
-over the same Tuned RAG on PyMuPDF — the single largest metric movement
-in the notebook after the chunking decision.</p>
-</li>
-<li><p><strong>Adding a cross-encoder reranker is the new production winner</strong>
-(composite 0.932). AnsRel holds flat while Faithfulness (+5.7 pp) and
-Context Precision (+8.9 pp) — the audit-critical grounding metrics — both
-jump. See Section 6.12. <strong>Production default is now Tuned RAG + Docling +
-reranking.</strong></p>
-</li>
-<li><p><strong>GraphRAG regresses on Docling</strong> (AR 0.852 → 0.524). The richer table
-extraction Docling produces fragments the entity graph at extraction
-time; graph-expansion ends up dragging in topically-adjacent but
-query-irrelevant chunks. Context Precision rises (0.976) because the
-graph still finds <em>cited</em> content, but the answers no longer address the
-question — the AR collapse is the dominant signal.</p>
-<p><em>Contextual retrieval (Anthropic, 2024) was also tested and <strong>hurt</strong>
-AnsRel by 37 pp (0.945 → 0.574): on a small, single-domain corpus the
-generated context blurbs reduce embedding discrimination rather than
-improving it. A "sophistication backfires" result in the same family as
-GraphRAG-on-Docling. Full analysis in Section 6.12.</em></p>
-</li>
-</ol>
-<p>The VLM-charts variant adds chart-extracted text to the Docling text
-chunks. It nudges Context Precision up (0.905 vs 0.865) — chart numerics
-are more likely to be exactly what a quantitative query is asking for —
-but Faithfulness wobbles (0.802 ± 0.046, the highest variance in the
-sweep) because the VLM occasionally hallucinates the bottom-axis units on
-small or rotated charts. Not adopted as default but earns its keep on
-chart-dense queries.</p>
-<p><strong>Production recommendation (post-Section 6.12):</strong> <strong>Tuned RAG with
-Docling ingestion + cross-encoder reranking</strong> is the default route
-(composite 0.932, citation accuracy 0.962 ± 0.007 post-fix). The reranker
-adds +5.7 pp Faithfulness and +8.9 pp Context Precision over plain Tuned
-RAG + Docling at trivial query-time cost (Section 6.12). <strong>GraphRAG +
-Chain-of-Verification</strong> runs on the original PyMuPDF graph and is the
-causal-correctness leader (0.942 ± 0.011 vs ≤ 0.90 for any Tuned RAG
-variant) — route multi-hop policy queries here. The simpler vector
-architecture (with reranking) wins on broad analyst Q&amp;A given a modern PDF
-extractor; the graph architecture wins on the narrower set of cross-sector
-causal-reasoning queries. Two retrieval enhancements were rejected with
-documented rationale: contextual retrieval (hurt AnsRel on this homogeneous
-corpus, Section 6.12) and hybrid BM25 fusion (Section 6.6/6.7). See Section
-6.12 for the reranking/contextual comparison and Section 6.9 for CoV.</p>
-<p>Base RAG is the alternative for audit-critical use cases where the highest
-possible grounding (Faithfulness 0.941) matters more than synthesis breadth.</p>
-<h2 id="Methodological-Notes">Methodological Notes<a class="anchor-link" href="#Methodological-Notes">¶</a></h2><ul>
-<li><strong>Generators tested</strong>: Groq <code>llama-3.3-70b-versatile</code> (project-template
-default) and Claude <code>claude-opus-4-5</code> (Section 6.8). The Opus advantage
-observed with gpt-4o-mini did not survive the gpt-4.1 judge upgrade —
-generator quality is not the dominant lever at this corpus size.</li>
-<li><strong>Judge LLM (final)</strong>: OpenAI <code>gpt-4.1</code> at n=5 trials. Re-evaluation
-followed an initial gpt-4o-mini run determined to be producing
-noisy claim-extraction and over-generous context-precision scores.
-Documented in <em>Methodological Postscript II: Judge Model Upgrade</em>.</li>
-<li><strong>Chunking unit</strong>: tokens (not characters), via the embedder's own BERT
-tokenizer. Decision documented in the Data Preparation section.</li>
-<li><strong>Retrieval</strong>: MMR (k=6) for Tuned RAG. <strong>Cross-encoder reranking is
-adopted in the production default</strong> (Section 6.12, +0.046 composite on the
-Docling corpus). Hybrid (BM25 + vector) fusion and contextual retrieval
-were tested and <strong>not adopted</strong> (Sections 6.6–6.7, 6.12).</li>
-<li><strong>Evaluation rigour</strong>: per-technique metrics reported as mean ± stdev
-across 5 independent RAGAS trials with gpt-4.1 as judge.</li>
-</ul>
-<h2 id="Supporting-Artifacts">Supporting Artifacts<a class="anchor-link" href="#Supporting-Artifacts">¶</a></h2><table>
-<thead>
-<tr>
-<th>File</th>
-<th>Contents</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>rag_harness.py</code></td>
-<td>Core pipeline: ingest, chunk, embed, retrieve, evaluate</td>
-</tr>
-<tr>
-<td><code>answer_runners.py</code></td>
-<td>Four answer-generation strategies (base / prompt-eng / base-RAG / tuned-RAG)</td>
-</tr>
-<tr>
-<td><code>graph_rag.py</code></td>
-<td>GraphRAG implementation (Section 6.5) — Neo4j graph + vector hybrid retrieval</td>
-</tr>
-<tr>
-<td><code>frontier_full_corpus.py</code></td>
-<td>Frontier-LLM corpus runner (Section 6.8)</td>
-</tr>
-<tr>
-<td><code>all_answers.json</code></td>
-<td>6 × 5 = 30 generated answers cached for the notebook</td>
-</tr>
-<tr>
-<td><code>chunk_sweep_token_vs_char.csv</code></td>
-<td>Char vs. token chunking decision data</td>
-</tr>
-<tr>
-<td><code>model_comparison_full.csv</code></td>
-<td>5-model embedder benchmark</td>
-</tr>
-<tr>
-<td><code>hybrid_rerank_sweep.csv</code></td>
-<td>Initial hybrid + rerank configuration sweep</td>
-</tr>
-<tr>
-<td><code>hybrid_rerank_variance_extended.csv</code></td>
-<td>15-trial verification of hybrid+rerank stability</td>
-</tr>
-<tr>
-<td><code>variance_summary.csv</code></td>
-<td>5-trial variance study (older, gpt-4o-mini judge)</td>
-</tr>
-<tr>
-<td><code>ragas_gpt41_summary.csv</code></td>
-<td><strong>Current canonical</strong> — 6 techniques × 5 trials, gpt-4.1 judge</td>
-</tr>
-<tr>
-<td><code>ragas_gpt41_raw.csv</code></td>
-<td>Per-trial raw scores from the gpt-4.1 re-evaluation</td>
-</tr>
-<tr>
-<td><code>diagnostic_analysis1_entity_stats.csv</code></td>
-<td>Section 6.6 entity distribution analysis</td>
-</tr>
-<tr>
-<td><code>diagnostic_analysis2_overlap_raw.csv</code></td>
-<td>Section 6.6 BM25-vs-dense overlap study</td>
-</tr>
-<tr>
-<td><code>entity_normalization_clusters.csv</code></td>
-<td>Section 6.7 entity merge clusters</td>
-</tr>
-<tr>
-<td><code>chain_of_verification.py</code></td>
-<td>Section 6.9 CoV pipeline (extract → verify → rewrite)</td>
-</tr>
-<tr>
-<td><code>causal_correctness.py</code></td>
-<td>Section 6.9 custom causal_correctness metric</td>
-</tr>
-<tr>
-<td><code>cov_verification_artifacts.json</code></td>
-<td>Section 6.9 per-claim verification details</td>
-</tr>
-<tr>
-<td><code>causal_correctness_raw.csv</code></td>
-<td>Section 6.9 5-trial causal_correctness scores</td>
-</tr>
-<tr>
-<td><code>causal_correctness_per_query.csv</code></td>
-<td>Section 6.9 per-query causal scores</td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 </div>
